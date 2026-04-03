@@ -1,0 +1,1344 @@
+{
+  "info": {
+    "_postman_id": "b51a8c50-865f-49d5-8556-aa83b75525d2",
+    "name": "hocbaso",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "39783619"
+  },
+  "item": [
+    {
+      "name": "student",
+      "item": [
+        {
+          "name": "http://127.0.0.1:8000/students",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8000/students",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "students"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://127.0.0.1:8000/student/2526.01.M1.001",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8000/students/2526.01.M1.001",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "students",
+                "2526.01.M1.001"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://127.0.0.1:8000/student",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"code\": \"2526.01.M1.001\",\r\n    \"name\": \"Đặng Giang Thanh Quân\",\r\n    \"date_of_birth\": \"2018-05-15\",\r\n    \"gender\": \"Nam\",\r\n    \"nationality\": \"Việt Nam\",\r\n    \"card_id\": \"051201009402\",\r\n    \"edu_id\": \"7974440302\",\r\n    \"status\": \"Đang học\",\r\n    \"phone\": \"0933134347\",\r\n    \"address\": \"70 Trần Phú, p.An Đông, HCM\",\r\n    \"other_info\": null\r\n  }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/students",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "students"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://127.0.0.1:8000/student/",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"code\": \"2526.01.M1.001\",\r\n    // \"nationality\": \"Việt Nam\",\r\n    // \"card_id\": \"051201009402\",\r\n    // \"status\": \"Đang học\",\r\n    // \"phone\": \"0933134347\",\r\n    // \"address\": \"70 Trần Phú, p.An Đông, HCM\",\r\n    \"other_info\": \"Không có thông tin\"\r\n  }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/students/",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "students",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://127.0.0.1:8000/student/2526.01.M1.001",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:8000/students/2526.01.M1.001",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "students",
+                "2526.01.M1.001"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "teacher",
+      "item": [
+        {
+          "name": "http://127.0.0.1:8000/teachers",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{    \r\n    \"code\": \"T.GV01\",\r\n    \"data\": {\r\n      \"name\": \"Lê Trần Thùy Trâm\",\r\n      \"date_of_birth\": \"1992-05-15\",\r\n      \"gender\": \"Nữ\",\r\n      \"status\": \"Đang công tác\",\r\n      \"phone\": \"0852011200\",\r\n      \"nationality\": \"Việt Nam\",\r\n      \"specialization\": \"Sư phạm Tiếng Anh\",\r\n      \"position\": \"Tổ trưởng chuyên môn\"\r\n    }\r\n  }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/teachers",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "teachers"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://127.0.0.1:8000/teachers/T.GV01",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{    \r\n    \"code\": \"T.GV01\",\r\n    \"name\": \"Lê Trần Thùy Trâm\",\r\n    \"date_of_birth\": \"1992-05-15\",\r\n    \"gender\": \"Nữ\",\r\n    \"status\": \"Đang công tác\",\r\n    \"phone\": \"0852011200\",\r\n    \"nationality\": \"Việt Nam\",\r\n    \"specialization\": \"Sư phạm Tiếng Anh\",\r\n    \"position\": \"Tổ trưởng chuyên môn\"\r\n  }"
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/teachers/T.GV01",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "teachers",
+                "T.GV01"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://127.0.0.1:8000/teachers",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{    \r\n    \"code\": \"T.GV01\",\r\n    \"name\": \"Lê Trần Thùy Trâm\",\r\n    \"date_of_birth\": \"1992-05-15\",\r\n    \"gender\": \"Nữ\",\r\n    \"status\": \"Đang công tác\",\r\n    \"phone\": \"0852011200\",\r\n    \"nationality\": \"Việt Nam\",\r\n    \"specialization\": \"Sư phạm Tiếng Anh\",\r\n    \"position\": \"Tổ trưởng chuyên môn\"\r\n  }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/teachers",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "teachers"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://127.0.0.1:8000/teachers/",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{    \r\n    \"code\": \"T.GV01\",\r\n    \"position\": \"Tổ trưởng chuyên môn Toán\"\r\n  }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/teachers/",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "teachers",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://127.0.0.1:8000/teachers",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/teachers/T.GV01",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "teachers",
+                "T.GV01"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "subject",
+      "item": [
+        {
+          "name": "http://127.0.0.1:8000/sujects",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{    \r\n    \"code\": \"T.GV01\",\r\n    \"data\": {\r\n      \"name\": \"Lê Trần Thùy Trâm\",\r\n      \"date_of_birth\": \"1992-05-15\",\r\n      \"gender\": \"Nữ\",\r\n      \"status\": \"Đang công tác\",\r\n      \"phone\": \"0852011200\",\r\n      \"nationality\": \"Việt Nam\",\r\n      \"specialization\": \"Sư phạm Tiếng Anh\",\r\n      \"position\": \"Tổ trưởng chuyên môn\"\r\n    }\r\n  }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/subjects",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "subjects"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://127.0.0.1:8000/subjects/MHT",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{    \r\n    \"code\": \"T.GV01\",\r\n    \"data\": {\r\n      \"name\": \"Lê Trần Thùy Trâm\",\r\n      \"date_of_birth\": \"1992-05-15\",\r\n      \"gender\": \"Nữ\",\r\n      \"status\": \"Đang công tác\",\r\n      \"phone\": \"0852011200\",\r\n      \"nationality\": \"Việt Nam\",\r\n      \"specialization\": \"Sư phạm Tiếng Anh\",\r\n      \"position\": \"Tổ trưởng chuyên môn\"\r\n    }\r\n  }"
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/subjects/MHT",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "subjects",
+                "MHT"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://127.0.0.1:8000/subjects",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{    \r\n    \"code\": \"MHT\",\r\n    \"name\": \"Toán\",\r\n    \"total_periods\": 135\r\n  }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/subjects",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "subjects"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://127.0.0.1:8000/subjects",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{    \r\n    \"code\": \"MHT\",\r\n    \"name\": \"Toán\",\r\n    \"total_periods\": 135\r\n  }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/subjects",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "subjects"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://127.0.0.1:8000/subjects/MHT",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{    \r\n    \"code\": \"T.GV01\",\r\n    \"data\": {\r\n      \"name\": \"Lê Trần Thùy Trâm\",\r\n      \"date_of_birth\": \"1992-05-15\",\r\n      \"gender\": \"Nữ\",\r\n      \"status\": \"Đang công tác\",\r\n      \"phone\": \"0852011200\",\r\n      \"nationality\": \"Việt Nam\",\r\n      \"specialization\": \"Sư phạm Tiếng Anh\",\r\n      \"position\": \"Tổ trưởng chuyên môn\"\r\n    }\r\n  }"
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/subjects/MHT",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "subjects",
+                "MHT"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "semester",
+      "item": [
+        {
+          "name": "http://127.0.0.1:8000/semesters",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"code\": \"2526.HK01\",\r\n    \"name\": \"HK1\",\r\n    \"start_date\": \"2025-08-15\",\r\n    \"end_date\": \"2026-01-10\",\r\n    \"academic_year_id\": \"NH2526\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/semesters",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "semesters"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://127.0.0.1:8000/semesters/2526.HK01",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"code\": \"2526.HK01\",\r\n    \"name\": \"HK1\",\r\n    \"start_date\": \"2025-08-15\",\r\n    \"end_date\": \"2026-01-10\",\r\n    \"academic_year_id\": \"NH2526\"\r\n}"
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/semesters/2526.HK01",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "semesters",
+                "2526.HK01"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://127.0.0.1:8000/semesters/",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"code\": \"2526.HK01\",\r\n    \"name\": \"HK1\",\r\n    \"start_date\": \"2025-08-15\",\r\n    \"end_date\": \"2026-01-10\",\r\n    \"academic_year_id\": \"NH2526\"\r\n}"
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/semesters/",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "semesters",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://127.0.0.1:8000/semesters/",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"code\": \"2526.HK01\",\r\n    \"start_date\": \"2025-08-15\",\r\n    \"end_date\": \"2026-01-10\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/semesters/",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "semesters",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://127.0.0.1:8000/semesters/2526.HK01",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"code\": \"2526.HK01\",\r\n    \"name\": \"HK1\",\r\n    \"start_date\": \"2025-08-15\",\r\n    \"end_date\": \"2026-01-10\",\r\n    \"academic_year_id\": \"NH2526\"\r\n}"
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/semesters/2526.HK01",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "semesters",
+                "2526.HK01"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "score",
+      "item": [
+        {
+          "name": "http://127.0.0.1:8000/scores",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"code\": \"2526.HK1.GK1\",\r\n    \"name\": \"Giữa kì 1\",\r\n    \"description\": \"Điểm giữa kì học kì 1 năm học 2025–2026\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/scores",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "scores"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://127.0.0.1:8000/scores",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Giữa kì 1\",\r\n    \"description\": \"Điểm giữa kì học kì 1 năm học 2025–2026\"\r\n}"
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/scores",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "scores"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://127.0.0.1:8000/scores/2526.HK1.GK1",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Giữa kì 1\",\r\n    \"description\": \"Điểm giữa kì học kì 1 năm học 2025–2026\"\r\n}"
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/scores/2526.HK1.GK1",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "scores",
+                "2526.HK1.GK1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://127.0.0.1:8000/scores",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"code\": \"2526.HK1.GK1\",\r\n    \"name\": \"Giữa kì 1\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/scores",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "scores"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://127.0.0.1:8000/scores/2526.HK1.GK1",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Giữa kì 1\",\r\n    \"description\": \"Điểm giữa kì học kì 1 năm học 2025–2026\"\r\n}"
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/scores/2526.HK1.GK1",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "scores",
+                "2526.HK1.GK1"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "grade_level",
+      "item": [
+        {
+          "name": "http://127.0.0.1:8000/grade-levels",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"code\": \"MK01\",\r\n    \"name\": \"Khối 1\",\r\n    \"max_students\": 98\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/grade-levels",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "grade-levels"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://127.0.0.1:8000/grade-levels",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"code\": \"MK01\",\r\n    \"name\": \"Khối 1\",\r\n    \"max_students\": 98\r\n}"
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/grade-levels",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "grade-levels"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://127.0.0.1:8000/grade-levels/MK01",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"code\": \"MK01\",\r\n    \"name\": \"Khối 1\",\r\n    \"max_students\": 98\r\n}"
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/grade-levels/MK01",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "grade-levels",
+                "MK01"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://127.0.0.1:8000/grade-levels",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"code\": \"MK01\",\r\n    \"max_students\": 98\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/grade-levels",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "grade-levels"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://127.0.0.1:8000/grade-levels/MK01",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"code\": \"MK01\",\r\n    \"name\": \"Khối 1\",\r\n    \"max_students\": 98\r\n}"
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/grade-levels/MK01",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "grade-levels",
+                "MK01"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "class",
+      "item": [
+        {
+          "name": "http://127.0.0.1:8000/classes",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"code\": \"K01.MLM1\",\r\n    \"name\": \"Một 1\",\r\n    \"size\": 32,\r\n    \"special_program\": \"Tăng cường AV\",\r\n    \"grade_level_id\": \"MK01\",\r\n    \"academic_year_id\": \"NH2526\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/classes",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "classes"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://127.0.0.1:8000/classes",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"code\": \"K01.MLM1\",\r\n    \"name\": \"Một 1\",\r\n    \"size\": 32,\r\n    \"special_program\": \"Tăng cường AV\",\r\n    \"grade_level_id\": \"MK01\",\r\n    \"academic_year_id\": \"NH2526\"\r\n}"
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/classes",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "classes"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://127.0.0.1:8000/classes/K01.MLM1",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"code\": \"K01.MLM1\",\r\n    \"name\": \"Một 1\",\r\n    \"size\": 32,\r\n    \"special_program\": \"Tăng cường AV\",\r\n    \"grade_level_id\": \"MK01\",\r\n    \"academic_year_id\": \"NH2526\"\r\n}"
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/classes/K01.MLM1",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "classes",
+                "K01.MLM1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://127.0.0.1:8000/classes",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"code\": \"K01.MLM1\",\r\n    \"special_program\": \"Tăng cường AV\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/classes",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "classes"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://127.0.0.1:8000/classes/K01.MLM1",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"code\": \"K01.MLM1\",\r\n    \"name\": \"Một 1\",\r\n    \"size\": 32,\r\n    \"special_program\": \"Tăng cường AV\",\r\n    \"grade_level_id\": \"MK01\",\r\n    \"academic_year_id\": \"NH2526\"\r\n}"
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/classes/K01.MLM1",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "classes",
+                "K01.MLM1"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "academic_year",
+      "item": [
+        {
+          "name": "http://127.0.0.1:8000/academic-years",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"code\": \"NH2526\",\r\n    \"name\": \"2025-2026\",\r\n    \"start_date\": \"2025-08-15\",\r\n    \"end_date\": \"2026-05-31\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/academic-years",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "academic-years"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://127.0.0.1:8000/academic-years",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"code\": \"NH2526\",\r\n    \"name\": \"2025-2026\",\r\n    \"start_date\": \"2025-08-15\",\r\n    \"end_date\": \"2026-05-31\"\r\n}"
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/academic-years",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "academic-years"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://127.0.0.1:8000/academic-years/NH2526",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"code\": \"NH2526\",\r\n    \"name\": \"2025-2026\",\r\n    \"start_date\": \"2025-08-15\",\r\n    \"end_date\": \"2026-05-31\"\r\n}"
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/academic-years/NH2526",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "academic-years",
+                "NH2526"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://127.0.0.1:8000/academic-years",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"code\": \"NH2526\",\r\n    \"start_date\": \"2025-08-15\",\r\n    \"end_date\": \"2026-05-31\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/academic-years",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "academic-years"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://127.0.0.1:8000/academic-years/NH2526",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"code\": \"NH2526\",\r\n    \"name\": \"2025-2026\",\r\n    \"start_date\": \"2025-08-15\",\r\n    \"end_date\": \"2026-05-31\"\r\n}"
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/academic-years/NH2526",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "academic-years",
+                "NH2526"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "http://127.0.0.1:8000/health",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/health",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "health"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
