@@ -71,11 +71,17 @@ class SystemCore:
         self.graph_student_subject_assessmets_repo = Neo4jStudentSubjectAssessmentsRepository(manager)
         # Other
         self.utils = Utils()
+        self.manage = manager
 
         # Init default
         self._init_graph()
 
     def _init_graph(self) -> None:
+        self.graph_thing_repo.__init__(self.manage)
+        self.graph_student_Q_repo.__init__(self.manage)
+        self.graph_student_GA_repo.__init__(self.manage)
+        self.graph_student_SA_repo.__init__(self.manage)
+
         self.graph_thing_repo.create_relationship(
             from_value="thing",
             to_label="StudentQuality",
@@ -103,6 +109,7 @@ class SystemCore:
 
     async def add_student(self, info: StudentRecords) -> list:
         if info.file_profiles is not None:
+            self._init_graph()
             return await self.add_student_profiles(info.academic_year, info.file_profiles.file)
 
     async def add_student_profiles(self, academic_year: str, file: BinaryIO) -> list:
