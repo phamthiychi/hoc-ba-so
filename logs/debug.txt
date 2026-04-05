@@ -1,1608 +1,276 @@
-[2026-04-03 22:28:52]: Traceback (most recent call last):
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 158, in add_student_profiles
-    await self.add_student_relationship(student_code, p)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 279, in add_student_relationship
-    self.student_contact_infos_repo.create(student_contact_infos_record)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 37, in create
-    return self.manager.execute_write(self._create, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_manager.py", line 25, in execute_write
-    return session.execute_write(callback, *args, **kwargs)
+[2026-04-04 23:45:55]: Module Student said: card_id=79218027222 already exists 
+[2026-04-04 23:45:56]: Module ContactInfos said: 20262027.01.Mo1.001 no fields were changed 
+[2026-04-04 23:45:56]: Traceback (most recent call last):
+  File "D:\Work\Iu\hoc-ba-so\src\application\core.py", line 143, in add_student_profiles
+    await self.add_subject_assessments_student_mongo(student_code)
+  File "D:\Work\Iu\hoc-ba-so\src\application\core.py", line 247, in add_subject_assessments_student_mongo
+    await self.student_subject_assessments_repo.update(SubjectAssessments(
+  File "D:\Work\Iu\hoc-ba-so\src\adapter\database\mongo_repository.py", line 58, in update
+    update_result = self.col.update_one(
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 1336, in update_one
+    self._update_retryable(
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 1118, in _update_retryable
+    return self._database.client._retryable_write(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2082, in _retryable_write
+    return self._retry_with_session(retryable, func, s, bulk, operation, operation_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 1968, in _retry_with_session
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2014, in _retry_internal
+    ).run()
+      ^^^^^
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2765, in run
+    return self._read() if self._is_read else self._write()
+                                              ^^^^^^^^^^^^^
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2897, in _write
+    return self._func(self._session, conn, self._retryable)  # type: ignore
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 720, in execute_write
-    return self._run_transaction(
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 543, in _run_transaction
-    result = transaction_function(tx, *args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 56, in _create
-    record = tx.run(query, props=data).single()
-             ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\transaction.py", line 201, in run
-    result._tx_ready_run(query, parameters)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 178, in _tx_ready_run
-    self._run(query, parameters, None, None, None, None, None, None)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 220, in _run
-    self._connection.run(
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 193, in inner
-    func(*args, **kwargs)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt6.py", line 338, in run
-    self._append(
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt.py", line 816, in _append
-    self.outbox.append_message(signature, fields, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 146, in append_message
-    self._packer.pack_struct(tag, fields, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 226, in pack_struct
-    self._pack_struct(
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 243, in _pack_struct
-    self._pack(field, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 75, in _pack
-    self._py_pack(data, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 147, in _py_pack
-    self._py_pack(item, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 147, in _py_pack
-    self._py_pack(item, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 161, in _py_pack
-    raise ValueError(f"Values of type {type(value)} are not supported")
-ValueError: Values of type <class 'src.model.mongo.contact_infos.ContactInfosData'> are not supported
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 1098, in _update
+    return self._update(
+           ^^^^^^^^^^^^^
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 1059, in _update
+    _check_write_command_response(result)
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\helpers_shared.py", line 322, in _check_write_command_response
+    _raise_last_write_error(write_errors)
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\helpers_shared.py", line 293, in _raise_last_write_error
+    raise WriteError(error.get("errmsg"), error.get("code"), error)
+pymongo.errors.WriteError: Cannot create field 'data' in element {data: [ { subject_name: "Tiếng Việt", score_point: 0.0, comment: null }, { subject_name: "Toán", score_point: 0.0, comment: null }, { subject_name: "Tự nhiên vầ xã hội", score_point: 0.0, comment: null }, { subject_name: "Hoạt động trải nghiệm", score_point: 0.0, comment: null }, { subject_name: "Đạo đức", level: null, comment: null }, { subject_name: "Công nghệ", level: null, comment: null }, { subject_name: "Khoa học", level: null, comment: null }, { subject_name: "Lịch sự & Địa lý", level: null, comment: null }, { subject_name: "Âm nhạc", level: null, comment: null }, { subject_name: "Thể dục", level: null, comment: null }, { subject_name: "Tin học", level: null, comment: null }, { subject_name: "Tiếng Anh", level: null, comment: null }, { subject_name: "Mỹ thuật", level: null, comment: null } ]}, full error: {'index': 0, 'code': 28, 'errmsg': 'Cannot create field \'data\' in element {data: [ { subject_name: "Tiếng Việt", score_point: 0.0, comment: null }, { subject_name: "Toán", score_point: 0.0, comment: null }, { subject_name: "Tự nhiên vầ xã hội", score_point: 0.0, comment: null }, { subject_name: "Hoạt động trải nghiệm", score_point: 0.0, comment: null }, { subject_name: "Đạo đức", level: null, comment: null }, { subject_name: "Công nghệ", level: null, comment: null }, { subject_name: "Khoa học", level: null, comment: null }, { subject_name: "Lịch sự & Địa lý", level: null, comment: null }, { subject_name: "Âm nhạc", level: null, comment: null }, { subject_name: "Thể dục", level: null, comment: null }, { subject_name: "Tin học", level: null, comment: null }, { subject_name: "Tiếng Anh", level: null, comment: null }, { subject_name: "Mỹ thuật", level: null, comment: null } ]}'}
  
-[2026-04-03 22:28:57]: Traceback (most recent call last):
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 158, in add_student_profiles
-    await self.add_student_relationship(student_code, p)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 279, in add_student_relationship
-    self.student_contact_infos_repo.create(student_contact_infos_record)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 37, in create
-    return self.manager.execute_write(self._create, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_manager.py", line 25, in execute_write
-    return session.execute_write(callback, *args, **kwargs)
+[2026-04-04 23:45:56]: Module Student said: card_id=79318026268 already exists 
+[2026-04-04 23:45:56]: Module ContactInfos said: 20262027.01.Mo1.002 no fields were changed 
+[2026-04-04 23:45:56]: Traceback (most recent call last):
+  File "D:\Work\Iu\hoc-ba-so\src\application\core.py", line 143, in add_student_profiles
+    await self.add_subject_assessments_student_mongo(student_code)
+  File "D:\Work\Iu\hoc-ba-so\src\application\core.py", line 247, in add_subject_assessments_student_mongo
+    await self.student_subject_assessments_repo.update(SubjectAssessments(
+  File "D:\Work\Iu\hoc-ba-so\src\adapter\database\mongo_repository.py", line 58, in update
+    update_result = self.col.update_one(
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 1336, in update_one
+    self._update_retryable(
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 1118, in _update_retryable
+    return self._database.client._retryable_write(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2082, in _retryable_write
+    return self._retry_with_session(retryable, func, s, bulk, operation, operation_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 1968, in _retry_with_session
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2014, in _retry_internal
+    ).run()
+      ^^^^^
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2765, in run
+    return self._read() if self._is_read else self._write()
+                                              ^^^^^^^^^^^^^
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2897, in _write
+    return self._func(self._session, conn, self._retryable)  # type: ignore
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 720, in execute_write
-    return self._run_transaction(
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 543, in _run_transaction
-    result = transaction_function(tx, *args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 56, in _create
-    record = tx.run(query, props=data).single()
-             ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\transaction.py", line 201, in run
-    result._tx_ready_run(query, parameters)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 178, in _tx_ready_run
-    self._run(query, parameters, None, None, None, None, None, None)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 220, in _run
-    self._connection.run(
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 193, in inner
-    func(*args, **kwargs)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt6.py", line 338, in run
-    self._append(
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt.py", line 816, in _append
-    self.outbox.append_message(signature, fields, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 146, in append_message
-    self._packer.pack_struct(tag, fields, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 226, in pack_struct
-    self._pack_struct(
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 243, in _pack_struct
-    self._pack(field, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 75, in _pack
-    self._py_pack(data, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 147, in _py_pack
-    self._py_pack(item, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 147, in _py_pack
-    self._py_pack(item, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 161, in _py_pack
-    raise ValueError(f"Values of type {type(value)} are not supported")
-ValueError: Values of type <class 'src.model.mongo.contact_infos.ContactInfosData'> are not supported
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 1098, in _update
+    return self._update(
+           ^^^^^^^^^^^^^
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 1059, in _update
+    _check_write_command_response(result)
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\helpers_shared.py", line 322, in _check_write_command_response
+    _raise_last_write_error(write_errors)
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\helpers_shared.py", line 293, in _raise_last_write_error
+    raise WriteError(error.get("errmsg"), error.get("code"), error)
+pymongo.errors.WriteError: Cannot create field 'data' in element {data: [ { subject_name: "Tiếng Việt", score_point: 0.0, comment: null }, { subject_name: "Toán", score_point: 0.0, comment: null }, { subject_name: "Tự nhiên vầ xã hội", score_point: 0.0, comment: null }, { subject_name: "Hoạt động trải nghiệm", score_point: 0.0, comment: null }, { subject_name: "Đạo đức", level: null, comment: null }, { subject_name: "Công nghệ", level: null, comment: null }, { subject_name: "Khoa học", level: null, comment: null }, { subject_name: "Lịch sự & Địa lý", level: null, comment: null }, { subject_name: "Âm nhạc", level: null, comment: null }, { subject_name: "Thể dục", level: null, comment: null }, { subject_name: "Tin học", level: null, comment: null }, { subject_name: "Tiếng Anh", level: null, comment: null }, { subject_name: "Mỹ thuật", level: null, comment: null } ]}, full error: {'index': 0, 'code': 28, 'errmsg': 'Cannot create field \'data\' in element {data: [ { subject_name: "Tiếng Việt", score_point: 0.0, comment: null }, { subject_name: "Toán", score_point: 0.0, comment: null }, { subject_name: "Tự nhiên vầ xã hội", score_point: 0.0, comment: null }, { subject_name: "Hoạt động trải nghiệm", score_point: 0.0, comment: null }, { subject_name: "Đạo đức", level: null, comment: null }, { subject_name: "Công nghệ", level: null, comment: null }, { subject_name: "Khoa học", level: null, comment: null }, { subject_name: "Lịch sự & Địa lý", level: null, comment: null }, { subject_name: "Âm nhạc", level: null, comment: null }, { subject_name: "Thể dục", level: null, comment: null }, { subject_name: "Tin học", level: null, comment: null }, { subject_name: "Tiếng Anh", level: null, comment: null }, { subject_name: "Mỹ thuật", level: null, comment: null } ]}'}
  
-[2026-04-03 22:29:02]: Traceback (most recent call last):
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 158, in add_student_profiles
-    await self.add_student_relationship(student_code, p)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 279, in add_student_relationship
-    self.student_contact_infos_repo.create(student_contact_infos_record)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 37, in create
-    return self.manager.execute_write(self._create, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_manager.py", line 25, in execute_write
-    return session.execute_write(callback, *args, **kwargs)
+[2026-04-04 23:45:56]: Module Student said: card_id=79318026098 already exists 
+[2026-04-04 23:45:57]: Module ContactInfos said: 20262027.01.Mo1.003 no fields were changed 
+[2026-04-04 23:45:57]: Traceback (most recent call last):
+  File "D:\Work\Iu\hoc-ba-so\src\application\core.py", line 143, in add_student_profiles
+    await self.add_subject_assessments_student_mongo(student_code)
+  File "D:\Work\Iu\hoc-ba-so\src\application\core.py", line 247, in add_subject_assessments_student_mongo
+    await self.student_subject_assessments_repo.update(SubjectAssessments(
+  File "D:\Work\Iu\hoc-ba-so\src\adapter\database\mongo_repository.py", line 58, in update
+    update_result = self.col.update_one(
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 1336, in update_one
+    self._update_retryable(
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 1118, in _update_retryable
+    return self._database.client._retryable_write(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2082, in _retryable_write
+    return self._retry_with_session(retryable, func, s, bulk, operation, operation_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 1968, in _retry_with_session
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2014, in _retry_internal
+    ).run()
+      ^^^^^
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2765, in run
+    return self._read() if self._is_read else self._write()
+                                              ^^^^^^^^^^^^^
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2897, in _write
+    return self._func(self._session, conn, self._retryable)  # type: ignore
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 720, in execute_write
-    return self._run_transaction(
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 543, in _run_transaction
-    result = transaction_function(tx, *args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 56, in _create
-    record = tx.run(query, props=data).single()
-             ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\transaction.py", line 201, in run
-    result._tx_ready_run(query, parameters)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 178, in _tx_ready_run
-    self._run(query, parameters, None, None, None, None, None, None)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 220, in _run
-    self._connection.run(
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 193, in inner
-    func(*args, **kwargs)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt6.py", line 338, in run
-    self._append(
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt.py", line 816, in _append
-    self.outbox.append_message(signature, fields, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 146, in append_message
-    self._packer.pack_struct(tag, fields, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 226, in pack_struct
-    self._pack_struct(
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 243, in _pack_struct
-    self._pack(field, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 75, in _pack
-    self._py_pack(data, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 147, in _py_pack
-    self._py_pack(item, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 147, in _py_pack
-    self._py_pack(item, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 161, in _py_pack
-    raise ValueError(f"Values of type {type(value)} are not supported")
-ValueError: Values of type <class 'src.model.mongo.contact_infos.ContactInfosData'> are not supported
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 1098, in _update
+    return self._update(
+           ^^^^^^^^^^^^^
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 1059, in _update
+    _check_write_command_response(result)
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\helpers_shared.py", line 322, in _check_write_command_response
+    _raise_last_write_error(write_errors)
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\helpers_shared.py", line 293, in _raise_last_write_error
+    raise WriteError(error.get("errmsg"), error.get("code"), error)
+pymongo.errors.WriteError: Cannot create field 'data' in element {data: [ { subject_name: "Tiếng Việt", score_point: 0.0, comment: null }, { subject_name: "Toán", score_point: 0.0, comment: null }, { subject_name: "Tự nhiên vầ xã hội", score_point: 0.0, comment: null }, { subject_name: "Hoạt động trải nghiệm", score_point: 0.0, comment: null }, { subject_name: "Đạo đức", level: null, comment: null }, { subject_name: "Công nghệ", level: null, comment: null }, { subject_name: "Khoa học", level: null, comment: null }, { subject_name: "Lịch sự & Địa lý", level: null, comment: null }, { subject_name: "Âm nhạc", level: null, comment: null }, { subject_name: "Thể dục", level: null, comment: null }, { subject_name: "Tin học", level: null, comment: null }, { subject_name: "Tiếng Anh", level: null, comment: null }, { subject_name: "Mỹ thuật", level: null, comment: null } ]}, full error: {'index': 0, 'code': 28, 'errmsg': 'Cannot create field \'data\' in element {data: [ { subject_name: "Tiếng Việt", score_point: 0.0, comment: null }, { subject_name: "Toán", score_point: 0.0, comment: null }, { subject_name: "Tự nhiên vầ xã hội", score_point: 0.0, comment: null }, { subject_name: "Hoạt động trải nghiệm", score_point: 0.0, comment: null }, { subject_name: "Đạo đức", level: null, comment: null }, { subject_name: "Công nghệ", level: null, comment: null }, { subject_name: "Khoa học", level: null, comment: null }, { subject_name: "Lịch sự & Địa lý", level: null, comment: null }, { subject_name: "Âm nhạc", level: null, comment: null }, { subject_name: "Thể dục", level: null, comment: null }, { subject_name: "Tin học", level: null, comment: null }, { subject_name: "Tiếng Anh", level: null, comment: null }, { subject_name: "Mỹ thuật", level: null, comment: null } ]}'}
  
-[2026-04-03 22:29:06]: Traceback (most recent call last):
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 158, in add_student_profiles
-    await self.add_student_relationship(student_code, p)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 279, in add_student_relationship
-    self.student_contact_infos_repo.create(student_contact_infos_record)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 37, in create
-    return self.manager.execute_write(self._create, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_manager.py", line 25, in execute_write
-    return session.execute_write(callback, *args, **kwargs)
+[2026-04-04 23:45:57]: Module Student said: card_id=79218041580 already exists 
+[2026-04-04 23:45:57]: Module ContactInfos said: 20262027.01.Mo2.001 no fields were changed 
+[2026-04-04 23:45:57]: Traceback (most recent call last):
+  File "D:\Work\Iu\hoc-ba-so\src\application\core.py", line 143, in add_student_profiles
+    await self.add_subject_assessments_student_mongo(student_code)
+  File "D:\Work\Iu\hoc-ba-so\src\application\core.py", line 247, in add_subject_assessments_student_mongo
+    await self.student_subject_assessments_repo.update(SubjectAssessments(
+  File "D:\Work\Iu\hoc-ba-so\src\adapter\database\mongo_repository.py", line 58, in update
+    update_result = self.col.update_one(
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 1336, in update_one
+    self._update_retryable(
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 1118, in _update_retryable
+    return self._database.client._retryable_write(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2082, in _retryable_write
+    return self._retry_with_session(retryable, func, s, bulk, operation, operation_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 1968, in _retry_with_session
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2014, in _retry_internal
+    ).run()
+      ^^^^^
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2765, in run
+    return self._read() if self._is_read else self._write()
+                                              ^^^^^^^^^^^^^
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2897, in _write
+    return self._func(self._session, conn, self._retryable)  # type: ignore
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 720, in execute_write
-    return self._run_transaction(
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 543, in _run_transaction
-    result = transaction_function(tx, *args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 56, in _create
-    record = tx.run(query, props=data).single()
-             ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\transaction.py", line 201, in run
-    result._tx_ready_run(query, parameters)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 178, in _tx_ready_run
-    self._run(query, parameters, None, None, None, None, None, None)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 220, in _run
-    self._connection.run(
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 193, in inner
-    func(*args, **kwargs)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt6.py", line 338, in run
-    self._append(
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt.py", line 816, in _append
-    self.outbox.append_message(signature, fields, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 146, in append_message
-    self._packer.pack_struct(tag, fields, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 226, in pack_struct
-    self._pack_struct(
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 243, in _pack_struct
-    self._pack(field, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 75, in _pack
-    self._py_pack(data, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 147, in _py_pack
-    self._py_pack(item, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 147, in _py_pack
-    self._py_pack(item, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 161, in _py_pack
-    raise ValueError(f"Values of type {type(value)} are not supported")
-ValueError: Values of type <class 'src.model.mongo.contact_infos.ContactInfosData'> are not supported
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 1098, in _update
+    return self._update(
+           ^^^^^^^^^^^^^
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 1059, in _update
+    _check_write_command_response(result)
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\helpers_shared.py", line 322, in _check_write_command_response
+    _raise_last_write_error(write_errors)
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\helpers_shared.py", line 293, in _raise_last_write_error
+    raise WriteError(error.get("errmsg"), error.get("code"), error)
+pymongo.errors.WriteError: Cannot create field 'data' in element {data: [ { subject_name: "Tiếng Việt", score_point: 0.0, comment: null }, { subject_name: "Toán", score_point: 0.0, comment: null }, { subject_name: "Tự nhiên vầ xã hội", score_point: 0.0, comment: null }, { subject_name: "Hoạt động trải nghiệm", score_point: 0.0, comment: null }, { subject_name: "Đạo đức", level: null, comment: null }, { subject_name: "Công nghệ", level: null, comment: null }, { subject_name: "Khoa học", level: null, comment: null }, { subject_name: "Lịch sự & Địa lý", level: null, comment: null }, { subject_name: "Âm nhạc", level: null, comment: null }, { subject_name: "Thể dục", level: null, comment: null }, { subject_name: "Tin học", level: null, comment: null }, { subject_name: "Tiếng Anh", level: null, comment: null }, { subject_name: "Mỹ thuật", level: null, comment: null } ]}, full error: {'index': 0, 'code': 28, 'errmsg': 'Cannot create field \'data\' in element {data: [ { subject_name: "Tiếng Việt", score_point: 0.0, comment: null }, { subject_name: "Toán", score_point: 0.0, comment: null }, { subject_name: "Tự nhiên vầ xã hội", score_point: 0.0, comment: null }, { subject_name: "Hoạt động trải nghiệm", score_point: 0.0, comment: null }, { subject_name: "Đạo đức", level: null, comment: null }, { subject_name: "Công nghệ", level: null, comment: null }, { subject_name: "Khoa học", level: null, comment: null }, { subject_name: "Lịch sự & Địa lý", level: null, comment: null }, { subject_name: "Âm nhạc", level: null, comment: null }, { subject_name: "Thể dục", level: null, comment: null }, { subject_name: "Tin học", level: null, comment: null }, { subject_name: "Tiếng Anh", level: null, comment: null }, { subject_name: "Mỹ thuật", level: null, comment: null } ]}'}
  
-[2026-04-03 22:29:11]: Traceback (most recent call last):
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 158, in add_student_profiles
-    await self.add_student_relationship(student_code, p)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 279, in add_student_relationship
-    self.student_contact_infos_repo.create(student_contact_infos_record)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 37, in create
-    return self.manager.execute_write(self._create, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_manager.py", line 25, in execute_write
-    return session.execute_write(callback, *args, **kwargs)
+[2026-04-04 23:45:57]: Module Student said: card_id=79218041581 already exists 
+[2026-04-04 23:45:57]: Module ContactInfos said: 20262027.01.Mo2.002 no fields were changed 
+[2026-04-04 23:45:58]: Traceback (most recent call last):
+  File "D:\Work\Iu\hoc-ba-so\src\application\core.py", line 143, in add_student_profiles
+    await self.add_subject_assessments_student_mongo(student_code)
+  File "D:\Work\Iu\hoc-ba-so\src\application\core.py", line 247, in add_subject_assessments_student_mongo
+    await self.student_subject_assessments_repo.update(SubjectAssessments(
+  File "D:\Work\Iu\hoc-ba-so\src\adapter\database\mongo_repository.py", line 58, in update
+    update_result = self.col.update_one(
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 1336, in update_one
+    self._update_retryable(
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 1118, in _update_retryable
+    return self._database.client._retryable_write(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2082, in _retryable_write
+    return self._retry_with_session(retryable, func, s, bulk, operation, operation_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 1968, in _retry_with_session
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2014, in _retry_internal
+    ).run()
+      ^^^^^
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2765, in run
+    return self._read() if self._is_read else self._write()
+                                              ^^^^^^^^^^^^^
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2897, in _write
+    return self._func(self._session, conn, self._retryable)  # type: ignore
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 720, in execute_write
-    return self._run_transaction(
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 543, in _run_transaction
-    result = transaction_function(tx, *args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 56, in _create
-    record = tx.run(query, props=data).single()
-             ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\transaction.py", line 201, in run
-    result._tx_ready_run(query, parameters)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 178, in _tx_ready_run
-    self._run(query, parameters, None, None, None, None, None, None)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 220, in _run
-    self._connection.run(
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 193, in inner
-    func(*args, **kwargs)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt6.py", line 338, in run
-    self._append(
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt.py", line 816, in _append
-    self.outbox.append_message(signature, fields, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 146, in append_message
-    self._packer.pack_struct(tag, fields, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 226, in pack_struct
-    self._pack_struct(
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 243, in _pack_struct
-    self._pack(field, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 75, in _pack
-    self._py_pack(data, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 147, in _py_pack
-    self._py_pack(item, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 147, in _py_pack
-    self._py_pack(item, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 161, in _py_pack
-    raise ValueError(f"Values of type {type(value)} are not supported")
-ValueError: Values of type <class 'src.model.mongo.contact_infos.ContactInfosData'> are not supported
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 1098, in _update
+    return self._update(
+           ^^^^^^^^^^^^^
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 1059, in _update
+    _check_write_command_response(result)
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\helpers_shared.py", line 322, in _check_write_command_response
+    _raise_last_write_error(write_errors)
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\helpers_shared.py", line 293, in _raise_last_write_error
+    raise WriteError(error.get("errmsg"), error.get("code"), error)
+pymongo.errors.WriteError: Cannot create field 'data' in element {data: [ { subject_name: "Tiếng Việt", score_point: 0.0, comment: null }, { subject_name: "Toán", score_point: 0.0, comment: null }, { subject_name: "Tự nhiên vầ xã hội", score_point: 0.0, comment: null }, { subject_name: "Hoạt động trải nghiệm", score_point: 0.0, comment: null }, { subject_name: "Đạo đức", level: null, comment: null }, { subject_name: "Công nghệ", level: null, comment: null }, { subject_name: "Khoa học", level: null, comment: null }, { subject_name: "Lịch sự & Địa lý", level: null, comment: null }, { subject_name: "Âm nhạc", level: null, comment: null }, { subject_name: "Thể dục", level: null, comment: null }, { subject_name: "Tin học", level: null, comment: null }, { subject_name: "Tiếng Anh", level: null, comment: null }, { subject_name: "Mỹ thuật", level: null, comment: null } ]}, full error: {'index': 0, 'code': 28, 'errmsg': 'Cannot create field \'data\' in element {data: [ { subject_name: "Tiếng Việt", score_point: 0.0, comment: null }, { subject_name: "Toán", score_point: 0.0, comment: null }, { subject_name: "Tự nhiên vầ xã hội", score_point: 0.0, comment: null }, { subject_name: "Hoạt động trải nghiệm", score_point: 0.0, comment: null }, { subject_name: "Đạo đức", level: null, comment: null }, { subject_name: "Công nghệ", level: null, comment: null }, { subject_name: "Khoa học", level: null, comment: null }, { subject_name: "Lịch sự & Địa lý", level: null, comment: null }, { subject_name: "Âm nhạc", level: null, comment: null }, { subject_name: "Thể dục", level: null, comment: null }, { subject_name: "Tin học", level: null, comment: null }, { subject_name: "Tiếng Anh", level: null, comment: null }, { subject_name: "Mỹ thuật", level: null, comment: null } ]}'}
  
-[2026-04-03 22:29:16]: Traceback (most recent call last):
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 158, in add_student_profiles
-    await self.add_student_relationship(student_code, p)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 279, in add_student_relationship
-    self.student_contact_infos_repo.create(student_contact_infos_record)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 37, in create
-    return self.manager.execute_write(self._create, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_manager.py", line 25, in execute_write
-    return session.execute_write(callback, *args, **kwargs)
+[2026-04-04 23:45:58]: Module Student said: card_id=79218045516 already exists 
+[2026-04-04 23:45:58]: Module ContactInfos said: 20262027.01.Mo2.003 no fields were changed 
+[2026-04-04 23:45:58]: Traceback (most recent call last):
+  File "D:\Work\Iu\hoc-ba-so\src\application\core.py", line 143, in add_student_profiles
+    await self.add_subject_assessments_student_mongo(student_code)
+  File "D:\Work\Iu\hoc-ba-so\src\application\core.py", line 247, in add_subject_assessments_student_mongo
+    await self.student_subject_assessments_repo.update(SubjectAssessments(
+  File "D:\Work\Iu\hoc-ba-so\src\adapter\database\mongo_repository.py", line 58, in update
+    update_result = self.col.update_one(
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 1336, in update_one
+    self._update_retryable(
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 1118, in _update_retryable
+    return self._database.client._retryable_write(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2082, in _retryable_write
+    return self._retry_with_session(retryable, func, s, bulk, operation, operation_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 1968, in _retry_with_session
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2014, in _retry_internal
+    ).run()
+      ^^^^^
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2765, in run
+    return self._read() if self._is_read else self._write()
+                                              ^^^^^^^^^^^^^
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2897, in _write
+    return self._func(self._session, conn, self._retryable)  # type: ignore
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 720, in execute_write
-    return self._run_transaction(
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 543, in _run_transaction
-    result = transaction_function(tx, *args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 56, in _create
-    record = tx.run(query, props=data).single()
-             ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\transaction.py", line 201, in run
-    result._tx_ready_run(query, parameters)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 178, in _tx_ready_run
-    self._run(query, parameters, None, None, None, None, None, None)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 220, in _run
-    self._connection.run(
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 193, in inner
-    func(*args, **kwargs)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt6.py", line 338, in run
-    self._append(
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt.py", line 816, in _append
-    self.outbox.append_message(signature, fields, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 146, in append_message
-    self._packer.pack_struct(tag, fields, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 226, in pack_struct
-    self._pack_struct(
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 243, in _pack_struct
-    self._pack(field, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 75, in _pack
-    self._py_pack(data, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 147, in _py_pack
-    self._py_pack(item, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 147, in _py_pack
-    self._py_pack(item, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 161, in _py_pack
-    raise ValueError(f"Values of type {type(value)} are not supported")
-ValueError: Values of type <class 'src.model.mongo.contact_infos.ContactInfosData'> are not supported
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 1098, in _update
+    return self._update(
+           ^^^^^^^^^^^^^
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 1059, in _update
+    _check_write_command_response(result)
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\helpers_shared.py", line 322, in _check_write_command_response
+    _raise_last_write_error(write_errors)
+  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\helpers_shared.py", line 293, in _raise_last_write_error
+    raise WriteError(error.get("errmsg"), error.get("code"), error)
+pymongo.errors.WriteError: Cannot create field 'data' in element {data: [ { subject_name: "Tiếng Việt", score_point: 0.0, comment: null }, { subject_name: "Toán", score_point: 0.0, comment: null }, { subject_name: "Tự nhiên vầ xã hội", score_point: 0.0, comment: null }, { subject_name: "Hoạt động trải nghiệm", score_point: 0.0, comment: null }, { subject_name: "Đạo đức", level: null, comment: null }, { subject_name: "Công nghệ", level: null, comment: null }, { subject_name: "Khoa học", level: null, comment: null }, { subject_name: "Lịch sự & Địa lý", level: null, comment: null }, { subject_name: "Âm nhạc", level: null, comment: null }, { subject_name: "Thể dục", level: null, comment: null }, { subject_name: "Tin học", level: null, comment: null }, { subject_name: "Tiếng Anh", level: null, comment: null }, { subject_name: "Mỹ thuật", level: null, comment: null } ]}, full error: {'index': 0, 'code': 28, 'errmsg': 'Cannot create field \'data\' in element {data: [ { subject_name: "Tiếng Việt", score_point: 0.0, comment: null }, { subject_name: "Toán", score_point: 0.0, comment: null }, { subject_name: "Tự nhiên vầ xã hội", score_point: 0.0, comment: null }, { subject_name: "Hoạt động trải nghiệm", score_point: 0.0, comment: null }, { subject_name: "Đạo đức", level: null, comment: null }, { subject_name: "Công nghệ", level: null, comment: null }, { subject_name: "Khoa học", level: null, comment: null }, { subject_name: "Lịch sự & Địa lý", level: null, comment: null }, { subject_name: "Âm nhạc", level: null, comment: null }, { subject_name: "Thể dục", level: null, comment: null }, { subject_name: "Tin học", level: null, comment: null }, { subject_name: "Tiếng Anh", level: null, comment: null }, { subject_name: "Mỹ thuật", level: null, comment: null } ]}'}
  
-[2026-04-03 22:33:25]: Traceback (most recent call last):
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 158, in add_student_profiles
-    await self.add_student_relationship(student_code, p)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 277, in add_student_relationship
-    print(student_subject_assessmets_record)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-UnboundLocalError: cannot access local variable 'student_subject_assessmets_record' where it is not associated with a value
- 
-[2026-04-03 22:33:29]: Traceback (most recent call last):
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 158, in add_student_profiles
-    await self.add_student_relationship(student_code, p)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 277, in add_student_relationship
-    print(student_subject_assessmets_record)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-UnboundLocalError: cannot access local variable 'student_subject_assessmets_record' where it is not associated with a value
- 
-[2026-04-03 22:33:34]: Traceback (most recent call last):
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 158, in add_student_profiles
-    await self.add_student_relationship(student_code, p)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 277, in add_student_relationship
-    print(student_subject_assessmets_record)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-UnboundLocalError: cannot access local variable 'student_subject_assessmets_record' where it is not associated with a value
- 
-[2026-04-03 22:33:38]: Traceback (most recent call last):
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 158, in add_student_profiles
-    await self.add_student_relationship(student_code, p)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 277, in add_student_relationship
-    print(student_subject_assessmets_record)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-UnboundLocalError: cannot access local variable 'student_subject_assessmets_record' where it is not associated with a value
- 
-[2026-04-03 22:33:42]: Traceback (most recent call last):
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 158, in add_student_profiles
-    await self.add_student_relationship(student_code, p)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 277, in add_student_relationship
-    print(student_subject_assessmets_record)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-UnboundLocalError: cannot access local variable 'student_subject_assessmets_record' where it is not associated with a value
- 
-[2026-04-03 22:33:46]: Traceback (most recent call last):
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 158, in add_student_profiles
-    await self.add_student_relationship(student_code, p)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 277, in add_student_relationship
-    print(student_subject_assessmets_record)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-UnboundLocalError: cannot access local variable 'student_subject_assessmets_record' where it is not associated with a value
- 
-[2026-04-03 22:36:06]: Traceback (most recent call last):
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 158, in add_student_profiles
-    await self.add_student_relationship(student_code, p)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 281, in add_student_relationship
-    self.student_contact_infos_repo.create(student_contact_infos_record)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 37, in create
-    return self.manager.execute_write(self._create, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_manager.py", line 25, in execute_write
-    return session.execute_write(callback, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 720, in execute_write
-    return self._run_transaction(
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 543, in _run_transaction
-    result = transaction_function(tx, *args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 56, in _create
-    record = tx.run(query, props=data).single()
-             ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\transaction.py", line 201, in run
-    result._tx_ready_run(query, parameters)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 178, in _tx_ready_run
-    self._run(query, parameters, None, None, None, None, None, None)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 220, in _run
-    self._connection.run(
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 193, in inner
-    func(*args, **kwargs)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt6.py", line 338, in run
-    self._append(
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt.py", line 816, in _append
-    self.outbox.append_message(signature, fields, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 146, in append_message
-    self._packer.pack_struct(tag, fields, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 226, in pack_struct
-    self._pack_struct(
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 243, in _pack_struct
-    self._pack(field, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 75, in _pack
-    self._py_pack(data, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 147, in _py_pack
-    self._py_pack(item, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 147, in _py_pack
-    self._py_pack(item, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 161, in _py_pack
-    raise ValueError(f"Values of type {type(value)} are not supported")
-ValueError: Values of type <class 'src.model.mongo.contact_infos.ContactInfosData'> are not supported
- 
-[2026-04-03 22:36:11]: Traceback (most recent call last):
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 158, in add_student_profiles
-    await self.add_student_relationship(student_code, p)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 281, in add_student_relationship
-    self.student_contact_infos_repo.create(student_contact_infos_record)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 37, in create
-    return self.manager.execute_write(self._create, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_manager.py", line 25, in execute_write
-    return session.execute_write(callback, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 720, in execute_write
-    return self._run_transaction(
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 543, in _run_transaction
-    result = transaction_function(tx, *args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 56, in _create
-    record = tx.run(query, props=data).single()
-             ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\transaction.py", line 201, in run
-    result._tx_ready_run(query, parameters)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 178, in _tx_ready_run
-    self._run(query, parameters, None, None, None, None, None, None)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 220, in _run
-    self._connection.run(
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 193, in inner
-    func(*args, **kwargs)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt6.py", line 338, in run
-    self._append(
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt.py", line 816, in _append
-    self.outbox.append_message(signature, fields, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 146, in append_message
-    self._packer.pack_struct(tag, fields, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 226, in pack_struct
-    self._pack_struct(
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 243, in _pack_struct
-    self._pack(field, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 75, in _pack
-    self._py_pack(data, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 147, in _py_pack
-    self._py_pack(item, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 147, in _py_pack
-    self._py_pack(item, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 161, in _py_pack
-    raise ValueError(f"Values of type {type(value)} are not supported")
-ValueError: Values of type <class 'src.model.mongo.contact_infos.ContactInfosData'> are not supported
- 
-[2026-04-03 22:36:16]: Traceback (most recent call last):
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 158, in add_student_profiles
-    await self.add_student_relationship(student_code, p)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 281, in add_student_relationship
-    self.student_contact_infos_repo.create(student_contact_infos_record)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 37, in create
-    return self.manager.execute_write(self._create, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_manager.py", line 25, in execute_write
-    return session.execute_write(callback, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 720, in execute_write
-    return self._run_transaction(
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 543, in _run_transaction
-    result = transaction_function(tx, *args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 56, in _create
-    record = tx.run(query, props=data).single()
-             ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\transaction.py", line 201, in run
-    result._tx_ready_run(query, parameters)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 178, in _tx_ready_run
-    self._run(query, parameters, None, None, None, None, None, None)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 220, in _run
-    self._connection.run(
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 193, in inner
-    func(*args, **kwargs)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt6.py", line 338, in run
-    self._append(
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt.py", line 816, in _append
-    self.outbox.append_message(signature, fields, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 146, in append_message
-    self._packer.pack_struct(tag, fields, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 226, in pack_struct
-    self._pack_struct(
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 243, in _pack_struct
-    self._pack(field, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 75, in _pack
-    self._py_pack(data, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 147, in _py_pack
-    self._py_pack(item, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 147, in _py_pack
-    self._py_pack(item, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 161, in _py_pack
-    raise ValueError(f"Values of type {type(value)} are not supported")
-ValueError: Values of type <class 'src.model.mongo.contact_infos.ContactInfosData'> are not supported
- 
-[2026-04-03 22:36:21]: Traceback (most recent call last):
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 158, in add_student_profiles
-    await self.add_student_relationship(student_code, p)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 281, in add_student_relationship
-    self.student_contact_infos_repo.create(student_contact_infos_record)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 37, in create
-    return self.manager.execute_write(self._create, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_manager.py", line 25, in execute_write
-    return session.execute_write(callback, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 720, in execute_write
-    return self._run_transaction(
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 543, in _run_transaction
-    result = transaction_function(tx, *args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 56, in _create
-    record = tx.run(query, props=data).single()
-             ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\transaction.py", line 201, in run
-    result._tx_ready_run(query, parameters)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 178, in _tx_ready_run
-    self._run(query, parameters, None, None, None, None, None, None)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 220, in _run
-    self._connection.run(
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 193, in inner
-    func(*args, **kwargs)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt6.py", line 338, in run
-    self._append(
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt.py", line 816, in _append
-    self.outbox.append_message(signature, fields, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 146, in append_message
-    self._packer.pack_struct(tag, fields, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 226, in pack_struct
-    self._pack_struct(
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 243, in _pack_struct
-    self._pack(field, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 75, in _pack
-    self._py_pack(data, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 147, in _py_pack
-    self._py_pack(item, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 147, in _py_pack
-    self._py_pack(item, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 161, in _py_pack
-    raise ValueError(f"Values of type {type(value)} are not supported")
-ValueError: Values of type <class 'src.model.mongo.contact_infos.ContactInfosData'> are not supported
- 
-[2026-04-03 22:36:26]: Traceback (most recent call last):
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 158, in add_student_profiles
-    await self.add_student_relationship(student_code, p)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 281, in add_student_relationship
-    self.student_contact_infos_repo.create(student_contact_infos_record)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 37, in create
-    return self.manager.execute_write(self._create, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_manager.py", line 25, in execute_write
-    return session.execute_write(callback, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 720, in execute_write
-    return self._run_transaction(
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 543, in _run_transaction
-    result = transaction_function(tx, *args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 56, in _create
-    record = tx.run(query, props=data).single()
-             ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\transaction.py", line 201, in run
-    result._tx_ready_run(query, parameters)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 178, in _tx_ready_run
-    self._run(query, parameters, None, None, None, None, None, None)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 220, in _run
-    self._connection.run(
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 193, in inner
-    func(*args, **kwargs)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt6.py", line 338, in run
-    self._append(
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt.py", line 816, in _append
-    self.outbox.append_message(signature, fields, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 146, in append_message
-    self._packer.pack_struct(tag, fields, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 226, in pack_struct
-    self._pack_struct(
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 243, in _pack_struct
-    self._pack(field, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 75, in _pack
-    self._py_pack(data, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 147, in _py_pack
-    self._py_pack(item, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 147, in _py_pack
-    self._py_pack(item, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 161, in _py_pack
-    raise ValueError(f"Values of type {type(value)} are not supported")
-ValueError: Values of type <class 'src.model.mongo.contact_infos.ContactInfosData'> are not supported
- 
-[2026-04-03 22:36:31]: Traceback (most recent call last):
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 158, in add_student_profiles
-    await self.add_student_relationship(student_code, p)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 281, in add_student_relationship
-    self.student_contact_infos_repo.create(student_contact_infos_record)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 37, in create
-    return self.manager.execute_write(self._create, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_manager.py", line 25, in execute_write
-    return session.execute_write(callback, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 720, in execute_write
-    return self._run_transaction(
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 543, in _run_transaction
-    result = transaction_function(tx, *args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 56, in _create
-    record = tx.run(query, props=data).single()
-             ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\transaction.py", line 201, in run
-    result._tx_ready_run(query, parameters)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 178, in _tx_ready_run
-    self._run(query, parameters, None, None, None, None, None, None)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 220, in _run
-    self._connection.run(
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 193, in inner
-    func(*args, **kwargs)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt6.py", line 338, in run
-    self._append(
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt.py", line 816, in _append
-    self.outbox.append_message(signature, fields, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 146, in append_message
-    self._packer.pack_struct(tag, fields, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 226, in pack_struct
-    self._pack_struct(
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 243, in _pack_struct
-    self._pack(field, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 75, in _pack
-    self._py_pack(data, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 147, in _py_pack
-    self._py_pack(item, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 147, in _py_pack
-    self._py_pack(item, dehydration_hooks)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_codec\packstream\v1\__init__.py", line 161, in _py_pack
-    raise ValueError(f"Values of type {type(value)} are not supported")
-ValueError: Values of type <class 'src.model.mongo.contact_infos.ContactInfosData'> are not supported
- 
-[2026-04-03 22:41:38]: neo4j.exceptions.GqlError: {gql_status: 22N01} {gql_status_description: error: data exception - invalid type. Expected the value Map{father_phone -> String("0906838066"), mother_card_id -> NO_VALUE, guardian_name -> String("Trương Hiếu Lương"), father_job -> String("Buôn bán"), father_name -> String("Trương Hiếu Lương"), father_card_id -> String("79074026916"), mother_name -> String("Trần Thị Thu Thùy"), mother_phone -> String("0918323207"), guardian_card_id -> String("79074026916"), guardian_job -> String("Buôn bán"), guardian_phone -> String("0906838066"), mother_job -> String("Buôn bán")} to be of type BOOLEAN, STRING, INTEGER, FLOAT, DATE, LOCAL TIME, ZONED TIME, LOCAL DATETIME, ZONED DATETIME, DURATION or POINT, but was of type MAP NOT NULL.} {message: 22N01: Expected the value Map{father_phone -> String("0906838066"), mother_card_id -> NO_VALUE, guardian_name -> String("Trương Hiếu Lương"), father_job -> String("Buôn bán"), father_name -> String("Trương Hiếu Lương"), father_card_id -> String("79074026916"), mother_name -> String("Trần Thị Thu Thùy"), mother_phone -> String("0918323207"), guardian_card_id -> String("79074026916"), guardian_job -> String("Buôn bán"), guardian_phone -> String("0906838066"), mother_job -> String("Buôn bán")} to be of type BOOLEAN, STRING, INTEGER, FLOAT, DATE, LOCAL TIME, ZONED TIME, LOCAL DATETIME, ZONED DATETIME, DURATION or POINT, but was of type MAP NOT NULL.} {diagnostic_record: {'_classification': 'CLIENT_ERROR', 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}} {raw_classification: CLIENT_ERROR}
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 158, in add_student_profiles
-    await self.add_student_relationship(student_code, p)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 279, in add_student_relationship
-    self.student_contact_infos_repo.create(student_contact_infos_record)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 37, in create
-    return self.manager.execute_write(self._create, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_manager.py", line 25, in execute_write
-    return session.execute_write(callback, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 720, in execute_write
-    return self._run_transaction(
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 543, in _run_transaction
-    result = transaction_function(tx, *args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 56, in _create
-    record = tx.run(query, props=data).single()
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 620, in single
-    self._buffer(2)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 457, in _buffer
-    for record in self:
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 407, in __iter__
-    self._connection.fetch_message()
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 193, in inner
-    func(*args, **kwargs)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt.py", line 867, in fetch_message
-    res = self._process_message(tag, fields)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt6.py", line 548, in _process_message
-    response.on_failure(summary_metadata or {})
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 263, in on_failure
-    raise self._hydrate_error(metadata)
-neo4j.exceptions.CypherTypeError: {neo4j_code: Neo.ClientError.Statement.TypeError} {message: Property values can only be of primitive types or arrays thereof. Encountered: Map{father_phone -> String("0906838066"), mother_card_id -> NO_VALUE, guardian_name -> String("Trương Hiếu Lương"), father_job -> String("Buôn bán"), father_name -> String("Trương Hiếu Lương"), father_card_id -> String("79074026916"), mother_name -> String("Trần Thị Thu Thùy"), mother_phone -> String("0918323207"), guardian_card_id -> String("79074026916"), guardian_job -> String("Buôn bán"), guardian_phone -> String("0906838066"), mother_job -> String("Buôn bán")}.} {gql_status: 22G03} {gql_status_description: error: data exception - invalid value type}
- 
-[2026-04-03 22:41:43]: neo4j.exceptions.GqlError: {gql_status: 22N01} {gql_status_description: error: data exception - invalid type. Expected the value Map{father_phone -> String("0989986367"), mother_card_id -> String("51182000328"), guardian_name -> NO_VALUE, father_job -> String("Điện lạnh"), father_name -> String("Nguyễn Trung Hinh"), father_card_id -> String("51079007921"), mother_name -> String("Lê Thị Ánh Tú"), mother_phone -> String("0774432290"), guardian_card_id -> NO_VALUE, guardian_job -> NO_VALUE, guardian_phone -> NO_VALUE, mother_job -> String("Đồ hoạ")} to be of type BOOLEAN, STRING, INTEGER, FLOAT, DATE, LOCAL TIME, ZONED TIME, LOCAL DATETIME, ZONED DATETIME, DURATION or POINT, but was of type MAP NOT NULL.} {message: 22N01: Expected the value Map{father_phone -> String("0989986367"), mother_card_id -> String("51182000328"), guardian_name -> NO_VALUE, father_job -> String("Điện lạnh"), father_name -> String("Nguyễn Trung Hinh"), father_card_id -> String("51079007921"), mother_name -> String("Lê Thị Ánh Tú"), mother_phone -> String("0774432290"), guardian_card_id -> NO_VALUE, guardian_job -> NO_VALUE, guardian_phone -> NO_VALUE, mother_job -> String("Đồ hoạ")} to be of type BOOLEAN, STRING, INTEGER, FLOAT, DATE, LOCAL TIME, ZONED TIME, LOCAL DATETIME, ZONED DATETIME, DURATION or POINT, but was of type MAP NOT NULL.} {diagnostic_record: {'_classification': 'CLIENT_ERROR', 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}} {raw_classification: CLIENT_ERROR}
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 158, in add_student_profiles
-    await self.add_student_relationship(student_code, p)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 279, in add_student_relationship
-    self.student_contact_infos_repo.create(student_contact_infos_record)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 37, in create
-    return self.manager.execute_write(self._create, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_manager.py", line 25, in execute_write
-    return session.execute_write(callback, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 720, in execute_write
-    return self._run_transaction(
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 543, in _run_transaction
-    result = transaction_function(tx, *args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 56, in _create
-    record = tx.run(query, props=data).single()
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 620, in single
-    self._buffer(2)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 457, in _buffer
-    for record in self:
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 407, in __iter__
-    self._connection.fetch_message()
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 193, in inner
-    func(*args, **kwargs)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt.py", line 867, in fetch_message
-    res = self._process_message(tag, fields)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt6.py", line 548, in _process_message
-    response.on_failure(summary_metadata or {})
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 263, in on_failure
-    raise self._hydrate_error(metadata)
-neo4j.exceptions.CypherTypeError: {neo4j_code: Neo.ClientError.Statement.TypeError} {message: Property values can only be of primitive types or arrays thereof. Encountered: Map{father_phone -> String("0989986367"), mother_card_id -> String("51182000328"), guardian_name -> NO_VALUE, father_job -> String("Điện lạnh"), father_name -> String("Nguyễn Trung Hinh"), father_card_id -> String("51079007921"), mother_name -> String("Lê Thị Ánh Tú"), mother_phone -> String("0774432290"), guardian_card_id -> NO_VALUE, guardian_job -> NO_VALUE, guardian_phone -> NO_VALUE, mother_job -> String("Đồ hoạ")}.} {gql_status: 22G03} {gql_status_description: error: data exception - invalid value type}
- 
-[2026-04-03 22:41:48]: neo4j.exceptions.GqlError: {gql_status: 22N01} {gql_status_description: error: data exception - invalid type. Expected the value Map{father_phone -> String("0961794401"), mother_card_id -> String("79197000961"), guardian_name -> NO_VALUE, father_job -> String("Người vận chuyển"), father_name -> String("Chung Văn Hải"), father_card_id -> String("79090011296"), mother_name -> String("Huỳnh Lữ Minh Hiền"), mother_phone -> String("0775469649"), guardian_card_id -> NO_VALUE, guardian_job -> NO_VALUE, guardian_phone -> NO_VALUE, mother_job -> String("Nội trợ")} to be of type BOOLEAN, STRING, INTEGER, FLOAT, DATE, LOCAL TIME, ZONED TIME, LOCAL DATETIME, ZONED DATETIME, DURATION or POINT, but was of type MAP NOT NULL.} {message: 22N01: Expected the value Map{father_phone -> String("0961794401"), mother_card_id -> String("79197000961"), guardian_name -> NO_VALUE, father_job -> String("Người vận chuyển"), father_name -> String("Chung Văn Hải"), father_card_id -> String("79090011296"), mother_name -> String("Huỳnh Lữ Minh Hiền"), mother_phone -> String("0775469649"), guardian_card_id -> NO_VALUE, guardian_job -> NO_VALUE, guardian_phone -> NO_VALUE, mother_job -> String("Nội trợ")} to be of type BOOLEAN, STRING, INTEGER, FLOAT, DATE, LOCAL TIME, ZONED TIME, LOCAL DATETIME, ZONED DATETIME, DURATION or POINT, but was of type MAP NOT NULL.} {diagnostic_record: {'_classification': 'CLIENT_ERROR', 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}} {raw_classification: CLIENT_ERROR}
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 158, in add_student_profiles
-    await self.add_student_relationship(student_code, p)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 279, in add_student_relationship
-    self.student_contact_infos_repo.create(student_contact_infos_record)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 37, in create
-    return self.manager.execute_write(self._create, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_manager.py", line 25, in execute_write
-    return session.execute_write(callback, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 720, in execute_write
-    return self._run_transaction(
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 543, in _run_transaction
-    result = transaction_function(tx, *args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 56, in _create
-    record = tx.run(query, props=data).single()
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 620, in single
-    self._buffer(2)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 457, in _buffer
-    for record in self:
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 407, in __iter__
-    self._connection.fetch_message()
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 193, in inner
-    func(*args, **kwargs)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt.py", line 867, in fetch_message
-    res = self._process_message(tag, fields)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt6.py", line 548, in _process_message
-    response.on_failure(summary_metadata or {})
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 263, in on_failure
-    raise self._hydrate_error(metadata)
-neo4j.exceptions.CypherTypeError: {neo4j_code: Neo.ClientError.Statement.TypeError} {message: Property values can only be of primitive types or arrays thereof. Encountered: Map{father_phone -> String("0961794401"), mother_card_id -> String("79197000961"), guardian_name -> NO_VALUE, father_job -> String("Người vận chuyển"), father_name -> String("Chung Văn Hải"), father_card_id -> String("79090011296"), mother_name -> String("Huỳnh Lữ Minh Hiền"), mother_phone -> String("0775469649"), guardian_card_id -> NO_VALUE, guardian_job -> NO_VALUE, guardian_phone -> NO_VALUE, mother_job -> String("Nội trợ")}.} {gql_status: 22G03} {gql_status_description: error: data exception - invalid value type}
- 
-[2026-04-03 22:41:53]: neo4j.exceptions.GqlError: {gql_status: 22N01} {gql_status_description: error: data exception - invalid type. Expected the value Map{father_phone -> String("0907215519"), mother_card_id -> String("75182011060"), guardian_name -> String("Đặng Thị Ngọc Trâm"), father_job -> String("Công nhân"), father_name -> String("Bùi Hữu Huy"), father_card_id -> String("74079005271"), mother_name -> String("Đặng Thị Ngọc Trâm"), mother_phone -> String("0908995058"), guardian_card_id -> String("75182011060"), guardian_job -> String("Điều dưỡng"), guardian_phone -> String("0908995058"), mother_job -> String("Công nhân")} to be of type BOOLEAN, STRING, INTEGER, FLOAT, DATE, LOCAL TIME, ZONED TIME, LOCAL DATETIME, ZONED DATETIME, DURATION or POINT, but was of type MAP NOT NULL.} {message: 22N01: Expected the value Map{father_phone -> String("0907215519"), mother_card_id -> String("75182011060"), guardian_name -> String("Đặng Thị Ngọc Trâm"), father_job -> String("Công nhân"), father_name -> String("Bùi Hữu Huy"), father_card_id -> String("74079005271"), mother_name -> String("Đặng Thị Ngọc Trâm"), mother_phone -> String("0908995058"), guardian_card_id -> String("75182011060"), guardian_job -> String("Điều dưỡng"), guardian_phone -> String("0908995058"), mother_job -> String("Công nhân")} to be of type BOOLEAN, STRING, INTEGER, FLOAT, DATE, LOCAL TIME, ZONED TIME, LOCAL DATETIME, ZONED DATETIME, DURATION or POINT, but was of type MAP NOT NULL.} {diagnostic_record: {'_classification': 'CLIENT_ERROR', 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}} {raw_classification: CLIENT_ERROR}
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 158, in add_student_profiles
-    await self.add_student_relationship(student_code, p)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 279, in add_student_relationship
-    self.student_contact_infos_repo.create(student_contact_infos_record)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 37, in create
-    return self.manager.execute_write(self._create, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_manager.py", line 25, in execute_write
-    return session.execute_write(callback, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 720, in execute_write
-    return self._run_transaction(
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 543, in _run_transaction
-    result = transaction_function(tx, *args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 56, in _create
-    record = tx.run(query, props=data).single()
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 620, in single
-    self._buffer(2)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 457, in _buffer
-    for record in self:
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 407, in __iter__
-    self._connection.fetch_message()
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 193, in inner
-    func(*args, **kwargs)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt.py", line 867, in fetch_message
-    res = self._process_message(tag, fields)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt6.py", line 548, in _process_message
-    response.on_failure(summary_metadata or {})
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 263, in on_failure
-    raise self._hydrate_error(metadata)
-neo4j.exceptions.CypherTypeError: {neo4j_code: Neo.ClientError.Statement.TypeError} {message: Property values can only be of primitive types or arrays thereof. Encountered: Map{father_phone -> String("0907215519"), mother_card_id -> String("75182011060"), guardian_name -> String("Đặng Thị Ngọc Trâm"), father_job -> String("Công nhân"), father_name -> String("Bùi Hữu Huy"), father_card_id -> String("74079005271"), mother_name -> String("Đặng Thị Ngọc Trâm"), mother_phone -> String("0908995058"), guardian_card_id -> String("75182011060"), guardian_job -> String("Điều dưỡng"), guardian_phone -> String("0908995058"), mother_job -> String("Công nhân")}.} {gql_status: 22G03} {gql_status_description: error: data exception - invalid value type}
- 
-[2026-04-03 22:41:57]: neo4j.exceptions.GqlError: {gql_status: 22N01} {gql_status_description: error: data exception - invalid type. Expected the value Map{father_phone -> String("0907215519"), mother_card_id -> String("75182011060"), guardian_name -> String("Đặng Thị Ngọc Trâm"), father_job -> String("Công nhân"), father_name -> String("Bùi Hữu Huy"), father_card_id -> String("74079005271"), mother_name -> String("Đặng Thị Ngọc Trâm"), mother_phone -> String("0908995058"), guardian_card_id -> String("75182011060"), guardian_job -> String("Điều dưỡng"), guardian_phone -> String("0908995058"), mother_job -> String("Công nhân")} to be of type BOOLEAN, STRING, INTEGER, FLOAT, DATE, LOCAL TIME, ZONED TIME, LOCAL DATETIME, ZONED DATETIME, DURATION or POINT, but was of type MAP NOT NULL.} {message: 22N01: Expected the value Map{father_phone -> String("0907215519"), mother_card_id -> String("75182011060"), guardian_name -> String("Đặng Thị Ngọc Trâm"), father_job -> String("Công nhân"), father_name -> String("Bùi Hữu Huy"), father_card_id -> String("74079005271"), mother_name -> String("Đặng Thị Ngọc Trâm"), mother_phone -> String("0908995058"), guardian_card_id -> String("75182011060"), guardian_job -> String("Điều dưỡng"), guardian_phone -> String("0908995058"), mother_job -> String("Công nhân")} to be of type BOOLEAN, STRING, INTEGER, FLOAT, DATE, LOCAL TIME, ZONED TIME, LOCAL DATETIME, ZONED DATETIME, DURATION or POINT, but was of type MAP NOT NULL.} {diagnostic_record: {'_classification': 'CLIENT_ERROR', 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}} {raw_classification: CLIENT_ERROR}
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 158, in add_student_profiles
-    await self.add_student_relationship(student_code, p)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 279, in add_student_relationship
-    self.student_contact_infos_repo.create(student_contact_infos_record)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 37, in create
-    return self.manager.execute_write(self._create, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_manager.py", line 25, in execute_write
-    return session.execute_write(callback, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 720, in execute_write
-    return self._run_transaction(
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 543, in _run_transaction
-    result = transaction_function(tx, *args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 56, in _create
-    record = tx.run(query, props=data).single()
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 620, in single
-    self._buffer(2)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 457, in _buffer
-    for record in self:
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 407, in __iter__
-    self._connection.fetch_message()
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 193, in inner
-    func(*args, **kwargs)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt.py", line 867, in fetch_message
-    res = self._process_message(tag, fields)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt6.py", line 548, in _process_message
-    response.on_failure(summary_metadata or {})
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 263, in on_failure
-    raise self._hydrate_error(metadata)
-neo4j.exceptions.CypherTypeError: {neo4j_code: Neo.ClientError.Statement.TypeError} {message: Property values can only be of primitive types or arrays thereof. Encountered: Map{father_phone -> String("0907215519"), mother_card_id -> String("75182011060"), guardian_name -> String("Đặng Thị Ngọc Trâm"), father_job -> String("Công nhân"), father_name -> String("Bùi Hữu Huy"), father_card_id -> String("74079005271"), mother_name -> String("Đặng Thị Ngọc Trâm"), mother_phone -> String("0908995058"), guardian_card_id -> String("75182011060"), guardian_job -> String("Điều dưỡng"), guardian_phone -> String("0908995058"), mother_job -> String("Công nhân")}.} {gql_status: 22G03} {gql_status_description: error: data exception - invalid value type}
- 
-[2026-04-03 22:42:02]: neo4j.exceptions.GqlError: {gql_status: 22N01} {gql_status_description: error: data exception - invalid type. Expected the value Map{father_phone -> String("0933358768"), mother_card_id -> String("82179001706"), guardian_name -> NO_VALUE, father_job -> String("Tự do"), father_name -> String("Hồ Quốc Dũng"), father_card_id -> String("79074003599"), mother_name -> String("Nguyễn Hữu Duyên"), mother_phone -> String("0933773110"), guardian_card_id -> NO_VALUE, guardian_job -> NO_VALUE, guardian_phone -> NO_VALUE, mother_job -> String("Buôn bán")} to be of type BOOLEAN, STRING, INTEGER, FLOAT, DATE, LOCAL TIME, ZONED TIME, LOCAL DATETIME, ZONED DATETIME, DURATION or POINT, but was of type MAP NOT NULL.} {message: 22N01: Expected the value Map{father_phone -> String("0933358768"), mother_card_id -> String("82179001706"), guardian_name -> NO_VALUE, father_job -> String("Tự do"), father_name -> String("Hồ Quốc Dũng"), father_card_id -> String("79074003599"), mother_name -> String("Nguyễn Hữu Duyên"), mother_phone -> String("0933773110"), guardian_card_id -> NO_VALUE, guardian_job -> NO_VALUE, guardian_phone -> NO_VALUE, mother_job -> String("Buôn bán")} to be of type BOOLEAN, STRING, INTEGER, FLOAT, DATE, LOCAL TIME, ZONED TIME, LOCAL DATETIME, ZONED DATETIME, DURATION or POINT, but was of type MAP NOT NULL.} {diagnostic_record: {'_classification': 'CLIENT_ERROR', 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}} {raw_classification: CLIENT_ERROR}
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 158, in add_student_profiles
-    await self.add_student_relationship(student_code, p)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 279, in add_student_relationship
-    self.student_contact_infos_repo.create(student_contact_infos_record)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 37, in create
-    return self.manager.execute_write(self._create, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_manager.py", line 25, in execute_write
-    return session.execute_write(callback, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 720, in execute_write
-    return self._run_transaction(
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 543, in _run_transaction
-    result = transaction_function(tx, *args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 56, in _create
-    record = tx.run(query, props=data).single()
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 620, in single
-    self._buffer(2)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 457, in _buffer
-    for record in self:
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 407, in __iter__
-    self._connection.fetch_message()
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 193, in inner
-    func(*args, **kwargs)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt.py", line 867, in fetch_message
-    res = self._process_message(tag, fields)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt6.py", line 548, in _process_message
-    response.on_failure(summary_metadata or {})
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 263, in on_failure
-    raise self._hydrate_error(metadata)
-neo4j.exceptions.CypherTypeError: {neo4j_code: Neo.ClientError.Statement.TypeError} {message: Property values can only be of primitive types or arrays thereof. Encountered: Map{father_phone -> String("0933358768"), mother_card_id -> String("82179001706"), guardian_name -> NO_VALUE, father_job -> String("Tự do"), father_name -> String("Hồ Quốc Dũng"), father_card_id -> String("79074003599"), mother_name -> String("Nguyễn Hữu Duyên"), mother_phone -> String("0933773110"), guardian_card_id -> NO_VALUE, guardian_job -> NO_VALUE, guardian_phone -> NO_VALUE, mother_job -> String("Buôn bán")}.} {gql_status: 22G03} {gql_status_description: error: data exception - invalid value type}
- 
-[2026-04-03 22:43:44]: neo4j.exceptions.GqlError: {gql_status: 22N01} {gql_status_description: error: data exception - invalid type. Expected the value Map{father_phone -> String("0906838066"), mother_card_id -> NO_VALUE, guardian_name -> String("Trương Hiếu Lương"), father_job -> String("Buôn bán"), father_name -> String("Trương Hiếu Lương"), father_card_id -> String("79074026916"), mother_name -> String("Trần Thị Thu Thùy"), mother_phone -> String("0918323207"), guardian_card_id -> String("79074026916"), guardian_job -> String("Buôn bán"), guardian_phone -> String("0906838066"), mother_job -> String("Buôn bán")} to be of type BOOLEAN, STRING, INTEGER, FLOAT, DATE, LOCAL TIME, ZONED TIME, LOCAL DATETIME, ZONED DATETIME, DURATION or POINT, but was of type MAP NOT NULL.} {message: 22N01: Expected the value Map{father_phone -> String("0906838066"), mother_card_id -> NO_VALUE, guardian_name -> String("Trương Hiếu Lương"), father_job -> String("Buôn bán"), father_name -> String("Trương Hiếu Lương"), father_card_id -> String("79074026916"), mother_name -> String("Trần Thị Thu Thùy"), mother_phone -> String("0918323207"), guardian_card_id -> String("79074026916"), guardian_job -> String("Buôn bán"), guardian_phone -> String("0906838066"), mother_job -> String("Buôn bán")} to be of type BOOLEAN, STRING, INTEGER, FLOAT, DATE, LOCAL TIME, ZONED TIME, LOCAL DATETIME, ZONED DATETIME, DURATION or POINT, but was of type MAP NOT NULL.} {diagnostic_record: {'_classification': 'CLIENT_ERROR', 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}} {raw_classification: CLIENT_ERROR}
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 158, in add_student_profiles
-    await self.add_student_relationship(student_code, p)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 281, in add_student_relationship
-    self.student_contact_infos_repo.create(student_contact_infos_record)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 37, in create
-    return self.manager.execute_write(self._create, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_manager.py", line 25, in execute_write
-    return session.execute_write(callback, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 720, in execute_write
-    return self._run_transaction(
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 543, in _run_transaction
-    result = transaction_function(tx, *args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 56, in _create
-    record = tx.run(query, props=data).single()
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 620, in single
-    self._buffer(2)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 457, in _buffer
-    for record in self:
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 407, in __iter__
-    self._connection.fetch_message()
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 193, in inner
-    func(*args, **kwargs)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt.py", line 867, in fetch_message
-    res = self._process_message(tag, fields)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt6.py", line 548, in _process_message
-    response.on_failure(summary_metadata or {})
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 263, in on_failure
-    raise self._hydrate_error(metadata)
-neo4j.exceptions.CypherTypeError: {neo4j_code: Neo.ClientError.Statement.TypeError} {message: Property values can only be of primitive types or arrays thereof. Encountered: Map{father_phone -> String("0906838066"), mother_card_id -> NO_VALUE, guardian_name -> String("Trương Hiếu Lương"), father_job -> String("Buôn bán"), father_name -> String("Trương Hiếu Lương"), father_card_id -> String("79074026916"), mother_name -> String("Trần Thị Thu Thùy"), mother_phone -> String("0918323207"), guardian_card_id -> String("79074026916"), guardian_job -> String("Buôn bán"), guardian_phone -> String("0906838066"), mother_job -> String("Buôn bán")}.} {gql_status: 22G03} {gql_status_description: error: data exception - invalid value type}
- 
-[2026-04-03 22:43:49]: neo4j.exceptions.GqlError: {gql_status: 22N01} {gql_status_description: error: data exception - invalid type. Expected the value Map{father_phone -> String("0989986367"), mother_card_id -> String("51182000328"), guardian_name -> NO_VALUE, father_job -> String("Điện lạnh"), father_name -> String("Nguyễn Trung Hinh"), father_card_id -> String("51079007921"), mother_name -> String("Lê Thị Ánh Tú"), mother_phone -> String("0774432290"), guardian_card_id -> NO_VALUE, guardian_job -> NO_VALUE, guardian_phone -> NO_VALUE, mother_job -> String("Đồ hoạ")} to be of type BOOLEAN, STRING, INTEGER, FLOAT, DATE, LOCAL TIME, ZONED TIME, LOCAL DATETIME, ZONED DATETIME, DURATION or POINT, but was of type MAP NOT NULL.} {message: 22N01: Expected the value Map{father_phone -> String("0989986367"), mother_card_id -> String("51182000328"), guardian_name -> NO_VALUE, father_job -> String("Điện lạnh"), father_name -> String("Nguyễn Trung Hinh"), father_card_id -> String("51079007921"), mother_name -> String("Lê Thị Ánh Tú"), mother_phone -> String("0774432290"), guardian_card_id -> NO_VALUE, guardian_job -> NO_VALUE, guardian_phone -> NO_VALUE, mother_job -> String("Đồ hoạ")} to be of type BOOLEAN, STRING, INTEGER, FLOAT, DATE, LOCAL TIME, ZONED TIME, LOCAL DATETIME, ZONED DATETIME, DURATION or POINT, but was of type MAP NOT NULL.} {diagnostic_record: {'_classification': 'CLIENT_ERROR', 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}} {raw_classification: CLIENT_ERROR}
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 158, in add_student_profiles
-    await self.add_student_relationship(student_code, p)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 281, in add_student_relationship
-    self.student_contact_infos_repo.create(student_contact_infos_record)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 37, in create
-    return self.manager.execute_write(self._create, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_manager.py", line 25, in execute_write
-    return session.execute_write(callback, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 720, in execute_write
-    return self._run_transaction(
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 543, in _run_transaction
-    result = transaction_function(tx, *args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 56, in _create
-    record = tx.run(query, props=data).single()
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 620, in single
-    self._buffer(2)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 457, in _buffer
-    for record in self:
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 407, in __iter__
-    self._connection.fetch_message()
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 193, in inner
-    func(*args, **kwargs)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt.py", line 867, in fetch_message
-    res = self._process_message(tag, fields)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt6.py", line 548, in _process_message
-    response.on_failure(summary_metadata or {})
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 263, in on_failure
-    raise self._hydrate_error(metadata)
-neo4j.exceptions.CypherTypeError: {neo4j_code: Neo.ClientError.Statement.TypeError} {message: Property values can only be of primitive types or arrays thereof. Encountered: Map{father_phone -> String("0989986367"), mother_card_id -> String("51182000328"), guardian_name -> NO_VALUE, father_job -> String("Điện lạnh"), father_name -> String("Nguyễn Trung Hinh"), father_card_id -> String("51079007921"), mother_name -> String("Lê Thị Ánh Tú"), mother_phone -> String("0774432290"), guardian_card_id -> NO_VALUE, guardian_job -> NO_VALUE, guardian_phone -> NO_VALUE, mother_job -> String("Đồ hoạ")}.} {gql_status: 22G03} {gql_status_description: error: data exception - invalid value type}
- 
-[2026-04-03 22:43:54]: neo4j.exceptions.GqlError: {gql_status: 22N01} {gql_status_description: error: data exception - invalid type. Expected the value Map{father_phone -> String("0961794401"), mother_card_id -> String("79197000961"), guardian_name -> NO_VALUE, father_job -> String("Người vận chuyển"), father_name -> String("Chung Văn Hải"), father_card_id -> String("79090011296"), mother_name -> String("Huỳnh Lữ Minh Hiền"), mother_phone -> String("0775469649"), guardian_card_id -> NO_VALUE, guardian_job -> NO_VALUE, guardian_phone -> NO_VALUE, mother_job -> String("Nội trợ")} to be of type BOOLEAN, STRING, INTEGER, FLOAT, DATE, LOCAL TIME, ZONED TIME, LOCAL DATETIME, ZONED DATETIME, DURATION or POINT, but was of type MAP NOT NULL.} {message: 22N01: Expected the value Map{father_phone -> String("0961794401"), mother_card_id -> String("79197000961"), guardian_name -> NO_VALUE, father_job -> String("Người vận chuyển"), father_name -> String("Chung Văn Hải"), father_card_id -> String("79090011296"), mother_name -> String("Huỳnh Lữ Minh Hiền"), mother_phone -> String("0775469649"), guardian_card_id -> NO_VALUE, guardian_job -> NO_VALUE, guardian_phone -> NO_VALUE, mother_job -> String("Nội trợ")} to be of type BOOLEAN, STRING, INTEGER, FLOAT, DATE, LOCAL TIME, ZONED TIME, LOCAL DATETIME, ZONED DATETIME, DURATION or POINT, but was of type MAP NOT NULL.} {diagnostic_record: {'_classification': 'CLIENT_ERROR', 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}} {raw_classification: CLIENT_ERROR}
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 158, in add_student_profiles
-    await self.add_student_relationship(student_code, p)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 281, in add_student_relationship
-    self.student_contact_infos_repo.create(student_contact_infos_record)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 37, in create
-    return self.manager.execute_write(self._create, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_manager.py", line 25, in execute_write
-    return session.execute_write(callback, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 720, in execute_write
-    return self._run_transaction(
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 543, in _run_transaction
-    result = transaction_function(tx, *args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 56, in _create
-    record = tx.run(query, props=data).single()
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 620, in single
-    self._buffer(2)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 457, in _buffer
-    for record in self:
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 407, in __iter__
-    self._connection.fetch_message()
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 193, in inner
-    func(*args, **kwargs)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt.py", line 867, in fetch_message
-    res = self._process_message(tag, fields)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt6.py", line 548, in _process_message
-    response.on_failure(summary_metadata or {})
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 263, in on_failure
-    raise self._hydrate_error(metadata)
-neo4j.exceptions.CypherTypeError: {neo4j_code: Neo.ClientError.Statement.TypeError} {message: Property values can only be of primitive types or arrays thereof. Encountered: Map{father_phone -> String("0961794401"), mother_card_id -> String("79197000961"), guardian_name -> NO_VALUE, father_job -> String("Người vận chuyển"), father_name -> String("Chung Văn Hải"), father_card_id -> String("79090011296"), mother_name -> String("Huỳnh Lữ Minh Hiền"), mother_phone -> String("0775469649"), guardian_card_id -> NO_VALUE, guardian_job -> NO_VALUE, guardian_phone -> NO_VALUE, mother_job -> String("Nội trợ")}.} {gql_status: 22G03} {gql_status_description: error: data exception - invalid value type}
- 
-[2026-04-03 22:43:59]: neo4j.exceptions.GqlError: {gql_status: 22N01} {gql_status_description: error: data exception - invalid type. Expected the value Map{father_phone -> String("0907215519"), mother_card_id -> String("75182011060"), guardian_name -> String("Đặng Thị Ngọc Trâm"), father_job -> String("Công nhân"), father_name -> String("Bùi Hữu Huy"), father_card_id -> String("74079005271"), mother_name -> String("Đặng Thị Ngọc Trâm"), mother_phone -> String("0908995058"), guardian_card_id -> String("75182011060"), guardian_job -> String("Điều dưỡng"), guardian_phone -> String("0908995058"), mother_job -> String("Công nhân")} to be of type BOOLEAN, STRING, INTEGER, FLOAT, DATE, LOCAL TIME, ZONED TIME, LOCAL DATETIME, ZONED DATETIME, DURATION or POINT, but was of type MAP NOT NULL.} {message: 22N01: Expected the value Map{father_phone -> String("0907215519"), mother_card_id -> String("75182011060"), guardian_name -> String("Đặng Thị Ngọc Trâm"), father_job -> String("Công nhân"), father_name -> String("Bùi Hữu Huy"), father_card_id -> String("74079005271"), mother_name -> String("Đặng Thị Ngọc Trâm"), mother_phone -> String("0908995058"), guardian_card_id -> String("75182011060"), guardian_job -> String("Điều dưỡng"), guardian_phone -> String("0908995058"), mother_job -> String("Công nhân")} to be of type BOOLEAN, STRING, INTEGER, FLOAT, DATE, LOCAL TIME, ZONED TIME, LOCAL DATETIME, ZONED DATETIME, DURATION or POINT, but was of type MAP NOT NULL.} {diagnostic_record: {'_classification': 'CLIENT_ERROR', 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}} {raw_classification: CLIENT_ERROR}
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 158, in add_student_profiles
-    await self.add_student_relationship(student_code, p)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 281, in add_student_relationship
-    self.student_contact_infos_repo.create(student_contact_infos_record)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 37, in create
-    return self.manager.execute_write(self._create, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_manager.py", line 25, in execute_write
-    return session.execute_write(callback, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 720, in execute_write
-    return self._run_transaction(
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 543, in _run_transaction
-    result = transaction_function(tx, *args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 56, in _create
-    record = tx.run(query, props=data).single()
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 620, in single
-    self._buffer(2)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 457, in _buffer
-    for record in self:
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 407, in __iter__
-    self._connection.fetch_message()
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 193, in inner
-    func(*args, **kwargs)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt.py", line 867, in fetch_message
-    res = self._process_message(tag, fields)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt6.py", line 548, in _process_message
-    response.on_failure(summary_metadata or {})
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 263, in on_failure
-    raise self._hydrate_error(metadata)
-neo4j.exceptions.CypherTypeError: {neo4j_code: Neo.ClientError.Statement.TypeError} {message: Property values can only be of primitive types or arrays thereof. Encountered: Map{father_phone -> String("0907215519"), mother_card_id -> String("75182011060"), guardian_name -> String("Đặng Thị Ngọc Trâm"), father_job -> String("Công nhân"), father_name -> String("Bùi Hữu Huy"), father_card_id -> String("74079005271"), mother_name -> String("Đặng Thị Ngọc Trâm"), mother_phone -> String("0908995058"), guardian_card_id -> String("75182011060"), guardian_job -> String("Điều dưỡng"), guardian_phone -> String("0908995058"), mother_job -> String("Công nhân")}.} {gql_status: 22G03} {gql_status_description: error: data exception - invalid value type}
- 
-[2026-04-03 22:44:04]: neo4j.exceptions.GqlError: {gql_status: 22N01} {gql_status_description: error: data exception - invalid type. Expected the value Map{father_phone -> String("0907215519"), mother_card_id -> String("75182011060"), guardian_name -> String("Đặng Thị Ngọc Trâm"), father_job -> String("Công nhân"), father_name -> String("Bùi Hữu Huy"), father_card_id -> String("74079005271"), mother_name -> String("Đặng Thị Ngọc Trâm"), mother_phone -> String("0908995058"), guardian_card_id -> String("75182011060"), guardian_job -> String("Điều dưỡng"), guardian_phone -> String("0908995058"), mother_job -> String("Công nhân")} to be of type BOOLEAN, STRING, INTEGER, FLOAT, DATE, LOCAL TIME, ZONED TIME, LOCAL DATETIME, ZONED DATETIME, DURATION or POINT, but was of type MAP NOT NULL.} {message: 22N01: Expected the value Map{father_phone -> String("0907215519"), mother_card_id -> String("75182011060"), guardian_name -> String("Đặng Thị Ngọc Trâm"), father_job -> String("Công nhân"), father_name -> String("Bùi Hữu Huy"), father_card_id -> String("74079005271"), mother_name -> String("Đặng Thị Ngọc Trâm"), mother_phone -> String("0908995058"), guardian_card_id -> String("75182011060"), guardian_job -> String("Điều dưỡng"), guardian_phone -> String("0908995058"), mother_job -> String("Công nhân")} to be of type BOOLEAN, STRING, INTEGER, FLOAT, DATE, LOCAL TIME, ZONED TIME, LOCAL DATETIME, ZONED DATETIME, DURATION or POINT, but was of type MAP NOT NULL.} {diagnostic_record: {'_classification': 'CLIENT_ERROR', 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}} {raw_classification: CLIENT_ERROR}
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 158, in add_student_profiles
-    await self.add_student_relationship(student_code, p)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 281, in add_student_relationship
-    self.student_contact_infos_repo.create(student_contact_infos_record)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 37, in create
-    return self.manager.execute_write(self._create, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_manager.py", line 25, in execute_write
-    return session.execute_write(callback, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 720, in execute_write
-    return self._run_transaction(
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 543, in _run_transaction
-    result = transaction_function(tx, *args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 56, in _create
-    record = tx.run(query, props=data).single()
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 620, in single
-    self._buffer(2)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 457, in _buffer
-    for record in self:
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 407, in __iter__
-    self._connection.fetch_message()
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 193, in inner
-    func(*args, **kwargs)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt.py", line 867, in fetch_message
-    res = self._process_message(tag, fields)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt6.py", line 548, in _process_message
-    response.on_failure(summary_metadata or {})
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 263, in on_failure
-    raise self._hydrate_error(metadata)
-neo4j.exceptions.CypherTypeError: {neo4j_code: Neo.ClientError.Statement.TypeError} {message: Property values can only be of primitive types or arrays thereof. Encountered: Map{father_phone -> String("0907215519"), mother_card_id -> String("75182011060"), guardian_name -> String("Đặng Thị Ngọc Trâm"), father_job -> String("Công nhân"), father_name -> String("Bùi Hữu Huy"), father_card_id -> String("74079005271"), mother_name -> String("Đặng Thị Ngọc Trâm"), mother_phone -> String("0908995058"), guardian_card_id -> String("75182011060"), guardian_job -> String("Điều dưỡng"), guardian_phone -> String("0908995058"), mother_job -> String("Công nhân")}.} {gql_status: 22G03} {gql_status_description: error: data exception - invalid value type}
- 
-[2026-04-03 22:44:09]: neo4j.exceptions.GqlError: {gql_status: 22N01} {gql_status_description: error: data exception - invalid type. Expected the value Map{father_phone -> String("0933358768"), mother_card_id -> String("82179001706"), guardian_name -> NO_VALUE, father_job -> String("Tự do"), father_name -> String("Hồ Quốc Dũng"), father_card_id -> String("79074003599"), mother_name -> String("Nguyễn Hữu Duyên"), mother_phone -> String("0933773110"), guardian_card_id -> NO_VALUE, guardian_job -> NO_VALUE, guardian_phone -> NO_VALUE, mother_job -> String("Buôn bán")} to be of type BOOLEAN, STRING, INTEGER, FLOAT, DATE, LOCAL TIME, ZONED TIME, LOCAL DATETIME, ZONED DATETIME, DURATION or POINT, but was of type MAP NOT NULL.} {message: 22N01: Expected the value Map{father_phone -> String("0933358768"), mother_card_id -> String("82179001706"), guardian_name -> NO_VALUE, father_job -> String("Tự do"), father_name -> String("Hồ Quốc Dũng"), father_card_id -> String("79074003599"), mother_name -> String("Nguyễn Hữu Duyên"), mother_phone -> String("0933773110"), guardian_card_id -> NO_VALUE, guardian_job -> NO_VALUE, guardian_phone -> NO_VALUE, mother_job -> String("Buôn bán")} to be of type BOOLEAN, STRING, INTEGER, FLOAT, DATE, LOCAL TIME, ZONED TIME, LOCAL DATETIME, ZONED DATETIME, DURATION or POINT, but was of type MAP NOT NULL.} {diagnostic_record: {'_classification': 'CLIENT_ERROR', 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}} {raw_classification: CLIENT_ERROR}
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 158, in add_student_profiles
-    await self.add_student_relationship(student_code, p)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 281, in add_student_relationship
-    self.student_contact_infos_repo.create(student_contact_infos_record)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 37, in create
-    return self.manager.execute_write(self._create, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_manager.py", line 25, in execute_write
-    return session.execute_write(callback, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 720, in execute_write
-    return self._run_transaction(
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 543, in _run_transaction
-    result = transaction_function(tx, *args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 56, in _create
-    record = tx.run(query, props=data).single()
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 620, in single
-    self._buffer(2)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 457, in _buffer
-    for record in self:
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 407, in __iter__
-    self._connection.fetch_message()
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 193, in inner
-    func(*args, **kwargs)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt.py", line 867, in fetch_message
-    res = self._process_message(tag, fields)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt6.py", line 548, in _process_message
-    response.on_failure(summary_metadata or {})
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 263, in on_failure
-    raise self._hydrate_error(metadata)
-neo4j.exceptions.CypherTypeError: {neo4j_code: Neo.ClientError.Statement.TypeError} {message: Property values can only be of primitive types or arrays thereof. Encountered: Map{father_phone -> String("0933358768"), mother_card_id -> String("82179001706"), guardian_name -> NO_VALUE, father_job -> String("Tự do"), father_name -> String("Hồ Quốc Dũng"), father_card_id -> String("79074003599"), mother_name -> String("Nguyễn Hữu Duyên"), mother_phone -> String("0933773110"), guardian_card_id -> NO_VALUE, guardian_job -> NO_VALUE, guardian_phone -> NO_VALUE, mother_job -> String("Buôn bán")}.} {gql_status: 22G03} {gql_status_description: error: data exception - invalid value type}
- 
-[2026-04-03 22:58:39]: neo4j.exceptions.GqlError: {gql_status: 22N01} {gql_status_description: error: data exception - invalid type. Expected the value Map{father_phone -> String("0906838066"), guardian_name -> String("Trương Hiếu Lương"), father_job -> String("Buôn bán"), father_name -> String("Trương Hiếu Lương"), father_card_id -> String("79074026916"), mother_name -> String("Trần Thị Thu Thùy"), mother_phone -> String("0918323207"), guardian_card_id -> String("79074026916"), guardian_job -> String("Buôn bán"), guardian_phone -> String("0906838066"), mother_job -> String("Buôn bán")} to be of type BOOLEAN, STRING, INTEGER, FLOAT, DATE, LOCAL TIME, ZONED TIME, LOCAL DATETIME, ZONED DATETIME, DURATION or POINT, but was of type MAP NOT NULL.} {message: 22N01: Expected the value Map{father_phone -> String("0906838066"), guardian_name -> String("Trương Hiếu Lương"), father_job -> String("Buôn bán"), father_name -> String("Trương Hiếu Lương"), father_card_id -> String("79074026916"), mother_name -> String("Trần Thị Thu Thùy"), mother_phone -> String("0918323207"), guardian_card_id -> String("79074026916"), guardian_job -> String("Buôn bán"), guardian_phone -> String("0906838066"), mother_job -> String("Buôn bán")} to be of type BOOLEAN, STRING, INTEGER, FLOAT, DATE, LOCAL TIME, ZONED TIME, LOCAL DATETIME, ZONED DATETIME, DURATION or POINT, but was of type MAP NOT NULL.} {diagnostic_record: {'_classification': 'CLIENT_ERROR', 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}} {raw_classification: CLIENT_ERROR}
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 158, in add_student_profiles
-    await self.add_student_relationship(student_code, p)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 283, in add_student_relationship
-    self.student_contact_infos_repo.create(student_contact_infos_record)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 37, in create
-    return self.manager.execute_write(self._create, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_manager.py", line 25, in execute_write
-    return session.execute_write(callback, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 720, in execute_write
-    return self._run_transaction(
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 543, in _run_transaction
-    result = transaction_function(tx, *args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 56, in _create
-    record = tx.run(query, props=data).single()
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 620, in single
-    self._buffer(2)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 457, in _buffer
-    for record in self:
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 407, in __iter__
-    self._connection.fetch_message()
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 193, in inner
-    func(*args, **kwargs)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt.py", line 867, in fetch_message
-    res = self._process_message(tag, fields)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt6.py", line 548, in _process_message
-    response.on_failure(summary_metadata or {})
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 263, in on_failure
-    raise self._hydrate_error(metadata)
-neo4j.exceptions.CypherTypeError: {neo4j_code: Neo.ClientError.Statement.TypeError} {message: Property values can only be of primitive types or arrays thereof. Encountered: Map{father_phone -> String("0906838066"), guardian_name -> String("Trương Hiếu Lương"), father_job -> String("Buôn bán"), father_name -> String("Trương Hiếu Lương"), father_card_id -> String("79074026916"), mother_name -> String("Trần Thị Thu Thùy"), mother_phone -> String("0918323207"), guardian_card_id -> String("79074026916"), guardian_job -> String("Buôn bán"), guardian_phone -> String("0906838066"), mother_job -> String("Buôn bán")}.} {gql_status: 22G03} {gql_status_description: error: data exception - invalid value type}
- 
-[2026-04-03 22:58:44]: neo4j.exceptions.GqlError: {gql_status: 22N01} {gql_status_description: error: data exception - invalid type. Expected the value Map{father_phone -> String("0989986367"), mother_card_id -> String("51182000328"), father_job -> String("Điện lạnh"), father_name -> String("Nguyễn Trung Hinh"), father_card_id -> String("51079007921"), mother_name -> String("Lê Thị Ánh Tú"), mother_phone -> String("0774432290"), mother_job -> String("Đồ hoạ")} to be of type BOOLEAN, STRING, INTEGER, FLOAT, DATE, LOCAL TIME, ZONED TIME, LOCAL DATETIME, ZONED DATETIME, DURATION or POINT, but was of type MAP NOT NULL.} {message: 22N01: Expected the value Map{father_phone -> String("0989986367"), mother_card_id -> String("51182000328"), father_job -> String("Điện lạnh"), father_name -> String("Nguyễn Trung Hinh"), father_card_id -> String("51079007921"), mother_name -> String("Lê Thị Ánh Tú"), mother_phone -> String("0774432290"), mother_job -> String("Đồ hoạ")} to be of type BOOLEAN, STRING, INTEGER, FLOAT, DATE, LOCAL TIME, ZONED TIME, LOCAL DATETIME, ZONED DATETIME, DURATION or POINT, but was of type MAP NOT NULL.} {diagnostic_record: {'_classification': 'CLIENT_ERROR', 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}} {raw_classification: CLIENT_ERROR}
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 158, in add_student_profiles
-    await self.add_student_relationship(student_code, p)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 283, in add_student_relationship
-    self.student_contact_infos_repo.create(student_contact_infos_record)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 37, in create
-    return self.manager.execute_write(self._create, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_manager.py", line 25, in execute_write
-    return session.execute_write(callback, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 720, in execute_write
-    return self._run_transaction(
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 543, in _run_transaction
-    result = transaction_function(tx, *args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 56, in _create
-    record = tx.run(query, props=data).single()
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 620, in single
-    self._buffer(2)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 457, in _buffer
-    for record in self:
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 407, in __iter__
-    self._connection.fetch_message()
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 193, in inner
-    func(*args, **kwargs)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt.py", line 867, in fetch_message
-    res = self._process_message(tag, fields)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt6.py", line 548, in _process_message
-    response.on_failure(summary_metadata or {})
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 263, in on_failure
-    raise self._hydrate_error(metadata)
-neo4j.exceptions.CypherTypeError: {neo4j_code: Neo.ClientError.Statement.TypeError} {message: Property values can only be of primitive types or arrays thereof. Encountered: Map{father_phone -> String("0989986367"), mother_card_id -> String("51182000328"), father_job -> String("Điện lạnh"), father_name -> String("Nguyễn Trung Hinh"), father_card_id -> String("51079007921"), mother_name -> String("Lê Thị Ánh Tú"), mother_phone -> String("0774432290"), mother_job -> String("Đồ hoạ")}.} {gql_status: 22G03} {gql_status_description: error: data exception - invalid value type}
- 
-[2026-04-03 22:58:49]: neo4j.exceptions.GqlError: {gql_status: 22N01} {gql_status_description: error: data exception - invalid type. Expected the value Map{father_phone -> String("0961794401"), mother_card_id -> String("79197000961"), father_job -> String("Người vận chuyển"), father_name -> String("Chung Văn Hải"), father_card_id -> String("79090011296"), mother_name -> String("Huỳnh Lữ Minh Hiền"), mother_phone -> String("0775469649"), mother_job -> String("Nội trợ")} to be of type BOOLEAN, STRING, INTEGER, FLOAT, DATE, LOCAL TIME, ZONED TIME, LOCAL DATETIME, ZONED DATETIME, DURATION or POINT, but was of type MAP NOT NULL.} {message: 22N01: Expected the value Map{father_phone -> String("0961794401"), mother_card_id -> String("79197000961"), father_job -> String("Người vận chuyển"), father_name -> String("Chung Văn Hải"), father_card_id -> String("79090011296"), mother_name -> String("Huỳnh Lữ Minh Hiền"), mother_phone -> String("0775469649"), mother_job -> String("Nội trợ")} to be of type BOOLEAN, STRING, INTEGER, FLOAT, DATE, LOCAL TIME, ZONED TIME, LOCAL DATETIME, ZONED DATETIME, DURATION or POINT, but was of type MAP NOT NULL.} {diagnostic_record: {'_classification': 'CLIENT_ERROR', 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}} {raw_classification: CLIENT_ERROR}
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 158, in add_student_profiles
-    await self.add_student_relationship(student_code, p)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 283, in add_student_relationship
-    self.student_contact_infos_repo.create(student_contact_infos_record)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 37, in create
-    return self.manager.execute_write(self._create, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_manager.py", line 25, in execute_write
-    return session.execute_write(callback, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 720, in execute_write
-    return self._run_transaction(
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 543, in _run_transaction
-    result = transaction_function(tx, *args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 56, in _create
-    record = tx.run(query, props=data).single()
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 620, in single
-    self._buffer(2)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 457, in _buffer
-    for record in self:
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 407, in __iter__
-    self._connection.fetch_message()
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 193, in inner
-    func(*args, **kwargs)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt.py", line 867, in fetch_message
-    res = self._process_message(tag, fields)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt6.py", line 548, in _process_message
-    response.on_failure(summary_metadata or {})
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 263, in on_failure
-    raise self._hydrate_error(metadata)
-neo4j.exceptions.CypherTypeError: {neo4j_code: Neo.ClientError.Statement.TypeError} {message: Property values can only be of primitive types or arrays thereof. Encountered: Map{father_phone -> String("0961794401"), mother_card_id -> String("79197000961"), father_job -> String("Người vận chuyển"), father_name -> String("Chung Văn Hải"), father_card_id -> String("79090011296"), mother_name -> String("Huỳnh Lữ Minh Hiền"), mother_phone -> String("0775469649"), mother_job -> String("Nội trợ")}.} {gql_status: 22G03} {gql_status_description: error: data exception - invalid value type}
- 
-[2026-04-03 22:58:54]: neo4j.exceptions.GqlError: {gql_status: 22N01} {gql_status_description: error: data exception - invalid type. Expected the value Map{father_phone -> String("0907215519"), mother_card_id -> String("75182011060"), guardian_name -> String("Đặng Thị Ngọc Trâm"), father_job -> String("Công nhân"), father_name -> String("Bùi Hữu Huy"), father_card_id -> String("74079005271"), mother_name -> String("Đặng Thị Ngọc Trâm"), mother_phone -> String("0908995058"), guardian_card_id -> String("75182011060"), guardian_job -> String("Điều dưỡng"), guardian_phone -> String("0908995058"), mother_job -> String("Công nhân")} to be of type BOOLEAN, STRING, INTEGER, FLOAT, DATE, LOCAL TIME, ZONED TIME, LOCAL DATETIME, ZONED DATETIME, DURATION or POINT, but was of type MAP NOT NULL.} {message: 22N01: Expected the value Map{father_phone -> String("0907215519"), mother_card_id -> String("75182011060"), guardian_name -> String("Đặng Thị Ngọc Trâm"), father_job -> String("Công nhân"), father_name -> String("Bùi Hữu Huy"), father_card_id -> String("74079005271"), mother_name -> String("Đặng Thị Ngọc Trâm"), mother_phone -> String("0908995058"), guardian_card_id -> String("75182011060"), guardian_job -> String("Điều dưỡng"), guardian_phone -> String("0908995058"), mother_job -> String("Công nhân")} to be of type BOOLEAN, STRING, INTEGER, FLOAT, DATE, LOCAL TIME, ZONED TIME, LOCAL DATETIME, ZONED DATETIME, DURATION or POINT, but was of type MAP NOT NULL.} {diagnostic_record: {'_classification': 'CLIENT_ERROR', 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}} {raw_classification: CLIENT_ERROR}
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 158, in add_student_profiles
-    await self.add_student_relationship(student_code, p)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 283, in add_student_relationship
-    self.student_contact_infos_repo.create(student_contact_infos_record)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 37, in create
-    return self.manager.execute_write(self._create, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_manager.py", line 25, in execute_write
-    return session.execute_write(callback, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 720, in execute_write
-    return self._run_transaction(
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 543, in _run_transaction
-    result = transaction_function(tx, *args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 56, in _create
-    record = tx.run(query, props=data).single()
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 620, in single
-    self._buffer(2)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 457, in _buffer
-    for record in self:
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 407, in __iter__
-    self._connection.fetch_message()
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 193, in inner
-    func(*args, **kwargs)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt.py", line 867, in fetch_message
-    res = self._process_message(tag, fields)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt6.py", line 548, in _process_message
-    response.on_failure(summary_metadata or {})
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 263, in on_failure
-    raise self._hydrate_error(metadata)
-neo4j.exceptions.CypherTypeError: {neo4j_code: Neo.ClientError.Statement.TypeError} {message: Property values can only be of primitive types or arrays thereof. Encountered: Map{father_phone -> String("0907215519"), mother_card_id -> String("75182011060"), guardian_name -> String("Đặng Thị Ngọc Trâm"), father_job -> String("Công nhân"), father_name -> String("Bùi Hữu Huy"), father_card_id -> String("74079005271"), mother_name -> String("Đặng Thị Ngọc Trâm"), mother_phone -> String("0908995058"), guardian_card_id -> String("75182011060"), guardian_job -> String("Điều dưỡng"), guardian_phone -> String("0908995058"), mother_job -> String("Công nhân")}.} {gql_status: 22G03} {gql_status_description: error: data exception - invalid value type}
- 
-[2026-04-03 22:58:59]: neo4j.exceptions.GqlError: {gql_status: 22N01} {gql_status_description: error: data exception - invalid type. Expected the value Map{father_phone -> String("0907215519"), mother_card_id -> String("75182011060"), guardian_name -> String("Đặng Thị Ngọc Trâm"), father_job -> String("Công nhân"), father_name -> String("Bùi Hữu Huy"), father_card_id -> String("74079005271"), mother_name -> String("Đặng Thị Ngọc Trâm"), mother_phone -> String("0908995058"), guardian_card_id -> String("75182011060"), guardian_job -> String("Điều dưỡng"), guardian_phone -> String("0908995058"), mother_job -> String("Công nhân")} to be of type BOOLEAN, STRING, INTEGER, FLOAT, DATE, LOCAL TIME, ZONED TIME, LOCAL DATETIME, ZONED DATETIME, DURATION or POINT, but was of type MAP NOT NULL.} {message: 22N01: Expected the value Map{father_phone -> String("0907215519"), mother_card_id -> String("75182011060"), guardian_name -> String("Đặng Thị Ngọc Trâm"), father_job -> String("Công nhân"), father_name -> String("Bùi Hữu Huy"), father_card_id -> String("74079005271"), mother_name -> String("Đặng Thị Ngọc Trâm"), mother_phone -> String("0908995058"), guardian_card_id -> String("75182011060"), guardian_job -> String("Điều dưỡng"), guardian_phone -> String("0908995058"), mother_job -> String("Công nhân")} to be of type BOOLEAN, STRING, INTEGER, FLOAT, DATE, LOCAL TIME, ZONED TIME, LOCAL DATETIME, ZONED DATETIME, DURATION or POINT, but was of type MAP NOT NULL.} {diagnostic_record: {'_classification': 'CLIENT_ERROR', 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}} {raw_classification: CLIENT_ERROR}
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 158, in add_student_profiles
-    await self.add_student_relationship(student_code, p)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 283, in add_student_relationship
-    self.student_contact_infos_repo.create(student_contact_infos_record)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 37, in create
-    return self.manager.execute_write(self._create, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_manager.py", line 25, in execute_write
-    return session.execute_write(callback, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 720, in execute_write
-    return self._run_transaction(
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 543, in _run_transaction
-    result = transaction_function(tx, *args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 56, in _create
-    record = tx.run(query, props=data).single()
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 620, in single
-    self._buffer(2)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 457, in _buffer
-    for record in self:
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 407, in __iter__
-    self._connection.fetch_message()
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 193, in inner
-    func(*args, **kwargs)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt.py", line 867, in fetch_message
-    res = self._process_message(tag, fields)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt6.py", line 548, in _process_message
-    response.on_failure(summary_metadata or {})
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 263, in on_failure
-    raise self._hydrate_error(metadata)
-neo4j.exceptions.CypherTypeError: {neo4j_code: Neo.ClientError.Statement.TypeError} {message: Property values can only be of primitive types or arrays thereof. Encountered: Map{father_phone -> String("0907215519"), mother_card_id -> String("75182011060"), guardian_name -> String("Đặng Thị Ngọc Trâm"), father_job -> String("Công nhân"), father_name -> String("Bùi Hữu Huy"), father_card_id -> String("74079005271"), mother_name -> String("Đặng Thị Ngọc Trâm"), mother_phone -> String("0908995058"), guardian_card_id -> String("75182011060"), guardian_job -> String("Điều dưỡng"), guardian_phone -> String("0908995058"), mother_job -> String("Công nhân")}.} {gql_status: 22G03} {gql_status_description: error: data exception - invalid value type}
- 
-[2026-04-03 22:59:04]: neo4j.exceptions.GqlError: {gql_status: 22N01} {gql_status_description: error: data exception - invalid type. Expected the value Map{father_phone -> String("0933358768"), mother_card_id -> String("82179001706"), father_job -> String("Tự do"), father_name -> String("Hồ Quốc Dũng"), father_card_id -> String("79074003599"), mother_name -> String("Nguyễn Hữu Duyên"), mother_phone -> String("0933773110"), mother_job -> String("Buôn bán")} to be of type BOOLEAN, STRING, INTEGER, FLOAT, DATE, LOCAL TIME, ZONED TIME, LOCAL DATETIME, ZONED DATETIME, DURATION or POINT, but was of type MAP NOT NULL.} {message: 22N01: Expected the value Map{father_phone -> String("0933358768"), mother_card_id -> String("82179001706"), father_job -> String("Tự do"), father_name -> String("Hồ Quốc Dũng"), father_card_id -> String("79074003599"), mother_name -> String("Nguyễn Hữu Duyên"), mother_phone -> String("0933773110"), mother_job -> String("Buôn bán")} to be of type BOOLEAN, STRING, INTEGER, FLOAT, DATE, LOCAL TIME, ZONED TIME, LOCAL DATETIME, ZONED DATETIME, DURATION or POINT, but was of type MAP NOT NULL.} {diagnostic_record: {'_classification': 'CLIENT_ERROR', 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}} {raw_classification: CLIENT_ERROR}
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 158, in add_student_profiles
-    await self.add_student_relationship(student_code, p)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 283, in add_student_relationship
-    self.student_contact_infos_repo.create(student_contact_infos_record)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 37, in create
-    return self.manager.execute_write(self._create, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_manager.py", line 25, in execute_write
-    return session.execute_write(callback, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 720, in execute_write
-    return self._run_transaction(
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 543, in _run_transaction
-    result = transaction_function(tx, *args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 56, in _create
-    record = tx.run(query, props=data).single()
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 620, in single
-    self._buffer(2)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 457, in _buffer
-    for record in self:
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 407, in __iter__
-    self._connection.fetch_message()
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 193, in inner
-    func(*args, **kwargs)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt.py", line 867, in fetch_message
-    res = self._process_message(tag, fields)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt6.py", line 548, in _process_message
-    response.on_failure(summary_metadata or {})
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 263, in on_failure
-    raise self._hydrate_error(metadata)
-neo4j.exceptions.CypherTypeError: {neo4j_code: Neo.ClientError.Statement.TypeError} {message: Property values can only be of primitive types or arrays thereof. Encountered: Map{father_phone -> String("0933358768"), mother_card_id -> String("82179001706"), father_job -> String("Tự do"), father_name -> String("Hồ Quốc Dũng"), father_card_id -> String("79074003599"), mother_name -> String("Nguyễn Hữu Duyên"), mother_phone -> String("0933773110"), mother_job -> String("Buôn bán")}.} {gql_status: 22G03} {gql_status_description: error: data exception - invalid value type}
- 
-[2026-04-03 23:05:47]: neo4j.exceptions.GqlError: {gql_status: 22N01} {gql_status_description: error: data exception - invalid type. Expected the value Map{subject_name -> String("Tiếng Việt"), score_point -> Double(0.000000e+00), comment -> NO_VALUE} to be of type BOOLEAN, STRING, INTEGER, FLOAT, DATE, LOCAL TIME, ZONED TIME, LOCAL DATETIME, ZONED DATETIME, DURATION or POINT, but was of type MAP.} {message: 22N01: Expected the value Map{subject_name -> String("Tiếng Việt"), score_point -> Double(0.000000e+00), comment -> NO_VALUE} to be of type BOOLEAN, STRING, INTEGER, FLOAT, DATE, LOCAL TIME, ZONED TIME, LOCAL DATETIME, ZONED DATETIME, DURATION or POINT, but was of type MAP.} {diagnostic_record: {'_classification': 'CLIENT_ERROR', 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}} {raw_classification: CLIENT_ERROR}
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 158, in add_student_profiles
-    await self.add_student_relationship(student_code, p)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 291, in add_student_relationship
-    self.student_subject_assessmets_repo.create(student_subject_assessmets_record)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 37, in create
-    return self.manager.execute_write(self._create, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_manager.py", line 25, in execute_write
-    return session.execute_write(callback, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 720, in execute_write
-    return self._run_transaction(
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 543, in _run_transaction
-    result = transaction_function(tx, *args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 56, in _create
-    record = tx.run(query, props=data).single()
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 620, in single
-    self._buffer(2)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 457, in _buffer
-    for record in self:
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 407, in __iter__
-    self._connection.fetch_message()
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 193, in inner
-    func(*args, **kwargs)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt.py", line 867, in fetch_message
-    res = self._process_message(tag, fields)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt6.py", line 548, in _process_message
-    response.on_failure(summary_metadata or {})
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 263, in on_failure
-    raise self._hydrate_error(metadata)
-neo4j.exceptions.CypherTypeError: {neo4j_code: Neo.ClientError.Statement.TypeError} {message: Property values can only be of primitive types or arrays thereof. Encountered: Map{subject_name -> String("Tiếng Việt"), score_point -> Double(0.000000e+00), comment -> NO_VALUE}.} {gql_status: 22G03} {gql_status_description: error: data exception - invalid value type}
- 
-[2026-04-03 23:05:52]: neo4j.exceptions.GqlError: {gql_status: 22N01} {gql_status_description: error: data exception - invalid type. Expected the value Map{subject_name -> String("Tiếng Việt"), score_point -> Double(0.000000e+00), comment -> NO_VALUE} to be of type BOOLEAN, STRING, INTEGER, FLOAT, DATE, LOCAL TIME, ZONED TIME, LOCAL DATETIME, ZONED DATETIME, DURATION or POINT, but was of type MAP.} {message: 22N01: Expected the value Map{subject_name -> String("Tiếng Việt"), score_point -> Double(0.000000e+00), comment -> NO_VALUE} to be of type BOOLEAN, STRING, INTEGER, FLOAT, DATE, LOCAL TIME, ZONED TIME, LOCAL DATETIME, ZONED DATETIME, DURATION or POINT, but was of type MAP.} {diagnostic_record: {'_classification': 'CLIENT_ERROR', 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}} {raw_classification: CLIENT_ERROR}
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 158, in add_student_profiles
-    await self.add_student_relationship(student_code, p)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 291, in add_student_relationship
-    self.student_subject_assessmets_repo.create(student_subject_assessmets_record)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 37, in create
-    return self.manager.execute_write(self._create, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_manager.py", line 25, in execute_write
-    return session.execute_write(callback, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 720, in execute_write
-    return self._run_transaction(
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 543, in _run_transaction
-    result = transaction_function(tx, *args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 56, in _create
-    record = tx.run(query, props=data).single()
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 620, in single
-    self._buffer(2)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 457, in _buffer
-    for record in self:
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 407, in __iter__
-    self._connection.fetch_message()
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 193, in inner
-    func(*args, **kwargs)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt.py", line 867, in fetch_message
-    res = self._process_message(tag, fields)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt6.py", line 548, in _process_message
-    response.on_failure(summary_metadata or {})
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 263, in on_failure
-    raise self._hydrate_error(metadata)
-neo4j.exceptions.CypherTypeError: {neo4j_code: Neo.ClientError.Statement.TypeError} {message: Property values can only be of primitive types or arrays thereof. Encountered: Map{subject_name -> String("Tiếng Việt"), score_point -> Double(0.000000e+00), comment -> NO_VALUE}.} {gql_status: 22G03} {gql_status_description: error: data exception - invalid value type}
- 
-[2026-04-03 23:05:58]: neo4j.exceptions.GqlError: {gql_status: 22N01} {gql_status_description: error: data exception - invalid type. Expected the value Map{subject_name -> String("Tiếng Việt"), score_point -> Double(0.000000e+00), comment -> NO_VALUE} to be of type BOOLEAN, STRING, INTEGER, FLOAT, DATE, LOCAL TIME, ZONED TIME, LOCAL DATETIME, ZONED DATETIME, DURATION or POINT, but was of type MAP.} {message: 22N01: Expected the value Map{subject_name -> String("Tiếng Việt"), score_point -> Double(0.000000e+00), comment -> NO_VALUE} to be of type BOOLEAN, STRING, INTEGER, FLOAT, DATE, LOCAL TIME, ZONED TIME, LOCAL DATETIME, ZONED DATETIME, DURATION or POINT, but was of type MAP.} {diagnostic_record: {'_classification': 'CLIENT_ERROR', 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}} {raw_classification: CLIENT_ERROR}
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 158, in add_student_profiles
-    await self.add_student_relationship(student_code, p)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 291, in add_student_relationship
-    self.student_subject_assessmets_repo.create(student_subject_assessmets_record)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 37, in create
-    return self.manager.execute_write(self._create, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_manager.py", line 25, in execute_write
-    return session.execute_write(callback, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 720, in execute_write
-    return self._run_transaction(
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 543, in _run_transaction
-    result = transaction_function(tx, *args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 56, in _create
-    record = tx.run(query, props=data).single()
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 620, in single
-    self._buffer(2)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 457, in _buffer
-    for record in self:
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 407, in __iter__
-    self._connection.fetch_message()
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 193, in inner
-    func(*args, **kwargs)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt.py", line 867, in fetch_message
-    res = self._process_message(tag, fields)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt6.py", line 548, in _process_message
-    response.on_failure(summary_metadata or {})
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 263, in on_failure
-    raise self._hydrate_error(metadata)
-neo4j.exceptions.CypherTypeError: {neo4j_code: Neo.ClientError.Statement.TypeError} {message: Property values can only be of primitive types or arrays thereof. Encountered: Map{subject_name -> String("Tiếng Việt"), score_point -> Double(0.000000e+00), comment -> NO_VALUE}.} {gql_status: 22G03} {gql_status_description: error: data exception - invalid value type}
- 
-[2026-04-03 23:06:03]: neo4j.exceptions.GqlError: {gql_status: 22N01} {gql_status_description: error: data exception - invalid type. Expected the value Map{subject_name -> String("Tiếng Việt"), score_point -> Double(0.000000e+00), comment -> NO_VALUE} to be of type BOOLEAN, STRING, INTEGER, FLOAT, DATE, LOCAL TIME, ZONED TIME, LOCAL DATETIME, ZONED DATETIME, DURATION or POINT, but was of type MAP.} {message: 22N01: Expected the value Map{subject_name -> String("Tiếng Việt"), score_point -> Double(0.000000e+00), comment -> NO_VALUE} to be of type BOOLEAN, STRING, INTEGER, FLOAT, DATE, LOCAL TIME, ZONED TIME, LOCAL DATETIME, ZONED DATETIME, DURATION or POINT, but was of type MAP.} {diagnostic_record: {'_classification': 'CLIENT_ERROR', 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}} {raw_classification: CLIENT_ERROR}
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 158, in add_student_profiles
-    await self.add_student_relationship(student_code, p)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 291, in add_student_relationship
-    self.student_subject_assessmets_repo.create(student_subject_assessmets_record)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 37, in create
-    return self.manager.execute_write(self._create, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_manager.py", line 25, in execute_write
-    return session.execute_write(callback, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 720, in execute_write
-    return self._run_transaction(
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 543, in _run_transaction
-    result = transaction_function(tx, *args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 56, in _create
-    record = tx.run(query, props=data).single()
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 620, in single
-    self._buffer(2)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 457, in _buffer
-    for record in self:
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 407, in __iter__
-    self._connection.fetch_message()
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 193, in inner
-    func(*args, **kwargs)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt.py", line 867, in fetch_message
-    res = self._process_message(tag, fields)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt6.py", line 548, in _process_message
-    response.on_failure(summary_metadata or {})
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 263, in on_failure
-    raise self._hydrate_error(metadata)
-neo4j.exceptions.CypherTypeError: {neo4j_code: Neo.ClientError.Statement.TypeError} {message: Property values can only be of primitive types or arrays thereof. Encountered: Map{subject_name -> String("Tiếng Việt"), score_point -> Double(0.000000e+00), comment -> NO_VALUE}.} {gql_status: 22G03} {gql_status_description: error: data exception - invalid value type}
- 
-[2026-04-03 23:06:08]: neo4j.exceptions.GqlError: {gql_status: 22N01} {gql_status_description: error: data exception - invalid type. Expected the value Map{subject_name -> String("Tiếng Việt"), score_point -> Double(0.000000e+00), comment -> NO_VALUE} to be of type BOOLEAN, STRING, INTEGER, FLOAT, DATE, LOCAL TIME, ZONED TIME, LOCAL DATETIME, ZONED DATETIME, DURATION or POINT, but was of type MAP.} {message: 22N01: Expected the value Map{subject_name -> String("Tiếng Việt"), score_point -> Double(0.000000e+00), comment -> NO_VALUE} to be of type BOOLEAN, STRING, INTEGER, FLOAT, DATE, LOCAL TIME, ZONED TIME, LOCAL DATETIME, ZONED DATETIME, DURATION or POINT, but was of type MAP.} {diagnostic_record: {'_classification': 'CLIENT_ERROR', 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}} {raw_classification: CLIENT_ERROR}
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 158, in add_student_profiles
-    await self.add_student_relationship(student_code, p)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 291, in add_student_relationship
-    self.student_subject_assessmets_repo.create(student_subject_assessmets_record)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 37, in create
-    return self.manager.execute_write(self._create, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_manager.py", line 25, in execute_write
-    return session.execute_write(callback, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 720, in execute_write
-    return self._run_transaction(
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 543, in _run_transaction
-    result = transaction_function(tx, *args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 56, in _create
-    record = tx.run(query, props=data).single()
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 620, in single
-    self._buffer(2)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 457, in _buffer
-    for record in self:
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 407, in __iter__
-    self._connection.fetch_message()
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 193, in inner
-    func(*args, **kwargs)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt.py", line 867, in fetch_message
-    res = self._process_message(tag, fields)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt6.py", line 548, in _process_message
-    response.on_failure(summary_metadata or {})
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 263, in on_failure
-    raise self._hydrate_error(metadata)
-neo4j.exceptions.CypherTypeError: {neo4j_code: Neo.ClientError.Statement.TypeError} {message: Property values can only be of primitive types or arrays thereof. Encountered: Map{subject_name -> String("Tiếng Việt"), score_point -> Double(0.000000e+00), comment -> NO_VALUE}.} {gql_status: 22G03} {gql_status_description: error: data exception - invalid value type}
- 
-[2026-04-03 23:06:13]: neo4j.exceptions.GqlError: {gql_status: 22N01} {gql_status_description: error: data exception - invalid type. Expected the value Map{subject_name -> String("Tiếng Việt"), score_point -> Double(0.000000e+00), comment -> NO_VALUE} to be of type BOOLEAN, STRING, INTEGER, FLOAT, DATE, LOCAL TIME, ZONED TIME, LOCAL DATETIME, ZONED DATETIME, DURATION or POINT, but was of type MAP.} {message: 22N01: Expected the value Map{subject_name -> String("Tiếng Việt"), score_point -> Double(0.000000e+00), comment -> NO_VALUE} to be of type BOOLEAN, STRING, INTEGER, FLOAT, DATE, LOCAL TIME, ZONED TIME, LOCAL DATETIME, ZONED DATETIME, DURATION or POINT, but was of type MAP.} {diagnostic_record: {'_classification': 'CLIENT_ERROR', 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}} {raw_classification: CLIENT_ERROR}
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 158, in add_student_profiles
-    await self.add_student_relationship(student_code, p)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\application\core.py", line 291, in add_student_relationship
-    self.student_subject_assessmets_repo.create(student_subject_assessmets_record)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 37, in create
-    return self.manager.execute_write(self._create, data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_manager.py", line 25, in execute_write
-    return session.execute_write(callback, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 720, in execute_write
-    return self._run_transaction(
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\session.py", line 543, in _run_transaction
-    result = transaction_function(tx, *args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\src\adapter\graph\neo4j_repository.py", line 56, in _create
-    record = tx.run(query, props=data).single()
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 620, in single
-    self._buffer(2)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 457, in _buffer
-    for record in self:
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\work\result.py", line 407, in __iter__
-    self._connection.fetch_message()
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 193, in inner
-    func(*args, **kwargs)
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt.py", line 867, in fetch_message
-    res = self._process_message(tag, fields)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_bolt6.py", line 548, in _process_message
-    response.on_failure(summary_metadata or {})
-  File "D:\Work\Iu\luanvan-hocbaso-metadata\.venv\Lib\site-packages\neo4j\_sync\io\_common.py", line 263, in on_failure
-    raise self._hydrate_error(metadata)
-neo4j.exceptions.CypherTypeError: {neo4j_code: Neo.ClientError.Statement.TypeError} {message: Property values can only be of primitive types or arrays thereof. Encountered: Map{subject_name -> String("Tiếng Việt"), score_point -> Double(0.000000e+00), comment -> NO_VALUE}.} {gql_status: 22G03} {gql_status_description: error: data exception - invalid value type}
- 
+[2026-04-04 23:50:31]: Module Student said: card_id=79218027222 already exists 
+[2026-04-04 23:50:32]: Module ContactInfos said: 20262027.01.Mo1.001 no fields were changed 
+[2026-04-04 23:50:34]: Module Student said: card_id=79318026268 already exists 
+[2026-04-04 23:50:34]: Module ContactInfos said: 20262027.01.Mo1.002 no fields were changed 
+[2026-04-04 23:50:36]: Module Student said: card_id=79318026098 already exists 
+[2026-04-04 23:50:36]: Module ContactInfos said: 20262027.01.Mo1.003 no fields were changed 
+[2026-04-04 23:50:38]: Module Student said: card_id=79218041580 already exists 
+[2026-04-04 23:50:38]: Module ContactInfos said: 20262027.01.Mo2.001 no fields were changed 
+[2026-04-04 23:50:40]: Module Student said: card_id=79218041581 already exists 
+[2026-04-04 23:50:40]: Module ContactInfos said: 20262027.01.Mo2.002 no fields were changed 
+[2026-04-04 23:50:42]: Module Student said: card_id=79218045516 already exists 
+[2026-04-04 23:50:42]: Module ContactInfos said: 20262027.01.Mo2.003 no fields were changed 

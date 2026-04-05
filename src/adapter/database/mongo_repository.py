@@ -1,10 +1,13 @@
 from typing import Generic, Optional, Type, TypeVar
 from fastapi import HTTPException
 
+from src.application.utils import Utils
+
 from src.interface.data import Repository
 from src.model.mongo.contact_infos import ContactInfos
 from src.model.mongo.subject_assessments import SubjectAssessments
 T = TypeVar("T")
+utils = Utils()
 
 class MongoRepositoryBase(Repository[T], Generic[T]):
     collection_name: str
@@ -30,7 +33,9 @@ class MongoRepositoryBase(Repository[T], Generic[T]):
         entity = self.model_cls(**create_info)
         exist = await self.get(create_info.get(self.field_code))
         if exist:
-            return None
+            utils._log(f"Module {self.model_cls.__name__}" \
+                       f" said: {create_info.get(self.field_code)}")
+            return ("Exist", exist)
         result = self.col.insert_one(entity.to_dict())
         doc = self.col.find_one({"_id": result.inserted_id})
         return self.model_cls.from_dict(doc)
@@ -55,12 +60,10 @@ class MongoRepositoryBase(Repository[T], Generic[T]):
             {"$set": update_data}
         )
         if update_result.matched_count == 0:
-            return None
+            utils._log(f"Module {self.model_cls.__name__} said: {code} can not update")
+            raise
         if update_result.modified_count == 0:
-            raise HTTPException(
-                status_code=400,
-                detail="No fields were changed"
-            )
+            return utils._log(f"Module {self.model_cls.__name__} said: {code} no fields were changed")
         updated_doc = self.col.find_one({self.field_code: code})
         return self.model_cls.from_dict(updated_doc)
 

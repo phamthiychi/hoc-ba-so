@@ -99,7 +99,7 @@ class PostgresRepository(Repository[T], Generic[T]):
             if hasattr(entity, field):
                 setattr(entity, field, value)
         if entity.to_dict() == entity_clone:
-             return utils._log(f"Module {self.model_cls.__name__} said: {update_info.get('code')} no fields were changed")
+            return utils._log(f"Module {self.model_cls.__name__} said: {update_info.get('code')} no fields were changed")
         try:
             self.session.commit()
             self.session.refresh(entity)

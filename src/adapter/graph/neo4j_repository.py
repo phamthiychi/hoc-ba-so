@@ -327,9 +327,10 @@ class Neo4jStudentRepository(BaseNeo4jRepository):
 class Neo4jStudentContactInfosRepository(BaseNeo4jRepository):
     label = "StudentContactInfos"
     id_field = "code"
-    allowed_fields = {"code", "data"}
+    allowed_fields = {"code", "url"}
 
 class Neo4jStudentSubjectAssessmentsRepository(BaseNeo4jRepository):
     label = "StudentSubjectAssessments"
     id_field = "code"
-    allowed_fields = {"code", "data"}
+    allowed_fields = {"code", "url"}
+

@@ -1,8 +1,7 @@
-import zipfile
 import traceback
 
-import pdfplumber
-from pathlib import Path
+from typing import BinaryIO
+
 from src.application.utils import Utils
 from src.common.common_setting import settings as common_settings
 from src.common.postgres_model_setting import settings as postgres_settings
@@ -60,24 +59,24 @@ class SystemCore:
         self.learning_result_repo = PostgresLearningResultRepository(session)
         self.teaching_assignment_repo = PostgresTeachingAssignmentRepository(session)
         # Mongo database
-        self.contact_infos_repo = MongoContactInfosRepository(db)
-        self.subject_assessments_repo = MongoSubjectAssessmentsRepository(db)
+        self.student_contact_infos_repo = MongoContactInfosRepository(db)
+        self.student_subject_assessments_repo = MongoSubjectAssessmentsRepository(db)
         # Neo4j database
-        self.thing_repo = Neo4jThingRepository(manager)
-        self.student_Q_repo = Neo4jStudentQualityRepository(manager)
-        self.student_GA_repo = Neo4jStudentGeneralAbilitiesRepository(manager)
-        self.student_SA_repo = Neo4jStudentSpecialAbilitiesRepository(manager)
-        self.student_graph_repo = Neo4jStudentRepository(manager)
-        self.student_contact_infos_repo = Neo4jStudentContactInfosRepository(manager)
-        self.student_subject_assessmets_repo = Neo4jStudentSubjectAssessmentsRepository(manager)
+        self.graph_thing_repo = Neo4jThingRepository(manager)
+        self.graph_student_Q_repo = Neo4jStudentQualityRepository(manager)
+        self.graph_student_GA_repo = Neo4jStudentGeneralAbilitiesRepository(manager)
+        self.graph_student_SA_repo = Neo4jStudentSpecialAbilitiesRepository(manager)
+        self.graph_student_repo = Neo4jStudentRepository(manager)
+        self.graph_student_contact_infos_repo = Neo4jStudentContactInfosRepository(manager)
+        self.graph_student_subject_assessmets_repo = Neo4jStudentSubjectAssessmentsRepository(manager)
         # Other
         self.utils = Utils()
 
         # Init default
         self._init_graph()
 
-    def _init_graph(self):
-        self.thing_repo.create_relationship(
+    def _init_graph(self) -> None:
+        self.graph_thing_repo.create_relationship(
             from_value="thing",
             to_label="StudentQuality",
             to_id_field="code",
@@ -85,7 +84,7 @@ class SystemCore:
             relation_type="HAS_ASSESSMENT",
             relation_props=None
         )
-        self.thing_repo.create_relationship(
+        self.graph_thing_repo.create_relationship(
             from_value="thing",
             to_label="StudentGeneralAbilities",
             to_id_field="code",
@@ -93,7 +92,7 @@ class SystemCore:
             relation_type="HAS_ASSESSMENT",
             relation_props=None
         )
-        self.thing_repo.create_relationship(
+        self.graph_thing_repo.create_relationship(
             from_value="thing",
             to_label="StudentSpecialAbilities",
             to_id_field="code",
@@ -102,25 +101,12 @@ class SystemCore:
             relation_props=None
         )
 
-    async def add_student(self, info: StudentRecords) -> dict:
+    async def add_student(self, info: StudentRecords) -> list:
         if info.file_profiles is not None:
-            await self.add_student_profiles(info.academic_year, info.file_profiles.file)
-        # if info.file_reports is not None:
-        #     await self.add_student_reports(info.file_reports.file)
+            return await self.add_student_profiles(info.academic_year, info.file_profiles.file)
 
-    async def add_student_reports(self, file,
-                                  output_folder=common_settings.SRC_ROOT / "adapter/api/uploads/student_reports"):
-        with zipfile.ZipFile(file) as zip_ref:
-            zip_ref.extractall(output_folder)
-        for pdf_file in Path(output_folder).glob("*.pdf"):
-            with pdfplumber.open(pdf_file) as pdf:
-                text = ""
-                for page in pdf.pages:
-                    text += page.extract_text() or ""
-            print(text)
-            return None
-
-    async def add_student_profiles(self, academic_year, file):
+    async def add_student_profiles(self, academic_year: str, file: BinaryIO) -> list:
+        error_students = []
         profiles = self.utils.extract_info_from_student_profile(file)
         for p in profiles:
             try:
@@ -158,10 +144,17 @@ class SystemCore:
                 await self.add_student_relationship(student_code, p)
             except Exception as e:
                 self.utils._log(traceback.format_exc())
+                error_students.append(f'Name: {p.get("name")}, card_id: {p.get("card_id")}')
                 continue
+        return error_students
 
     async def find_student(self, code: str) -> dict:
-        return await self.student_repo.get(code)
+        student_info = await self.student_repo.get(code)
+        if student_info is None:
+            return None
+        student_info = student_info.to_dict()
+        student_info["contact_infors"] = (await self.student_contact_infos_repo.get(code)).to_dict()
+        return student_info
 
     async def update_student(self, info: StudentUpdate) -> dict:
         return await self.student_repo.update(info.dict())
@@ -233,12 +226,12 @@ class SystemCore:
         return student_entity["code"]
 
     async def add_contact_info_student_mongo(self, info: ContactInfosCreateAndUpate) -> None:
-        if await self.contact_infos_repo.get(info.student_code):
-            await self.contact_infos_repo.update(info.dict())
+        if await self.student_contact_infos_repo.get(info.student_code):
+            await self.student_contact_infos_repo.update(info.dict())
             return
-        await self.contact_infos_repo.add(info.dict())
+        await self.student_contact_infos_repo.add(info.dict())
 
-    async def add_subject_assessments_student_mongo(self, student_code):
+    async def add_subject_assessments_student_mongo(self, student_code: str) -> None:
         class_name = postgres_settings.NUM2WORD[int(student_code.split(".")[1])]
         subject_with_eval = postgres_settings.INIT_SUBJECT_EVAL[class_name]
         data = []
@@ -251,19 +244,15 @@ class SystemCore:
                 data.append(SubjectAssessmentsLevel(
                     subject_name=subject_name
                 ).to_dict())
-        if await self.subject_assessments_repo.get(student_code):
-            await self.subject_assessments_repo.update(SubjectAssessments(
-                student_code=student_code,
-                data=data
-            ).to_dict())
-            return
-        await self.subject_assessments_repo.add(SubjectAssessments(
+        if await self.student_subject_assessments_repo.get(student_code):
+            return None
+        await self.student_subject_assessments_repo.add(SubjectAssessments(
             student_code=student_code,
             data=data
         ).to_dict())
 
-    async def add_student_relationship(self, student_code, profile):
-        self.student_graph_repo.create({
+    async def add_student_relationship(self, student_code: str, profile: dict):
+        self.graph_student_repo.create({
             "code": student_code,
             "name": profile.get("name"),
             "card_id": profile.get("card_id"),
@@ -271,23 +260,21 @@ class SystemCore:
         })
         student_contact_infos_record = {
                 "code": student_code,
-                "data": f"{self.utils.flatten_props((await self.contact_infos_repo.get(student_code)).data.to_dict())}"
+                "url": f"{common_settings.API_URL}/student_contact_infos/{student_code}"
             }
-        if self.student_contact_infos_repo.get_by_id(student_code):
-            self.student_contact_infos_repo.update_by_id(student_code, student_contact_infos_record)
+        if self.graph_student_contact_infos_repo.get_by_id(student_code):
+            self.graph_student_contact_infos_repo.update_by_id(student_code, student_contact_infos_record)
         else:
-            self.student_contact_infos_repo.create(student_contact_infos_record)
-        datas = (await self.subject_assessments_repo.get(student_code)).data
-        new_data = [self.utils.flatten_props(data) for data in datas]
+            self.graph_student_contact_infos_repo.create(student_contact_infos_record)
         student_subject_assessmets_record = {
             "code": student_code,
-            "data": f"{new_data}"
+            "url": f"{common_settings.API_URL}/student_subject_assessmets/{student_code}"
         }
-        if self.student_subject_assessmets_repo.get_by_id(student_code):
-            self.student_subject_assessmets_repo.update_by_id(student_code, student_subject_assessmets_record)
+        if self.graph_student_subject_assessmets_repo.get_by_id(student_code):
+            self.graph_student_subject_assessmets_repo.update_by_id(student_code, student_subject_assessmets_record)
         else:
-            self.student_subject_assessmets_repo.create(student_subject_assessmets_record)
-        self.student_graph_repo.create_relationship(
+            self.graph_student_subject_assessmets_repo.create(student_subject_assessmets_record)
+        self.graph_student_repo.create_relationship(
             from_value=student_code,
             to_label="StudentContactInfos",
             to_id_field="code",
@@ -295,7 +282,7 @@ class SystemCore:
             relation_type="HAVE_CONTACT",
             relation_props=None
         )
-        self.student_graph_repo.create_relationship(
+        self.graph_student_repo.create_relationship(
             from_value=student_code,
             to_label="StudentSubjectAssessments",
             to_id_field="code",
@@ -303,3 +290,10 @@ class SystemCore:
             relation_type="HAVE_ASSESSMENT",
             relation_props=None
         )
+
+    async def find_student_contact_infos(self, student_code: str) -> dict:
+        return (await self.student_contact_infos_repo.get(student_code)).to_dict()
+
+    async def find_student_subject_assessmets(self, student_code: str) -> dict:
+        return (await self.student_subject_assessments_repo.get(student_code)).to_dict()
+

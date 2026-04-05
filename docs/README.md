@@ -13,13 +13,16 @@
 
 # Run
 - uvicorn src.adapter.api.main:app --host 0.0.0.0 --port 8000 --reload
-- uvicorn src.adapter.api.main_postgres:app --host 0.0.0.0 --port 8001 --reload
 
-- `http://127.0.0.1:8000/docs` host for Mongo
-- `http://127.0.0.1:8001/docs` host for Postgres
+- `http://127.0.0.1:8000/docs` to using API
 
 # Test with postman
 - Dowload postman at: `https://www.postman.com/downloads/` and sign in with Google account.
 - Go to `Workspace > My workspace > Collections`
 - Import file from `\common\postman\hocbaso.postman_collection` in repo project.
 - Have fun !!!!
+
+# Kill fastapi process:
+- netstat -ano | findstr :8000
+# -> (TCP    0.0.0.0:8000           0.0.0.0:0              LISTENING       17232 (&PID))
+- taskkill /PID  &PID /F
