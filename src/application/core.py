@@ -1,8 +1,10 @@
 import traceback
 
-from typing import BinaryIO
+from typing import BinaryIO, Optional
 
 from src.application.utils import Utils
+from src.adapter.graph.knowledge_base import KnowledgeBase
+from src.application.embedding import EmbeddingSentence
 from src.common.common_setting import settings as common_settings
 from src.common.postgres_model_setting import settings as postgres_settings
 from src.adapter.api.template.student import StudentCreate, StudentUpdate
@@ -32,6 +34,7 @@ from src.adapter.database.mongo_repository import (
 from src.adapter.graph.neo4j_repository import (
     Neo4jStudentSpecialAbilitiesRepository,
     Neo4jStudentQualityRepository,
+    Neo4jStudentSubQualityRepository,
     Neo4jThingRepository,
     Neo4jStudentGeneralAbilitiesRepository,
     Neo4jStudentRepository,
@@ -64,11 +67,20 @@ class SystemCore:
         # Neo4j database
         self.graph_thing_repo = Neo4jThingRepository(manager)
         self.graph_student_Q_repo = Neo4jStudentQualityRepository(manager)
+        self.graph_student_sQ_repo = Neo4jStudentSubQualityRepository(manager)
         self.graph_student_GA_repo = Neo4jStudentGeneralAbilitiesRepository(manager)
         self.graph_student_SA_repo = Neo4jStudentSpecialAbilitiesRepository(manager)
         self.graph_student_repo = Neo4jStudentRepository(manager)
         self.graph_student_contact_infos_repo = Neo4jStudentContactInfosRepository(manager)
         self.graph_student_subject_assessmets_repo = Neo4jStudentSubjectAssessmentsRepository(manager)
+        # Embedding
+        student_assessment_kb = KnowledgeBase().student_assessments.define
+        self.embedding_assessment = EmbeddingSentence()
+        self.emb_kb = {
+            "Phẩm chất chủ yếu": self.embedding_assessment.emb_knowledge(student_assessment_kb["Phẩm chất chủ yếu"]),
+            "Năng lực chung": self.embedding_assessment.emb_knowledge(student_assessment_kb["Năng lực chung"]),
+            "Năng lực đặc thù": self.embedding_assessment.emb_knowledge(student_assessment_kb["Năng lực đặc thù"])
+        }
         # Other
         self.utils = Utils()
         self.manage = manager
@@ -77,7 +89,7 @@ class SystemCore:
         self._init_graph()
 
     ## Export funcs
-    async def find_students(self) -> list:
+    async def find_students(self) -> Optional[list]:
         student_infos = await self.student_repo.get_all()
         if student_infos is None:
             return None
@@ -86,19 +98,19 @@ class SystemCore:
             results.append(self.find_student(student_info.code))
         return results
 
-    async def find_student(self, code: str) -> dict:
+    async def find_student(self, code: str) -> Optional[dict]:
         student_info = await self.student_repo.get(code)
         if student_info is None:
             return None
         student_info = student_info.to_dict()
         student_info["contact_infors"] = (await self.student_contact_infos_repo.get(code)).to_dict()
         return student_info
-    
+
     async def add_student(self, info: StudentRecords) -> list:
         if info.file_profiles is not None:
             self._init_graph()
             return await self.add_student_profiles(info.academic_year, info.file_profiles.file)
-    
+
     async def update_student(self, info: StudentUpdate) -> list:
         student_info = await self.student_repo.update(info)
         if student_info is None:
@@ -119,7 +131,7 @@ class SystemCore:
             guardian_phone=info.guardian_phone
         ))
         return self.find_student(student_info.code)
-    
+
     async def delete_student(self, student_code: str) -> bool:
         is_delete = await self.student_repo.delete(student_code)
         if is_delete == False:
@@ -134,15 +146,29 @@ class SystemCore:
         except Exception as e:
             self.utils._log(traceback.format_exc())
             return False
-    
+
     async def find_student_contact_infos(self, student_code: str) -> dict:
         return (await self.student_contact_infos_repo.get(student_code)).to_dict()
 
     async def find_student_subject_assessmets(self, student_code: str) -> dict:
         return (await self.student_subject_assessments_repo.get(student_code)).to_dict()
-    
-    async def add_student_commend(self, student_code: str, comment: str, type_assessment: str) -> None:
-        return None
+
+    async def add_student_commend(self, student_code: str, comment: str, type_assessment: str, threshold = 0.5) -> None:
+        if await self.find_student(student_code) is None:
+            return None
+        clauses = self.utils.split_clauses(comment)
+        clause_embs = self.embedding_assessment.model.encode(clauses, convert_to_tensor=True)
+        for i, clause in enumerate(clauses):
+            sims = self.embedding_assessment.util.cos_sim(clause_embs[i], self.emb_kb[type_assessment].get("encode"))[0]
+            best_idx = sims.argmax().item()
+            score = float(sims[best_idx])
+            if score <= threshold:
+                continue
+            indicators = self.emb_kb[type_assessment].get("all_indicators")[best_idx]
+            #{'virtue': 'Chăm chỉ', 'indicator': ' Thường xuyên tham gia các công việc của gia đình vừa sức với bản thân.'}
+            self.create_student_assessment_outstanding(student_code, clause,
+                                                       indicators.get("virtue"), indicators.get("indicator"),
+                                                       comment, type_assessment)
 
     ## Internal funcs
     def _init_graph(self) -> None:
@@ -178,7 +204,7 @@ class SystemCore:
 
     async def fill_none(value: any, default="Không có") -> any:
         return value if value else default
-    
+
     async def add_student_profiles(self, academic_year: str, file: BinaryIO) -> list:
         error_students = []
         profiles = self.utils.extract_info_from_student_profile(file)
@@ -360,5 +386,31 @@ class SystemCore:
             relation_type="HAVE_ASSESSMENT",
             relation_props=None
         )
+    def create_student_assessment_outstanding(self, student_code: str, evidence: str,
+                                              name: str, indicator: str, comment: str, type_assessment: str) -> None:
+        if type_assessment == "Phẩm chất chủ yếu":
+            self.graph_student_sQ_repo.create({
+                "code": student_code,
+                "name": name,
+                "indicator": indicator,
+                "evidence": evidence,
+                "full_comment": comment
+            })
+            self.graph_student_Q_repo.create_relationship(
+                from_value=student_code,
+                to_label="StudentSubQuality",
+                to_id_field="code",
+                to_value=student_code,
+                relation_type="INCLUDING",
+                relation_props=None
+            )
+            self.graph_student_repo.create_relationship(
+                from_value=student_code,
+                to_label="StudentSubQuality",
+                to_id_field="code",
+                to_value=student_code,
+                relation_type="OUTSTANDING",
+                relation_props=None
+            )
 
 

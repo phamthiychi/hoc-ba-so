@@ -1,0 +1,29 @@
+{
+    "input": "Em luôn đoàn kết và yêu mến bạn bè. Em có tính trung thực và chấp hành tốt nội qui lớp học.",
+    "clauses": [
+        "em luôn đoàn kết",
+        "yêu mến bạn bè",
+        "em có tính trung thực",
+        "chấp hành tốt nội qui lớp học"
+    ],
+    "labels": [
+        {
+            "pham_chat": "Nhân ái",
+            "evidence": "em luôn đoàn kết",
+            "indicator": "Yêu thương, quan tâm, chăm sóc người thân trong gia đình.",
+            "score": 1.15
+        },
+        {
+            "pham_chat": "Trung thực",
+            "evidence": "em có tính trung thực",
+            "indicator": "Không đồng tình với các hành vi thiếu trung thực trong học tập và trong cuộc sống.",
+            "score": 1.0
+        },
+        {
+            "pham_chat": "Trách nhiệm",
+            "evidence": "chấp hành tốt nội qui lớp học",
+            "indicator": "Nhắc nhở bạn bè chấp hành nội quy trường lớp; nhắc nhở người thân chấp hành các quy định, quy ước nơi công cộng.",
+            "score": 0.9
+        }
+    ]
+}

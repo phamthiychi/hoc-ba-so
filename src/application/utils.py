@@ -1,8 +1,10 @@
+import re
 import pandas as pd
 import datetime
 
-from typing import BinaryIO
+from typing import BinaryIO, List
 from src.common.common_setting import settings
+from src.common.sementic_setting import settings as sementic_settings
 
 class Utils:
     def __init__(self):
@@ -64,3 +66,17 @@ class Utils:
             else:
                 items.append((new_key, v))
         return dict(items)
+
+    def normalize_text(self, text: str) -> str:
+        text = text.lower().strip()
+        text = re.sub(r"\s+", " ", text)
+        text = text.replace("; ", ". ")
+        text = text.replace(" - ", ". ")
+        return text
+
+    def split_clauses(self, text: str) -> List[str]:
+        text = self.normalize_text(text)
+        conj_pattern = r"\b(?:%s)\b" % "|".join(map(re.escape, sorted(sementic_settings.CONJUNCTION, key=len, reverse=True)))
+        parts = re.split(rf"[.!?;\n,]+|{conj_pattern}", text)
+        clauses = [p.strip() for p in parts if p and p.strip()]
+        return clauses

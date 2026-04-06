@@ -295,6 +295,11 @@ class Neo4jStudentQualityRepository(BaseNeo4jRepository):
             "name": "Phẩm chất chủ yếu của học sinh"
         })
 
+class Neo4jStudentSubQualityRepository(BaseNeo4jRepository):
+    label = "StudentSubQuality"
+    id_field = "code"
+    allowed_fields = {"code", "name", "indicator", "evidence", "full_comment"}
+
 class Neo4jStudentGeneralAbilitiesRepository(BaseNeo4jRepository):
     label = "StudentGeneralAbilities"
     id_field = "code"
