@@ -76,6 +76,7 @@ class PostgresRepository(Repository[T], Generic[T]):
     async def delete(self, code: str) -> bool:
         entity = await self.get(code)
         if entity is None:
+            utils._log(f"Module {self.model_cls.__name__} said: {code} is not found")
             return False
         try:
             self.session.delete(entity)
@@ -92,14 +93,15 @@ class PostgresRepository(Repository[T], Generic[T]):
         entity = await self.get(code)
         entity_clone = entity.to_dict().copy()
         if entity is None:
-            return None
+            return utils._log(f"Module {self.model_cls.__name__} said: {code} is not found")
         for field, value in update_info.items():
             if value is None:
                 continue
             if hasattr(entity, field):
                 setattr(entity, field, value)
         if entity.to_dict() == entity_clone:
-            return utils._log(f"Module {self.model_cls.__name__} said: {update_info.get('code')} no fields were changed")
+            utils._log(f"Module {self.model_cls.__name__} said: {update_info.get('code')} no fields were changed")
+            return entity
         try:
             self.session.commit()
             self.session.refresh(entity)

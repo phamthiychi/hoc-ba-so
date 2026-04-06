@@ -76,6 +76,75 @@ class SystemCore:
         # Init default
         self._init_graph()
 
+    ## Export funcs
+    async def find_students(self) -> list:
+        student_infos = await self.student_repo.get_all()
+        if student_infos is None:
+            return None
+        results = []
+        for student_info in student_infos:
+            results.append(self.find_student(student_info.code))
+        return results
+
+    async def find_student(self, code: str) -> dict:
+        student_info = await self.student_repo.get(code)
+        if student_info is None:
+            return None
+        student_info = student_info.to_dict()
+        student_info["contact_infors"] = (await self.student_contact_infos_repo.get(code)).to_dict()
+        return student_info
+    
+    async def add_student(self, info: StudentRecords) -> list:
+        if info.file_profiles is not None:
+            self._init_graph()
+            return await self.add_student_profiles(info.academic_year, info.file_profiles.file)
+    
+    async def update_student(self, info: StudentUpdate) -> list:
+        student_info = await self.student_repo.update(info)
+        if student_info is None:
+            return None
+        await self.student_contact_infos_repo.update(ContactInfosCreateAndUpate(
+            student_code=student_info.code,
+            father_card_id=info.father_card_id,
+            father_job=info.father_job,
+            father_name=info.father_name,
+            father_phone=info.father_phone,
+            mother_card_id=info.mother_card_id,
+            mother_job=info.mother_job,
+            mother_name=info.mother_name,
+            mother_phone=info.mother_phone,
+            guardian_card_id=info.guardian_card_id,
+            guardian_job=info.guardian_job,
+            guardian_name=info.guardian_name,
+            guardian_phone=info.guardian_phone
+        ))
+        return self.find_student(student_info.code)
+    
+    async def delete_student(self, student_code: str) -> bool:
+        is_delete = await self.student_repo.delete(student_code)
+        if is_delete == False:
+            return False
+        try:
+            await self.student_contact_infos_repo.delete(student_code)
+            await self.student_subject_assessments_repo.delete(student_code)
+            self.graph_student_contact_infos_repo.delete_by_id(student_code)
+            self.graph_student_subject_assessmets_repo.delete_by_id(student_code)
+            self.graph_student_repo.delete_by_id(student_code)
+            return True
+        except Exception as e:
+            self.utils._log(traceback.format_exc())
+            return False
+    
+    async def find_student_contact_infos(self, student_code: str) -> dict:
+        return (await self.student_contact_infos_repo.get(student_code)).to_dict()
+
+    async def find_student_subject_assessmets(self, student_code: str) -> dict:
+        return (await self.student_subject_assessments_repo.get(student_code)).to_dict()
+    
+    async def add_student_commend(self, student_code: str, comment: str, type_assessment: str) -> None:
+        return None
+
+    ## Internal funcs
     def _init_graph(self) -> None:
         self.graph_thing_repo.__init__(self.manage)
         self.graph_student_Q_repo.__init__(self.manage)
@@ -107,11 +176,9 @@ class SystemCore:
             relation_props=None
         )
 
-    async def add_student(self, info: StudentRecords) -> list:
-        if info.file_profiles is not None:
-            self._init_graph()
-            return await self.add_student_profiles(info.academic_year, info.file_profiles.file)
-
+    async def fill_none(value: any, default="Không có") -> any:
+        return value if value else default
+    
     async def add_student_profiles(self, academic_year: str, file: BinaryIO) -> list:
         error_students = []
         profiles = self.utils.extract_info_from_student_profile(file)
@@ -130,22 +197,22 @@ class SystemCore:
                         phone=p.get("phone"),
                         address=p.get("address"),
                         status=p.get("status"),
-                        place_of_birth=p.get("place_of_birth")
+                        place_of_birth=self.fill_none(p.get("place_of_birth"))
                 ))
                 await self.add_contact_info_student_mongo(ContactInfosCreateAndUpate(
                     student_code=student_code,
-                    father_name=p.get("father_name"),
-                    father_job=p.get("father_job"),
-                    father_card_id=p.get("father_card_id"),
-                    father_phone=p.get("father_phone"),
-                    mother_name=p.get("mother_name"),
-                    mother_job=p.get("mother_job"),
-                    mother_card_id=p.get("mother_card_id"),
-                    mother_phone=p.get("mother_phone"),
-                    guardian_name=p.get("guardian_name"),
-                    guardian_job=p.get("guardian_job"),
-                    guardian_card_id=p.get("guardian_card_id"),
-                    guardian_phone=p.get("guardian_phone")
+                    father_name=self.fill_none(p.get("father_name")),
+                    father_job=self.fill_none(p.get("father_job")),
+                    father_card_id=self.fill_none(p.get("father_card_id")),
+                    father_phone=self.fill_none(p.get("father_phone")),
+                    mother_name=self.fill_none(p.get("mother_name")),
+                    mother_job=self.fill_none(p.get("mother_job")),
+                    mother_card_id=self.fill_none(p.get("mother_card_id")),
+                    mother_phone=self.fill_none(p.get("mother_phone")),
+                    guardian_name=self.fill_none(p.get("guardian_name")),
+                    guardian_job=self.fill_none(p.get("guardian_job")),
+                    guardian_card_id=self.fill_none(p.get("guardian_card_id")),
+                    guardian_phone=self.fill_none(p.get("guardian_phone"))
                 ))
                 await self.add_subject_assessments_student_mongo(student_code)
                 await self.add_student_relationship(student_code, p)
@@ -154,17 +221,6 @@ class SystemCore:
                 error_students.append(f'Name: {p.get("name")}, card_id: {p.get("card_id")}')
                 continue
         return error_students
-
-    async def find_student(self, code: str) -> dict:
-        student_info = await self.student_repo.get(code)
-        if student_info is None:
-            return None
-        student_info = student_info.to_dict()
-        student_info["contact_infors"] = (await self.student_contact_infos_repo.get(code)).to_dict()
-        return student_info
-
-    async def update_student(self, info: StudentUpdate) -> dict:
-        return await self.student_repo.update(info.dict())
 
     async def add_student_postgres(self, info: StudentCreate) -> str:
         academic_year_code = self.academic_year_repo.create_code(info.academic_year)
@@ -183,6 +239,13 @@ class SystemCore:
                                                                class_room_code, max(indexs) + 1)
         Result = await self.student_repo.add(student_entity)
         if isinstance(Result, tuple) and "Exist" in Result:
+            await self.student_repo.update(StudentUpdate(
+                code=Result[1].code,
+                nationality=info.nationality,
+                status=info.status,
+                phone=info.phone,
+                address=info.address
+            ))
             return Result[1].code
         academic_year_entity = await self.academic_year_repo.get(academic_year_code)
         grade_level_entity = await self.grade_level_repo.get(grade_level_code)
@@ -235,7 +298,7 @@ class SystemCore:
     async def add_contact_info_student_mongo(self, info: ContactInfosCreateAndUpate) -> None:
         if await self.student_contact_infos_repo.get(info.student_code):
             await self.student_contact_infos_repo.update(info.dict())
-            return
+            return None
         await self.student_contact_infos_repo.add(info.dict())
 
     async def add_subject_assessments_student_mongo(self, student_code: str) -> None:
@@ -298,9 +361,4 @@ class SystemCore:
             relation_props=None
         )
 
-    async def find_student_contact_infos(self, student_code: str) -> dict:
-        return (await self.student_contact_infos_repo.get(student_code)).to_dict()
-
-    async def find_student_subject_assessmets(self, student_code: str) -> dict:
-        return (await self.student_subject_assessments_repo.get(student_code)).to_dict()
 

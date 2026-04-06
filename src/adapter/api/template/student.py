@@ -14,26 +14,24 @@ class StudentCreate(BaseModel):
     phone: str
     address: str
     status: str
-    # father_name: Optional[str] = None
-    # father_job: Optional[str] = None
-    # father_phone: Optional[str] = None
-    # father_card_id: Optional[str] = None
-    # mother_name: Optional[str] = None
-    # mother_job: Optional[str] = None
-    # mother_phone: Optional[str] = None
-    # mother_card_id: Optional[str] = None
-    # guardian_name: Optional[str] = None
-    # guardian_job: Optional[str] = None
-    # guardian_phone: Optional[str] = None
-    # guardian_card_id: Optional[str] = None
     place_of_birth: Optional[str] = None
 
 class StudentUpdate(BaseModel):
     code: str
     nationality: Optional[str] = None
-    card_id: Optional[str] = None
-    edu_id: Optional[str] = None
     status: Optional[str] = None
     phone: Optional[str] = None
     address: Optional[str] = None
     place_of_birth: Optional[str] = None
+    father_name: Optional[str] = None
+    father_job: Optional[str] = None
+    father_phone: Optional[str] = None
+    father_card_id: Optional[str] = None
+    mother_name: Optional[str] = None
+    mother_job: Optional[str] = None
+    mother_phone: Optional[str] = None
+    mother_card_id: Optional[str] = None
+    guardian_name: Optional[str] = None
+    guardian_job: Optional[str] = None
+    guardian_phone: Optional[str] = None
+    guardian_card_id: Optional[str] = None

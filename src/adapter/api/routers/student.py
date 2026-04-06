@@ -2,16 +2,17 @@ from typing import List
 from fastapi import APIRouter, HTTPException, Request, UploadFile, File, Form
 
 from src.adapter.api.template.student_records import StudentRecords
+from src.adapter.api.template.student import StudentUpdate
 
 router = APIRouter(prefix="/students", tags=["students"])
 
 @router.get("")
-async def get_students(req: Request):
+async def find_students(req: Request):
     repo = req.app.state.student_repo
-    return await repo.get_all()
+    return await repo.find_students()
 
 @router.get("/{code}")
-async def get_student(code: str, req: Request):
+async def find_student(code: str, req: Request):
     if not isinstance(code, str):
         raise HTTPException(status_code=400, detail="Invalid ID")
     repo = req.app.state.core
@@ -21,7 +22,7 @@ async def get_student(code: str, req: Request):
     return doc
 
 @router.post("")
-async def create_student(
+async def add_student(
     req: Request,
     academic_year: str = Form(...),
     file_profiles: UploadFile = File(...)
@@ -37,19 +38,21 @@ async def create_student(
         return {"message": "created"}
     raise HTTPException(status_code=400, detail=f"Can not add {result}, please check logs")
 
-# @router.put("")
-# async def update_student(payload: StudentUpdate, req: Request):
-#     if not isinstance(payload.code, str):
-#         raise HTTPException(status_code=400, detail="Invalid ID")
-#     repo = req.app.state.student_repo
-#     update_student = await repo.update(payload.dict())
-#     if not update_student:
-#         raise HTTPException(status_code=404, detail="Student not found")
-#     return update_student.to_dict()
+@router.put("")
+async def update_student(payload: StudentUpdate, req: Request):
+    if not isinstance(payload.code, str):
+        raise HTTPException(status_code=400, detail="Invalid ID")
+    repo = req.app.state.student_repo
+    update_student = await repo.update_student(payload)
+    if not update_student:
+        raise HTTPException(status_code=404, detail=f"Student {payload.code} not found")
+    return update_student.to_dict()
 
-# @router.delete("/{code}")
-# async def delete_student(code :str, req: Request):
-#     if not isinstance(code, str):
-#         raise HTTPException(status_code=400, detail="Invalid ID")
-#     repo = req.app.state.student_repo
-#     return await repo.delete(code)
+@router.delete("/{code}")
+async def delete_student(code :str, req: Request):
+    if not isinstance(code, str):
+        raise HTTPException(status_code=400, detail="Invalid ID")
+    repo = req.app.state.student_repo
+    if await repo.delete_student(code):
+        return {"message": "ok"}
+    raise HTTPException(status_code=404, detail=f"Error when delete student's code {code}, please check logs")
