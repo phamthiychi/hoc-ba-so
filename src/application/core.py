@@ -1,12 +1,13 @@
 import traceback
 
-from typing import BinaryIO, Optional
+from typing import BinaryIO, Optional, Callable, Any, Tuple
 
 from src.application.utils import Utils
 from src.adapter.graph.knowledge_base import KnowledgeBase
 from src.application.embedding import EmbeddingSentence
 from src.common.common_setting import settings as common_settings
 from src.common.postgres_model_setting import settings as postgres_settings
+from src.common.ontology_setting import settings as ontology_setting
 from src.adapter.api.template.student import StudentCreate, StudentUpdate
 from src.adapter.api.template.academic_year import AcademicYearCreate
 from src.adapter.api.template.semester import SemesterCreate
@@ -14,6 +15,7 @@ from src.adapter.api.template.grade_level import GradeLevelCreate, GradeLevelUpd
 from src.adapter.api.template.class_room import ClassRoomCreate, ClassRoomUpdate
 from src.adapter.api.template.contact_infos import ContactInfosCreateAndUpate
 from src.adapter.api.template.student_records import StudentRecords
+from src.adapter.api.template.comment import Comment
 
 from src.adapter.database.postgres_repository import (
     PostgresAcademicYearRepository,
@@ -34,7 +36,7 @@ from src.adapter.database.mongo_repository import (
 from src.adapter.graph.neo4j_repository import (
     Neo4jStudentSpecialAbilitiesRepository,
     Neo4jStudentQualityRepository,
-    Neo4jStudentSubQualityRepository,
+    Neo4jStudentSubAssessmentRepository,
     Neo4jThingRepository,
     Neo4jStudentGeneralAbilitiesRepository,
     Neo4jStudentRepository,
@@ -67,9 +69,9 @@ class SystemCore:
         # Neo4j database
         self.graph_thing_repo = Neo4jThingRepository(manager)
         self.graph_student_Q_repo = Neo4jStudentQualityRepository(manager)
-        self.graph_student_sQ_repo = Neo4jStudentSubQualityRepository(manager)
         self.graph_student_GA_repo = Neo4jStudentGeneralAbilitiesRepository(manager)
         self.graph_student_SA_repo = Neo4jStudentSpecialAbilitiesRepository(manager)
+        self.graph_student_sub_assessment_repo = Neo4jStudentSubAssessmentRepository(manager)
         self.graph_student_repo = Neo4jStudentRepository(manager)
         self.graph_student_contact_infos_repo = Neo4jStudentContactInfosRepository(manager)
         self.graph_student_subject_assessmets_repo = Neo4jStudentSubjectAssessmentsRepository(manager)
@@ -153,10 +155,11 @@ class SystemCore:
     async def find_student_subject_assessmets(self, student_code: str) -> dict:
         return (await self.student_subject_assessments_repo.get(student_code)).to_dict()
 
-    async def add_student_commend(self, student_code: str, comment: str, type_assessment: str, threshold = 0.5) -> None:
-        if await self.find_student(student_code) is None:
+    async def add_student_comment(self, payload: Comment, type_assessment: str, threshold = 0.5) -> str:
+        if await self.find_student(payload.code) is None:
             return None
-        clauses = self.utils.split_clauses(comment)
+        clauses = self.utils.split_clauses(payload.comment)
+        print(clauses)
         clause_embs = self.embedding_assessment.model.encode(clauses, convert_to_tensor=True)
         for i, clause in enumerate(clauses):
             sims = self.embedding_assessment.util.cos_sim(clause_embs[i], self.emb_kb[type_assessment].get("encode"))[0]
@@ -165,10 +168,10 @@ class SystemCore:
             if score <= threshold:
                 continue
             indicators = self.emb_kb[type_assessment].get("all_indicators")[best_idx]
-            #{'virtue': 'Chăm chỉ', 'indicator': ' Thường xuyên tham gia các công việc của gia đình vừa sức với bản thân.'}
-            self.create_student_assessment_outstanding(student_code, clause,
+            self.create_student_assessment_outstanding(payload.code, clause,
                                                        indicators.get("virtue"), indicators.get("indicator"),
-                                                       comment, type_assessment)
+                                                       payload.comment, type_assessment)
+        return payload.code
 
     ## Internal funcs
     def _init_graph(self) -> None:
@@ -356,6 +359,7 @@ class SystemCore:
         })
         student_contact_infos_record = {
                 "code": student_code,
+                "name": "Thông tin liên hệ",
                 "url": f"{common_settings.API_URL}/student_contact_infos/{student_code}"
             }
         if self.graph_student_contact_infos_repo.get_by_id(student_code):
@@ -364,6 +368,7 @@ class SystemCore:
             self.graph_student_contact_infos_repo.create(student_contact_infos_record)
         student_subject_assessmets_record = {
             "code": student_code,
+            "name": "Đánh giá môn học",
             "url": f"{common_settings.API_URL}/student_subject_assessmets/{student_code}"
         }
         if self.graph_student_subject_assessmets_repo.get_by_id(student_code):
@@ -388,29 +393,40 @@ class SystemCore:
         )
     def create_student_assessment_outstanding(self, student_code: str, evidence: str,
                                               name: str, indicator: str, comment: str, type_assessment: str) -> None:
-        if type_assessment == "Phẩm chất chủ yếu":
-            self.graph_student_sQ_repo.create({
-                "code": student_code,
-                "name": name,
+        code = ontology_setting.ASSESSMENT2CODE[name]
+        including_code, callback = self.choose_assessment(type_assessment)
+        self.graph_student_sub_assessment_repo.create({
+            "code": ontology_setting.ASSESSMENT2CODE[name],
+            "name": name
+        })
+        callback.create_relationship(
+            from_value=including_code,
+            to_label="StudentSubAssessment",
+            to_id_field="code",
+            to_value=code,
+            relation_type="INCLUDING",
+            relation_props=None
+        )
+        self.graph_student_repo.create_relationship(
+            from_value=student_code,
+            to_label="StudentSubAssessment",
+            to_id_field="code",
+            to_value=code,
+            relation_type="OUTSTANDING",
+            relation_props={
                 "indicator": indicator,
                 "evidence": evidence,
                 "full_comment": comment
-            })
-            self.graph_student_Q_repo.create_relationship(
-                from_value=student_code,
-                to_label="StudentSubQuality",
-                to_id_field="code",
-                to_value=student_code,
-                relation_type="INCLUDING",
-                relation_props=None
-            )
-            self.graph_student_repo.create_relationship(
-                from_value=student_code,
-                to_label="StudentSubQuality",
-                to_id_field="code",
-                to_value=student_code,
-                relation_type="OUTSTANDING",
-                relation_props=None
-            )
+            }
+        )
 
+    def choose_assessment(self, type_assessment: str) -> Tuple[str, Callable[..., Any]]:
+        if type_assessment == "Phẩm chất chủ yếu":
+            return "student_quality", self.graph_student_Q_repo
+        elif type_assessment == "Năng lực chung":
+            return "student_general_abilities", self.graph_student_GA_repo
+        elif type_assessment == "Năng lực đặc thù":
+            return "student_special_abilities", self.graph_student_SA_repo
 
+    def clear_student_assessment_outstanding(self, student_code: str) -> None:
+        self.graph_student_sub_assessment_repo.delete_by_prefix_id(student_code)

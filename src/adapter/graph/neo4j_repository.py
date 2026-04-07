@@ -39,11 +39,17 @@ class BaseNeo4jRepository:
     def get_by_id(self, value: Any) -> Optional[Dict[str, Any]]:
         return self.manager.execute_read(self._get_by_field, self.id_field, value)
 
+    def get_by_prefix_id(self, prefix: str) -> List[Dict[str, Any]]:
+        return self.manager.execute_read(self._get_by_prefix_id, prefix)
+
     def update_by_id(self, value: Any, data: Dict[str, Any]) -> Optional[Dict[str, Any]]:
         return self.manager.execute_write(self._update_by_id, value, data)
 
     def delete_by_id(self, value: Any) -> bool:
         return self.manager.execute_write(self._delete_by_id, value)
+
+    def delete_by_prefix_id(self, prefix: str) -> int:
+        return self.manager.execute_write(self._delete_by_prefix_id, prefix)
 
     def _create(self, tx, data: Dict[str, Any]) -> Optional[Dict[str, Any]]:
         if self.get_by_id(data[self.id_field]):
@@ -68,6 +74,15 @@ class BaseNeo4jRepository:
         record = tx.run(query, value=value).single()
         return self._record_to_dict(record) if record else None
 
+    def _get_by_prefix_id(self, tx, prefix: str) -> List[Dict[str, Any]]:
+        query = f"""
+        MATCH (n:{self.label})
+        WHERE n.{self.id_field} STARTS WITH $prefix
+        RETURN n
+        """
+        result = tx.run(query, prefix=prefix)
+        return [self._record_to_dict(record) for record in result]
+
     def _update_by_id(self, tx, value: Any, data: Dict[str, Any]) -> Optional[Dict[str, Any]]:
         query = f"""
         MATCH (n:{self.label})
@@ -87,7 +102,22 @@ class BaseNeo4jRepository:
         RETURN cnt > 0 AS deleted
         """
         record = tx.run(query, id_value=value).single()
+        if record is None:
+            return False
         return record["deleted"] if record else False
+
+    def _delete_by_prefix_id(self, tx, prefix: str) -> bool:
+        query = f"""
+        MATCH (n:{self.label})
+        WHERE n.{self.id_field} STARTS WITH $prefix
+        WITH n, COUNT(n) AS cnt
+        DETACH DELETE n
+        RETURN cnt AS deleted_count
+        """
+        record = tx.run(query, prefix=prefix).single()
+        if record is None:
+            return False
+        return record["deleted_count"] != 0
 
     # =========================
     # RELATION CRUD
@@ -157,16 +187,20 @@ class BaseNeo4jRepository:
     def get_relationships(
         self,
         from_value: Any,
-        to_label: Optional[str] = None,
-        relation_type: Optional[str] = None,
-        from_id_field: Optional[str] = None,
+        to_value: Optional[Any],
+        to_label: Optional[str],
+        relation_type: Optional[str],
+        from_id_field: str,
+        to_id_field: Optional[str] = None,
     ) -> List[Dict[str, Any]]:
         return self.manager.execute_read(
             self._get_relationships,
             from_value,
+            to_value,
             to_label,
             relation_type,
-            from_id_field or self.id_field,
+            from_id_field,
+            to_id_field
         )
 
     def _create_relationship(
@@ -180,7 +214,8 @@ class BaseNeo4jRepository:
         relation_props: Dict[str, Any],
         from_id_field: str,
     ) -> Optional[Dict[str, Any]]:
-        if self.get_relationships(from_value, to_label, relation_type, from_id_field):
+        if self.get_relationships(from_value, to_value, to_label, relation_type,
+                                  from_id_field, to_id_field):
             return ("Exist")
         query = f"""
         MATCH (a:{self.label}), (b:{to_label})
@@ -253,19 +288,24 @@ class BaseNeo4jRepository:
         self,
         tx,
         from_value: Any,
+        to_value: Optional[Any],
         to_label: Optional[str],
         relation_type: Optional[str],
         from_id_field: str,
+        to_id_field: Optional[str] = None,
     ) -> List[Dict[str, Any]]:
         rel_part = f"[r:{relation_type}]" if relation_type else "[r]"
         to_label_part = f":{to_label}" if to_label else ""
-
+        where_clauses = [f"a.{from_id_field} = $from_value"]
+        if to_value is not None and to_id_field:
+            where_clauses.append(f"b.{to_id_field} = $to_value")
+        where_query = " AND ".join(where_clauses)
         query = f"""
         MATCH (a:{self.label})-{rel_part}->(b{to_label_part})
-        WHERE a.{from_id_field} = $from_value
+        WHERE {where_query}
         RETURN a, r, b
         """
-        result = tx.run(query, from_value=from_value)
+        result = tx.run(query, from_value=from_value, to_value=to_value)
         records = list(result)
         if not records:
             return None
@@ -295,11 +335,6 @@ class Neo4jStudentQualityRepository(BaseNeo4jRepository):
             "name": "Phẩm chất chủ yếu của học sinh"
         })
 
-class Neo4jStudentSubQualityRepository(BaseNeo4jRepository):
-    label = "StudentSubQuality"
-    id_field = "code"
-    allowed_fields = {"code", "name", "indicator", "evidence", "full_comment"}
-
 class Neo4jStudentGeneralAbilitiesRepository(BaseNeo4jRepository):
     label = "StudentGeneralAbilities"
     id_field = "code"
@@ -324,6 +359,11 @@ class Neo4jStudentSpecialAbilitiesRepository(BaseNeo4jRepository):
             "name": "Năng lực đặc thù của học sinh"
         })
 
+class Neo4jStudentSubAssessmentRepository(BaseNeo4jRepository):
+    label = "StudentSubAssessment"
+    id_field = "code"
+    allowed_fields = {"code", "name"}
+
 class Neo4jStudentRepository(BaseNeo4jRepository):
     label = "Student"
     id_field = "code"
@@ -332,10 +372,11 @@ class Neo4jStudentRepository(BaseNeo4jRepository):
 class Neo4jStudentContactInfosRepository(BaseNeo4jRepository):
     label = "StudentContactInfos"
     id_field = "code"
-    allowed_fields = {"code", "url"}
+    allowed_fields = {"code", "name", "url"}
 
 class Neo4jStudentSubjectAssessmentsRepository(BaseNeo4jRepository):
     label = "StudentSubjectAssessments"
     id_field = "code"
-    allowed_fields = {"code", "url"}
+    allowed_fields = {"code", "name", "url"}
+
 

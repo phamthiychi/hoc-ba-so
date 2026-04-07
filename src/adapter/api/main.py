@@ -10,9 +10,7 @@ from src.application.utils import Utils
 from src.adapter.api.routers.student import router as student_router
 from src.adapter.api.routers.student_contact_infos import router as student_contact_infos_router
 from src.adapter.api.routers.student_subject_assessments import router as student_subject_assessments_router
-from src.adapter.api.routers.student_quality import router as student_quality_router
-from src.adapter.api.routers.student_general_abilities import router as student_general_abilities_router
-from src.adapter.api.routers.student_special_abilities import router as student_special_abilities_router
+from src.adapter.api.routers.student_assessment import router as student_assessment_router
 
 app = FastAPI(title="HOCBASO API")
 
@@ -49,6 +47,4 @@ async def global_exception_handler(request: Request, exc: Exception):
 app.include_router(student_router)
 app.include_router(student_contact_infos_router)
 app.include_router(student_subject_assessments_router)
-app.include_router(student_quality_router)
-app.include_router(student_general_abilities_router)
-app.include_router(student_special_abilities_router)
+app.include_router(student_assessment_router)

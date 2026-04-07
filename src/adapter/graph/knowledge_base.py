@@ -87,28 +87,35 @@ class StudentAssessments():
             },
             "Năng lực đặc thù":{
                 "Ngôn ngữ":[
-                    "Năng lực ngôn ngữ của học sinh bao gồm năng lực sử dụng tiếng Việt và năng lực sử dụng ngoại ngữ; mỗi năng lực được thể hiện qua các hoạt động: nghe, nói, đọc, viết. Yêu cầu cần đạt về năng lực ngôn ngữ đối với học sinh mỗi lớp học, cấp học được quy định trong chương trình môn Ngữ văn, chương trình môn Ngoại ngữ và được thực hiện trong toàn bộ các môn học, hoạt động giáo dục, phù hợp với đặc điểm của mỗi môn học và hoạt động giáo dục, trong đó môn Ngữ văn và môn Ngoại ngữ là chủ đạo."
+                    "Có năng lực sử dụng tiếng Việt và năng lực sử dụng ngoại ngữ.",
+                    "Có kỹ năng nghe, nói, đọc, viết tốt.",
+                    "Có am hiểu môn Ngữ văn, môn Ngoại ngữ"
                 ],
                 "Tính toán": [
                     "Nhận thức kiến thức toán học;",
-                    "Tư duy toán học;",
-                    "Vận dụng kiến thức, kĩ năng đã học. Năng lực tính toán được hình thành, phát triển ở nhiều môn học, hoạt động giáo dục, phù hợp với đặc điểm của mỗi môn học và hoạt động giáo dục. Biểu hiện tập trung nhất của năng lực tính toán là năng lực toán học, được hình thành và phát triển chủ yếu ở môn Toán. Yêu cầu cần đạt về năng lực toán học đối với học sinh mỗi lớp học, cấp học được quy định trong chương trình môn Toán."
+                    "Tư duy toán học, thực hiện tính đúng",
+                    "Vận dụng kiến thức, kĩ năng tính toán đã học",
+                    "Năng lực tính toán được hình thành, phát triển ở nhiều môn học",
+                    "Có năng lực toán học, được hình thành và phát triển chủ yếu ở môn Toán."
                 ],
                 "Khoa học":[
                     "Nhận thức khoa học;",
                     "Tìm hiểu tự nhiên, tìm hiểu xã hội;",
-                    "Vận dụng kiến thức, kĩ năng đã học. Năng lực khoa học được hình thành, phát triển ở nhiều môn học, hoạt động giáo dục, phù hợp với đặc điểm của mỗi môn học và hoạt động giáo dục, trong đó các môn học chủ đạo là: Tự nhiên và Xã hội, Khoa học, Lịch sử và Địa lí."
+                    "Vận dụng kiến thức, kĩ năng khoa học đã học",
+                    "Năng lực khoa học được hình thành, phát triển ở nhiều môn học,"
+                    "Có am hiểu về các môn học: Tự nhiên và Xã hội, Khoa học, Lịch sử và Địa lí."
                 ],
                 "Thẩm mĩ":[
-                    "Năng lực thẩm mĩ của học sinh bao gồm năng lực âm nhạc, năng lực mĩ thuật, năng lực văn học; mỗi năng lực được thể hiện qua các hoạt động.",
-                    "Nhận thức các yếu tố thẩm mĩ;",
-                    "Phân tích, đánh giá các yếu tố thẩm mĩ;",
-                    "Tái hiện, sáng tạo và ứng dụng các yếu tố thẩm mĩ. Yêu cầu cần đạt về năng lực thẩm mĩ đối với học sinh mỗi lớp học, cấp học được quy định trong chương trình các môn Âm nhạc, Mĩ thuật, Ngữ văn và được thực hiện trong chương trình của nhiều môn học, hoạt động giáo dục, phù hợp với đặc điểm của mỗi môn học và hoạt động giáo dục, trong đó ba môn học đã nêu là chủ đạo"
+                    "Có  năng lực âm nhạc, năng lực mĩ thuật, năng lực văn học",
+                    "Nhận thức các yếu tố thẩm mĩ, yêu cái đẹp",
+                    "Phân tích, đánh giá các yếu tố thẩm mĩ",
+                    "Tái hiện, sáng tạo và ứng dụng các yếu tố thẩm mĩ."
+                    "Có am hiểu về các môn Âm nhạc, Mĩ thuật, Ngữ văn"
                 ],
                 "Thể chất": [
                     "Chăm sóc sức khỏe;",
                     "Vận động cơ bản;",
-                    "Hoạt động thể dục thể thao. Yêu cầu cần đạt về năng lực thể chất đối với học sinh mỗi lớp học, cấp học được quy định trong chương trình môn Giáo dục thể chất và được thực hiện trong chương trình của nhiều môn học, hoạt động giáo dục, phù hợp với đặc điểm của mỗi môn học và hoạt động giáo dục, trong đó môn Giáo dục thể chất là chủ đạo."
+                    "Hoạt động thể dục thể thao"
                 ]
             }
         }
