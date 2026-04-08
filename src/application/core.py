@@ -395,6 +395,7 @@ class SystemCore:
                                               name: str, indicator: str, comment: str, type_assessment: str) -> None:
         code = ontology_setting.ASSESSMENT2CODE[name]
         including_code, callback = self.choose_assessment(type_assessment)
+        self.clear_student_assessment_outstanding(student_code, type_assessment)
         self.graph_student_sub_assessment_repo.create({
             "code": ontology_setting.ASSESSMENT2CODE[name],
             "name": name
