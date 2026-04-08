@@ -168,8 +168,8 @@ class SystemCore:
             if score <= threshold:
                 continue
             indicators = self.emb_kb[type_assessment].get("all_indicators")[best_idx]
-            self.create_student_assessment_outstanding(payload.code, clause,
-                                                       indicators.get("virtue"), indicators.get("indicator"),
+            self.create_student_assessment_outstanding(payload.code, clause, indicators.get("virtue"),
+                                                       score, indicators.get("indicator"),
                                                        payload.comment, type_assessment)
         return payload.code
 
@@ -391,7 +391,7 @@ class SystemCore:
             relation_type="HAVE_ASSESSMENT",
             relation_props=None
         )
-    def create_student_assessment_outstanding(self, student_code: str, evidence: str,
+    def create_student_assessment_outstanding(self, student_code: str, evidence: str, confident: float,
                                               name: str, indicator: str, comment: str, type_assessment: str) -> None:
         code = ontology_setting.ASSESSMENT2CODE[name]
         including_code, callback = self.choose_assessment(type_assessment)
@@ -414,9 +414,11 @@ class SystemCore:
             to_value=code,
             relation_type="OUTSTANDING",
             relation_props={
+                "including": type_assessment,
                 "indicator": indicator,
                 "evidence": evidence,
-                "full_comment": comment
+                "full_comment": comment,
+                "confident": confident
             }
         )
 
@@ -428,5 +430,12 @@ class SystemCore:
         elif type_assessment == "Năng lực đặc thù":
             return "student_special_abilities", self.graph_student_SA_repo
 
-    def clear_student_assessment_outstanding(self, student_code: str) -> None:
-        self.graph_student_sub_assessment_repo.delete_by_prefix_id(student_code)
+    def clear_student_assessment_outstanding(self, student_code: str, type_assessment: str) -> None:
+        for code in ontology_setting.CODES_IN_ASSESSMENT_TYPE[type_assessment]:
+            self.graph_student_repo.delete_relationship(
+                from_value=student_code,
+                to_label="StudentSubAssessment",
+                to_id_field="code",
+                to_value=code,
+                relation_type="OUTSTANDING"
+            )

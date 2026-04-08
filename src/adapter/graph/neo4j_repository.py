@@ -282,6 +282,8 @@ class BaseNeo4jRepository:
             from_value=from_value,
             to_value=to_value,
         ).single()
+        if record:
+            return None
         return record["deleted"] if record else False
 
     def _get_relationships(

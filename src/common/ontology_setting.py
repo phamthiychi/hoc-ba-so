@@ -1,8 +1,6 @@
 import os
 from dotenv import load_dotenv
 
-from src.common.common_setting import settings as setting_common
-
 load_dotenv()
 
 class Settings:
@@ -24,6 +22,11 @@ class Settings:
         "Khoa học": "science",
         "Thẩm mĩ": "aesthetics",
         "Thể chất": "physical_education"
+    }
+    CODES_IN_ASSESSMENT_TYPE = {
+        "Phẩm chất chủ yếu": ["patriotism", "compassion", "diligence", "honesty", "responsibility"],
+        "Năng lực chung": ["self_reliance_self_learning", "communication_collaboration", "problem_solving_creativity"],
+        "Năng lực đặc thù": ["language", "numeracy", "science", "aesthetics", "physical_education"]
     }
 
 settings = Settings()
