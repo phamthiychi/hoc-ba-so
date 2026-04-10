@@ -161,6 +161,7 @@ class SystemCore:
         clauses = self.utils.split_clauses(payload.comment)
         print(clauses)
         clause_embs = self.embedding_assessment.model.encode(clauses, convert_to_tensor=True)
+        self.clear_student_assessment_outstanding(payload.code, type_assessment)
         for i, clause in enumerate(clauses):
             sims = self.embedding_assessment.util.cos_sim(clause_embs[i], self.emb_kb[type_assessment].get("encode"))[0]
             best_idx = sims.argmax().item()
@@ -168,9 +169,15 @@ class SystemCore:
             if score <= threshold:
                 continue
             indicators = self.emb_kb[type_assessment].get("all_indicators")[best_idx]
-            self.create_student_assessment_outstanding(payload.code, clause, indicators.get("virtue"),
-                                                       score, indicators.get("indicator"),
-                                                       payload.comment, type_assessment)
+            self.create_student_assessment_outstanding(
+                student_code=payload.code,
+                evidence=clause,
+                confident=score,
+                name=indicators.get("virtue"),
+                indicator=indicators.get("indicator"),
+                comment=payload.comment,
+                type_assessment=type_assessment
+            )
         return payload.code
 
     ## Internal funcs
@@ -205,7 +212,7 @@ class SystemCore:
             relation_props=None
         )
 
-    async def fill_none(value: any, default="Không có") -> any:
+    def fill_none(self, value: any, default="Chưa có") -> any:
         return value if value else default
 
     async def add_student_profiles(self, academic_year: str, file: BinaryIO) -> list:
@@ -395,7 +402,6 @@ class SystemCore:
                                               name: str, indicator: str, comment: str, type_assessment: str) -> None:
         code = ontology_setting.ASSESSMENT2CODE[name]
         including_code, callback = self.choose_assessment(type_assessment)
-        self.clear_student_assessment_outstanding(student_code, type_assessment)
         self.graph_student_sub_assessment_repo.create({
             "code": ontology_setting.ASSESSMENT2CODE[name],
             "name": name
@@ -433,6 +439,7 @@ class SystemCore:
 
     def clear_student_assessment_outstanding(self, student_code: str, type_assessment: str) -> None:
         for code in ontology_setting.CODES_IN_ASSESSMENT_TYPE[type_assessment]:
+            print(code)
             self.graph_student_repo.delete_relationship(
                 from_value=student_code,
                 to_label="StudentSubAssessment",

@@ -1,0 +1,120 @@
+{
+  "info": {
+    "_postman_id": "06c6963c-8a24-410f-a355-cb6015c05a7a",
+    "name": "chinh",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "39783619"
+  },
+  "item": [
+    {
+      "name": "http://127.0.0.1:8000/students",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "academic_year",
+              "value": "2026 - 2027",
+              "type": "text",
+              "uuid": "4977aa46-801e-4609-8411-1b560c24d4f1"
+            },
+            {
+              "key": "file_profiles",
+              "type": "file",
+              "uuid": "d1ef1afe-8ae0-4039-84f1-19a2c164b0f5",
+              "src": "postman-cloud:///1f12eca9-73e2-45a0-b729-0d2a60492081"
+            },
+            {
+              "key": "",
+              "type": "text",
+              "uuid": "b23e7833-c167-4ed8-80d3-bcf8fe9a0916",
+              "value": "",
+              "disabled": true
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/students",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "students"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://127.0.0.1:8000/student_assessment/commend (HS1)",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"code\": \"20242025.01.Mo1.001\",\r\n    \"quality_comment\": \"Em biết yêu thương, chia sẻ cùng người thân nhưng chưa mạnh dạn. Em luôn nhường nhịn và chia sẻ với bạn bè trong lớp.\",\r\n    \"general_abilities_comment\": \"Em có khả năng tự học và tự chủ bản thân,  biết lắng nghe và tôn trọng ý kiến của bạn.\",\r\n    \"special_abilities_comment\": \"Em thực hiện tính đúng, biết yêu cái đẹp nhưng em trình bày các vấn đề chưa lưu loát.\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/student_assessment/comment",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "student_assessment",
+            "comment"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://127.0.0.1:8000/student_assessment/comment (HS2)",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"code\": \"20242025.01.Mo1.002\",\r\n    \"quality_comment\": \"Em biết yêu thương, chia sẻ cùng người thân nhưng chưa mạnh dạn. Em luôn nhường nhịn và chia sẻ với bạn bè trong lớp.\",\r\n    \"general_abilities_comment\": \"Em biết tự thực hiện các nhiệm vụ học tập. Em phối hợp tốt với bạn khi làm việc nhóm nhưng em cần thao tác nhanh nhẹn hơn nhé.\",\r\n    \"special_abilities_comment\": \"Em thực hiện tính đúng, biết yêu cái đẹp và chăm rèn luyện thể thao.\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/student_assessment/comment",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "student_assessment",
+            "comment"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

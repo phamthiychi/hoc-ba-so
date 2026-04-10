@@ -60,7 +60,7 @@ class PostgresRepository(Repository[T], Generic[T]):
         return query.first()
 
     async def get(self, code: str) -> Optional[T]:
-        if self.exists({"code": code}) is False:
+        if self.exists({"code": code}) is None:
             utils._log(f"Module {self.model_cls.__name__} said: {code} is not found")
             return None
         return self.session.query(self.model_cls) \
