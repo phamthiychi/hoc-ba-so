@@ -4,9 +4,13 @@ class SubjectAssessments:
     def __init__(
         self,
         student_code: str,
+        student_card_id: str,
+        student_edu_id: str,
         data: List[dict] = []
     ):
         self.student_code = student_code
+        self.student_card_id = student_card_id
+        self.student_edu_id = student_edu_id
         self.data = data
 
     def _validate(self):
@@ -15,6 +19,8 @@ class SubjectAssessments:
     def to_dict(self) -> dict:
         return {
             "student_code": self.student_code,
+            "student_card_id":self.student_card_id,
+            "student_edu_id": self.student_edu_id,
             "data": self.data
         }
 
@@ -22,6 +28,8 @@ class SubjectAssessments:
     def from_dict(cls, data: dict):
         return cls(
             student_code=data.get("student_code"),
+            student_card_id=data.get("student_card_id"),
+            student_edu_id=data.get("student_edu_id"),
             data=data.get("data"),
         )
 

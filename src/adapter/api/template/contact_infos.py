@@ -3,6 +3,8 @@ from typing import Optional
 
 class ContactInfosCreateAndUpate(BaseModel):
     student_code: str
+    student_card_id: str
+    student_edu_id: str
     father_name: Optional[str] = None
     father_job: Optional[str] = None
     father_phone: Optional[str] = None

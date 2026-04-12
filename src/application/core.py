@@ -76,12 +76,12 @@ class SystemCore:
         self.graph_student_contact_infos_repo = Neo4jStudentContactInfosRepository(manager)
         self.graph_student_subject_assessmets_repo = Neo4jStudentSubjectAssessmentsRepository(manager)
         # Embedding
-        student_assessment_kb = KnowledgeBase().student_assessments.define
+        self.student_assessment_kb = KnowledgeBase().student_assessments.define
         self.embedding_assessment = EmbeddingSentence()
         self.emb_kb = {
-            "Phẩm chất chủ yếu": self.embedding_assessment.emb_knowledge(student_assessment_kb["Phẩm chất chủ yếu"]),
-            "Năng lực chung": self.embedding_assessment.emb_knowledge(student_assessment_kb["Năng lực chung"]),
-            "Năng lực đặc thù": self.embedding_assessment.emb_knowledge(student_assessment_kb["Năng lực đặc thù"])
+            "Phẩm chất chủ yếu": self.embedding_assessment.emb_knowledge(self.student_assessment_kb["Phẩm chất chủ yếu"]),
+            "Năng lực chung": self.embedding_assessment.emb_knowledge(self.student_assessment_kb["Năng lực chung"]),
+            "Năng lực đặc thù": self.embedding_assessment.emb_knowledge(self.student_assessment_kb["Năng lực đặc thù"])
         }
         # Other
         self.utils = Utils()
@@ -237,6 +237,8 @@ class SystemCore:
                 ))
                 await self.add_contact_info_student_mongo(ContactInfosCreateAndUpate(
                     student_code=student_code,
+                    student_card_id=p.get("card_id"),
+                    student_edu_id=p.get("edu_id"),
                     father_name=self.fill_none(p.get("father_name")),
                     father_job=self.fill_none(p.get("father_job")),
                     father_card_id=self.fill_none(p.get("father_card_id")),
@@ -250,7 +252,7 @@ class SystemCore:
                     guardian_card_id=self.fill_none(p.get("guardian_card_id")),
                     guardian_phone=self.fill_none(p.get("guardian_phone"))
                 ))
-                await self.add_subject_assessments_student_mongo(student_code)
+                await self.add_subject_assessments_student_mongo(student_code, p)
                 await self.add_student_relationship(student_code, p)
             except Exception as e:
                 self.utils._log(traceback.format_exc())
@@ -337,7 +339,7 @@ class SystemCore:
             return None
         await self.student_contact_infos_repo.add(info.dict())
 
-    async def add_subject_assessments_student_mongo(self, student_code: str) -> None:
+    async def add_subject_assessments_student_mongo(self, student_code: str, profile: dict) -> None:
         class_name = postgres_settings.NUM2WORD[int(student_code.split(".")[1])]
         subject_with_eval = postgres_settings.INIT_SUBJECT_EVAL[class_name]
         data = []
@@ -354,6 +356,8 @@ class SystemCore:
             return None
         await self.student_subject_assessments_repo.add(SubjectAssessments(
             student_code=student_code,
+            student_card_id=profile.get("card_id"),
+            student_edu_id=profile.get("edu_id"),
             data=data
         ).to_dict())
 
@@ -365,10 +369,12 @@ class SystemCore:
             "edu_id": profile.get("edu_id"),
         })
         student_contact_infos_record = {
-                "code": student_code,
-                "name": "Thông tin liên hệ",
-                "url": f"{common_settings.API_URL}/student_contact_infos/{student_code}"
-            }
+            "code": student_code,
+            "card_id": profile.get("card_id"),
+            "edu_id": profile.get("edu_id"),
+            "name": "Thông tin liên hệ",
+            "url": f"{common_settings.API_URL}/student_contact_infos/{student_code}"
+        }
         if self.graph_student_contact_infos_repo.get_by_id(student_code):
             self.graph_student_contact_infos_repo.update_by_id(student_code, student_contact_infos_record)
         else:
@@ -376,6 +382,8 @@ class SystemCore:
         student_subject_assessmets_record = {
             "code": student_code,
             "name": "Đánh giá môn học",
+            "card_id": profile.get("card_id"),
+            "edu_id": profile.get("edu_id"),
             "url": f"{common_settings.API_URL}/student_subject_assessmets/{student_code}"
         }
         if self.graph_student_subject_assessmets_repo.get_by_id(student_code):
@@ -404,7 +412,8 @@ class SystemCore:
         including_code, callback = self.choose_assessment(type_assessment)
         self.graph_student_sub_assessment_repo.create({
             "code": ontology_setting.ASSESSMENT2CODE[name],
-            "name": name
+            "name": name,
+            "define": ". ".join(self.student_assessment_kb[type_assessment][name])
         })
         callback.create_relationship(
             from_value=including_code,

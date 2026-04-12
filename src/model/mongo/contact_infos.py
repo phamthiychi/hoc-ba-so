@@ -4,6 +4,8 @@ class ContactInfos:
     def __init__(
         self,
         student_code: str,
+        student_card_id: str,
+        student_edu_id: str,
         father_name: str,
         father_job: str,
         father_phone: str,
@@ -18,6 +20,8 @@ class ContactInfos:
         guardian_card_id: str
     ):
         self.student_code = student_code
+        self.student_card_id = student_card_id
+        self.student_edu_id = student_edu_id
         self.data = ContactInfosData(
             father_name=father_name,
             father_job=father_job,
@@ -41,6 +45,8 @@ class ContactInfos:
     def to_dict(self) -> dict:
         return {
             "student_code": self.student_code,
+            "student_card_id":self.student_card_id,
+            "student_edu_id": self.student_edu_id,
             "data": self.data.to_dict()
         }
 
@@ -49,6 +55,8 @@ class ContactInfos:
         contact_info_data = ContactInfosData.from_dict(data.get("data"))
         return cls(
             student_code=data.get("student_code"),
+            student_card_id=data.get("student_card_id"),
+            student_edu_id=data.get("student_edu_id"),
             father_name=contact_info_data.father_name,
             father_job=contact_info_data.father_job,
             father_phone=contact_info_data.father_phone,
