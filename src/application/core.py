@@ -15,7 +15,7 @@ from src.adapter.api.template.grade_level import GradeLevelCreate, GradeLevelUpd
 from src.adapter.api.template.class_room import ClassRoomCreate, ClassRoomUpdate
 from src.adapter.api.template.contact_infos import ContactInfosCreateAndUpate
 from src.adapter.api.template.student_records import StudentRecords
-from src.adapter.api.template.comment import Comment
+from src.adapter.api.template.comment import Comment, SpecialAbilitiesComment
 
 from src.adapter.database.postgres_repository import (
     PostgresAcademicYearRepository,
@@ -79,9 +79,48 @@ class SystemCore:
         self.student_assessment_kb = KnowledgeBase().student_assessments.define
         self.embedding_assessment = EmbeddingSentence()
         self.emb_kb = {
-            "Phẩm chất chủ yếu": self.embedding_assessment.emb_knowledge(self.student_assessment_kb["Phẩm chất chủ yếu"]),
-            "Năng lực chung": self.embedding_assessment.emb_knowledge(self.student_assessment_kb["Năng lực chung"]),
-            "Năng lực đặc thù": self.embedding_assessment.emb_knowledge(self.student_assessment_kb["Năng lực đặc thù"])
+            "Phẩm chất": self.embedding_assessment.emb_knowledge(
+                knowledge_base=self.student_assessment_kb["Phẩm chất"],
+                name="quality"),
+            "Năng lực chung": self.embedding_assessment.emb_knowledge(
+                knowledge_base=self.student_assessment_kb["Năng lực chung"],
+                name="general"),
+            "vietnamese": self.embedding_assessment.emb_knowledge(
+                knowledge_base={"vietnamese": self.student_assessment_kb["Môn học"]["Tiếng Việt"]},
+                name="vietnamese"),
+            "mathematics": self.embedding_assessment.emb_knowledge(
+                knowledge_base={"mathematics":self.student_assessment_kb["Môn học"]["Toán"]},
+                name="mathematics"),
+            "informatics": self.embedding_assessment.emb_knowledge(
+                knowledge_base={"informatics":self.student_assessment_kb["Môn học"]["Tin học"]},
+                name="informatics"),
+            "science": self.embedding_assessment.emb_knowledge(
+                knowledge_base={"science":self.student_assessment_kb["Môn học"]["Khoa học"]},
+                name="science"),
+            "history_and_geography": self.embedding_assessment.emb_knowledge(
+                knowledge_base={"history_and_geography":self.student_assessment_kb["Môn học"]["Lịch sử và Địa lý"]},
+                name="history_and_geography"),
+            "english": self.embedding_assessment.emb_knowledge(
+                knowledge_base={"english":self.student_assessment_kb["Môn học"]["Tiếng Anh"]},
+                name="english"),
+            "technology": self.embedding_assessment.emb_knowledge(
+                knowledge_base={"technology":self.student_assessment_kb["Môn học"]["Công nghệ"]},
+                name="technology"),
+            "music": self.embedding_assessment.emb_knowledge(
+                knowledge_base={"music":self.student_assessment_kb["Môn học"]["Âm nhạc"]},
+                name="music"),
+            "arts": self.embedding_assessment.emb_knowledge(
+                knowledge_base={"arts":self.student_assessment_kb["Môn học"]["Mĩ thuật"]},
+                name="arts"),
+            "civics": self.embedding_assessment.emb_knowledge(
+                knowledge_base={"civics":self.student_assessment_kb["Môn học"]["Giáo dục công dân"]},
+                name="civics"),
+            "physical_education": self.embedding_assessment.emb_knowledge(
+                knowledge_base={"physical_education":self.student_assessment_kb["Môn học"]["Giáo dục thể chất"]},
+                name="physical_education"),
+            "experiential_activities": self.embedding_assessment.emb_knowledge(
+                knowledge_base={"experiential_activities":self.student_assessment_kb["Môn học"]["Hoạt động trải nghiệm"]},
+                name="experiential_activities")
         }
         # Other
         self.utils = Utils()
@@ -155,13 +194,13 @@ class SystemCore:
     async def find_student_subject_assessmets(self, student_code: str) -> dict:
         return (await self.student_subject_assessments_repo.get(student_code)).to_dict()
 
-    async def add_student_comment(self, payload: Comment, type_assessment: str, threshold = 0.5) -> str:
+    async def add_student_comment_general(self, payload: Comment, type_assessment: str, threshold = 0.5) -> str:
         if await self.find_student(payload.code) is None:
             return None
+        self.clear_student_assessment_outstanding(payload.code, type_assessment)
         clauses = self.utils.split_clauses(payload.comment)
         print(clauses)
         clause_embs = self.embedding_assessment.model.encode(clauses, convert_to_tensor=True)
-        self.clear_student_assessment_outstanding(payload.code, type_assessment)
         for i, clause in enumerate(clauses):
             sims = self.embedding_assessment.util.cos_sim(clause_embs[i], self.emb_kb[type_assessment].get("encode"))[0]
             best_idx = sims.argmax().item()
@@ -180,6 +219,17 @@ class SystemCore:
             )
         return payload.code
 
+    async def add_student_comment_special(self, payload: SpecialAbilitiesComment) -> str:
+        if await self.find_student(payload.code) is None:
+            return None
+        self.clear_student_assessment_outstanding(payload.code, "Năng lực đặc thù")
+        student_outcome = {"student_code": payload.code}
+        for field, comment in payload.model_dump().items():
+            if field == "code" or comment == None:
+                continue
+            key = field.replace('_comment', '')
+            student_outcome[key] = self.calc_emb_distance(comment, self.emb_kb[key])
+        return student_outcome
     ## Internal funcs
     def _init_graph(self) -> None:
         self.graph_thing_repo.__init__(self.manage)
@@ -211,6 +261,23 @@ class SystemCore:
             relation_type="HAS_ASSESSMENT",
             relation_props=None
         )
+        # for type_assessment, data in self.student_assessment_kb.items():
+        #     for name in data.keys():
+        #         code = ontology_setting.ASSESSMENT2CODE[name]
+        #         including_code, callback = self.choose_assessment(type_assessment)
+        #         self.graph_student_sub_assessment_repo.create({
+        #             "code": code,
+        #             "name": name,
+        #             "define": " ".join(self.student_assessment_kb[type_assessment][name])
+        #         })
+        #         callback.create_relationship(
+        #             from_value=including_code,
+        #             to_label="StudentSubAssessment",
+        #             to_id_field="code",
+        #             to_value=code,
+        #             relation_type="INCLUDING",
+        #             relation_props=None
+        #         )
 
     def fill_none(self, value: any, default="Chưa có") -> any:
         return value if value else default
@@ -409,20 +476,6 @@ class SystemCore:
     def create_student_assessment_outstanding(self, student_code: str, evidence: str, confident: float,
                                               name: str, indicator: str, comment: str, type_assessment: str) -> None:
         code = ontology_setting.ASSESSMENT2CODE[name]
-        including_code, callback = self.choose_assessment(type_assessment)
-        self.graph_student_sub_assessment_repo.create({
-            "code": ontology_setting.ASSESSMENT2CODE[name],
-            "name": name,
-            "define": ". ".join(self.student_assessment_kb[type_assessment][name])
-        })
-        callback.create_relationship(
-            from_value=including_code,
-            to_label="StudentSubAssessment",
-            to_id_field="code",
-            to_value=code,
-            relation_type="INCLUDING",
-            relation_props=None
-        )
         self.graph_student_repo.create_relationship(
             from_value=student_code,
             to_label="StudentSubAssessment",
@@ -439,7 +492,7 @@ class SystemCore:
         )
 
     def choose_assessment(self, type_assessment: str) -> Tuple[str, Callable[..., Any]]:
-        if type_assessment == "Phẩm chất chủ yếu":
+        if type_assessment == "Phẩm chất":
             return "student_quality", self.graph_student_Q_repo
         elif type_assessment == "Năng lực chung":
             return "student_general_abilities", self.graph_student_GA_repo
@@ -456,3 +509,28 @@ class SystemCore:
                 to_value=code,
                 relation_type="OUTSTANDING"
             )
+
+    def calc_emb_distance(self, comment: str, kb: dict) -> dict:
+        clauses = self.utils.split_clauses(comment)
+        print(clauses)
+        final_score = 0
+        final_clause = None
+        final_indicators = None
+        clause_embs = self.embedding_assessment.model.encode(clauses, convert_to_tensor=True)
+        for i, clause in enumerate(clauses):
+            sims = self.embedding_assessment.util.cos_sim(clause_embs[i], kb.get("encode"))[0]
+            best_idx = sims.argmax().item()
+            score = float(sims[best_idx])
+            if score <= final_score:
+                continue
+            indicators = kb.get("all_indicators")[best_idx]
+            final_score = score
+            final_clause = clause
+            final_indicators = indicators
+
+        return {
+            "evidence": final_clause,
+            "confident": final_score,
+            "indicator": final_indicators.get("indicator"),
+            "full_comment": comment
+        }

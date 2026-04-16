@@ -334,7 +334,7 @@ class Neo4jStudentQualityRepository(BaseNeo4jRepository):
         super().__init__(manager)
         self.create({
             "code": "student_quality",
-            "name": "Phẩm chất chủ yếu của học sinh"
+            "name": "Phẩm chất của học sinh"
         })
 
 class Neo4jStudentGeneralAbilitiesRepository(BaseNeo4jRepository):
