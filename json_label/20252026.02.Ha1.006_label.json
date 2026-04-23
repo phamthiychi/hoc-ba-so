@@ -1,0 +1,33 @@
+{
+  "student_code": "20252026.02.Ha1.006",
+  "labels": [
+    {
+      "field": "Năng lực ngôn ngữ",
+      "level": "Đang hình thành"
+    },
+    {
+      "field": "Năng lực tính toán",
+      "level": "Nổi trội"
+    },
+    {
+      "field": "Năng lực khoa học",
+      "level": "Đang hình thành"
+    },
+    {
+      "field": "Năng lực công nghệ",
+      "level": "Chưa đủ cơ sở"
+    },
+    {
+      "field": "Năng lực tin học",
+      "level": "Đang hình thành"
+    },
+    {
+      "field": "Năng lực thẩm mĩ",
+      "level": "Đang hình thành"
+    },
+    {
+      "field": "Năng lực thể chất",
+      "level": "Đang hình thành"
+    }
+  ]
+}
