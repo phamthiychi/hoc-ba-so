@@ -1,0 +1,66 @@
+{
+    "student_code": "20252026.02.Ha1.001",
+    "vietnamese": {
+        "evidence": "nắm vững kiến thức tiếng việt đã học",
+        "confident": 0.7938811779022217,
+        "indicator": "Nêu được những điều học được từ văn bản.",
+        "level": 3,
+        "full_comment": "Em đọc bài lưu loát, nắm vững kiến thức Tiếng Việt đã học và viết văn có nhiều sáng tạo. Em thật đáng khen!"
+    },
+    "mathematics": {
+        "evidence": "giải toán có lời văn thành thạo",
+        "confident": 0.6891785860061646,
+        "indicator": "Nhận biết và viết được phép tính (cộng, trừ) phù hợp với câu trả lời của bài toán có lời văn và tính được kết quả đúng.",
+        "level": 3,
+        "full_comment": "Em nắm vững kiến thức môn học; tính toán nhanh nhẹn, chính xác và giải toán có lời văn thành thạo."
+    },
+    "informatics": {
+        "evidence": "em đã nhớ được trình tự thực hiện khi muốn lập trình nhạc nền cho nhân vật",
+        "confident": 0.5084704160690308,
+        "indicator": "Thực hiện thành thạo các thao tác chọn, xoá, sao chép, di chuyển một đoạn văn bản.",
+        "level": 1,
+        "full_comment": "Em đã nhớ được trình tự thực hiện khi muốn lập trình nhạc nền cho nhân vật."
+    },
+    "english": {
+        "evidence": "em chăm chỉ học tập",
+        "confident": 0.5045701265335083,
+        "indicator": "Nghe hiểu và làm theo những chỉ dẫn đơn giản trong lớp học.",
+        "level": 1,
+        "full_comment": "Em chăm chỉ học tập và luôn háo hức học những điều mới."
+    },
+    "music": {
+        "evidence": "kết hợp nốt trên khuôn nhạc",
+        "confident": 0.8131219148635864,
+        "indicator": "Vận dụng phù hợp các hình thức độc tấu, hoà tấu trong hoạt động âm nhạc.",
+        "level": 1,
+        "full_comment": "Em biết gọi tên nốt, kết hợp nốt trên khuôn nhạc, hát đúng giai điệu."
+    },
+    "arts": {
+        "evidence": "có nhiều sáng tạo",
+        "confident": 0.7691968679428101,
+        "indicator": "Biết kết hợp vẽ, cắt, xé dán,... trong thực hành, sáng tạo.",
+        "level": 3,
+        "full_comment": "Em hoàn thành tốt bài vẽ, có nhiều sáng tạo."
+    },
+    "civics": {
+        "evidence": "hiểu",
+        "confident": 0.6900830268859863,
+        "indicator": "Biết vì sao phải thật thà.",
+        "level": 3,
+        "full_comment": "Em tiếp thu bài nhanh; hiểu và thực hiện tốt hành vi đạo đức đã học."
+    },
+    "physical_education": {
+        "evidence": "em hoàn thành nội dung chương trình môn học",
+        "confident": 0.6903708577156067,
+        "indicator": "Hoàn thành lượng vận động của bài tập.",
+        "level": 1,
+        "full_comment": "Em hoàn thành nội dung chương trình môn học."
+    },
+    "experiential_activities": {
+        "evidence": "tích cực tham gia các hoạt động trải nghiệm cùng các bạn",
+        "confident": 0.7355899810791016,
+        "indicator": "Thể hiện được sự chia sẻ và hỗ trợ bạn trong hoạt động.",
+        "level": 2,
+        "full_comment": "Em hoàn thành tốt nội dung môn học, biết vận dụng vào cuộc sống hằng ngày; tích cực tham gia các hoạt động trải nghiệm cùng các bạn."
+    }
+}

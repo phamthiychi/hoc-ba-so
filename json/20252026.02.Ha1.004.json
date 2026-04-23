@@ -1,0 +1,66 @@
+{
+    "student_code": "20252026.02.Ha1.004",
+    "vietnamese": {
+        "evidence": "đặt câu đúng",
+        "confident": 0.778430700302124,
+        "indicator": "Nói rõ ràng, thành câu.",
+        "level": 1,
+        "full_comment": "Em đọc bài tốt, nắm vững vốn từ và đặt câu đúng; đoạn văn có nhiều hình ảnh đẹp và diễn đạt mạch lạc."
+    },
+    "mathematics": {
+        "evidence": "nắm vững cách giải toán",
+        "confident": 0.7047727704048157,
+        "indicator": "Nêu được cách thức giải quyết vấn đề.",
+        "level": 1,
+        "full_comment": "Em có kĩ năng tính toán tốt, nắm vững cách giải toán."
+    },
+    "informatics": {
+        "evidence": "em biết cách chọn các loại nhạc nền khác nhau cho nhân vật trong trò chơi",
+        "confident": 0.5730164647102356,
+        "indicator": "Nhận ra được chương trình máy tính qua các trò chơi.",
+        "level": 1,
+        "full_comment": "Em biết cách chọn các loại nhạc nền khác nhau cho nhân vật trong trò chơi."
+    },
+    "english": {
+        "evidence": "em có tiến bộ trong học tập",
+        "confident": 0.4569356441497803,
+        "indicator": "Có thái độ tích cực đối với việc học tiếng Anh.",
+        "level": 2,
+        "full_comment": "Em có tiến bộ trong học tập. Em cần phát huy."
+    },
+    "music": {
+        "evidence": "em hát thuộc lời ca",
+        "confident": 0.8272043466567993,
+        "indicator": "Hát rõ lời và thuộc lời.",
+        "level": 1,
+        "full_comment": "Em hát thuộc lời ca và đúng giai điệu bài hát."
+    },
+    "arts": {
+        "evidence": "thực hiện sản phẩm đúng yêu cầu",
+        "confident": 0.7500612735748291,
+        "indicator": "Vận dụng được nét để tạo nên sản phẩm.",
+        "level": 1,
+        "full_comment": "Em hoàn thành tốt nội dung môn học, thực hiện sản phẩm đúng yêu cầu."
+    },
+    "civics": {
+        "evidence": "hiểu",
+        "confident": 0.6900830268859863,
+        "indicator": "Biết vì sao phải thật thà.",
+        "level": 3,
+        "full_comment": "Em tiếp thu bài nhanh; hiểu và thực hiện tốt hành vi đạo đức đã học."
+    },
+    "physical_education": {
+        "evidence": "em hoàn thành nội dung chương trình môn học",
+        "confident": 0.6903708577156067,
+        "indicator": "Hoàn thành lượng vận động của bài tập.",
+        "level": 1,
+        "full_comment": "Em hoàn thành nội dung chương trình môn học."
+    },
+    "experiential_activities": {
+        "evidence": "em biết vận dụng bài học từ các chủ đề vào cuộc sống hằng ngày",
+        "confident": 0.5611894726753235,
+        "indicator": "Nhận biết được những việc nên làm vào giờ học, những việc nên làm vào giờ chơi và thực hiện được những việc đó.",
+        "level": 2,
+        "full_comment": "Em biết vận dụng bài học từ các chủ đề vào cuộc sống hằng ngày."
+    }
+}

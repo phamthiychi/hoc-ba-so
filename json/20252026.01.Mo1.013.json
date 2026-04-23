@@ -1,0 +1,66 @@
+{
+    "student_code": "20252026.01.Mo1.013",
+    "vietnamese": {
+        "evidence": "đặt câu đúng ngữ pháp",
+        "confident": 0.7797233462333679,
+        "indicator": "Nói rõ ràng, thành câu.",
+        "level": 1,
+        "full_comment": "Em đọc bài lưu loát, đặt câu đúng ngữ pháp, kỹ năng nghe viết tốt."
+    },
+    "mathematics": {
+        "evidence": "em nắm vững kiến thức",
+        "confident": 0.6900843977928162,
+        "indicator": "Nhận biết được hình bình hành, hình thoi.",
+        "level": 1,
+        "full_comment": "Em nắm vững kiến thức, kỹ năng tính toán nhanh."
+    },
+    "informatics": {
+        "evidence": "em sử dụng được các công cụ vẽ để tạo ra sản phẩm theo mẫu đã cho",
+        "confident": 0.6635370254516602,
+        "indicator": "Tạo được sản phẩm thủ công theo video hướng dẫn, ví dụ: gấp giấy, tạo đồ dùng tiện lợi cho gia đình,...",
+        "level": 1,
+        "full_comment": "Em sử dụng được các công cụ vẽ để tạo ra sản phẩm theo mẫu đã cho."
+    },
+    "english": {
+        "evidence": "em chăm chỉ học tập",
+        "confident": 0.5045701265335083,
+        "indicator": "Nghe hiểu và làm theo những chỉ dẫn đơn giản trong lớp học.",
+        "level": 1,
+        "full_comment": "Em chăm chỉ học tập và luôn háo hức học những điều mới."
+    },
+    "music": {
+        "evidence": "em biết phân biệt âm thanh cao – thấp",
+        "confident": 0.832665741443634,
+        "indicator": "Bước đầu cảm nhận và phân biệt được âm thanh cao – thấp, dài – ngắn, to – nhỏ.",
+        "level": 1,
+        "full_comment": "Em biết phân biệt âm thanh cao – thấp và biết thể hiện vận động theo ý thích khi nghe nhạc."
+    },
+    "arts": {
+        "evidence": "tô màu đều nét",
+        "confident": 0.7888104915618896,
+        "indicator": "Sử dụng được các màu cơ bản; màu đậm, màu nhạt trong thực hành, sáng tạo.",
+        "level": 1,
+        "full_comment": "Em biết trình bày các bố cục hài hòa và tô màu đều nét."
+    },
+    "civics": {
+        "evidence": "hành vi đạo đức phù hợp",
+        "confident": 0.6668856143951416,
+        "indicator": "Nhận xét được tính chất đúng – sai, tốt – xấu, thiện – ác của một số thái độ, hành vi đạo đức và pháp luật của bản thân và bạn bè trong học tập và sinh hoạt.",
+        "level": 1,
+        "full_comment": "Em biết điều chỉnh thái độ và hành vi đạo đức phù hợp."
+    },
+    "physical_education": {
+        "evidence": "em hoàn thành nội dung chương trình môn học",
+        "confident": 0.6903708577156067,
+        "indicator": "Hoàn thành lượng vận động của bài tập.",
+        "level": 1,
+        "full_comment": "Em hoàn thành nội dung chương trình môn học."
+    },
+    "experiential_activities": {
+        "evidence": "em biết khám phá thế giới bản thân",
+        "confident": 0.6386702656745911,
+        "indicator": "Nhận ra được những nét riêng của bản thân.",
+        "level": 1,
+        "full_comment": "Em biết khám phá thế giới bản thân và thế giới xung quanh."
+    }
+}

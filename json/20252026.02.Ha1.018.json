@@ -1,0 +1,66 @@
+{
+    "student_code": "20252026.02.Ha1.018",
+    "vietnamese": {
+        "evidence": "nắm vững kiến thức tiếng việt đã học",
+        "confident": 0.7938811779022217,
+        "indicator": "Nêu được những điều học được từ văn bản.",
+        "level": 3,
+        "full_comment": "Em đọc bài lưu loát, nắm vững kiến thức Tiếng Việt đã học và viết văn có nhiều sáng tạo. Em thật đáng khen!"
+    },
+    "mathematics": {
+        "evidence": "em vận dụng tốt kiến thức đã học để thực hiện các dạng toán",
+        "confident": 0.727294921875,
+        "indicator": "Sử dụng được các công cụ, phương tiện học toán để thực hiện những nhiệm vụ học tập toán đơn giản.",
+        "level": 1,
+        "full_comment": "Em vận dụng tốt kiến thức đã học để thực hiện các dạng toán; giải toán đúng. Em thật đáng khen!"
+    },
+    "informatics": {
+        "evidence": "em biết lập trình cho nhân vật làm các hành động khác nhau ứng với mỗi tương tác",
+        "confident": 0.5979772806167603,
+        "indicator": "Tự thiết lập và tạo được chương trình đơn giản, ví dụ điều khiển một nhân vật chuyển động trên màn hình.",
+        "level": 1,
+        "full_comment": "Em biết lập trình cho nhân vật làm các hành động khác nhau ứng với mỗi tương tác."
+    },
+    "english": {
+        "evidence": "tích cực phát biểu ý kiến xây dựng bài",
+        "confident": 0.5400339961051941,
+        "indicator": "Nói về một số chủ đề trong Chương trình (có sự trợ giúp).",
+        "level": 3,
+        "full_comment": "Em học rất tốt bộ môn và tích cực phát biểu ý kiến xây dựng bài."
+    },
+    "music": {
+        "evidence": "biết thể hiện hình tiết tấu có các nốt đã học",
+        "confident": 0.5479586124420166,
+        "indicator": "Bước đầu thể hiện được mẫu tiết tấu theo hướng dẫn của giáo viên.",
+        "level": 1,
+        "full_comment": "Em biết giá trị độ dài của hình nốt đã học, biết thể hiện hình tiết tấu có các nốt đã học."
+    },
+    "arts": {
+        "evidence": "biết phối hợp màu sắc hài hòa",
+        "confident": 0.8643441200256348,
+        "indicator": "Biết phân biệt màu cơ bản và màu thứ cấp.",
+        "level": 1,
+        "full_comment": "Em vẽ đẹp, biết phối hợp màu sắc hài hòa."
+    },
+    "civics": {
+        "evidence": "hiểu",
+        "confident": 0.6900830268859863,
+        "indicator": "Biết vì sao phải thật thà.",
+        "level": 3,
+        "full_comment": "Em tiếp thu bài nhanh; hiểu và thực hiện tốt hành vi đạo đức đã học."
+    },
+    "physical_education": {
+        "evidence": "em hoàn thành nội dung chương trình môn học",
+        "confident": 0.6903708577156067,
+        "indicator": "Hoàn thành lượng vận động của bài tập.",
+        "level": 1,
+        "full_comment": "Em hoàn thành nội dung chương trình môn học."
+    },
+    "experiential_activities": {
+        "evidence": "tích cực tham gia các hoạt động trải nghiệm cùng các bạn",
+        "confident": 0.7355899214744568,
+        "indicator": "Thể hiện được sự chia sẻ và hỗ trợ bạn trong hoạt động.",
+        "level": 2,
+        "full_comment": "Em biết vận dụng bài học từ các chủ đề vào cuộc sống hằng ngày, tích cực tham gia các hoạt động trải nghiệm cùng các bạn."
+    }
+}

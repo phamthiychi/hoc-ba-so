@@ -1,0 +1,66 @@
+{
+    "student_code": "20252026.01.Mo1.028",
+    "vietnamese": {
+        "evidence": "biết đặt câu hoàn chỉnh",
+        "confident": 0.8557479977607727,
+        "indicator": "Nói rõ ràng, thành câu.",
+        "level": 1,
+        "full_comment": "Em đọc bài khá tốt, biết đặt câu hoàn chỉnh. Em cần rèn thêm chữ viết nhé!"
+    },
+    "mathematics": {
+        "evidence": "vận dụng tốt vào các bài tập",
+        "confident": 0.6805649995803833,
+        "indicator": "Củng cố và hoàn thiện các kĩ năng: đọc, viết, so sánh, xếp thứ tự được các số tự nhiên.",
+        "level": 1,
+        "full_comment": "Em thực hiện tính đúng, vận dụng tốt vào các bài tập."
+    },
+    "informatics": {
+        "evidence": "em thực hiện tốt thao tác kéo thả chuột nhờ đó vẽ hình được nhanh hơn",
+        "confident": 0.7589210271835327,
+        "indicator": "Cầm được chuột đúng cách.",
+        "level": 3,
+        "full_comment": "Em thực hiện tốt thao tác kéo thả chuột nhờ đó vẽ hình được nhanh hơn."
+    },
+    "english": {
+        "evidence": "ôn thêm từ vựng nhé",
+        "confident": 0.7230868935585022,
+        "indicator": "Nói các từ và cụm từ quen thuộc, đơn giản.",
+        "level": 1,
+        "full_comment": "Em cần tập trung hơn trong giờ học, luyện đọc và ôn thêm từ vựng nhé."
+    },
+    "music": {
+        "evidence": "vị trí các nốt nhạc qua trò chơi",
+        "confident": 0.7958035469055176,
+        "indicator": "Biết hát kết hợp gõ đệm, vận động hoặc trò chơi.",
+        "level": 1,
+        "full_comment": "Em biết hát theo giai điệu và đúng lời ca, nhớ tên và vị trí các nốt nhạc qua trò chơi."
+    },
+    "arts": {
+        "evidence": "tô màu đều nét",
+        "confident": 0.7888104915618896,
+        "indicator": "Sử dụng được các màu cơ bản; màu đậm, màu nhạt trong thực hành, sáng tạo.",
+        "level": 1,
+        "full_comment": "Em biết trình bày các bố cục hài hòa và tô màu đều nét."
+    },
+    "civics": {
+        "evidence": "em biết thể hiện thái độ đồng tình với những hành vi đạo đức tốt",
+        "confident": 0.7079663276672363,
+        "indicator": "Thể hiện được thái độ đồng tình với cái thiện, cái đúng, cái tốt; không đồng tình với cái ác, cái sai, cái xấu.",
+        "level": 1,
+        "full_comment": "Em biết thể hiện thái độ đồng tình với những hành vi đạo đức tốt."
+    },
+    "physical_education": {
+        "evidence": "em hoàn thành nội dung chương trình môn học",
+        "confident": 0.6903708577156067,
+        "indicator": "Hoàn thành lượng vận động của bài tập.",
+        "level": 1,
+        "full_comment": "Em hoàn thành nội dung chương trình môn học."
+    },
+    "experiential_activities": {
+        "evidence": "chia sẻ ý kiến với các bạn trong nhóm",
+        "confident": 0.6365104913711548,
+        "indicator": "Tham gia tích cực vào hoạt động nhóm.",
+        "level": 1,
+        "full_comment": "Em hiểu bài, biết lắng nghe và chia sẻ ý kiến với các bạn trong nhóm."
+    }
+}

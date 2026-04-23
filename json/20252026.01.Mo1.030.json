@@ -1,0 +1,66 @@
+{
+    "student_code": "20252026.01.Mo1.030",
+    "vietnamese": {
+        "evidence": "đặt câu đúng ngữ pháp",
+        "confident": 0.7797233462333679,
+        "indicator": "Nói rõ ràng, thành câu.",
+        "level": 1,
+        "full_comment": "Em đọc bài lưu loát, đặt câu đúng ngữ pháp, kỹ năng nghe viết tốt."
+    },
+    "mathematics": {
+        "evidence": "kĩ năng tính toán tốt",
+        "confident": 0.6795313358306885,
+        "indicator": "Củng cố và hoàn thiện các kĩ năng: đọc, viết, so sánh, xếp thứ tự được các số tự nhiên.",
+        "level": 1,
+        "full_comment": "Em làm bài nhanh, kĩ năng tính toán tốt, trình bày vở sạch đẹp."
+    },
+    "informatics": {
+        "evidence": "em đã biết kết hợp các công cụ vẽ để tạo thành sản phẩm đơn giản",
+        "confident": 0.7037522196769714,
+        "indicator": "Tạo được bài trình chiếu đơn giản, bưu thiệp, bức vẽ hay một chương trình trò chơi đơn giản.",
+        "level": 1,
+        "full_comment": "Em đã biết kết hợp các công cụ vẽ để tạo thành sản phẩm đơn giản."
+    },
+    "english": {
+        "evidence": "tích cực phát biểu ý kiến xây dựng bài",
+        "confident": 0.5400339961051941,
+        "indicator": "Nói về một số chủ đề trong Chương trình (có sự trợ giúp).",
+        "level": 3,
+        "full_comment": "Em học rất tốt bộ môn và tích cực phát biểu ý kiến xây dựng bài."
+    },
+    "music": {
+        "evidence": "theo phách",
+        "confident": 0.6389163732528687,
+        "indicator": "Đọc đúng cao độ gam Đô trưởng.",
+        "level": 1,
+        "full_comment": "Em biết gõ đệm theo tiết tấu lời ca, theo phách."
+    },
+    "arts": {
+        "evidence": "tô màu đều nét",
+        "confident": 0.7888104915618896,
+        "indicator": "Sử dụng được các màu cơ bản; màu đậm, màu nhạt trong thực hành, sáng tạo.",
+        "level": 1,
+        "full_comment": "Em biết trình bày các bố cục hài hòa và tô màu đều nét."
+    },
+    "civics": {
+        "evidence": "em biết sắm vai",
+        "confident": 0.6965627670288086,
+        "indicator": "Biết vì sao phải thật thà.",
+        "level": 1,
+        "full_comment": "Em biết sắm vai và xử lý tốt các tình huống."
+    },
+    "physical_education": {
+        "evidence": "em hoàn thành nội dung chương trình môn học",
+        "confident": 0.6903708577156067,
+        "indicator": "Hoàn thành lượng vận động của bài tập.",
+        "level": 1,
+        "full_comment": "Em hoàn thành nội dung chương trình môn học, mạnh dạn trong các hoạt động nhóm."
+    },
+    "experiential_activities": {
+        "evidence": "chia sẻ ý kiến với các bạn trong nhóm",
+        "confident": 0.6365104913711548,
+        "indicator": "Tham gia tích cực vào hoạt động nhóm.",
+        "level": 1,
+        "full_comment": "Em hiểu bài, biết lắng nghe và chia sẻ ý kiến với các bạn trong nhóm."
+    }
+}

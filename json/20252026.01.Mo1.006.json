@@ -1,0 +1,66 @@
+{
+    "student_code": "20252026.01.Mo1.006",
+    "vietnamese": {
+        "evidence": "đặt câu đúng ngữ pháp",
+        "confident": 0.7797233462333679,
+        "indicator": "Nói rõ ràng, thành câu.",
+        "level": 1,
+        "full_comment": "Em đọc bài lưu loát, đặt câu đúng ngữ pháp, kỹ năng nghe viết tốt."
+    },
+    "mathematics": {
+        "evidence": "em nắm vững kiến thức",
+        "confident": 0.6900843977928162,
+        "indicator": "Nhận biết được hình bình hành, hình thoi.",
+        "level": 1,
+        "full_comment": "Em nắm vững kiến thức, kỹ năng tính toán nhanh."
+    },
+    "informatics": {
+        "evidence": "thu nhỏ trang giấy vẽ",
+        "confident": 0.669425904750824,
+        "indicator": "Tạo được tệp trình chiếu đơn giản (khoảng 4 trang) có chữ hoa và chữ thường, có ảnh, có sử dụng công cụ gạch đầu dòng.",
+        "level": 2,
+        "full_comment": "Em thực hiện được thao tác mở rộng, thu nhỏ trang giấy vẽ."
+    },
+    "english": {
+        "evidence": "em chăm chỉ học tập",
+        "confident": 0.5045701265335083,
+        "indicator": "Nghe hiểu và làm theo những chỉ dẫn đơn giản trong lớp học.",
+        "level": 1,
+        "full_comment": "Em chăm chỉ học tập và luôn háo hức học những điều mới."
+    },
+    "music": {
+        "evidence": "em hát thuộc lời ca",
+        "confident": 0.8272043466567993,
+        "indicator": "Hát rõ lời và thuộc lời.",
+        "level": 1,
+        "full_comment": "Em hát thuộc lời ca và đúng giai điệu bài hát."
+    },
+    "arts": {
+        "evidence": "biết chia sẻ các sản phẩm cùng bạn",
+        "confident": 0.7959755659103394,
+        "indicator": "Trưng bày, chia sẻ được cảm nhận về sản phẩm.",
+        "level": 1,
+        "full_comment": "Em tô màu đều nét và biết chia sẻ các sản phẩm cùng bạn."
+    },
+    "civics": {
+        "evidence": "em biết áp dụng các hành vi đạo đức đã học vào thực tiễn",
+        "confident": 0.6052494049072266,
+        "indicator": "Nhận biết được một số chuẩn mực hành vi đạo đức và pháp luật thường gặp phù hợp với lứa tuổi và sự cần thiết của việc thực hiện theo các chuẩn mực đó.",
+        "level": 1,
+        "full_comment": "Em biết áp dụng các hành vi đạo đức đã học vào thực tiễn."
+    },
+    "physical_education": {
+        "evidence": "em hoàn thành nội dung chương trình môn học",
+        "confident": 0.6903708577156067,
+        "indicator": "Hoàn thành lượng vận động của bài tập.",
+        "level": 1,
+        "full_comment": "Em hoàn thành nội dung chương trình môn học, mạnh dạn trong các hoạt động nhóm."
+    },
+    "experiential_activities": {
+        "evidence": "chia sẻ ý kiến với các bạn trong nhóm",
+        "confident": 0.6365104913711548,
+        "indicator": "Tham gia tích cực vào hoạt động nhóm.",
+        "level": 1,
+        "full_comment": "Em hiểu bài, biết lắng nghe và chia sẻ ý kiến với các bạn trong nhóm."
+    }
+}

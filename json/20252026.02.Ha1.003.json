@@ -1,0 +1,66 @@
+{
+    "student_code": "20252026.02.Ha1.003",
+    "vietnamese": {
+        "evidence": "diễn đạt câu văn ngắn gọn",
+        "confident": 0.7994937896728516,
+        "indicator": "Nói rõ ràng, thành câu.",
+        "level": 1,
+        "full_comment": "Em đọc to, rõ ràng; có kĩ năng nghe viết tốt; diễn đạt câu văn ngắn gọn và giàu cảm xúc. Em tiếp tục phát huy nhé!"
+    },
+    "mathematics": {
+        "evidence": "giải toán có lời văn thành thạo",
+        "confident": 0.6891787052154541,
+        "indicator": "Nhận biết và viết được phép tính (cộng, trừ) phù hợp với câu trả lời của bài toán có lời văn và tính được kết quả đúng.",
+        "level": 3,
+        "full_comment": "Em nắm vững kiến thức môn học; tính toán nhanh nhẹn, chính xác và giải toán có lời văn thành thạo. Em cần rèn tính cẩn thận mỗi khi viết đề bài tránh sai sót trong quá trình làm bài nhé!"
+    },
+    "informatics": {
+        "evidence": "em đã có thể viết các dòng lệnh đơn giản để tạo nhạc nền trong trò chơi",
+        "confident": 0.7125393152236938,
+        "indicator": "Tạo được bài trình chiếu đơn giản, bưu thiệp, bức vẽ hay một chương trình trò chơi đơn giản.",
+        "level": 1,
+        "full_comment": "Em đã có thể viết các dòng lệnh đơn giản để tạo nhạc nền trong trò chơi."
+    },
+    "english": {
+        "evidence": "em có tinh thần học tập tốt",
+        "confident": 0.5206648707389832,
+        "indicator": "Có thái độ tích cực đối với việc học tiếng Anh.",
+        "level": 1,
+        "full_comment": "Em có tinh thần học tập tốt. Em cần phát huy."
+    },
+    "music": {
+        "evidence": "hát đúng giai điệu",
+        "confident": 0.7741258144378662,
+        "indicator": "Hát với giọng hát tự nhiên, tư thế phù hợp.",
+        "level": 1,
+        "full_comment": "Em thuộc lời ca, hát đúng giai điệu, biết thể hiện sắc thái bài hát."
+    },
+    "arts": {
+        "evidence": "có sự chuẩn bị tốt ở mỗi tiết học",
+        "confident": 0.577387809753418,
+        "indicator": "Biết giữ vệ sinh trường, lớp, đồ dùng học tập,… trong thực hành, sáng tạo.",
+        "level": 1,
+        "full_comment": "Em hoàn thành tốt bài vẽ, có sự chuẩn bị tốt ở mỗi tiết học."
+    },
+    "civics": {
+        "evidence": "biết sắm vai trong các tình huống",
+        "confident": 0.7229063510894775,
+        "indicator": "Biết vì sao phải sinh hoạt nền nếp.",
+        "level": 3,
+        "full_comment": "Em hoàn thành tốt nội dung môn học, biết sắm vai trong các tình huống và tích cực trong học tập."
+    },
+    "physical_education": {
+        "evidence": "em hoàn thành nội dung chương trình môn học",
+        "confident": 0.6903708577156067,
+        "indicator": "Hoàn thành lượng vận động của bài tập.",
+        "level": 1,
+        "full_comment": "Em hoàn thành nội dung chương trình môn học."
+    },
+    "experiential_activities": {
+        "evidence": "em hoàn thành tốt nội dung môn học",
+        "confident": 0.569270670413971,
+        "indicator": "Thực hiện và hoàn thành được các nhiệm vụ.",
+        "level": 1,
+        "full_comment": "Em hoàn thành tốt nội dung môn học."
+    }
+}

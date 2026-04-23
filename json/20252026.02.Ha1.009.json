@@ -1,0 +1,66 @@
+{
+    "student_code": "20252026.02.Ha1.009",
+    "vietnamese": {
+        "evidence": "nắm vững kiến thức tiếng việt đã học",
+        "confident": 0.7938811779022217,
+        "indicator": "Nêu được những điều học được từ văn bản.",
+        "level": 3,
+        "full_comment": "Em đọc bài lưu loát, nắm vững kiến thức Tiếng Việt đã học và viết văn có nhiều sáng tạo. Em thật đáng khen!"
+    },
+    "mathematics": {
+        "evidence": "em vận dụng tốt kiến thức đã học để thực hiện các dạng toán",
+        "confident": 0.727294921875,
+        "indicator": "Sử dụng được các công cụ, phương tiện học toán để thực hiện những nhiệm vụ học tập toán đơn giản.",
+        "level": 1,
+        "full_comment": "Em vận dụng tốt kiến thức đã học để thực hiện các dạng toán; giải toán đúng. Em thật đáng khen!"
+    },
+    "informatics": {
+        "evidence": "em đã nhớ được các bước cần thực hiện khi muốn lập trình âm thanh cho nhân vật",
+        "confident": 0.5639641284942627,
+        "indicator": "Thực hiện thành thạo các thao tác chọn, xoá, sao chép, di chuyển một đoạn văn bản.",
+        "level": 1,
+        "full_comment": "Em đã nhớ được các bước cần thực hiện khi muốn lập trình âm thanh cho nhân vật."
+    },
+    "english": {
+        "evidence": "em có khả năng nhận biết",
+        "confident": 0.6521984338760376,
+        "indicator": "Nghe và nhận biết trọng âm từ.",
+        "level": 1,
+        "full_comment": "Em có khả năng nhận biết và ghi nhớ tốt những kiến thức được truyền thụ."
+    },
+    "music": {
+        "evidence": "theo phách",
+        "confident": 0.6389163732528687,
+        "indicator": "Đọc đúng cao độ gam Đô trưởng.",
+        "level": 1,
+        "full_comment": "Em biết gõ đệm theo tiết tấu lời ca, theo phách."
+    },
+    "arts": {
+        "evidence": "biết phối hợp màu sắc hài hòa",
+        "confident": 0.8643441200256348,
+        "indicator": "Biết phân biệt màu cơ bản và màu thứ cấp.",
+        "level": 1,
+        "full_comment": "Em vẽ đẹp, biết phối hợp màu sắc hài hòa."
+    },
+    "civics": {
+        "evidence": "em nắm vững nội dung kiến thức",
+        "confident": 0.6919206380844116,
+        "indicator": "Biết vì sao phải sinh hoạt nền nếp.",
+        "level": 1,
+        "full_comment": "Em nắm vững nội dung kiến thức, biết xử lí tình huống theo yêu cầu bài học."
+    },
+    "physical_education": {
+        "evidence": "em hoàn thành nội dung chương trình môn học",
+        "confident": 0.6903708577156067,
+        "indicator": "Hoàn thành lượng vận động của bài tập.",
+        "level": 1,
+        "full_comment": "Em hoàn thành nội dung chương trình môn học."
+    },
+    "experiential_activities": {
+        "evidence": "tích cực tham gia các hoạt động trải nghiệm cùng các bạn",
+        "confident": 0.7355899810791016,
+        "indicator": "Thể hiện được sự chia sẻ và hỗ trợ bạn trong hoạt động.",
+        "level": 2,
+        "full_comment": "Em hoàn thành tốt nội dung môn học, biết vận dụng vào cuộc sống hằng ngày, tích cực tham gia các hoạt động trải nghiệm cùng các bạn."
+    }
+}

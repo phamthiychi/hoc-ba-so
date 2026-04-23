@@ -1,0 +1,66 @@
+{
+    "student_code": "20252026.02.Ha1.011",
+    "vietnamese": {
+        "evidence": "diễn đạt câu văn ngắn gọn",
+        "confident": 0.7994937896728516,
+        "indicator": "Nói rõ ràng, thành câu.",
+        "level": 1,
+        "full_comment": "Em đọc to, rõ ràng; có kĩ năng nghe viết tốt; diễn đạt câu văn ngắn gọn và giàu cảm xúc. Em tiếp tục phát huy nhé!"
+    },
+    "mathematics": {
+        "evidence": "giải toán có lời văn thành thạo",
+        "confident": 0.6891785860061646,
+        "indicator": "Nhận biết và viết được phép tính (cộng, trừ) phù hợp với câu trả lời của bài toán có lời văn và tính được kết quả đúng.",
+        "level": 3,
+        "full_comment": "Em nắm vững kiến thức môn học; tính toán nhanh nhẹn, chính xác và giải toán có lời văn thành thạo."
+    },
+    "informatics": {
+        "evidence": "em biết dùng phím mũi tên sang phải",
+        "confident": 0.7820713520050049,
+        "indicator": "Giải thích được lợi ích của việc gõ bàn phím đúng cách.",
+        "level": 1,
+        "full_comment": "Em biết dùng phím mũi tên sang phải, sang trái để thay đổi màu cho nhân vật."
+    },
+    "english": {
+        "evidence": "là thành viên tích cực của lớp",
+        "confident": 0.5456535220146179,
+        "indicator": "Có thái độ tích cực đối với việc học tiếng Anh.",
+        "level": 3,
+        "full_comment": "Em học tốt bộ môn và là thành viên tích cực của lớp."
+    },
+    "music": {
+        "evidence": "em biết hát kết hợp vận động theo nhịp điệu bằng nhiều hình thức khác nhau như : đơn ca",
+        "confident": 0.8524116277694702,
+        "indicator": "Biết hát với các hình thức đơn ca, song ca, tốp ca, đồng ca.",
+        "level": 1,
+        "full_comment": "Em biết hát kết hợp vận động theo nhịp điệu bằng nhiều hình thức khác nhau như : Đơn ca, song ca, tốp ca."
+    },
+    "arts": {
+        "evidence": "biết phối hợp màu sắc hài hòa",
+        "confident": 0.8643441200256348,
+        "indicator": "Biết phân biệt màu cơ bản và màu thứ cấp.",
+        "level": 1,
+        "full_comment": "Em hoàn thành bài vẽ nhanh chóng, biết phối hợp màu sắc hài hòa."
+    },
+    "civics": {
+        "evidence": "hiểu",
+        "confident": 0.6900830268859863,
+        "indicator": "Biết vì sao phải thật thà.",
+        "level": 3,
+        "full_comment": "Em tiếp thu bài nhanh; hiểu và thực hiện tốt hành vi đạo đức đã học."
+    },
+    "physical_education": {
+        "evidence": "em hoàn thành nội dung chương trình môn học",
+        "confident": 0.6903708577156067,
+        "indicator": "Hoàn thành lượng vận động của bài tập.",
+        "level": 1,
+        "full_comment": "Em hoàn thành nội dung chương trình môn học."
+    },
+    "experiential_activities": {
+        "evidence": "tích cực tham gia các hoạt động trải nghiệm cùng các bạn",
+        "confident": 0.7355899214744568,
+        "indicator": "Thể hiện được sự chia sẻ và hỗ trợ bạn trong hoạt động.",
+        "level": 2,
+        "full_comment": "Em biết vận dụng bài học từ các chủ đề vào cuộc sống hằng ngày, tích cực tham gia các hoạt động trải nghiệm cùng các bạn."
+    }
+}

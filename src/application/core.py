@@ -516,21 +516,34 @@ class SystemCore:
         final_score = 0
         final_clause = None
         final_indicators = None
-        clause_embs = self.embedding_assessment.model.encode(clauses, convert_to_tensor=True)
-        for i, clause in enumerate(clauses):
-            sims = self.embedding_assessment.util.cos_sim(clause_embs[i], kb.get("encode"))[0]
-            best_idx = sims.argmax().item()
-            score = float(sims[best_idx])
-            if score <= final_score:
-                continue
-            indicators = kb.get("all_indicators")[best_idx]
-            final_score = score
-            final_clause = clause
-            final_indicators = indicators
+        level = self.get_level(self.utils.normalize_text(comment))
+        if level > 0:
+            clause_embs = self.embedding_assessment.model.encode(clauses, convert_to_tensor=True)
+            for i, clause in enumerate(clauses):
+                sims = self.embedding_assessment.util.cos_sim(clause_embs[i], kb.get("encode"))[0]
+                best_idx = sims.argmax().item()
+                score = float(sims[best_idx])
+                if score <= final_score:
+                    continue
+                indicators = kb.get("all_indicators")[best_idx]
+                final_score = score
+                final_clause = clause
+                final_indicators = indicators
 
         return {
             "evidence": final_clause,
             "confident": final_score,
-            "indicator": final_indicators.get("indicator"),
+            "indicator": final_indicators.get("indicator") if final_indicators else None,
+            "level": level,
             "full_comment": comment
         }
+
+    def get_level(self, text: str) -> int:
+        if not text:
+            return 0
+        # Ưu tiên mức thấp trước
+        for level in [0, 1, 2, 3]:
+            for phrase in ontology_setting.LEVEL_KEYWORDS[level]:
+                if phrase in text:
+                    return level
+        return 1

@@ -1,0 +1,66 @@
+{
+    "student_code": "20252026.02.Ha1.026",
+    "vietnamese": {
+        "evidence": "hiểu nội dung văn bản",
+        "confident": 0.8978782892227173,
+        "indicator": "Hiểu chủ đề của văn bản.",
+        "level": 2,
+        "full_comment": "Em đọc bài có tiến bộ, hiểu nội dung văn bản; biết tìm từ, đặt câu và viết văn giàu tình cảm. Em tiếp tục luyện đọc và viết từ khó nhiều hơn nhé!"
+    },
+    "mathematics": {
+        "evidence": "biết thực hiện bài toán",
+        "confident": 0.7355118989944458,
+        "indicator": "Nhận biết được hình bình hành, hình thoi.",
+        "level": 2,
+        "full_comment": "Em nắm vững kiến thức môn học; tính toán chính xác và biết thực hiện bài toán. Em cần rèn thói quen kiểm tra lại bài sau khi làm bài xong để tránh sai sót nhé!"
+    },
+    "informatics": {
+        "evidence": "em nhận biết các biểu tượng khi muốn lập trình tạo nhạc nền trong trò chơi",
+        "confident": 0.7087680101394653,
+        "indicator": "Nhận ra được chương trình máy tính qua các trò chơi.",
+        "level": 1,
+        "full_comment": "Em nhận biết các biểu tượng khi muốn lập trình tạo nhạc nền trong trò chơi."
+    },
+    "english": {
+        "evidence": "em hoàn thành nội dung môn học",
+        "confident": 0.5126744508743286,
+        "indicator": "Đọc những đoạn văn bản ngắn, đơn giản đã được chuẩn bị trước về những chủ đề quen thuộc như bạn bè, gia đình, nhà trường, ….",
+        "level": 2,
+        "full_comment": "Em hoàn thành nội dung môn học."
+    },
+    "music": {
+        "evidence": "em biết phân biệt âm thanh cao – thấp",
+        "confident": 0.832665741443634,
+        "indicator": "Bước đầu cảm nhận và phân biệt được âm thanh cao – thấp, dài – ngắn, to – nhỏ.",
+        "level": 1,
+        "full_comment": "Em biết phân biệt âm thanh cao – thấp và biết thể hiện vận động theo ý thích khi nghe nhạc."
+    },
+    "arts": {
+        "evidence": "thực hiện sản phẩm đúng yêu cầu",
+        "confident": 0.7500613927841187,
+        "indicator": "Vận dụng được nét để tạo nên sản phẩm.",
+        "level": 2,
+        "full_comment": "Em hoàn thành nội dung môn học, thực hiện sản phẩm đúng yêu cầu."
+    },
+    "civics": {
+        "evidence": "biết thể hiện thái độ đồng tình với những hành vi đạo đức tốt",
+        "confident": 0.7648722529411316,
+        "indicator": "Thể hiện được thái độ đồng tình với cái thiện, cái đúng, cái tốt; không đồng tình với cái ác, cái sai, cái xấu.",
+        "level": 2,
+        "full_comment": "Em hoàn thành nội dung môn học và biết thể hiện thái độ đồng tình với những hành vi đạo đức tốt."
+    },
+    "physical_education": {
+        "evidence": "em hoàn thành nội dung chương trình môn học",
+        "confident": 0.6903708577156067,
+        "indicator": "Hoàn thành lượng vận động của bài tập.",
+        "level": 1,
+        "full_comment": "Em hoàn thành nội dung chương trình môn học."
+    },
+    "experiential_activities": {
+        "evidence": "em hoàn thành tốt nội dung môn học",
+        "confident": 0.569270670413971,
+        "indicator": "Thực hiện và hoàn thành được các nhiệm vụ.",
+        "level": 1,
+        "full_comment": "Em hoàn thành tốt nội dung môn học."
+    }
+}

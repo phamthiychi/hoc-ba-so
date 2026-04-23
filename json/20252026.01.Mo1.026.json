@@ -1,0 +1,66 @@
+{
+    "student_code": "20252026.01.Mo1.026",
+    "vietnamese": {
+        "evidence": "biết đặt câu hoàn chỉnh",
+        "confident": 0.8557480573654175,
+        "indicator": "Nói rõ ràng, thành câu.",
+        "level": 1,
+        "full_comment": "Em đọc bài khá tốt, hiểu nội dung bài đọc, biết đặt câu hoàn chỉnh."
+    },
+    "mathematics": {
+        "evidence": "vận dụng tốt vào các bài tập",
+        "confident": 0.6805649995803833,
+        "indicator": "Củng cố và hoàn thiện các kĩ năng: đọc, viết, so sánh, xếp thứ tự được các số tự nhiên.",
+        "level": 1,
+        "full_comment": "Em thực hiện tính đúng, vận dụng tốt vào các bài tập."
+    },
+    "informatics": {
+        "evidence": "em biết chọn các công cụ vẽ có sẵn của paint để hoàn thành các mẫu vẽ cho sẵn",
+        "confident": 0.5492689609527588,
+        "indicator": "Đưa được hình ảnh vào trong văn bản một cách thành thạo.",
+        "level": 1,
+        "full_comment": "Em biết chọn các công cụ vẽ có sẵn của Paint để hoàn thành các mẫu vẽ cho sẵn."
+    },
+    "english": {
+        "evidence": "em có tinh thần học tập tốt",
+        "confident": 0.5206648707389832,
+        "indicator": "Có thái độ tích cực đối với việc học tiếng Anh.",
+        "level": 1,
+        "full_comment": "Em có tinh thần học tập tốt. Em cần phát huy."
+    },
+    "music": {
+        "evidence": "em hát thuộc lời ca",
+        "confident": 0.8272043466567993,
+        "indicator": "Hát rõ lời và thuộc lời.",
+        "level": 1,
+        "full_comment": "Em hát thuộc lời ca và đúng giai điệu bài hát."
+    },
+    "arts": {
+        "evidence": "tô màu đều nét",
+        "confident": 0.7888104915618896,
+        "indicator": "Sử dụng được các màu cơ bản; màu đậm, màu nhạt trong thực hành, sáng tạo.",
+        "level": 1,
+        "full_comment": "Em biết trình bày các bố cục hài hòa và tô màu đều nét."
+    },
+    "civics": {
+        "evidence": "em biết thể hiện thái độ đồng tình với những hành vi đạo đức tốt",
+        "confident": 0.7079663276672363,
+        "indicator": "Thể hiện được thái độ đồng tình với cái thiện, cái đúng, cái tốt; không đồng tình với cái ác, cái sai, cái xấu.",
+        "level": 1,
+        "full_comment": "Em biết thể hiện thái độ đồng tình với những hành vi đạo đức tốt."
+    },
+    "physical_education": {
+        "evidence": "tham gia tích cực các trò chơi được học",
+        "confident": 0.7463580965995789,
+        "indicator": "Bước đầu vận dụng được kiến thức, kĩ năng đã học vào các hoạt động tập thể, tổ chức chơi được một số trò chơi vận động phù hợp với yêu cầu.",
+        "level": 3,
+        "full_comment": "Em hoàn thành nội dung chương trình môn học, tham gia tích cực các trò chơi được học."
+    },
+    "experiential_activities": {
+        "evidence": "tham gia tốt các hoạt động",
+        "confident": 0.7037678360939026,
+        "indicator": "Thực hiện và hoàn thành được các nhiệm vụ.",
+        "level": 2,
+        "full_comment": "Em hiểu bài và tham gia tốt các hoạt động."
+    }
+}

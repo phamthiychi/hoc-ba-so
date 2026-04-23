@@ -1,0 +1,66 @@
+{
+    "student_code": "20252026.02.Ha1.010",
+    "vietnamese": {
+        "evidence": "đặt câu đúng",
+        "confident": 0.778430700302124,
+        "indicator": "Nói rõ ràng, thành câu.",
+        "level": 1,
+        "full_comment": "Em đọc bài tốt, nắm vững vốn từ và đặt câu đúng; đoạn văn có nhiều hình ảnh đẹp và diễn đạt mạch lạc."
+    },
+    "mathematics": {
+        "evidence": "nắm vững cách giải toán",
+        "confident": 0.7047727704048157,
+        "indicator": "Nêu được cách thức giải quyết vấn đề.",
+        "level": 1,
+        "full_comment": "Em có kĩ năng tính toán tốt, nắm vững cách giải toán."
+    },
+    "informatics": {
+        "evidence": "em nhận biết biểu tượng để chọn màu sắc cho nhân vật",
+        "confident": 0.6376307606697083,
+        "indicator": "Định dạng được kí tự để trình bày văn bản đẹp hơn: chọn kiểu, kích thước, màu sắc cho chữ.",
+        "level": 1,
+        "full_comment": "Em nhận biết biểu tượng để chọn màu sắc cho nhân vật."
+    },
+    "english": {
+        "evidence": "thực hiện tốt yêu cầu của bài",
+        "confident": 0.5864704847335815,
+        "indicator": "Nghe và nhận biết trọng âm từ.",
+        "level": 3,
+        "full_comment": "Em tiếp thu bài nhanh và thực hiện tốt yêu cầu của bài."
+    },
+    "music": {
+        "evidence": "em biết phân biệt âm thanh cao – thấp",
+        "confident": 0.832665741443634,
+        "indicator": "Bước đầu cảm nhận và phân biệt được âm thanh cao – thấp, dài – ngắn, to – nhỏ.",
+        "level": 1,
+        "full_comment": "Em biết phân biệt âm thanh cao – thấp và biết thể hiện vận động theo ý thích khi nghe nhạc."
+    },
+    "arts": {
+        "evidence": "có nhiều sự sáng tạo",
+        "confident": 0.8196181058883667,
+        "indicator": "Xác định được đối tượng thể hiện, mục đích sáng tạo.",
+        "level": 3,
+        "full_comment": "Em hoàn thành tốt các bài vẽ, có nhiều sự sáng tạo."
+    },
+    "civics": {
+        "evidence": "biết sắm vai trong các tình huống",
+        "confident": 0.7229063510894775,
+        "indicator": "Biết vì sao phải sinh hoạt nền nếp.",
+        "level": 3,
+        "full_comment": "Em hoàn thành tốt nội dung môn học, biết sắm vai trong các tình huống và tích cực trong học tập."
+    },
+    "physical_education": {
+        "evidence": "em hoàn thành nội dung chương trình môn học",
+        "confident": 0.6903708577156067,
+        "indicator": "Hoàn thành lượng vận động của bài tập.",
+        "level": 1,
+        "full_comment": "Em hoàn thành nội dung chương trình môn học."
+    },
+    "experiential_activities": {
+        "evidence": "em nắm vững nội dung bài học",
+        "confident": 0.5998463034629822,
+        "indicator": "Nhận biết được những việc nên làm vào giờ học, những việc nên làm vào giờ chơi và thực hiện được những việc đó.",
+        "level": 2,
+        "full_comment": "Em nắm vững nội dung bài học và biết vận dụng kiến thức vào cuộc sống."
+    }
+}

@@ -1,0 +1,66 @@
+{
+    "student_code": "20252026.02.Ha1.027",
+    "vietnamese": {
+        "evidence": "đặt câu đúng",
+        "confident": 0.778430700302124,
+        "indicator": "Nói rõ ràng, thành câu.",
+        "level": 1,
+        "full_comment": "Em đọc bài tốt, nắm vững vốn từ và đặt câu đúng; đoạn văn có nhiều hình ảnh đẹp và diễn đạt mạch lạc."
+    },
+    "mathematics": {
+        "evidence": "trình bày bài toán đúng",
+        "confident": 0.7182656526565552,
+        "indicator": "Nhận biết được hình bình hành, hình thoi.",
+        "level": 1,
+        "full_comment": "Em tính toán nhanh và chính xác; trình bày bài toán đúng."
+    },
+    "informatics": {
+        "evidence": "kịch",
+        "confident": 0.5650871992111206,
+        "indicator": "Cầm chuột đúng cách.",
+        "level": 1,
+        "full_comment": "Em biết được có nhiều loại nhạc nền khác nhau: âm nhạc, kịch, lái xe."
+    },
+    "english": {
+        "evidence": "em có tinh thần học tập tốt",
+        "confident": 0.5206648707389832,
+        "indicator": "Có thái độ tích cực đối với việc học tiếng Anh.",
+        "level": 1,
+        "full_comment": "Em có tinh thần học tập tốt. Em cần phát huy."
+    },
+    "music": {
+        "evidence": "theo phách",
+        "confident": 0.6389163732528687,
+        "indicator": "Đọc đúng cao độ gam Đô trưởng.",
+        "level": 1,
+        "full_comment": "Em biết gõ đệm theo tiết tấu lời ca, theo phách."
+    },
+    "arts": {
+        "evidence": "biết phối hợp màu sắc hài hòa",
+        "confident": 0.8643441200256348,
+        "indicator": "Biết phân biệt màu cơ bản và màu thứ cấp.",
+        "level": 1,
+        "full_comment": "Em hoàn thành bài vẽ nhanh chóng, biết phối hợp màu sắc hài hòa."
+    },
+    "civics": {
+        "evidence": "em nắm vững nội dung kiến thức",
+        "confident": 0.6919206380844116,
+        "indicator": "Biết vì sao phải sinh hoạt nền nếp.",
+        "level": 1,
+        "full_comment": "Em nắm vững nội dung kiến thức, biết xử lí tình huống theo yêu cầu bài học."
+    },
+    "physical_education": {
+        "evidence": "em hoàn thành nội dung chương trình môn học",
+        "confident": 0.6903708577156067,
+        "indicator": "Hoàn thành lượng vận động của bài tập.",
+        "level": 1,
+        "full_comment": "Em hoàn thành nội dung chương trình môn học."
+    },
+    "experiential_activities": {
+        "evidence": "tích cực tham gia các hoạt động trải nghiệm cùng các bạn",
+        "confident": 0.7355899214744568,
+        "indicator": "Thể hiện được sự chia sẻ và hỗ trợ bạn trong hoạt động.",
+        "level": 2,
+        "full_comment": "Em biết vận dụng bài học từ các chủ đề vào cuộc sống hằng ngày, tích cực tham gia các hoạt động trải nghiệm cùng các bạn."
+    }
+}

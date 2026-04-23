@@ -1,0 +1,66 @@
+{
+    "student_code": "20252026.01.Mo1.031",
+    "vietnamese": {
+        "evidence": "đặt câu đúng ngữ pháp",
+        "confident": 0.7797233462333679,
+        "indicator": "Nói rõ ràng, thành câu.",
+        "level": 1,
+        "full_comment": "Em đọc bài lưu loát, đặt câu đúng ngữ pháp, kỹ năng nghe viết tốt."
+    },
+    "mathematics": {
+        "evidence": "em nắm vững kiến thức",
+        "confident": 0.6900844573974609,
+        "indicator": "Nhận biết được hình bình hành, hình thoi.",
+        "level": 1,
+        "full_comment": "Em nắm vững kiến thức, kỹ năng tính toán nhanh. Em hoàn thành tốt nội dung môn Toán."
+    },
+    "informatics": {
+        "evidence": "lưới khi cần vẽ các chi tiết nhỏ",
+        "confident": 0.6270509958267212,
+        "indicator": "Tạo được bài trình chiếu đơn giản, bưu thiệp, bức vẽ hay một chương trình trò chơi đơn giản.",
+        "level": 1,
+        "full_comment": "Em biết cách hiển thị thước và lưới khi cần vẽ các chi tiết nhỏ, chính xác."
+    },
+    "english": {
+        "evidence": "tích cực phát biểu ý kiến xây dựng bài",
+        "confident": 0.5400339961051941,
+        "indicator": "Nói về một số chủ đề trong Chương trình (có sự trợ giúp).",
+        "level": 3,
+        "full_comment": "Em học rất tốt bộ môn và tích cực phát biểu ý kiến xây dựng bài."
+    },
+    "music": {
+        "evidence": "em biết phân biệt âm thanh cao – thấp",
+        "confident": 0.832665741443634,
+        "indicator": "Bước đầu cảm nhận và phân biệt được âm thanh cao – thấp, dài – ngắn, to – nhỏ.",
+        "level": 1,
+        "full_comment": "Em biết phân biệt âm thanh cao – thấp và biết thể hiện vận động theo ý thích khi nghe nhạc."
+    },
+    "arts": {
+        "evidence": "em biết sử dụng vật liệu sẵn có để sáng tạo sản phẩm",
+        "confident": 0.8994526863098145,
+        "indicator": "Sử dụng được vật liệu sẵn có để thực hành, sáng tạo.",
+        "level": 3,
+        "full_comment": "Em biết sử dụng vật liệu sẵn có để sáng tạo sản phẩm."
+    },
+    "civics": {
+        "evidence": "em biết áp dụng các hành vi đạo đức đã học vào thực tiễn",
+        "confident": 0.6052494049072266,
+        "indicator": "Nhận biết được một số chuẩn mực hành vi đạo đức và pháp luật thường gặp phù hợp với lứa tuổi và sự cần thiết của việc thực hiện theo các chuẩn mực đó.",
+        "level": 1,
+        "full_comment": "Em biết áp dụng các hành vi đạo đức đã học vào thực tiễn."
+    },
+    "physical_education": {
+        "evidence": "em hoàn thành nội dung chương trình môn học",
+        "confident": 0.6903708577156067,
+        "indicator": "Hoàn thành lượng vận động của bài tập.",
+        "level": 1,
+        "full_comment": "Em hoàn thành nội dung chương trình môn học."
+    },
+    "experiential_activities": {
+        "evidence": "em biết xử lí tình huống",
+        "confident": 0.7106432318687439,
+        "indicator": "Biết cách xử lí trong một số tình huống nguy hiểm.",
+        "level": 1,
+        "full_comment": "Em biết xử lí tình huống, phân biệt đúng/sai trong chủ đề vừa học."
+    }
+}

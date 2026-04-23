@@ -1,0 +1,66 @@
+{
+    "student_code": "20252026.02.Ha1.002",
+    "vietnamese": {
+        "evidence": "biết đặt câu theo yêu cầu",
+        "confident": 0.7466765642166138,
+        "indicator": "Nói rõ ràng, thành câu.",
+        "level": 1,
+        "full_comment": "Em đọc bài có tiến bộ, biết đặt câu theo yêu cầu. Em cần rèn thêm kĩ năng nghe viết và viết sáng tạo cần mạch lạc hơn nhé!"
+    },
+    "mathematics": {
+        "evidence": "phân tích đề toán để làm bài chính xác nhé",
+        "confident": 0.7222987413406372,
+        "indicator": "Củng cố và hoàn thiện các kĩ năng: ước lượng và làm tròn được số trong những tính toán đơn giản.",
+        "level": 2,
+        "full_comment": "Em có tiến bộ trong học tập, cần rèn kĩ năng tính nhanh và phân tích đề toán để làm bài chính xác nhé!"
+    },
+    "informatics": {
+        "evidence": "em chưa thể lập trình để nhân vật làm các hành động khác nhau ứng với mỗi tương tác",
+        "confident": 0.3789157271385193,
+        "indicator": "Tự thiết lập và tạo được chương trình đơn giản, ví dụ điều khiển một nhân vật chuyển động trên màn hình.",
+        "level": 1,
+        "full_comment": "Em chưa thể lập trình để nhân vật làm các hành động khác nhau ứng với mỗi tương tác."
+    },
+    "english": {
+        "evidence": "em cần luyện đọc nhiều hơn nhé",
+        "confident": 0.6242101788520813,
+        "indicator": "Đọc những đoạn văn bản ngắn, đơn giản đã được chuẩn bị trước về những chủ đề quen thuộc như bạn bè, gia đình, nhà trường, ….",
+        "level": 1,
+        "full_comment": "Em đọc bài còn chưa thật lưu loát. Em cần luyện đọc nhiều hơn nhé."
+    },
+    "music": {
+        "evidence": "vị trí các nốt nhạc qua trò chơi",
+        "confident": 0.7958035469055176,
+        "indicator": "Biết hát kết hợp gõ đệm, vận động hoặc trò chơi.",
+        "level": 1,
+        "full_comment": "Em biết hát theo giai điệu và đúng lời ca, nhớ tên và vị trí các nốt nhạc qua trò chơi."
+    },
+    "arts": {
+        "evidence": "biết phối hợp màu vẽ hài hòa",
+        "confident": 0.8229181170463562,
+        "indicator": "Sử dụng được các màu cơ bản; màu đậm, màu nhạt trong thực hành, sáng tạo.",
+        "level": 1,
+        "full_comment": "Em hoàn thành tốt bài vẽ, biết phối hợp màu vẽ hài hòa."
+    },
+    "civics": {
+        "evidence": "biết thể hiện thái độ đồng tình với những hành vi đạo đức tốt",
+        "confident": 0.7648722529411316,
+        "indicator": "Thể hiện được thái độ đồng tình với cái thiện, cái đúng, cái tốt; không đồng tình với cái ác, cái sai, cái xấu.",
+        "level": 1,
+        "full_comment": "Em hoàn thành tốt nội dung môn học và biết thể hiện thái độ đồng tình với những hành vi đạo đức tốt."
+    },
+    "physical_education": {
+        "evidence": "em hoàn thành nội dung chương trình môn học",
+        "confident": 0.6903708577156067,
+        "indicator": "Hoàn thành lượng vận động của bài tập.",
+        "level": 1,
+        "full_comment": "Em hoàn thành nội dung chương trình môn học."
+    },
+    "experiential_activities": {
+        "evidence": "em hoàn thành tốt nội dung môn học",
+        "confident": 0.569270670413971,
+        "indicator": "Thực hiện và hoàn thành được các nhiệm vụ.",
+        "level": 1,
+        "full_comment": "Em hoàn thành tốt nội dung môn học."
+    }
+}

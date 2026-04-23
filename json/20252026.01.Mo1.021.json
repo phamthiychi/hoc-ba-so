@@ -1,0 +1,66 @@
+{
+    "student_code": "20252026.01.Mo1.021",
+    "vietnamese": {
+        "evidence": "đặt câu đúng ngữ pháp",
+        "confident": 0.7797233462333679,
+        "indicator": "Nói rõ ràng, thành câu.",
+        "level": 1,
+        "full_comment": "Em đọc bài lưu loát, đặt câu đúng ngữ pháp, kỹ năng nghe viết tốt."
+    },
+    "mathematics": {
+        "evidence": "em nắm vững kiến thức",
+        "confident": 0.6900844573974609,
+        "indicator": "Nhận biết được hình bình hành, hình thoi.",
+        "level": 1,
+        "full_comment": "Em nắm vững kiến thức, kỹ năng tính toán nhanh. Em hoàn thành tốt nội dung môn Toán."
+    },
+    "informatics": {
+        "evidence": "em biết cách thao tác để hiển thị lưới vẽ: chọn thẻ view",
+        "confident": 0.573209285736084,
+        "indicator": "Kể lại được điều quan sát và biết thêm qua sử dụng công cụ đa phương tiện.",
+        "level": 1,
+        "full_comment": "Em biết cách thao tác để hiển thị lưới vẽ: chọn thẻ View, chọn Gridlines."
+    },
+    "english": {
+        "evidence": "là thành viên tích cực của lớp",
+        "confident": 0.5456535220146179,
+        "indicator": "Có thái độ tích cực đối với việc học tiếng Anh.",
+        "level": 3,
+        "full_comment": "Em học tốt bộ môn và là thành viên tích cực của lớp."
+    },
+    "music": {
+        "evidence": "theo phách",
+        "confident": 0.6389163732528687,
+        "indicator": "Đọc đúng cao độ gam Đô trưởng.",
+        "level": 1,
+        "full_comment": "Em biết gõ đệm theo tiết tấu lời ca, theo phách."
+    },
+    "arts": {
+        "evidence": "tô màu đều nét",
+        "confident": 0.7888104915618896,
+        "indicator": "Sử dụng được các màu cơ bản; màu đậm, màu nhạt trong thực hành, sáng tạo.",
+        "level": 1,
+        "full_comment": "Em biết trình bày các bố cục hài hòa và tô màu đều nét."
+    },
+    "civics": {
+        "evidence": "em biết áp dụng các hành vi đạo đức đã học vào thực tiễn",
+        "confident": 0.6052494049072266,
+        "indicator": "Nhận biết được một số chuẩn mực hành vi đạo đức và pháp luật thường gặp phù hợp với lứa tuổi và sự cần thiết của việc thực hiện theo các chuẩn mực đó.",
+        "level": 1,
+        "full_comment": "Em biết áp dụng các hành vi đạo đức đã học vào thực tiễn."
+    },
+    "physical_education": {
+        "evidence": "tham gia tích cực các trò chơi được học",
+        "confident": 0.7463580965995789,
+        "indicator": "Bước đầu vận dụng được kiến thức, kĩ năng đã học vào các hoạt động tập thể, tổ chức chơi được một số trò chơi vận động phù hợp với yêu cầu.",
+        "level": 3,
+        "full_comment": "Em hoàn thành nội dung chương trình môn học, tham gia tích cực các trò chơi được học."
+    },
+    "experiential_activities": {
+        "evidence": "em biết khám phá thế giới bản thân",
+        "confident": 0.6386702656745911,
+        "indicator": "Nhận ra được những nét riêng của bản thân.",
+        "level": 1,
+        "full_comment": "Em biết khám phá thế giới bản thân và thế giới xung quanh."
+    }
+}
