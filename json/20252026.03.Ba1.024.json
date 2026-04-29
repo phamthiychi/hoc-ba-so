@@ -1,0 +1,73 @@
+{
+    "student_code": "20252026.03.Ba1.024",
+    "vietnamese": {
+        "evidence": "rèn viết văn rõ ý",
+        "confident": 0.8570236563682556,
+        "indicator": "Biết tóm tắt văn bản.",
+        "level": 1,
+        "full_comment": "Em đọc to nhưng ngắt nghỉ chưa hợp lí. Em hiểu nội dung bài đọc, nắm tốt kiến thức từ và câu. Em cố gắng viết đúng chính tả, rèn viết văn rõ ý và có cảm xúc hơn."
+    },
+    "mathematics": {
+        "evidence": "nắm được các dạng toán cơ bản",
+        "confident": 0.7813912630081177,
+        "indicator": "Sử dụng được các công cụ, phương tiện học toán để thực hiện những nhiệm vụ học tập toán đơn giản.",
+        "level": 1,
+        "full_comment": "Em có kĩ năng tính toán, nắm được các dạng toán cơ bản. Nhưng em cần rèn đọc kĩ đề bài và tính toán cẩn thận khi làm bài."
+    },
+    "informatics": {
+        "evidence": "em biết được một số công việc hàng ngày được thực hiện theo từng bước",
+        "confident": 0.8035246133804321,
+        "indicator": "Nêu được một số công việc hàng ngày được thực hiện theo từng bước, mỗi bước là một việc nhỏ hơn, các bước phải được sắp xếp thứ tự.",
+        "level": 1,
+        "full_comment": "Em biết được một số công việc hàng ngày được thực hiện theo từng bước, các bước phãi được sắp xếp thứ tự"
+    },
+    "english": {
+        "evidence": "chủ động học từ mới thường xuyên",
+        "confident": 0.6858174800872803,
+        "indicator": "Có thể hiểu, sử dụng các cấu trúc quen thuộc thường nhật; các từ ngữ cơ bản đáp ứng nhu cầu giao tiếp cụ thể.",
+        "level": 3,
+        "full_comment": "Em học hỏi tốt nhưng em nên chủ động học từ mới thường xuyên."
+    },
+    "technology": {
+        "evidence": "kỹ năng cơ bản của môn học",
+        "confident": 0.5803095698356628,
+        "indicator": "Nhận biết được sở thích, khả năng của bản thân đối với các hoạt động kĩ thuật, công nghệ đơn giản.",
+        "level": 1,
+        "full_comment": "Em nắm được kiến thức, kỹ năng cơ bản của môn học. Em cần chăm học và rèn tính cẩn thận khi làm bài."
+    },
+    "music": {
+        "evidence": "em biết hát kết hợp vận động theo nhịp điệu bằng nhiều hình thức khác nhau như : đơn ca",
+        "confident": 0.8524116277694702,
+        "indicator": "Biết hát với các hình thức đơn ca, song ca, tốp ca, đồng ca.",
+        "level": 1,
+        "full_comment": "Em biết hát kết hợp vận động theo nhịp điệu bằng nhiều hình thức khác nhau như : Đơn ca, song ca, tốp ca."
+    },
+    "arts": {
+        "evidence": "em phối hợp màu sắc hài hòa",
+        "confident": 0.7833553552627563,
+        "indicator": "Biết phân biệt màu cơ bản và màu thứ cấp.",
+        "level": 1,
+        "full_comment": "Em phối hợp màu sắc hài hòa và hoàn thiện sản phẩm mĩ thuật đúng yêu cầu, tô màu đẹp."
+    },
+    "civics": {
+        "evidence": "em biết thể hiện thái độ đồng tình với những hành vi đạo đức",
+        "confident": 0.6570252180099487,
+        "indicator": "Thể hiện được thái độ đồng tình với cái thiện, cái đúng, cái tốt; không đồng tình với cái ác, cái sai, cái xấu.",
+        "level": 1,
+        "full_comment": "Em biết thể hiện thái độ đồng tình với những hành vi đạo đức. Tuy nhiên, em cần tập trung và học tập nghiêm túc hơn."
+    },
+    "physical_education": {
+        "evidence": "tham gia tích cực các trò chơi được học",
+        "confident": 0.7463580965995789,
+        "indicator": "Bước đầu vận dụng được kiến thức, kĩ năng đã học vào các hoạt động tập thể, tổ chức chơi được một số trò chơi vận động phù hợp với yêu cầu.",
+        "level": 3,
+        "full_comment": "Em hoàn thành nội dung chương trình môn học, tham gia tích cực các trò chơi được học."
+    },
+    "experiential_activities": {
+        "evidence": "thực hiện được một số việc làm phù hợp với lứa tuổi",
+        "confident": 0.889987051486969,
+        "indicator": "Tự lực trong việc thực hiện một số việc phù hợp với lứa tuổi.",
+        "level": 2,
+        "full_comment": "Em có tiến bộ hơn so với đầu năm. Thực hiện được một số việc làm phù hợp với lứa tuổi. Em cần rèn luyện thêm sự tập trung, chăm chỉ trong học tập."
+    }
+}

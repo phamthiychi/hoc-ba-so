@@ -1,0 +1,73 @@
+{
+    "student_code": "20252026.03.Ba1.007",
+    "vietnamese": {
+        "evidence": "hiểu nội dung bài",
+        "confident": 0.8326846361160278,
+        "indicator": "Nhận biết được chi tiết và nội dung chính.",
+        "level": 1,
+        "full_comment": "Em đọc lưu loát, hiểu nội dung bài. Em nắm tốt kiến thức từ và câu nhưng cố gắng viết đúng chính tả hơn, rèn viết văn có cảm xúc hơn."
+    },
+    "mathematics": {
+        "evidence": "nắm được các dạng toán cơ bản",
+        "confident": 0.7813912630081177,
+        "indicator": "Sử dụng được các công cụ, phương tiện học toán để thực hiện những nhiệm vụ học tập toán đơn giản.",
+        "level": 2,
+        "full_comment": "Em có tiến bộ về kĩ năng tính toán, nắm được các dạng toán cơ bản. Nhưng em cần rèn đọc kĩ đề bài và tính toán cẩn thận khi làm bài."
+    },
+    "informatics": {
+        "evidence": "em biết chia công việc cụ thể thành những việc nhỏ hơn",
+        "confident": 0.7515645027160645,
+        "indicator": "Chia được một công việc cụ thể thành những việc nhỏ hơn, trong đó có những việc có thể thực hiện với trợ giúp của máy tính.",
+        "level": 1,
+        "full_comment": "Em biết chia công việc cụ thể thành những việc nhỏ hơn."
+    },
+    "english": {
+        "evidence": "sử dụng từ mới",
+        "confident": 0.6239956021308899,
+        "indicator": "Nói các từ và cụm từ quen thuộc, đơn giản.",
+        "level": 1,
+        "full_comment": "Em có nỗ lực nhưng em nên chú ý hơn đến việc ghi nhớ và sử dụng từ mới."
+    },
+    "technology": {
+        "evidence": "kỹ năng cơ bản của môn học",
+        "confident": 0.5803095698356628,
+        "indicator": "Nhận biết được sở thích, khả năng của bản thân đối với các hoạt động kĩ thuật, công nghệ đơn giản.",
+        "level": 1,
+        "full_comment": "Em nắm được kiến thức, kỹ năng cơ bản của môn học. Em cần rèn tính cẩn thận khi làm bài."
+    },
+    "music": {
+        "evidence": "em biết phân biệt âm thanh cao – thấp",
+        "confident": 0.832665741443634,
+        "indicator": "Bước đầu cảm nhận và phân biệt được âm thanh cao – thấp, dài – ngắn, to – nhỏ.",
+        "level": 1,
+        "full_comment": "Em biết phân biệt âm thanh cao – thấp và biết thể hiện vận động theo ý thích khi nghe nhạc."
+    },
+    "arts": {
+        "evidence": "hoàn thiện sản phẩm mĩ thuật đúng yêu cầu",
+        "confident": 0.75980144739151,
+        "indicator": "Vận dụng được nét để tạo nên sản phẩm.",
+        "level": 1,
+        "full_comment": "Em có năng khiếu vẽ và hoàn thiện sản phẩm mĩ thuật đúng yêu cầu, tô màu đẹp."
+    },
+    "civics": {
+        "evidence": "em ngoan",
+        "confident": 0.6934275031089783,
+        "indicator": "Biết vì sao phải thật thà.",
+        "level": 3,
+        "full_comment": "Em ngoan, lễ phép. Em biết điều chỉnh thái độ và hành vi đạo đức, thực hiện tốt hành vi đạo đức đã học vào cuộc sống."
+    },
+    "physical_education": {
+        "evidence": "em hoàn thành nội dung chương trình môn học",
+        "confident": 0.6903708577156067,
+        "indicator": "Hoàn thành lượng vận động của bài tập.",
+        "level": 1,
+        "full_comment": "Em hoàn thành nội dung chương trình môn học, mạnh dạn trong các hoạt động nhóm."
+    },
+    "experiential_activities": {
+        "evidence": "em tham gia tốt các hoạt động của trường lớp",
+        "confident": 0.6867343187332153,
+        "indicator": "Tham gia các hoạt động giáo dục của Sao Nhi đồng và của nhà trường.",
+        "level": 2,
+        "full_comment": "Em tham gia tốt các hoạt động của trường lớp. Em biết phát huy thế mạnh bản thân và khám phá thế giới xung quanh."
+    }
+}

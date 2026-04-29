@@ -1,0 +1,73 @@
+{
+    "student_code": "20252026.03.Ba1.013",
+    "vietnamese": {
+        "evidence": "câu",
+        "confident": 0.8323054313659668,
+        "indicator": "Nói rõ ràng, thành câu.",
+        "level": 1,
+        "full_comment": "Em đọc lưu loát, hiểu nội dung bài tốt. Em nắm tốt kiến thức từ và câu, viết văn có ý hay, diễn đạt tốt."
+    },
+    "mathematics": {
+        "evidence": "nắm tốt các dạng toán",
+        "confident": 0.7269628047943115,
+        "indicator": "Làm quen với biểu thức số.",
+        "level": 3,
+        "full_comment": "Em có kĩ năng tính toán tốt, nắm tốt các dạng toán và thực hành giải thành thạo các bài tập."
+    },
+    "informatics": {
+        "evidence": "em đã bước đầu sử dụng được phần mềm powerpoint để tạo các bài trình chiếu đơn giản",
+        "confident": 0.6213517189025879,
+        "indicator": "Tự thiết lập và tạo được chương trình đơn giản, ví dụ điều khiển một nhân vật chuyển động trên màn hình.",
+        "level": 1,
+        "full_comment": "Em đã bước đầu sử dụng được phần mềm PowerPoint để tạo các bài trình chiếu đơn giản."
+    },
+    "english": {
+        "evidence": "áp dụng hiệu quả vào bài học",
+        "confident": 0.7165745496749878,
+        "indicator": "Nghe hiểu và làm theo những chỉ dẫn đơn giản trong lớp học.",
+        "level": 1,
+        "full_comment": "Em mở rộng vốn từ vựng và áp dụng hiệu quả vào bài học."
+    },
+    "technology": {
+        "evidence": "em khéo léo khi vận dụng thực hành tạo ra sản phẩm tốt",
+        "confident": 0.5725607872009277,
+        "indicator": "Nêu được một số đức tính cần có để trở thành nhà sáng chế.",
+        "level": 1,
+        "full_comment": "Em học tập hăng hái, nắm tốt nội dung bài. Em khéo léo khi vận dụng thực hành tạo ra sản phẩm tốt."
+    },
+    "music": {
+        "evidence": "em biết phân biệt âm thanh cao – thấp",
+        "confident": 0.832665741443634,
+        "indicator": "Bước đầu cảm nhận và phân biệt được âm thanh cao – thấp, dài – ngắn, to – nhỏ.",
+        "level": 1,
+        "full_comment": "Em biết phân biệt âm thanh cao – thấp và biết thể hiện vận động theo ý thích khi nghe nhạc."
+    },
+    "arts": {
+        "evidence": "em phối hợp màu sắc hài hòa",
+        "confident": 0.7833553552627563,
+        "indicator": "Biết phân biệt màu cơ bản và màu thứ cấp.",
+        "level": 1,
+        "full_comment": "Em phối hợp màu sắc hài hòa và hoàn thiện sản phẩm mĩ thuật đúng yêu cầu, tô màu đẹp."
+    },
+    "civics": {
+        "evidence": "em ngoan",
+        "confident": 0.6934275031089783,
+        "indicator": "Biết vì sao phải thật thà.",
+        "level": 3,
+        "full_comment": "Em ngoan, lễ phép. Em biết điều chỉnh thái độ và hành vi đạo đức, thực hiện tốt hành vi đạo đức đã học vào cuộc sống."
+    },
+    "physical_education": {
+        "evidence": "em hoàn thành nội dung chương trình môn học",
+        "confident": 0.6903708577156067,
+        "indicator": "Hoàn thành lượng vận động của bài tập.",
+        "level": 3,
+        "full_comment": "Em hoàn thành nội dung chương trình môn học, tham gia tích cực hoạt động nhóm."
+    },
+    "experiential_activities": {
+        "evidence": "định hướng các hoạt động trải nghiệm",
+        "confident": 0.6284729242324829,
+        "indicator": "Tham gia xác định được nội dung và cách thức thực hiện hoạt động cá nhân, hoạt động nhóm.",
+        "level": 3,
+        "full_comment": "Em thực hiện tốt các nội dung trong hoạt động trải nghiệm, có tính sáng tạo và định hướng các hoạt động trải nghiệm."
+    }
+}

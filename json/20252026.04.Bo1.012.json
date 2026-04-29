@@ -1,0 +1,87 @@
+{
+    "student_code": "20252026.04.Bo1.012",
+    "vietnamese": {
+        "evidence": "nắm vững thể loại viết văn miêu tả",
+        "confident": 0.8450987339019775,
+        "indicator": "Viết thành thạo chữ viết thường, viết đúng chữ viết hoa.",
+        "level": 1,
+        "full_comment": "Em đọc bài lưu loát, biết ngắt nghỉ hợp lí; viết chính tả tốt; vốn từ phong phú, viết câu sinh động, có cảm xúc và nắm vững thể loại viết văn miêu tả."
+    },
+    "mathematics": {
+        "evidence": "biết mở rộng tư duy với các dạng bài vận dụng",
+        "confident": 0.6486233472824097,
+        "indicator": "Nhận biết và thực hiện được việc lắp ghép, xếp hình gắn với sử dụng bộ đồ dùng học tập cá nhân hoặc vật thật.",
+        "level": 1,
+        "full_comment": "Em nhạy bén trong học tập, nắm chắc các kiến thức đã học và biết mở rộng tư duy với các dạng bài vận dụng."
+    },
+    "informatics": {
+        "evidence": "chủ động tìm hiểu thêm kiến thức theo gợi ý của giáo viên",
+        "confident": 0.786108136177063,
+        "indicator": "Nhận biết được trong ví dụ của giáo viên, cái gì là thông tin và đâu là quyết định.",
+        "level": 2,
+        "full_comment": "Em thực hiện tốt các bài tập thực hành, chủ động tìm hiểu thêm kiến thức theo gợi ý của giáo viên; có tiến bộ rõ rệt trong các kỹ năng gõ văn bản, tạo bài trình chiếu và lập trình cơ bản."
+    },
+    "science": {
+        "evidence": "kĩ năng môn học",
+        "confident": 0.5334153175354004,
+        "indicator": "Giải quyết được một số vấn đề thực tiễn đơn giản trong đó vận dụng kiến thức khoa học và kiến thức kĩ năng từ các môn học khác có liên quan.",
+        "level": 1,
+        "full_comment": "Em nắm vững kiến thức, kĩ năng môn học và có khả năng báo cáo trước tập thể."
+    },
+    "history_and_geography": {
+        "evidence": "thích sưu tầm tài liệu",
+        "confident": 0.5658037662506104,
+        "indicator": "Đọc và nêu nhận xét về nội dung và ý nghĩa của Chiếu dời đô.",
+        "level": 1,
+        "full_comment": "Em tham gia học nhóm tốt, thích sưu tầm tài liệu, ham học hỏi."
+    },
+    "english": {
+        "evidence": "em học đều các kĩ năng",
+        "confident": 0.564562201499939,
+        "indicator": "Nghe hiểu và làm theo những chỉ dẫn đơn giản trong lớp học.",
+        "level": 3,
+        "full_comment": "Em học đều các kĩ năng và tích cực giơ tay phát biểu."
+    },
+    "technology": {
+        "evidence": "em nắm vững các bước lắp ghép mô hình kĩ thuật",
+        "confident": 0.8041003346443176,
+        "indicator": "Kể tên, nhận biết được các chi tiết của bộ lắp ghép mô hình kĩ thuật.",
+        "level": 1,
+        "full_comment": "Em nắm vững các bước lắp ghép mô hình kĩ thuật và hoàn thành tốt các sản phẩm."
+    },
+    "music": {
+        "evidence": "em biết phân biệt âm thanh cao – thấp",
+        "confident": 0.832665741443634,
+        "indicator": "Bước đầu cảm nhận và phân biệt được âm thanh cao – thấp, dài – ngắn, to – nhỏ.",
+        "level": 1,
+        "full_comment": "Em biết phân biệt âm thanh cao – thấp và biết thể hiện vận động theo ý thích khi nghe nhạc."
+    },
+    "arts": {
+        "evidence": "chọn màu phù hợp",
+        "confident": 0.8580363988876343,
+        "indicator": "Biết phân biệt màu cơ bản và màu thứ cấp.",
+        "level": 1,
+        "full_comment": "Em vẽ các họa tiết cân đối, chọn màu phù hợp."
+    },
+    "civics": {
+        "evidence": "em biết thể hiện thái độ đồng tình với những hành vi đạo đức tốt",
+        "confident": 0.7079663276672363,
+        "indicator": "Thể hiện được thái độ đồng tình với cái thiện, cái đúng, cái tốt; không đồng tình với cái ác, cái sai, cái xấu.",
+        "level": 1,
+        "full_comment": "Em biết thể hiện thái độ đồng tình với những hành vi đạo đức tốt."
+    },
+    "physical_education": {
+        "evidence": "em hoàn thành nội dung chương trình môn học",
+        "confident": 0.6903708577156067,
+        "indicator": "Hoàn thành lượng vận động của bài tập.",
+        "level": 3,
+        "full_comment": "Em hoàn thành nội dung chương trình môn học, tham gia tích cực hoạt động nhóm."
+    },
+    "experiential_activities": {
+        "evidence": "xử lý tốt các tình huống",
+        "confident": 0.6986969113349915,
+        "indicator": "Biết cách xử lí trong một số tình huống nguy hiểm.",
+        "level": 1,
+        "full_comment": "Em nhạy bén, xử lý tốt các tình huống."
+    }
+}

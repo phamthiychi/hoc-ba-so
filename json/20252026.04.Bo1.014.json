@@ -1,0 +1,87 @@
+{
+    "student_code": "20252026.04.Bo1.014",
+    "vietnamese": {
+        "evidence": "nắm được các thể loại viết văn",
+        "confident": 0.8358232378959656,
+        "indicator": "Viết thành thạo chữ viết thường, viết đúng chữ viết hoa.",
+        "level": 1,
+        "full_comment": "Em đọc bài lưu loát, trả lời tốt câu hỏi của bài đọc; nắm được các thể loại viết văn; viết câu đủ thành phần. Tuy nhiên em cần rèn thêm kĩ năng viết văn."
+    },
+    "mathematics": {
+        "evidence": "em cần rèn thêm toán giải có lời văn",
+        "confident": 0.7273844480514526,
+        "indicator": "Đọc, viết được các phân số.",
+        "level": 1,
+        "full_comment": "Em thực hiện các phép tính đúng, nắm được các kiến thức cơ bản và có tiến bộ trong học tập. Tuy nhiên em cần rèn thêm toán giải có lời văn."
+    },
+    "informatics": {
+        "evidence": "có khả năng thực hiện đúng thao tác",
+        "confident": 0.6822817921638489,
+        "indicator": "Cầm chuột đúng cách.",
+        "level": 2,
+        "full_comment": "Em hoàn thành tốt các nội dung học tập theo hướng dẫn của giáo viên; có khả năng thực hiện đúng thao tác và sản phẩm đạt yêu cầu về nội dung và hình thức."
+    },
+    "science": {
+        "evidence": "em biết vận dụng kiến thức đã học để giải thích các hiện tượng trong tự nhiên",
+        "confident": 0.650236964225769,
+        "indicator": "Vận dụng được kiến thức về tính chất cho ánh sáng truyền qua hay không cho ánh sáng truyền qua của các vật để giải thích được một số hiện tượng tự nhiên và ứng dụng thực tế.",
+        "level": 2,
+        "full_comment": "Em biết vận dụng kiến thức đã học để giải thích các hiện tượng trong tự nhiên."
+    },
+    "history_and_geography": {
+        "evidence": "kĩ năng cơ bản môn học",
+        "confident": 0.5066169500350952,
+        "indicator": "Sử dụng được một số phương tiện môn học vào học tập môn Lịch sử và Địa lí.",
+        "level": 1,
+        "full_comment": "Em nắm được kiến thức, kĩ năng cơ bản môn học."
+    },
+    "english": {
+        "evidence": "em cần rèn luyện thêm kĩ năng nghe",
+        "confident": 0.5933961868286133,
+        "indicator": "Nghe và nhận biết trọng âm từ.",
+        "level": 3,
+        "full_comment": "Em cần rèn luyện thêm kĩ năng nghe và cố gắng tích cực giơ tay phát biểu hơn."
+    },
+    "technology": {
+        "evidence": "em nắm vững các bước lắp ghép mô hình kĩ thuật",
+        "confident": 0.8041003346443176,
+        "indicator": "Kể tên, nhận biết được các chi tiết của bộ lắp ghép mô hình kĩ thuật.",
+        "level": 1,
+        "full_comment": "Em nắm vững các bước lắp ghép mô hình kĩ thuật và hoàn thành tốt các sản phẩm."
+    },
+    "music": {
+        "evidence": "em biết hát kết hợp nhạc đệm",
+        "confident": 0.8634956479072571,
+        "indicator": "Biết hát với các hình thức đơn ca, song ca, tốp ca, đồng ca.",
+        "level": 1,
+        "full_comment": "Em biết hát kết hợp nhạc đệm, vận động theo nhịp điệu của bài hát."
+    },
+    "arts": {
+        "evidence": "em sắp xếp được bố cục chặt chẽ",
+        "confident": 0.5658930540084839,
+        "indicator": "Biết được mĩ thuật có ở xung quanh.",
+        "level": 1,
+        "full_comment": "Em sắp xếp được bố cục chặt chẽ, hài hòa, cân đối trong tranh."
+    },
+    "civics": {
+        "evidence": "hành vi đạo đức phù hợp",
+        "confident": 0.6668856143951416,
+        "indicator": "Nhận xét được tính chất đúng – sai, tốt – xấu, thiện – ác của một số thái độ, hành vi đạo đức và pháp luật của bản thân và bạn bè trong học tập và sinh hoạt.",
+        "level": 1,
+        "full_comment": "Em biết điều chỉnh thái độ và hành vi đạo đức phù hợp."
+    },
+    "physical_education": {
+        "evidence": "em hoàn thành nội dung chương trình môn học",
+        "confident": 0.6903708577156067,
+        "indicator": "Hoàn thành lượng vận động của bài tập.",
+        "level": 1,
+        "full_comment": "Em hoàn thành nội dung chương trình môn học."
+    },
+    "experiential_activities": {
+        "evidence": "em biết vận dụng bài học vào cuộc sống hằng ngày",
+        "confident": 0.5038247108459473,
+        "indicator": "Nhận biết được những việc nên làm vào giờ học, những việc nên làm vào giờ chơi và thực hiện được những việc đó.",
+        "level": 2,
+        "full_comment": "Em biết vận dụng bài học vào cuộc sống hằng ngày."
+    }
+}

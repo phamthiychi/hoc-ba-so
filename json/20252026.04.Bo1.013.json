@@ -1,0 +1,87 @@
+{
+    "student_code": "20252026.04.Bo1.013",
+    "vietnamese": {
+        "evidence": "câu",
+        "confident": 0.8323054313659668,
+        "indicator": "Nói rõ ràng, thành câu.",
+        "level": 3,
+        "full_comment": "Em đọc diễn cảm được cả bài, biết nhấn mạnh những từ ngữ tả đặc tính của sự vật; nắm vững các kiến thức về từ và câu; viết câu rõ nghĩa diễn đạt được ý của mình và có sáng tạo."
+    },
+    "mathematics": {
+        "evidence": "biết mở rộng tư duy với các dạng bài vận dụng",
+        "confident": 0.6486233472824097,
+        "indicator": "Nhận biết và thực hiện được việc lắp ghép, xếp hình gắn với sử dụng bộ đồ dùng học tập cá nhân hoặc vật thật.",
+        "level": 1,
+        "full_comment": "Em nhạy bén trong học tập, nắm chắc các kiến thức đã học và biết mở rộng tư duy với các dạng bài vận dụng."
+    },
+    "informatics": {
+        "evidence": "tự tìm hiểu",
+        "confident": 0.6052567362785339,
+        "indicator": "Cầm chuột đúng cách.",
+        "level": 3,
+        "full_comment": "Em hoàn thành xuất sắc các yêu cầu bài tập ở tất cả nội dung học; có tư duy sáng tạo, tự tìm hiểu và vận dụng kiến thức để mở rộng sản phẩm, thể hiện sự yêu thích và khả năng học tập độc lập."
+    },
+    "science": {
+        "evidence": "kĩ năng môn học",
+        "confident": 0.5334153175354004,
+        "indicator": "Giải quyết được một số vấn đề thực tiễn đơn giản trong đó vận dụng kiến thức khoa học và kiến thức kĩ năng từ các môn học khác có liên quan.",
+        "level": 1,
+        "full_comment": "Em nắm vững kiến thức, kĩ năng môn học và có khả năng báo cáo trước tập thể."
+    },
+    "history_and_geography": {
+        "evidence": "tích cực tham gia các hoạt động học tập cá nhân",
+        "confident": 0.46574822068214417,
+        "indicator": "Sử dụng được một số phương tiện môn học vào học tập môn Lịch sử và Địa lí.",
+        "level": 3,
+        "full_comment": "Em nhạy bén, tích cực tham gia các hoạt động học tập cá nhân, nhóm."
+    },
+    "english": {
+        "evidence": "em học đều các kĩ năng",
+        "confident": 0.564562201499939,
+        "indicator": "Nghe hiểu và làm theo những chỉ dẫn đơn giản trong lớp học.",
+        "level": 3,
+        "full_comment": "Em học đều các kĩ năng và tích cực giơ tay phát biểu."
+    },
+    "technology": {
+        "evidence": "làm được một số đồ chơi đơn giản",
+        "confident": 0.899813175201416,
+        "indicator": "Làm được một đồ chơi đơn giản theo hướng dẫn.",
+        "level": 1,
+        "full_comment": "Em nắm vững kiến thức đã học và làm được một số đồ chơi đơn giản."
+    },
+    "music": {
+        "evidence": "em biết hát kết hợp vận động theo nhịp điệu bằng nhiều hình thức khác nhau như : đơn ca",
+        "confident": 0.8524116277694702,
+        "indicator": "Biết hát với các hình thức đơn ca, song ca, tốp ca, đồng ca.",
+        "level": 1,
+        "full_comment": "Em biết hát kết hợp vận động theo nhịp điệu bằng nhiều hình thức khác nhau như : Đơn ca, song ca, tốp ca."
+    },
+    "arts": {
+        "evidence": "biết phối màu phù hợp",
+        "confident": 0.8747682571411133,
+        "indicator": "Biết phân biệt màu cơ bản và màu thứ cấp.",
+        "level": 1,
+        "full_comment": "Em hoàn thành các sản phẩm, biết phối màu phù hợp."
+    },
+    "civics": {
+        "evidence": "em biết thể hiện thái độ đồng tình với những hành vi đạo đức tốt",
+        "confident": 0.7079663276672363,
+        "indicator": "Thể hiện được thái độ đồng tình với cái thiện, cái đúng, cái tốt; không đồng tình với cái ác, cái sai, cái xấu.",
+        "level": 1,
+        "full_comment": "Em biết thể hiện thái độ đồng tình với những hành vi đạo đức tốt."
+    },
+    "physical_education": {
+        "evidence": "tham gia tích cực các trò chơi được học",
+        "confident": 0.7463580965995789,
+        "indicator": "Bước đầu vận dụng được kiến thức, kĩ năng đã học vào các hoạt động tập thể, tổ chức chơi được một số trò chơi vận động phù hợp với yêu cầu.",
+        "level": 3,
+        "full_comment": "Em hoàn thành nội dung chương trình môn học, tham gia tích cực các trò chơi được học."
+    },
+    "experiential_activities": {
+        "evidence": "giúp đỡ bạn bè phù hợp với hoàn cảnh",
+        "confident": 0.783274233341217,
+        "indicator": "Biết cách hoà giải bất đồng trong quan hệ bạn bè.",
+        "level": 1,
+        "full_comment": "Em biết yêu thương, giúp đỡ bạn bè phù hợp với hoàn cảnh."
+    }
+}

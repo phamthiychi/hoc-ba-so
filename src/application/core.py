@@ -144,7 +144,7 @@ class SystemCore:
         if student_info is None:
             return None
         student_info = student_info.to_dict()
-        student_info["contact_infors"] = (await self.student_contact_infos_repo.get(code)).to_dict()
+        # student_info["contact_infors"] = (await self.student_contact_infos_repo.get(code)).to_dict()
         return student_info
 
     async def add_student(self, info: StudentRecords) -> list:

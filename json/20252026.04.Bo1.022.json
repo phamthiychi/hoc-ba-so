@@ -1,0 +1,87 @@
+{
+    "student_code": "20252026.04.Bo1.022",
+    "vietnamese": {
+        "evidence": "nắm vững thể loại viết văn miêu tả",
+        "confident": 0.8450987339019775,
+        "indicator": "Viết thành thạo chữ viết thường, viết đúng chữ viết hoa.",
+        "level": 3,
+        "full_comment": "Em đọc bài diễn cảm; viết chính tả tốt; vốn từ phong phú, viết câu sáng tạo có đủ thành phần; nắm vững thể loại viết văn miêu tả và có ý thức giữ gìn tập vở sạch đẹp."
+    },
+    "mathematics": {
+        "evidence": "có kỹ năng tính toán thành thạo",
+        "confident": 0.7426307201385498,
+        "indicator": "Củng cố và hoàn thiện các kĩ năng: đọc, viết, so sánh, xếp thứ tự được các số tự nhiên.",
+        "level": 3,
+        "full_comment": "Em tích cực tham gia phát biểu, có kỹ năng tính toán thành thạo, nắm vững các kiến thức đã học."
+    },
+    "informatics": {
+        "evidence": "có khả năng thực hiện đúng thao tác",
+        "confident": 0.6822817921638489,
+        "indicator": "Cầm chuột đúng cách.",
+        "level": 2,
+        "full_comment": "Em hoàn thành tốt các nội dung học tập theo hướng dẫn của giáo viên; có khả năng thực hiện đúng thao tác và sản phẩm đạt yêu cầu về nội dung và hình thức."
+    },
+    "science": {
+        "evidence": "biết vận dụng vào cuộc sống",
+        "confident": 0.5673609972000122,
+        "indicator": "Nêu và thực hiện được những việc cần làm để chăm sóc, bảo vệ sức khoẻ về thể chất và tinh thần ở tuổi dậy thì.",
+        "level": 2,
+        "full_comment": "Em chủ động nắm bắt, ghi nhớ kiến thức tốt và biết vận dụng vào cuộc sống."
+    },
+    "history_and_geography": {
+        "evidence": "biết tìm kiếm thông tin từ nhiều nguồn",
+        "confident": 0.6194045543670654,
+        "indicator": "Biết quan sát, tra cứu tài liệu để tìm thông tin hoặc thực hiện điều tra ở mức độ đơn giản để tìm hiểu về các sự kiện lịch sử và hiện tượng địa lí; biết đọc lược đồ, biểu đồ, bản đồ tự nhiên, dân cư,... ở mức đơn giản.",
+        "level": 1,
+        "full_comment": "Em có khả năng báo cáo trước đám đông, biết tìm kiếm thông tin từ nhiều nguồn, ham học hỏi."
+    },
+    "english": {
+        "evidence": "cần cố gắng tích cực phát biểu hơn",
+        "confident": 0.6733605861663818,
+        "indicator": "Nghe và nhận biết trọng âm từ.",
+        "level": 1,
+        "full_comment": "Em học đều các kĩ năng nhưng cần cố gắng tích cực phát biểu hơn."
+    },
+    "technology": {
+        "evidence": "hoàn thành tốt các sản phẩm",
+        "confident": 0.5866881012916565,
+        "indicator": "Lựa chọn được vật liệu phù hợp.",
+        "level": 1,
+        "full_comment": "Em nắm vững kiến thức đã học, khéo tay, hoàn thành tốt các sản phẩm."
+    },
+    "music": {
+        "evidence": "em biết phân biệt âm thanh cao – thấp",
+        "confident": 0.832665741443634,
+        "indicator": "Bước đầu cảm nhận và phân biệt được âm thanh cao – thấp, dài – ngắn, to – nhỏ.",
+        "level": 1,
+        "full_comment": "Em biết phân biệt âm thanh cao – thấp và biết thể hiện vận động theo ý thích khi nghe nhạc."
+    },
+    "arts": {
+        "evidence": "biết vận dụng để tạo sản phẩm",
+        "confident": 0.9204555153846741,
+        "indicator": "Vận dụng được nét để tạo nên sản phẩm.",
+        "level": 2,
+        "full_comment": "Em nắm được cách thực hành và biết vận dụng để tạo sản phẩm."
+    },
+    "civics": {
+        "evidence": "hành vi đạo đức đã học",
+        "confident": 0.6928997039794922,
+        "indicator": "Nhận xét được tính chất đúng – sai, tốt – xấu, thiện – ác của một số thái độ, hành vi đạo đức và pháp luật của bản thân và bạn bè trong học tập và sinh hoạt.",
+        "level": 1,
+        "full_comment": "Em biết đánh giá tính chất đúng/sai của những thái độ và hành vi đạo đức đã học."
+    },
+    "physical_education": {
+        "evidence": "tham gia tích cực các trò chơi được học",
+        "confident": 0.7463580965995789,
+        "indicator": "Bước đầu vận dụng được kiến thức, kĩ năng đã học vào các hoạt động tập thể, tổ chức chơi được một số trò chơi vận động phù hợp với yêu cầu.",
+        "level": 3,
+        "full_comment": "Em hoàn thành nội dung chương trình môn học, tham gia tích cực các trò chơi được học."
+    },
+    "experiential_activities": {
+        "evidence": "chia sẻ ý kiến với các bạn trong nhóm",
+        "confident": 0.6365103721618652,
+        "indicator": "Tham gia tích cực vào hoạt động nhóm.",
+        "level": 1,
+        "full_comment": "Em biết lắng nghe và chia sẻ ý kiến với các bạn trong nhóm."
+    }
+}

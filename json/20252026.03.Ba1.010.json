@@ -1,0 +1,73 @@
+{
+    "student_code": "20252026.03.Ba1.010",
+    "vietnamese": {
+        "evidence": "rèn viết văn rõ ý",
+        "confident": 0.8570236563682556,
+        "indicator": "Biết tóm tắt văn bản.",
+        "level": 1,
+        "full_comment": "Em đọc to nhưng ngắt nghỉ chưa hợp lí. Em hiểu nội dung bài đọc, nắm tốt kiến thức từ và câu. Em cố gắng viết đúng chính tả, rèn viết văn rõ ý và có cảm xúc hơn."
+    },
+    "mathematics": {
+        "evidence": "nắm tốt các dạng toán",
+        "confident": 0.7269628047943115,
+        "indicator": "Làm quen với biểu thức số.",
+        "level": 3,
+        "full_comment": "Em tính toán nhanh, nắm tốt các dạng toán và thực hành giải thành thạo các bài tập."
+    },
+    "informatics": {
+        "evidence": "em biết dựa vào sự trợ giúp của máy tính để hoàn thành một số nhiệm vụ",
+        "confident": 0.8213306665420532,
+        "indicator": "Thể hiện được mong muốn biết sử dụng máy tính thành thạo để làm được nhiều việc hơn.",
+        "level": 1,
+        "full_comment": "Em biết dựa vào sự trợ giúp của máy tính để hoàn thành một số nhiệm vụ."
+    },
+    "english": {
+        "evidence": "em cần chăm chỉ mở rộng vốn từ vựng qua bài tập",
+        "confident": 0.588695228099823,
+        "indicator": "Nghe hiểu và làm theo những chỉ dẫn đơn giản trong lớp học.",
+        "level": 1,
+        "full_comment": "Em tiến bộ tốt nhưng em cần chăm chỉ mở rộng vốn từ vựng qua bài tập."
+    },
+    "technology": {
+        "evidence": "kỹ năng cơ bản của môn học",
+        "confident": 0.5803095698356628,
+        "indicator": "Nhận biết được sở thích, khả năng của bản thân đối với các hoạt động kĩ thuật, công nghệ đơn giản.",
+        "level": 1,
+        "full_comment": "Em nắm được kiến thức, kỹ năng cơ bản của môn học. Em cần chăm học và rèn tính cẩn thận khi làm bài."
+    },
+    "music": {
+        "evidence": "vị trí các nốt nhạc qua trò chơi",
+        "confident": 0.7958035469055176,
+        "indicator": "Biết hát kết hợp gõ đệm, vận động hoặc trò chơi.",
+        "level": 1,
+        "full_comment": "Em biết hát theo giai điệu và đúng lời ca, nhớ tên và vị trí các nốt nhạc qua trò chơi."
+    },
+    "arts": {
+        "evidence": "em phối hợp màu sắc hài hòa",
+        "confident": 0.7833553552627563,
+        "indicator": "Biết phân biệt màu cơ bản và màu thứ cấp.",
+        "level": 1,
+        "full_comment": "Em phối hợp màu sắc hài hòa và hoàn thiện sản phẩm mĩ thuật đúng yêu cầu, tô màu đẹp."
+    },
+    "civics": {
+        "evidence": "em biết thể hiện thái độ đồng tình với những hành vi đạo đức",
+        "confident": 0.6570252180099487,
+        "indicator": "Thể hiện được thái độ đồng tình với cái thiện, cái đúng, cái tốt; không đồng tình với cái ác, cái sai, cái xấu.",
+        "level": 1,
+        "full_comment": "Em biết thể hiện thái độ đồng tình với những hành vi đạo đức. Tuy nhiên, em cần tập trung và học tập nghiêm túc hơn."
+    },
+    "physical_education": {
+        "evidence": "em hoàn thành nội dung chương trình môn học",
+        "confident": 0.6903708577156067,
+        "indicator": "Hoàn thành lượng vận động của bài tập.",
+        "level": 1,
+        "full_comment": "Em hoàn thành nội dung chương trình môn học."
+    },
+    "experiential_activities": {
+        "evidence": "thực hiện được một số việc làm phù hợp với lứa tuổi",
+        "confident": 0.889987051486969,
+        "indicator": "Tự lực trong việc thực hiện một số việc phù hợp với lứa tuổi.",
+        "level": 2,
+        "full_comment": "Em có tiến bộ hơn so với đầu năm. Thực hiện được một số việc làm phù hợp với lứa tuổi. Em cần rèn luyện thêm sự tập trung, chăm chỉ trong học tập."
+    }
+}

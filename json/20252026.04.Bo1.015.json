@@ -1,0 +1,87 @@
+{
+    "student_code": "20252026.04.Bo1.015",
+    "vietnamese": {
+        "evidence": "nắm chắc nội dung bài",
+        "confident": 0.8353462219238281,
+        "indicator": "Biết tóm tắt văn bản.",
+        "level": 1,
+        "full_comment": "Em đọc bài lưu loát, nắm chắc nội dung bài, trả lời câu hỏi tốt; sử dụng từ ngữ phong phú, đúng ngữ cảnh và nắm vững các thể loại viết văn miêu tả."
+    },
+    "mathematics": {
+        "evidence": "thực hiện tốt các yêu cầu của bài toán",
+        "confident": 0.6956791877746582,
+        "indicator": "Củng cố và hoàn thiện các kĩ năng: ước lượng và làm tròn được số trong những tính toán đơn giản.",
+        "level": 2,
+        "full_comment": "Em tiếp thu bài nhanh, tính toán chính xác, thực hiện tốt các yêu cầu của bài toán và có tiến bộ trong học tập."
+    },
+    "informatics": {
+        "evidence": "có khả năng thực hiện đúng thao tác",
+        "confident": 0.6822817921638489,
+        "indicator": "Cầm chuột đúng cách.",
+        "level": 2,
+        "full_comment": "Em hoàn thành tốt các nội dung học tập theo hướng dẫn của giáo viên; có khả năng thực hiện đúng thao tác và sản phẩm đạt yêu cầu về nội dung và hình thức."
+    },
+    "science": {
+        "evidence": "vận dụng vào cuộc sống tốt",
+        "confident": 0.5345214009284973,
+        "indicator": "Nêu và thực hiện được những việc cần làm để chăm sóc, bảo vệ sức khoẻ về thể chất và tinh thần ở tuổi dậy thì.",
+        "level": 1,
+        "full_comment": "Em tham gia học nhóm tốt, tiếp thu bài nhanh và vận dụng vào cuộc sống tốt."
+    },
+    "history_and_geography": {
+        "evidence": "các sự kiện lịch sử đã học",
+        "confident": 0.6642863154411316,
+        "indicator": "Sử dụng tư liệu lịch sử và văn hoá dân gian, trình bày được những nét sơ lược về lễ hội giỗ Tổ Hùng Vương.",
+        "level": 1,
+        "full_comment": "Em nắm được một số hoạt động sản xuất của người dân gắn liền với đặc điểm khí hậu, sông ngòi…các vùng lãnh thổ và các sự kiện lịch sử đã học."
+    },
+    "english": {
+        "evidence": "cần cố gắng tích cực phát biểu hơn",
+        "confident": 0.6733605861663818,
+        "indicator": "Nghe và nhận biết trọng âm từ.",
+        "level": 1,
+        "full_comment": "Em học đều các kĩ năng nhưng cần cố gắng tích cực phát biểu hơn."
+    },
+    "technology": {
+        "evidence": "lắp ghép được một số mô hình kĩ thuật đơn giản",
+        "confident": 0.858170747756958,
+        "indicator": "Lựa chọn và sử dụng được một số dụng cụ và chi tiết để lắp ghép được một số mô hình kĩ thuật đơn giản.",
+        "level": 1,
+        "full_comment": "Em nắm vững kiến thức đã học và lắp ghép được một số mô hình kĩ thuật đơn giản."
+    },
+    "music": {
+        "evidence": "cao thấp khi hát",
+        "confident": 0.7130476832389832,
+        "indicator": "Biết hát với các hình thức đơn ca, song ca, tốp ca, đồng ca.",
+        "level": 1,
+        "full_comment": "Em biết điều chỉnh giọng và thể hiện yếu tố to nhỏ, cao thấp khi hát và đọc câu nhạc."
+    },
+    "arts": {
+        "evidence": "chọn màu phù hợp",
+        "confident": 0.8580363988876343,
+        "indicator": "Biết phân biệt màu cơ bản và màu thứ cấp.",
+        "level": 1,
+        "full_comment": "Em vẽ các họa tiết cân đối, chọn màu phù hợp."
+    },
+    "civics": {
+        "evidence": "em biết tự giác tham gia các hoạt động nhóm",
+        "confident": 0.6413928270339966,
+        "indicator": "Nhắc nhở bạn bè tích cực hoàn thành nhiệm vụ.",
+        "level": 1,
+        "full_comment": "Em biết tự giác tham gia các hoạt động nhóm."
+    },
+    "physical_education": {
+        "evidence": "tham gia tích cực các trò chơi được học",
+        "confident": 0.7463580965995789,
+        "indicator": "Bước đầu vận dụng được kiến thức, kĩ năng đã học vào các hoạt động tập thể, tổ chức chơi được một số trò chơi vận động phù hợp với yêu cầu.",
+        "level": 3,
+        "full_comment": "Em hoàn thành nội dung chương trình môn học, tham gia tích cực các trò chơi được học."
+    },
+    "experiential_activities": {
+        "evidence": "em biết xử lí tình huống",
+        "confident": 0.7106432318687439,
+        "indicator": "Biết cách xử lí trong một số tình huống nguy hiểm.",
+        "level": 1,
+        "full_comment": "Em biết xử lí tình huống, phân biệt đúng/sai trong chủ đề vừa học."
+    }
+}

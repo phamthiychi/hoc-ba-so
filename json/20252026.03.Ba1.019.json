@@ -1,0 +1,73 @@
+{
+    "student_code": "20252026.03.Ba1.019",
+    "vietnamese": {
+        "evidence": "hiểu nội dung bài",
+        "confident": 0.8326846361160278,
+        "indicator": "Nhận biết được chi tiết và nội dung chính.",
+        "level": 1,
+        "full_comment": "Em đọc lưu loát, hiểu nội dung bài. Em viết chính tả đúng, nắm tốt kiến thức từ và câu nhưng cố gắng rèn viết văn rõ ý, có cảm xúc hơn."
+    },
+    "mathematics": {
+        "evidence": "em tính toán thành thạo",
+        "confident": 0.6866952180862427,
+        "indicator": "Củng cố và hoàn thiện các kĩ năng: ước lượng và làm tròn được số trong những tính toán đơn giản.",
+        "level": 3,
+        "full_comment": "Em nắm chắc kiến thức đã học. Em tính toán thành thạo, giải toán đúng."
+    },
+    "informatics": {
+        "evidence": "em biết dùng các phím chức năng f5",
+        "confident": 0.6823817491531372,
+        "indicator": "Giải thích được lợi ích của việc gõ bàn phím đúng cách.",
+        "level": 1,
+        "full_comment": "Em biết dùng các phím chức năng F5, Esc để thực hiện việc trình chiếu thuận lợi hơn."
+    },
+    "english": {
+        "evidence": "nói",
+        "confident": 0.6272066831588745,
+        "indicator": "Nghe và nhận biết trọng âm từ.",
+        "level": 1,
+        "full_comment": "Em sử dụng cấu trúc câu phức tạp chính xác trong viết và nói."
+    },
+    "technology": {
+        "evidence": "nắm tốt kiến thức môn học",
+        "confident": 0.566475510597229,
+        "indicator": "Sử dụng được các dụng cụ để làm đồ dùng học tập đúng cách, an toàn.",
+        "level": 2,
+        "full_comment": "Em học tập tích cực, nắm tốt kiến thức môn học và vận dụng thực hành làm sản phẩm đạt yêu cầu."
+    },
+    "music": {
+        "evidence": "vị trí các nốt nhạc qua trò chơi",
+        "confident": 0.7958035469055176,
+        "indicator": "Biết hát kết hợp gõ đệm, vận động hoặc trò chơi.",
+        "level": 1,
+        "full_comment": "Em biết hát theo giai điệu và đúng lời ca, nhớ tên và vị trí các nốt nhạc qua trò chơi."
+    },
+    "arts": {
+        "evidence": "em phối hợp màu sắc hài hòa",
+        "confident": 0.7833553552627563,
+        "indicator": "Biết phân biệt màu cơ bản và màu thứ cấp.",
+        "level": 1,
+        "full_comment": "Em phối hợp màu sắc hài hòa và hoàn thiện sản phẩm mĩ thuật đúng yêu cầu, tô màu đẹp."
+    },
+    "civics": {
+        "evidence": "em ngoan",
+        "confident": 0.6934275031089783,
+        "indicator": "Biết vì sao phải thật thà.",
+        "level": 1,
+        "full_comment": "Em ngoan, lễ phép. Em biết thể hiện thái độ phù hợp với những hành vi đạo đức, vận dụng tốt vào thực tiễn."
+    },
+    "physical_education": {
+        "evidence": "em hoàn thành nội dung chương trình môn học",
+        "confident": 0.6903708577156067,
+        "indicator": "Hoàn thành lượng vận động của bài tập.",
+        "level": 1,
+        "full_comment": "Em hoàn thành nội dung chương trình môn học."
+    },
+    "experiential_activities": {
+        "evidence": "em thể hiện được lòng biết ơn",
+        "confident": 0.7345809936523438,
+        "indicator": "Biết thể hiện lòng biết ơn với thầy cô.",
+        "level": 3,
+        "full_comment": "Em có thái độ tích cực trong các hoạt động. Em thể hiện được lòng biết ơn, sự quan tâm, chăm sóc đến bố mẹ, người thân và làm được một số công việc phù hợp."
+    }
+}

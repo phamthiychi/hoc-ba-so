@@ -1,0 +1,87 @@
+{
+    "student_code": "20252026.04.Bo1.019",
+    "vietnamese": {
+        "evidence": "nắm chắc nội dung bài",
+        "confident": 0.8353462219238281,
+        "indicator": "Biết tóm tắt văn bản.",
+        "level": 2,
+        "full_comment": "Em học tập có tiến bộ, đọc bài trôi chảy, nắm chắc nội dung bài; viết câu có đủ các thành phần và có hình ảnh gợi tả cảm xúc; nắm vững các thể loại viết văn miêu tả."
+    },
+    "mathematics": {
+        "evidence": "kĩ năng tính toán thành thạo",
+        "confident": 0.7262130975723267,
+        "indicator": "Củng cố và hoàn thiện các kĩ năng: đọc, viết, so sánh, xếp thứ tự được các số tự nhiên.",
+        "level": 3,
+        "full_comment": "Em tiếp thu bài nhanh, kĩ năng tính toán thành thạo, nắm được vững các dạng toán giải có lời văn."
+    },
+    "informatics": {
+        "evidence": "tự tìm hiểu",
+        "confident": 0.6052567362785339,
+        "indicator": "Cầm chuột đúng cách.",
+        "level": 3,
+        "full_comment": "Em hoàn thành xuất sắc các yêu cầu bài tập ở tất cả nội dung học; có tư duy sáng tạo, tự tìm hiểu và vận dụng kiến thức để mở rộng sản phẩm, thể hiện sự yêu thích và khả năng học tập độc lập."
+    },
+    "science": {
+        "evidence": "em biết vận dụng kiến thức đã học để giải thích các hiện tượng trong tự nhiên",
+        "confident": 0.650236964225769,
+        "indicator": "Vận dụng được kiến thức về tính chất cho ánh sáng truyền qua hay không cho ánh sáng truyền qua của các vật để giải thích được một số hiện tượng tự nhiên và ứng dụng thực tế.",
+        "level": 2,
+        "full_comment": "Em biết vận dụng kiến thức đã học để giải thích các hiện tượng trong tự nhiên."
+    },
+    "history_and_geography": {
+        "evidence": "các sự kiện lịch sử đã học",
+        "confident": 0.6642863154411316,
+        "indicator": "Sử dụng tư liệu lịch sử và văn hoá dân gian, trình bày được những nét sơ lược về lễ hội giỗ Tổ Hùng Vương.",
+        "level": 1,
+        "full_comment": "Em nắm được một số hoạt động sản xuất của người dân gắn liền với đặc điểm khí hậu, sông ngòi…các vùng lãnh thổ và các sự kiện lịch sử đã học."
+    },
+    "english": {
+        "evidence": "cần rèn luyện thêm kĩ năng viết",
+        "confident": 0.5630073547363281,
+        "indicator": "Viết hoặc điền thông tin vào biểu bảng đơn giản, tin nhắn, ….",
+        "level": 3,
+        "full_comment": "Em tích cực giơ tay phát biểu nhưng cần rèn luyện thêm kĩ năng viết."
+    },
+    "technology": {
+        "evidence": "làm được một số đồ chơi đơn giản",
+        "confident": 0.899813175201416,
+        "indicator": "Làm được một đồ chơi đơn giản theo hướng dẫn.",
+        "level": 1,
+        "full_comment": "Em nắm vững kiến thức đã học và làm được một số đồ chơi đơn giản."
+    },
+    "music": {
+        "evidence": "kết hợp nốt trên khuôn nhạc",
+        "confident": 0.8131219148635864,
+        "indicator": "Vận dụng phù hợp các hình thức độc tấu, hoà tấu trong hoạt động âm nhạc.",
+        "level": 1,
+        "full_comment": "Em biết gọi tên nốt, kết hợp nốt trên khuôn nhạc, hát đúng giai điệu."
+    },
+    "arts": {
+        "evidence": "em sắp xếp được bố cục chặt chẽ",
+        "confident": 0.5658930540084839,
+        "indicator": "Biết được mĩ thuật có ở xung quanh.",
+        "level": 1,
+        "full_comment": "Em sắp xếp được bố cục chặt chẽ, hài hòa, cân đối trong tranh."
+    },
+    "civics": {
+        "evidence": "hành vi đạo đức phù hợp",
+        "confident": 0.6668856143951416,
+        "indicator": "Nhận xét được tính chất đúng – sai, tốt – xấu, thiện – ác của một số thái độ, hành vi đạo đức và pháp luật của bản thân và bạn bè trong học tập và sinh hoạt.",
+        "level": 1,
+        "full_comment": "Em biết điều chỉnh thái độ và hành vi đạo đức phù hợp."
+    },
+    "physical_education": {
+        "evidence": "tham gia tích cực các trò chơi được học",
+        "confident": 0.7463580965995789,
+        "indicator": "Bước đầu vận dụng được kiến thức, kĩ năng đã học vào các hoạt động tập thể, tổ chức chơi được một số trò chơi vận động phù hợp với yêu cầu.",
+        "level": 3,
+        "full_comment": "Em hoàn thành nội dung chương trình môn học, tham gia tích cực các trò chơi được học."
+    },
+    "experiential_activities": {
+        "evidence": "em biết xử lí tình huống",
+        "confident": 0.7106432318687439,
+        "indicator": "Biết cách xử lí trong một số tình huống nguy hiểm.",
+        "level": 1,
+        "full_comment": "Em biết xử lí tình huống, phân biệt đúng/sai trong chủ đề vừa học."
+    }
+}

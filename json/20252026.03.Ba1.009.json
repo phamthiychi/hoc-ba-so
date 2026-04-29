@@ -1,0 +1,73 @@
+{
+    "student_code": "20252026.03.Ba1.009",
+    "vietnamese": {
+        "evidence": "câu",
+        "confident": 0.8323054313659668,
+        "indicator": "Nói rõ ràng, thành câu.",
+        "level": 1,
+        "full_comment": "Em đọc lưu loát, hiểu nội dung bài tốt. Em nắm tốt kiến thức từ và câu, viết văn có ý hay, diễn đạt tốt."
+    },
+    "mathematics": {
+        "evidence": "em tính toán thành thạo",
+        "confident": 0.6866952180862427,
+        "indicator": "Củng cố và hoàn thiện các kĩ năng: ước lượng và làm tròn được số trong những tính toán đơn giản.",
+        "level": 3,
+        "full_comment": "Em nắm chắc kiến thức đã học. Em tính toán thành thạo, giải toán đúng."
+    },
+    "informatics": {
+        "evidence": "em mô tả được nhiệm vụ đặt ra bằng cách xác định những gì đã có trước",
+        "confident": 0.8322392106056213,
+        "indicator": "Phát biểu được nhiệm vụ đặt ra bằng cách xác định những gì đã cho trước, cần làm gì hay cần tạo ra sản phẩm số nào.",
+        "level": 1,
+        "full_comment": "Em mô tả được nhiệm vụ đặt ra bằng cách xác định những gì đã có trước, những gì cần làm hoặc sản phẩm là gì."
+    },
+    "english": {
+        "evidence": "giao tiếp trong lớp",
+        "confident": 0.6914976835250854,
+        "indicator": "Nghe hiểu và làm theo những chỉ dẫn đơn giản trong lớp học.",
+        "level": 1,
+        "full_comment": "Em đã áp dụng tốt các cấu trúc câu mới vào bài tập và giao tiếp trong lớp."
+    },
+    "technology": {
+        "evidence": "nắm tốt kiến thức môn học",
+        "confident": 0.566475510597229,
+        "indicator": "Sử dụng được các dụng cụ để làm đồ dùng học tập đúng cách, an toàn.",
+        "level": 2,
+        "full_comment": "Em học tập tích cực, nắm tốt kiến thức môn học và vận dụng thực hành làm sản phẩm đạt yêu cầu."
+    },
+    "music": {
+        "evidence": "em hát thuộc lời ca",
+        "confident": 0.8272043466567993,
+        "indicator": "Hát rõ lời và thuộc lời.",
+        "level": 1,
+        "full_comment": "Em hát thuộc lời ca và đúng giai điệu bài hát."
+    },
+    "arts": {
+        "evidence": "hoàn thiện sản phẩm mĩ thuật đúng yêu cầu",
+        "confident": 0.75980144739151,
+        "indicator": "Vận dụng được nét để tạo nên sản phẩm.",
+        "level": 1,
+        "full_comment": "Em có năng khiếu vẽ và hoàn thiện sản phẩm mĩ thuật đúng yêu cầu, tô màu đẹp."
+    },
+    "civics": {
+        "evidence": "em ngoan",
+        "confident": 0.6934275031089783,
+        "indicator": "Biết vì sao phải thật thà.",
+        "level": 1,
+        "full_comment": "Em ngoan, lễ phép. Em biết thể hiện thái độ phù hợp với những hành vi đạo đức, vận dụng tốt vào thực tiễn."
+    },
+    "physical_education": {
+        "evidence": "em hoàn thành nội dung chương trình môn học",
+        "confident": 0.6903708577156067,
+        "indicator": "Hoàn thành lượng vận động của bài tập.",
+        "level": 1,
+        "full_comment": "Em hoàn thành nội dung chương trình môn học, mạnh dạn trong các hoạt động nhóm."
+    },
+    "experiential_activities": {
+        "evidence": "em nhận ra được một số đức tính của bản thân liên quan đến nghề yêu thích",
+        "confident": 0.9486032724380493,
+        "indicator": "Nhận ra được một số đức tính của bản thân liên quan đến nghề yêu thích.",
+        "level": 3,
+        "full_comment": "Em tham gia tích cực các hoạt động. Em nhận ra được một số đức tính của bản thân liên quan đến nghề yêu thích. Hoàn thành xuất tốt hoạt động giáo dục."
+    }
+}
