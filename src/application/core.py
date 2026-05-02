@@ -144,7 +144,7 @@ class SystemCore:
         if student_info is None:
             return None
         student_info = student_info.to_dict()
-        # student_info["contact_infors"] = (await self.student_contact_infos_repo.get(code)).to_dict()
+        student_info["contact_infors"] = (await self.student_contact_infos_repo.get(code)).to_dict()
         return student_info
 
     async def add_student(self, info: StudentRecords) -> list:
@@ -230,7 +230,11 @@ class SystemCore:
             key = field.replace('_comment', '')
             student_outcome[key] = self.calc_emb_distance(comment, self.emb_kb[key])
         return student_outcome
-    ## Internal funcs
+
+    ### ===================================================================================================
+    ### Internal funcs
+    ### ===================================================================================================
+
     def _init_graph(self) -> None:
         self.graph_thing_repo.__init__(self.manage)
         self.graph_student_Q_repo.__init__(self.manage)
@@ -350,7 +354,7 @@ class SystemCore:
                 status=info.status,
                 phone=info.phone,
                 address=info.address
-            ))
+            ).dict())
             return Result[1].code
         academic_year_entity = await self.academic_year_repo.get(academic_year_code)
         grade_level_entity = await self.grade_level_repo.get(grade_level_code)

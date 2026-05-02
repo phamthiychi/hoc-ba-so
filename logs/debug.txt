@@ -1,78 +1,5 @@
-[2026-04-13 23:28:17]: Module AcademicYear said: NH20252026 is not found 
-[2026-04-13 23:28:17]: Module GradeLevel said: MK01 is not found 
-[2026-04-13 23:28:17]: Module ClassRoom said: K01.MLMo1 is not found 
-[2026-04-13 23:33:44]: Module ClassRoom said: K01.MLMo2 is not found 
-[2026-04-13 23:38:11]: Module ClassRoom said: K01.MLMo3 is not found 
-[2026-04-13 23:42:47]: Module GradeLevel said: MK02 is not found 
-[2026-04-13 23:42:47]: Module ClassRoom said: K02.MLHa1 is not found 
-[2026-04-13 23:47:33]: Module ClassRoom said: K02.MLHa2 is not found 
-[2026-04-13 23:52:20]: Module ClassRoom said: K02.MLHa3 is not found 
-[2026-04-26 21:42:57]: Module GradeLevel said: MK03 is not found 
-[2026-04-26 21:42:57]: Module ClassRoom said: K03.MLBa1 is not found 
-[2026-04-26 21:43:29]: Traceback (most recent call last):
-  File "D:\Work\Iu\hoc-ba-so\src\application\core.py", line 305, in add_student_profiles
-    await self.add_contact_info_student_mongo(ContactInfosCreateAndUpate(
-  File "D:\Work\Iu\hoc-ba-so\src\application\core.py", line 404, in add_contact_info_student_mongo
-    if await self.student_contact_infos_repo.get(info.student_code):
-       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\hoc-ba-so\src\adapter\database\mongo_repository.py", line 29, in get
-    doc = self.col.find_one({self.field_code: code})
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\collection.py", line 1755, in find_one
-    for result in cursor.limit(-1):
-  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\cursor.py", line 1289, in __next__
-    return self.next()
-           ^^^^^^^^^^^
-  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\cursor.py", line 1265, in next
-    if len(self._data) or self._refresh():
-                          ^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\cursor.py", line 1213, in _refresh
-    self._send_message(q)
-  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\cursor.py", line 1108, in _send_message
-    response = client._run_operation(
-               ^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\_csot.py", line 125, in csot_wrapper
-    return func(self, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 1938, in _run_operation
-    return self._retryable_read(
-           ^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2047, in _retryable_read
-    return self._retry_internal(
-           ^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\_csot.py", line 125, in csot_wrapper
-    return func(self, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2014, in _retry_internal
-    ).run()
-      ^^^^^
-  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2765, in run
-    return self._read() if self._is_read else self._write()
-           ^^^^^^^^^^^^
-  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2910, in _read
-    self._server = self._get_server()
-                   ^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2858, in _get_server
-    return self._client._select_server(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 1833, in _select_server
-    server = topology.select_server(
-             ^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\topology.py", line 409, in select_server
-    server = self._select_server(
-             ^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\topology.py", line 387, in _select_server
-    servers = self.select_servers(
-              ^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\topology.py", line 294, in select_servers
-    server_descriptions = self._select_servers_loop(
-                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pymongo\synchronous\topology.py", line 344, in _select_servers_loop
-    raise ServerSelectionTimeoutError(
-pymongo.errors.ServerSelectionTimeoutError: SSL handshake failed: ac-0v80hol-shard-00-01.wyldsrm.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1006) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-0v80hol-shard-00-02.wyldsrm.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1006) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-0v80hol-shard-00-00.wyldsrm.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1006) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 69ee23aad4950af3923c8983, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-0v80hol-shard-00-00.wyldsrm.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-0v80hol-shard-00-00.wyldsrm.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1006) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-0v80hol-shard-00-01.wyldsrm.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-0v80hol-shard-00-01.wyldsrm.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1006) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-0v80hol-shard-00-02.wyldsrm.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-0v80hol-shard-00-02.wyldsrm.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1006) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
- 
-[2026-04-26 22:03:32]: Module Student said: card_id=79316020026 already exists 
-[2026-04-26 22:03:32]: Traceback (most recent call last):
+[2026-05-02 17:15:18]: Module Student said: card_id=79316020026 already exists 
+[2026-05-02 17:15:18]: Traceback (most recent call last):
   File "D:\Work\Iu\hoc-ba-so\src\application\core.py", line 290, in add_student_profiles
     student_code = await self.add_student_postgres(StudentCreate(
                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -85,8 +12,8 @@ pymongo.errors.ServerSelectionTimeoutError: SSL handshake failed: ac-0v80hol-sha
     raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
 AttributeError: 'StudentUpdate' object has no attribute 'get'
  
-[2026-04-26 22:03:32]: Module Student said: card_id=79215044796 already exists 
-[2026-04-26 22:03:32]: Traceback (most recent call last):
+[2026-05-02 17:15:18]: Module Student said: card_id=79215044796 already exists 
+[2026-05-02 17:15:18]: Traceback (most recent call last):
   File "D:\Work\Iu\hoc-ba-so\src\application\core.py", line 290, in add_student_profiles
     student_code = await self.add_student_postgres(StudentCreate(
                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -99,16 +26,7 @@ AttributeError: 'StudentUpdate' object has no attribute 'get'
     raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
 AttributeError: 'StudentUpdate' object has no attribute 'get'
  
-[2026-04-26 22:05:34]: Module ClassRoom said: K03.MLBa2 is not found 
-[2026-04-26 22:08:08]: Module ClassRoom said: K03.MLBa3 is not found 
-[2026-04-26 22:10:33]: Module ClassRoom said: K03.MLBa4 is not found 
-[2026-04-26 22:13:06]: Module GradeLevel said: MK04 is not found 
-[2026-04-26 22:13:06]: Module ClassRoom said: K04.MLBo1 is not found 
-[2026-04-26 22:15:52]: Module ClassRoom said: K04.MLBo2 is not found 
-[2026-04-26 22:18:21]: Module ClassRoom said: K04.MLBo3 is not found 
-[2026-04-26 22:20:38]: Module ClassRoom said: K04.MLBo4 is not found 
-[2026-04-26 22:22:32]: Module GradeLevel said: MK05 is not found 
-[2026-04-26 22:22:32]: Module ClassRoom said: K05.MLNa1 is not found 
-[2026-04-26 22:25:11]: Module ClassRoom said: K05.MLNa2 is not found 
-[2026-04-26 22:27:25]: Module ClassRoom said: K05.MLNa3 is not found 
-[2026-04-26 22:29:35]: Module ClassRoom said: K05.MLNa4 is not found 
+[2026-05-02 17:22:58]: Module Student said: card_id=79316020026 already exists 
+[2026-05-02 17:22:58]: Module Student said: 20252026.03.Ba1.001 no fields were changed 
+[2026-05-02 17:23:00]: Module Student said: card_id=79215044796 already exists 
+[2026-05-02 17:23:00]: Module Student said: 20252026.03.Ba1.002 no fields were changed 
