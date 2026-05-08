@@ -21,7 +21,14 @@ class Settings:
         "Tính toán": "numeracy",
         "Khoa học": "science",
         "Thẩm mĩ": "aesthetics",
-        "Thể chất": "physical_education"
+        "Thể chất": "physical_education",
+        "Công nghệ": "technology",
+        "Tin học": "informatics"
+    }
+    LEVEL2CODE = {
+        "Đang hình thành": "DEVELOPING",
+        "Đạt": "HAS_ACQUIRED",
+        "Nổi trội": "OUTSTANDING"
     }
     CODES_IN_ASSESSMENT_TYPE = {
         "Phẩm chất": ["patriotism", "compassion", "diligence", "honesty", "responsibility"],

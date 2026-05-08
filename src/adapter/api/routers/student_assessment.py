@@ -34,6 +34,7 @@ async def add_comment(payload: AssessmentComment, req: Request):
         civics_comment=payload.civics_comment,
         physical_education_comment=payload.physical_education_comment,
         experiential_activities_comment=payload.experiential_activities_comment,
+        nature_and_society_comment=payload.nature_and_society_comment,
     ))
     if not result:
         raise HTTPException(status_code=400, detail=f"comment is not useful for {payload.code}, please check logs")

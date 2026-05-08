@@ -1,0 +1,33 @@
+{
+  "student_code": "20252026.04.Bo1.015",
+  "labels": [
+    {
+      "field": "Năng lực ngôn ngữ",
+      "level": "Đang hình thành"
+    },
+    {
+      "field": "Năng lực tính toán",
+      "level": "Đạt"
+    },
+    {
+      "field": "Năng lực khoa học",
+      "level": "Đang hình thành"
+    },
+    {
+      "field": "Năng lực công nghệ",
+      "level": "Đang hình thành"
+    },
+    {
+      "field": "Năng lực tin học",
+      "level": "Đạt"
+    },
+    {
+      "field": "Năng lực thẩm mĩ",
+      "level": "Đang hình thành"
+    },
+    {
+      "field": "Năng lực thể chất",
+      "level": "Nổi trội"
+    }
+  ]
+}

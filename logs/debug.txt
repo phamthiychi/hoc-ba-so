@@ -1,32 +1,37 @@
-[2026-05-02 17:15:18]: Module Student said: card_id=79316020026 already exists 
-[2026-05-02 17:15:18]: Traceback (most recent call last):
-  File "D:\Work\Iu\hoc-ba-so\src\application\core.py", line 290, in add_student_profiles
-    student_code = await self.add_student_postgres(StudentCreate(
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\hoc-ba-so\src\application\core.py", line 347, in add_student_postgres
-    await self.student_repo.update(StudentUpdate(
-  File "D:\Work\Iu\hoc-ba-so\src\adapter\database\postgres_repository.py", line 90, in update
-    code = update_info.get("code")
-           ^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pydantic\main.py", line 1026, in __getattr__
-    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
-AttributeError: 'StudentUpdate' object has no attribute 'get'
- 
-[2026-05-02 17:15:18]: Module Student said: card_id=79215044796 already exists 
-[2026-05-02 17:15:18]: Traceback (most recent call last):
-  File "D:\Work\Iu\hoc-ba-so\src\application\core.py", line 290, in add_student_profiles
-    student_code = await self.add_student_postgres(StudentCreate(
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\hoc-ba-so\src\application\core.py", line 347, in add_student_postgres
-    await self.student_repo.update(StudentUpdate(
-  File "D:\Work\Iu\hoc-ba-so\src\adapter\database\postgres_repository.py", line 90, in update
-    code = update_info.get("code")
-           ^^^^^^^^^^^^^^^
-  File "D:\Work\Iu\hoc-ba-so\.venv\Lib\site-packages\pydantic\main.py", line 1026, in __getattr__
-    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
-AttributeError: 'StudentUpdate' object has no attribute 'get'
- 
-[2026-05-02 17:22:58]: Module Student said: card_id=79316020026 already exists 
-[2026-05-02 17:22:58]: Module Student said: 20252026.03.Ba1.001 no fields were changed 
-[2026-05-02 17:23:00]: Module Student said: card_id=79215044796 already exists 
-[2026-05-02 17:23:00]: Module Student said: 20252026.03.Ba1.002 no fields were changed 
+[2026-05-05 23:55:17]: Module Student said: 20262027.01.Mo1.001 is not found 
+[2026-05-05 23:55:17]: Module Student said: 20262027.01.Mo1.001 is not found 
+[2026-05-05 23:55:17]: Module Student said: 20262027.01.Mo1.001 is not found 
+[2026-05-05 23:56:56]: Status: 500 error, tuple indices must be integers or slices, not str 
+[2026-05-06 00:18:58]: Status: 500 error, 'SpecialAbilitiesComment' object has no attribute 'comment' 
+[2026-05-07 20:43:54]: Status: 500 error, (psycopg2.OperationalError) could not translate host name "aws-1-ap-southeast-2.pooler.supabase.com" to address: Name or service not known
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8) 
+[2026-05-07 21:04:20]: Module Comments said: 20252026.01.Mo1.001 no fields were changed 
+[2026-05-07 21:18:00]: Status: 500 error, (psycopg2.OperationalError) could not translate host name "aws-1-ap-southeast-2.pooler.supabase.com" to address: Name or service not known
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8) 
+[2026-05-07 22:25:07]: Module Comments said: 20252026.01.Mo1.001 no fields were changed 
+[2026-05-07 22:25:07]: Status: 500 error, 'Comments' object has no attribute 'vietnamese_comment' 
+[2026-05-07 22:27:25]: Status: 500 error, 'CommentsData' object has no attribute 'student_code' 
+[2026-05-07 22:32:50]: Module Comments said: 20252026.01.Mo1.001 no fields were changed 
+[2026-05-07 22:45:18]: Status: 500 error, 'NoneType' object has no attribute 'get' 
+[2026-05-07 22:55:29]: Module Comments said: 20252026.01.Mo1.001 no fields were changed 
+[2026-05-07 22:55:29]: Status: 500 error, 'Comments' object has no attribute 'get' 
+[2026-05-07 23:00:43]: Module Comments said: 20252026.01.Mo1.001 no fields were changed 
+[2026-05-07 23:00:43]: Status: 500 error, 'CommentsData' object has no attribute 'update' 
+[2026-05-07 23:02:13]: Module Comments said: 20252026.01.Mo1.001 no fields were changed 
+[2026-05-07 23:02:13]: Status: 500 error, 'NoneType' object has no attribute 'get' 
+[2026-05-07 23:07:11]: Module Comments said: 20252026.01.Mo1.001 no fields were changed 
+[2026-05-07 23:07:11]: Status: 500 error, 'NoneType' object has no attribute 'get' 
+[2026-05-07 23:09:53]: Status: 500 error, 'nature_and_society' 
+[2026-05-07 23:11:33]: Status: 500 error, Could not infer dtype of NoneType 
+[2026-05-07 23:18:02]: Status: 500 error, 'NoneType' object has no attribute 'get' 
+[2026-05-07 23:26:07]: Status: 500 error, X has 26 features, but RandomForestClassifier is expecting 24 features as input. 
+[2026-05-07 23:28:00]: Module Comments said: 20252026.01.Mo1.001 no fields were changed 
+[2026-05-07 23:53:27]: Âm nhạc chưa có nhận xét 
+[2026-05-07 23:54:16]: Status: 500 error, X has 24 features, but RandomForestClassifier is expecting 26 features as input. 
+[2026-05-07 23:55:15]: Module Comments said: 20252026.01.Mo1.001 no fields were changed 
+[2026-05-07 23:55:15]: Status: 500 error, X has 24 features, but RandomForestClassifier is expecting 26 features as input. 
+[2026-05-07 23:57:10]: Module Comments said: 20252026.01.Mo1.001 no fields were changed 
+[2026-05-07 23:57:10]: Status: 500 error, X has 24 features, but RandomForestClassifier is expecting 26 features as input. 
+[2026-05-07 23:58:35]: Mĩ thuật chưa có nhận xét 

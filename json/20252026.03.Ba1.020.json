@@ -1,87 +1,73 @@
 {
     "student_code": "20252026.03.Ba1.020",
     "vietnamese": {
-        "evidence": "hiểu nội dung bài",
-        "confident": 0.8326846361160278,
-        "indicator": "Nhận biết được chi tiết và nội dung chính.",
+        "evidence": "câu",
+        "confident": 0.8323054313659668,
+        "indicator": "Nói rõ ràng, thành câu.",
         "level": 1,
-        "full_comment": "Em đọc bài lưu loát, biết ngắt nghỉ hợp lí, hiểu nội dung bài; sử dụng từ ngữ đúng ngữ cảnh; nắm vững các thể loại viết văn miêu tả đã học."
+        "full_comment": "Em đọc lưu loát, diễn cảm, hiểu nội dung bài tốt. Em nắm tốt kiến thức từ và câu, viết văn có ý hay, diễn đạt tốt."
     },
     "mathematics": {
-        "evidence": "biết mở rộng tư duy với các dạng bài vận dụng",
-        "confident": 0.6486233472824097,
-        "indicator": "Nhận biết và thực hiện được việc lắp ghép, xếp hình gắn với sử dụng bộ đồ dùng học tập cá nhân hoặc vật thật.",
+        "evidence": "em tính toán thành thạo",
+        "confident": 0.6866952180862427,
+        "indicator": "Củng cố và hoàn thiện các kĩ năng: ước lượng và làm tròn được số trong những tính toán đơn giản.",
         "level": 3,
-        "full_comment": "Em nhạy bén trong học tập, tích cực phát biểu xây dựng bài, nắm chắc các kiến thức cơ bản và biết mở rộng tư duy với các dạng bài vận dụng."
+        "full_comment": "Em nắm chắc kiến thức đã học. Em tính toán thành thạo, giải toán đúng."
     },
     "informatics": {
-        "evidence": "tạo bài trình chiếu",
-        "confident": 0.717330276966095,
-        "indicator": "Đưa được hình ảnh vào văn bản.",
-        "level": 2,
-        "full_comment": "Em có tiến bộ rõ rệt trong các kỹ năng gõ văn bản, tạo bài trình chiếu và lập trình cơ bản, có khả năng thực hiện đúng thao tác và sản phẩm đạt yêu cầu về nội dung và hình thức."
-    },
-    "science": {
-        "evidence": "biết xử lý tình huống theo yêu cầu của bài học",
-        "confident": 0.6407498717308044,
-        "indicator": "Nhận xét, đánh giá được phương án giải quyết và cách ứng xử trong các tình huống gắn với đời sống.",
+        "evidence": "em biết dùng phần mềm solarsytem để tìm hiểu về hệ mặt trời",
+        "confident": 0.6796637773513794,
+        "indicator": "Máy tính giúp quan sát về loài vật, về Trái Đất quay quanh Mặt Trời.",
         "level": 1,
-        "full_comment": "Em nắm vững nội dung bài và biết xử lý tình huống theo yêu cầu của bài học."
-    },
-    "history_and_geography": {
-        "evidence": "các sự kiện lịch sử đã học",
-        "confident": 0.6642863154411316,
-        "indicator": "Sử dụng tư liệu lịch sử và văn hoá dân gian, trình bày được những nét sơ lược về lễ hội giỗ Tổ Hùng Vương.",
-        "level": 1,
-        "full_comment": "Em nắm được một số hoạt động sản xuất của người dân gắn liền với đặc điểm khí hậu, sông ngòi…các vùng lãnh thổ và các sự kiện lịch sử đã học."
+        "full_comment": "Em biết dùng phần mềm SolarSytem để tìm hiểu về hệ mặt trời."
     },
     "english": {
-        "evidence": "em học đều các kĩ năng",
-        "confident": 0.564562201499939,
+        "evidence": "giao tiếp trong lớp",
+        "confident": 0.6914976835250854,
         "indicator": "Nghe hiểu và làm theo những chỉ dẫn đơn giản trong lớp học.",
-        "level": 3,
-        "full_comment": "Em học đều các kĩ năng và tích cực giơ tay phát biểu."
+        "level": 1,
+        "full_comment": "Em đã áp dụng tốt các cấu trúc câu mới vào bài tập và giao tiếp trong lớp."
     },
     "technology": {
-        "evidence": "lắp ghép được một số mô hình kĩ thuật đơn giản",
-        "confident": 0.858170747756958,
-        "indicator": "Lựa chọn và sử dụng được một số dụng cụ và chi tiết để lắp ghép được một số mô hình kĩ thuật đơn giản.",
+        "evidence": "em khéo léo khi vận dụng thực hành tạo ra sản phẩm tốt",
+        "confident": 0.5725607872009277,
+        "indicator": "Nêu được một số đức tính cần có để trở thành nhà sáng chế.",
         "level": 1,
-        "full_comment": "Em nắm vững kiến thức đã học và lắp ghép được một số mô hình kĩ thuật đơn giản."
+        "full_comment": "Em học tập hăng hái, nắm tốt nội dung bài. Em khéo léo khi vận dụng thực hành tạo ra sản phẩm tốt."
     },
     "music": {
-        "evidence": "em biết hát kết hợp nhạc đệm",
-        "confident": 0.8634956479072571,
-        "indicator": "Biết hát với các hình thức đơn ca, song ca, tốp ca, đồng ca.",
+        "evidence": "kết hợp nốt trên khuôn nhạc",
+        "confident": 0.8131219148635864,
+        "indicator": "Vận dụng phù hợp các hình thức độc tấu, hoà tấu trong hoạt động âm nhạc.",
         "level": 1,
-        "full_comment": "Em biết hát kết hợp nhạc đệm, vận động theo nhịp điệu của bài hát."
+        "full_comment": "Em biết gọi tên nốt, kết hợp nốt trên khuôn nhạc, hát đúng giai điệu."
     },
     "arts": {
-        "evidence": "em hoàn thành các sản phẩm",
-        "confident": 0.6404419541358948,
+        "evidence": "hoàn thiện sản phẩm mĩ thuật đúng yêu cầu",
+        "confident": 0.75980144739151,
         "indicator": "Vận dụng được nét để tạo nên sản phẩm.",
         "level": 1,
-        "full_comment": "Em hoàn thành các sản phẩm, biết sắp xếp hình vẽ cân đối."
+        "full_comment": "Em có năng khiếu vẽ và hoàn thiện sản phẩm mĩ thuật đúng yêu cầu, tô màu đẹp."
     },
     "civics": {
-        "evidence": "hành vi đạo đức phù hợp",
-        "confident": 0.6668856143951416,
-        "indicator": "Nhận xét được tính chất đúng – sai, tốt – xấu, thiện – ác của một số thái độ, hành vi đạo đức và pháp luật của bản thân và bạn bè trong học tập và sinh hoạt.",
-        "level": 1,
-        "full_comment": "Em biết điều chỉnh thái độ và hành vi đạo đức phù hợp."
+        "evidence": "em ngoan",
+        "confident": 0.6934275031089783,
+        "indicator": "Biết vì sao phải thật thà.",
+        "level": 3,
+        "full_comment": "Em ngoan, lễ phép. Em biết điều chỉnh thái độ và hành vi đạo đức, thực hiện tốt hành vi đạo đức đã học vào cuộc sống."
     },
     "physical_education": {
-        "evidence": "em hoàn thành nội dung chương trình môn học",
-        "confident": 0.6903708577156067,
-        "indicator": "Hoàn thành lượng vận động của bài tập.",
+        "evidence": "tham gia tích cực các trò chơi được học",
+        "confident": 0.7463580965995789,
+        "indicator": "Bước đầu vận dụng được kiến thức, kĩ năng đã học vào các hoạt động tập thể, tổ chức chơi được một số trò chơi vận động phù hợp với yêu cầu.",
         "level": 3,
-        "full_comment": "Em hoàn thành nội dung chương trình môn học, tham gia tích cực hoạt động nhóm."
+        "full_comment": "Em hoàn thành nội dung chương trình môn học, tham gia tích cực các trò chơi được học."
     },
     "experiential_activities": {
-        "evidence": "em biết vận dụng bài học vào cuộc sống hằng ngày",
-        "confident": 0.5038247108459473,
-        "indicator": "Nhận biết được những việc nên làm vào giờ học, những việc nên làm vào giờ chơi và thực hiện được những việc đó.",
-        "level": 2,
-        "full_comment": "Em biết vận dụng bài học vào cuộc sống hằng ngày."
+        "evidence": "em thể hiện được lòng biết ơn",
+        "confident": 0.7345809936523438,
+        "indicator": "Biết thể hiện lòng biết ơn với thầy cô.",
+        "level": 3,
+        "full_comment": "Em có thái độ tích cực trong các hoạt động. Em thể hiện được lòng biết ơn, sự quan tâm, chăm sóc đến bố mẹ, người thân và làm được một số công việc phù hợp."
     }
 }

@@ -6,6 +6,7 @@ from src.application.utils import Utils
 from src.interface.data import Repository
 from src.model.mongo.contact_infos import ContactInfos
 from src.model.mongo.subject_assessments import SubjectAssessments
+from src.model.mongo.comments import Comments
 T = TypeVar("T")
 utils = Utils()
 
@@ -77,3 +78,7 @@ class MongoSubjectAssessmentsRepository(MongoRepositoryBase[SubjectAssessments])
     model_cls = SubjectAssessments
     field_code = "student_code"
 
+class MongoCommentsRepository(MongoRepositoryBase[Comments]):
+    collection_name = "comments"
+    model_cls = Comments
+    field_code = "student_code"

@@ -1,0 +1,87 @@
+{
+    "student_code": "20252026.03.Ba1.020",
+    "vietnamese": {
+        "evidence": "hiểu nội dung bài",
+        "confident": 0.8326846361160278,
+        "indicator": "Nhận biết được chi tiết và nội dung chính.",
+        "level": 1,
+        "full_comment": "Em đọc bài lưu loát, biết ngắt nghỉ hợp lí, hiểu nội dung bài; sử dụng từ ngữ đúng ngữ cảnh; nắm vững các thể loại viết văn miêu tả đã học."
+    },
+    "mathematics": {
+        "evidence": "biết mở rộng tư duy với các dạng bài vận dụng",
+        "confident": 0.6486233472824097,
+        "indicator": "Nhận biết và thực hiện được việc lắp ghép, xếp hình gắn với sử dụng bộ đồ dùng học tập cá nhân hoặc vật thật.",
+        "level": 3,
+        "full_comment": "Em nhạy bén trong học tập, tích cực phát biểu xây dựng bài, nắm chắc các kiến thức cơ bản và biết mở rộng tư duy với các dạng bài vận dụng."
+    },
+    "informatics": {
+        "evidence": "tạo bài trình chiếu",
+        "confident": 0.717330276966095,
+        "indicator": "Đưa được hình ảnh vào văn bản.",
+        "level": 2,
+        "full_comment": "Em có tiến bộ rõ rệt trong các kỹ năng gõ văn bản, tạo bài trình chiếu và lập trình cơ bản, có khả năng thực hiện đúng thao tác và sản phẩm đạt yêu cầu về nội dung và hình thức."
+    },
+    "science": {
+        "evidence": "biết xử lý tình huống theo yêu cầu của bài học",
+        "confident": 0.6407498717308044,
+        "indicator": "Nhận xét, đánh giá được phương án giải quyết và cách ứng xử trong các tình huống gắn với đời sống.",
+        "level": 1,
+        "full_comment": "Em nắm vững nội dung bài và biết xử lý tình huống theo yêu cầu của bài học."
+    },
+    "history_and_geography": {
+        "evidence": "các sự kiện lịch sử đã học",
+        "confident": 0.6642863154411316,
+        "indicator": "Sử dụng tư liệu lịch sử và văn hoá dân gian, trình bày được những nét sơ lược về lễ hội giỗ Tổ Hùng Vương.",
+        "level": 1,
+        "full_comment": "Em nắm được một số hoạt động sản xuất của người dân gắn liền với đặc điểm khí hậu, sông ngòi…các vùng lãnh thổ và các sự kiện lịch sử đã học."
+    },
+    "english": {
+        "evidence": "em học đều các kĩ năng",
+        "confident": 0.564562201499939,
+        "indicator": "Nghe hiểu và làm theo những chỉ dẫn đơn giản trong lớp học.",
+        "level": 3,
+        "full_comment": "Em học đều các kĩ năng và tích cực giơ tay phát biểu."
+    },
+    "technology": {
+        "evidence": "lắp ghép được một số mô hình kĩ thuật đơn giản",
+        "confident": 0.858170747756958,
+        "indicator": "Lựa chọn và sử dụng được một số dụng cụ và chi tiết để lắp ghép được một số mô hình kĩ thuật đơn giản.",
+        "level": 1,
+        "full_comment": "Em nắm vững kiến thức đã học và lắp ghép được một số mô hình kĩ thuật đơn giản."
+    },
+    "music": {
+        "evidence": "em biết hát kết hợp nhạc đệm",
+        "confident": 0.8634956479072571,
+        "indicator": "Biết hát với các hình thức đơn ca, song ca, tốp ca, đồng ca.",
+        "level": 1,
+        "full_comment": "Em biết hát kết hợp nhạc đệm, vận động theo nhịp điệu của bài hát."
+    },
+    "arts": {
+        "evidence": "em hoàn thành các sản phẩm",
+        "confident": 0.6404419541358948,
+        "indicator": "Vận dụng được nét để tạo nên sản phẩm.",
+        "level": 1,
+        "full_comment": "Em hoàn thành các sản phẩm, biết sắp xếp hình vẽ cân đối."
+    },
+    "civics": {
+        "evidence": "hành vi đạo đức phù hợp",
+        "confident": 0.6668856143951416,
+        "indicator": "Nhận xét được tính chất đúng – sai, tốt – xấu, thiện – ác của một số thái độ, hành vi đạo đức và pháp luật của bản thân và bạn bè trong học tập và sinh hoạt.",
+        "level": 1,
+        "full_comment": "Em biết điều chỉnh thái độ và hành vi đạo đức phù hợp."
+    },
+    "physical_education": {
+        "evidence": "em hoàn thành nội dung chương trình môn học",
+        "confident": 0.6903708577156067,
+        "indicator": "Hoàn thành lượng vận động của bài tập.",
+        "level": 3,
+        "full_comment": "Em hoàn thành nội dung chương trình môn học, tham gia tích cực hoạt động nhóm."
+    },
+    "experiential_activities": {
+        "evidence": "em biết vận dụng bài học vào cuộc sống hằng ngày",
+        "confident": 0.5038247108459473,
+        "indicator": "Nhận biết được những việc nên làm vào giờ học, những việc nên làm vào giờ chơi và thực hiện được những việc đó.",
+        "level": 2,
+        "full_comment": "Em biết vận dụng bài học vào cuộc sống hằng ngày."
+    }
+}

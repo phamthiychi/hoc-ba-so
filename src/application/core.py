@@ -16,6 +16,7 @@ from src.adapter.api.template.class_room import ClassRoomCreate, ClassRoomUpdate
 from src.adapter.api.template.contact_infos import ContactInfosCreateAndUpate
 from src.adapter.api.template.student_records import StudentRecords
 from src.adapter.api.template.comment import Comment, SpecialAbilitiesComment
+from src.ml_model.RandomForest import StudentSpecialAssessmentRandomForest
 
 from src.adapter.database.postgres_repository import (
     PostgresAcademicYearRepository,
@@ -31,7 +32,8 @@ from src.adapter.database.postgres_repository import (
 )
 from src.adapter.database.mongo_repository import (
     MongoContactInfosRepository,
-    MongoSubjectAssessmentsRepository
+    MongoSubjectAssessmentsRepository,
+    MongoCommentsRepository
 )
 from src.adapter.graph.neo4j_repository import (
     Neo4jStudentSpecialAbilitiesRepository,
@@ -50,6 +52,22 @@ from src.model.mongo.subject_assessments import (
     SubjectAssessmentsLevel
 )
 
+SUBJECT_MAPPING = {
+    "vietnamese_comment": "Tiếng Việt",
+    "mathematics_comment": "Toán",
+    "informatics_comment": "Tin học",
+    "science_comment": "Khoa học",
+    "history_and_geography_comment": "Lịch sử và Địa lí",
+    "english_comment": "Tiếng Anh",
+    "technology_comment": "Công nghệ",
+    "music_comment": "Âm nhạc",
+    "arts_comment": "Mĩ thuật",
+    "civics_comment": "Đạo đức",
+    "physical_education_comment": "Giáo dục thể chất",
+    "experiential_activities_comment": "Hoạt động trải nghiệm",
+    "nature_and_society_comment": "Tự nhiên và Xã hội"
+}
+
 class SystemCore:
     def __init__(self, session, db, manager):
         # Postgres database
@@ -66,6 +84,7 @@ class SystemCore:
         # Mongo database
         self.student_contact_infos_repo = MongoContactInfosRepository(db)
         self.student_subject_assessments_repo = MongoSubjectAssessmentsRepository(db)
+        self.student_comments_repo = MongoCommentsRepository(db)
         # Neo4j database
         self.graph_thing_repo = Neo4jThingRepository(manager)
         self.graph_student_Q_repo = Neo4jStudentQualityRepository(manager)
@@ -120,8 +139,12 @@ class SystemCore:
                 name="physical_education"),
             "experiential_activities": self.embedding_assessment.emb_knowledge(
                 knowledge_base={"experiential_activities":self.student_assessment_kb["Môn học"]["Hoạt động trải nghiệm"]},
-                name="experiential_activities")
+                name="experiential_activities"),
+            "nature_and_society": None
         }
+        # ML
+        self.student_special_forest = StudentSpecialAssessmentRandomForest()
+
         # Other
         self.utils = Utils()
         self.manage = manager
@@ -197,7 +220,7 @@ class SystemCore:
     async def add_student_comment_general(self, payload: Comment, type_assessment: str, threshold = 0.5) -> str:
         if await self.find_student(payload.code) is None:
             return None
-        self.clear_student_assessment_outstanding(payload.code, type_assessment)
+        self.clear_student_assessment(payload.code, type_assessment)
         clauses = self.utils.split_clauses(payload.comment)
         print(clauses)
         clause_embs = self.embedding_assessment.model.encode(clauses, convert_to_tensor=True)
@@ -208,28 +231,49 @@ class SystemCore:
             if score <= threshold:
                 continue
             indicators = self.emb_kb[type_assessment].get("all_indicators")[best_idx]
-            self.create_student_assessment_outstanding(
+            self.create_student_assessment(
                 student_code=payload.code,
-                evidence=clause,
-                confident=score,
                 name=indicators.get("virtue"),
-                indicator=indicators.get("indicator"),
-                comment=payload.comment,
-                type_assessment=type_assessment
+                type_assessment=type_assessment,
+                level="Nổi trội",
+                other_info={
+                    "evidence": clause,
+                    "confident": score,
+                    "indicator": indicators.get("indicator"),
+                    "comment": payload.comment
+                }
             )
         return payload.code
 
     async def add_student_comment_special(self, payload: SpecialAbilitiesComment) -> str:
         if await self.find_student(payload.code) is None:
             return None
-        self.clear_student_assessment_outstanding(payload.code, "Năng lực đặc thù")
         student_outcome = {"student_code": payload.code}
         for field, comment in payload.model_dump().items():
             if field == "code" or comment == None:
                 continue
-            key = field.replace('_comment', '')
-            student_outcome[key] = self.calc_emb_distance(comment, self.emb_kb[key])
-        return student_outcome
+            student_outcome[field] = self.calc_emb_distance(comment, self.emb_kb[field.replace('_comment', '')])
+            student_outcome[field].update({
+                "subject": SUBJECT_MAPPING[field]
+            })
+        await self.add_comments_student_mongo(student_outcome)
+        info = await self.student_comments_repo.get(payload.code)
+        if self.is_full_comments(info) is False:
+            return "Không thể đánh giá học sinh do chưa đủ nhận xét của tất cả môn học"
+        prase_info = info.data.to_dict()
+        prase_info.update({
+            "student_code": payload.code
+        })
+        result_from_ml = self.student_special_forest.predict(prase_info)
+        self.clear_student_assessment(payload.code, "Năng lực đặc thù")
+        for r in result_from_ml:
+            self.create_student_assessment(
+                student_code=payload.code,
+                name=r.get('field'),
+                type_assessment="Năng lực đặc thù",
+                level=r.get('level')
+            )
+        return "Đã đánh giá thành công có học sinh"
 
     ### ===================================================================================================
     ### Internal funcs
@@ -265,23 +309,31 @@ class SystemCore:
             relation_type="HAS_ASSESSMENT",
             relation_props=None
         )
-        # for type_assessment, data in self.student_assessment_kb.items():
-        #     for name in data.keys():
-        #         code = ontology_setting.ASSESSMENT2CODE[name]
-        #         including_code, callback = self.choose_assessment(type_assessment)
-        #         self.graph_student_sub_assessment_repo.create({
-        #             "code": code,
-        #             "name": name,
-        #             "define": " ".join(self.student_assessment_kb[type_assessment][name])
-        #         })
-        #         callback.create_relationship(
-        #             from_value=including_code,
-        #             to_label="StudentSubAssessment",
-        #             to_id_field="code",
-        #             to_value=code,
-        #             relation_type="INCLUDING",
-        #             relation_props=None
-        #         )
+        for type_assessment, data in {
+            "Phẩm chất": ["Yêu nước", "Nhân ái", "Chăm chỉ", "Trung thực", "Trách nhiệm"],
+            "Năng lực chung": ["Tự chủ và tự học", "Giao tiếp và hợp tác", "Giải quyết vấn đề và sáng tạo"],
+            "Năng lực đặc thù": ["Ngôn ngữ", "Tính toán", "Khoa học", "Thẩm mĩ", "Thể chất", "Công nghệ", "Tin học"]
+        }.items():
+            for name in data:
+                code = ontology_setting.ASSESSMENT2CODE[name]
+                including_code, callback = self.choose_assessment(type_assessment)
+                data = {
+                    "code": code,
+                    "name": name
+                }
+                if self.student_assessment_kb.get(type_assessment, None):
+                    data.update({
+                        "define": " ".join(self.student_assessment_kb[type_assessment][name])
+                    })
+                self.graph_student_sub_assessment_repo.create(data)
+                callback.create_relationship(
+                    from_value=including_code,
+                    to_label="StudentSubAssessment",
+                    to_id_field="code",
+                    to_value=code,
+                    relation_type="INCLUDING",
+                    relation_props=None
+                )
 
     def fill_none(self, value: any, default="Chưa có") -> any:
         return value if value else default
@@ -432,6 +484,12 @@ class SystemCore:
             data=data
         ).to_dict())
 
+    async def add_comments_student_mongo(self, info: dict) -> None:
+        if await self.student_comments_repo.get(info.get("student_code")):
+            await self.student_comments_repo.update(info)
+            return None
+        await self.student_comments_repo.add(info)
+
     async def add_student_relationship(self, student_code: str, profile: dict):
         self.graph_student_repo.create({
             "code": student_code,
@@ -477,23 +535,20 @@ class SystemCore:
             relation_type="HAVE_ASSESSMENT",
             relation_props=None
         )
-    def create_student_assessment_outstanding(self, student_code: str, evidence: str, confident: float,
-                                              name: str, indicator: str, comment: str, type_assessment: str) -> None:
-        code = ontology_setting.ASSESSMENT2CODE[name]
-        self.graph_student_repo.create_relationship(
-            from_value=student_code,
-            to_label="StudentSubAssessment",
-            to_id_field="code",
-            to_value=code,
-            relation_type="OUTSTANDING",
-            relation_props={
-                "including": type_assessment,
-                "indicator": indicator,
-                "evidence": evidence,
-                "full_comment": comment,
-                "confident": confident
-            }
-        )
+    def create_student_assessment(self, student_code: str, name: str,
+                                  type_assessment: str, level: str, other_info: dict = {}) -> None:
+        level2code = ontology_setting.LEVEL2CODE.get(level, None)
+        if level2code:
+            data = {"including": type_assessment, "level": level}
+            data.update(other_info)
+            self.graph_student_repo.create_relationship(
+                from_value=student_code,
+                to_label="StudentSubAssessment",
+                to_id_field="code",
+                to_value=ontology_setting.ASSESSMENT2CODE[name],
+                relation_type=level2code,
+                relation_props=data
+            )
 
     def choose_assessment(self, type_assessment: str) -> Tuple[str, Callable[..., Any]]:
         if type_assessment == "Phẩm chất":
@@ -503,7 +558,7 @@ class SystemCore:
         elif type_assessment == "Năng lực đặc thù":
             return "student_special_abilities", self.graph_student_SA_repo
 
-    def clear_student_assessment_outstanding(self, student_code: str, type_assessment: str) -> None:
+    def clear_student_assessment(self, student_code: str, type_assessment: str) -> None:
         for code in ontology_setting.CODES_IN_ASSESSMENT_TYPE[type_assessment]:
             print(code)
             self.graph_student_repo.delete_relationship(
@@ -513,6 +568,20 @@ class SystemCore:
                 to_value=code,
                 relation_type="OUTSTANDING"
             )
+            self.graph_student_repo.delete_relationship(
+                from_value=student_code,
+                to_label="StudentSubAssessment",
+                to_id_field="code",
+                to_value=code,
+                relation_type="HAS_ACQUIRED"
+            )
+            self.graph_student_repo.delete_relationship(
+                from_value=student_code,
+                to_label="StudentSubAssessment",
+                to_id_field="code",
+                to_value=code,
+                relation_type="DEVELOPING"
+            )
 
     def calc_emb_distance(self, comment: str, kb: dict) -> dict:
         clauses = self.utils.split_clauses(comment)
@@ -521,7 +590,7 @@ class SystemCore:
         final_clause = None
         final_indicators = None
         level = self.get_level(self.utils.normalize_text(comment))
-        if level > 0:
+        if level > 0 and kb is not None:
             clause_embs = self.embedding_assessment.model.encode(clauses, convert_to_tensor=True)
             for i, clause in enumerate(clauses):
                 sims = self.embedding_assessment.util.cos_sim(clause_embs[i], kb.get("encode"))[0]
@@ -551,3 +620,78 @@ class SystemCore:
                 if phrase in text:
                     return level
         return 1
+
+    def which_grade(self, code):
+        return int(code.split(".")[1])
+
+    def is_full_comments(self, data):
+        match self.which_grade(data.student_code):
+            case 1:
+                subjects_must_have_comment = [
+                    data.data.vietnamese_comment,
+                    data.data.mathematics_comment,
+                    data.data.civics_comment,
+                    # data.data.nature_and_society_comment,
+                    data.data.physical_education_comment,
+                    data.data.music_comment,
+                    data.data.arts_comment,
+                    data.data.experiential_activities_comment
+                ]
+            case 2:
+                subjects_must_have_comment = [
+                    data.data.vietnamese_comment,
+                    data.data.mathematics_comment,
+                    data.data.english_comment,
+                    data.data.informatics_comment,
+                    data.data.civics_comment,
+                    # data.data.nature_and_society_comment,
+                    data.data.physical_education_comment,
+                    data.data.music_comment,
+                    data.data.arts_comment,
+                    data.data.experiential_activities_comment
+                ]
+            case 3:
+                subjects_must_have_comment = [
+                    data.data.vietnamese_comment,
+                    data.data.mathematics_comment,
+                    data.data.english_comment,
+                    data.data.technology_comment,
+                    data.data.informatics_comment,
+                    data.data.civics_comment,
+                    # data.data.nature_and_society_comment,
+                    data.data.physical_education_comment,
+                    data.data.music_comment,
+                    data.data.arts_comment,
+                    data.data.experiential_activities_comment
+                ]
+            case 4:
+                subjects_must_have_comment = [
+                    data.data.vietnamese_comment,
+                    data.data.mathematics_comment,
+                    data.data.english_comment,
+                    data.data.history_and_geography_comment,
+                    data.data.science_comment,
+                    data.data.technology_comment,
+                    data.data.informatics_comment,
+                    data.data.civics_comment,
+                    data.data.physical_education_comment,
+                    data.data.music_comment,
+                    data.data.arts_comment,
+                    data.data.experiential_activities_comment
+                ]
+            case 5:
+                subjects_must_have_comment = [{
+                    "evidence": None,
+                    "confident": 0,
+                    "indicator": None,
+                    "level": 0,
+                    "full_comment": ""
+                }]
+        for comment in subjects_must_have_comment:
+            if not comment:
+                self.utils._log('Tồi tại null trong các nhận xét')
+                return False
+            if comment.get("full_comment") == "":
+                self.utils._log(f'{comment.get("subject", "unknown")} chưa có nhận xét')
+                return False
+        return True

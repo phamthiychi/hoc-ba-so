@@ -19,6 +19,7 @@ class SpecialAbilitiesComment(BaseModel):
     civics_comment: Optional[str] = None
     physical_education_comment: Optional[str] = None
     experiential_activities_comment: Optional[str] = None
+    nature_and_society_comment: Optional[str] = None
 
 class AssessmentComment(BaseModel):
     code: str
@@ -36,4 +37,5 @@ class AssessmentComment(BaseModel):
     civics_comment: Optional[str] = None
     physical_education_comment: Optional[str] = None
     experiential_activities_comment: Optional[str] = None
+    nature_and_society_comment: Optional[str] = None
 
