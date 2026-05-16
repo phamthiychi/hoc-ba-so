@@ -1,0 +1,243 @@
+{
+    "student_code": "20252026.02.Ha1.017",
+    "vietnamese_comment": {
+        "remembering": {
+            "evidence": "cần cố gắng luyện đọc hiểu nội dung bài đọc",
+            "confident": 0.7499679327011108,
+            "indicator": "đọc thuộc lòng đoạn văn",
+            "level": 1,
+            "full_comment": "Em đọc bài có tiến bộ nhưng cần cố gắng luyện đọc hiểu nội dung bài đọc và kĩ năng viết."
+        },
+        "understanding": {
+            "evidence": "kĩ năng viết",
+            "confident": 0.6357283592224121,
+            "indicator": "đánh giá quan điểm của người viết",
+            "level": 1,
+            "full_comment": "Em đọc bài có tiến bộ nhưng cần cố gắng luyện đọc hiểu nội dung bài đọc và kĩ năng viết."
+        },
+        "applying": {
+            "evidence": "kĩ năng viết",
+            "confident": 0.8148524761199951,
+            "indicator": "viết văn bản",
+            "level": 1,
+            "full_comment": "Em đọc bài có tiến bộ nhưng cần cố gắng luyện đọc hiểu nội dung bài đọc và kĩ năng viết."
+        },
+        "subject": "Tiếng Việt"
+    },
+    "mathematics_comment": {
+        "remembering": {
+            "evidence": "em có tiến bộ trong học tập",
+            "confident": 0.5573026537895203,
+            "indicator": "làm quen",
+            "level": 2,
+            "full_comment": "Em có tiến bộ trong học tập, cần rèn kĩ năng tính nhanh và phân tích đề toán để làm bài đúng bài toán nhé!"
+        },
+        "understanding": {
+            "evidence": "em có tiến bộ trong học tập",
+            "confident": 0.5291638374328613,
+            "indicator": "thể hiện",
+            "level": 2,
+            "full_comment": "Em có tiến bộ trong học tập, cần rèn kĩ năng tính nhanh và phân tích đề toán để làm bài đúng bài toán nhé!"
+        },
+        "applying": {
+            "evidence": "phân tích đề toán để làm bài đúng bài toán nhé",
+            "confident": 0.5798095464706421,
+            "indicator": "giải quyết",
+            "level": 2,
+            "full_comment": "Em có tiến bộ trong học tập, cần rèn kĩ năng tính nhanh và phân tích đề toán để làm bài đúng bài toán nhé!"
+        },
+        "subject": "Toán"
+    },
+    "informatics_comment": {
+        "remembering": {
+            "evidence": "em biết dùng nhiều dòng lệnh để lập trình nhiều hoạt động cho cho nhân vật",
+            "confident": 0.6353150010108948,
+            "indicator": "thực hiện được một số chức năng trong phần mềm",
+            "level": 1,
+            "full_comment": "Em biết dùng nhiều dòng lệnh để lập trình nhiều hoạt động cho cho nhân vật."
+        },
+        "understanding": {
+            "evidence": "em biết dùng nhiều dòng lệnh để lập trình nhiều hoạt động cho cho nhân vật",
+            "confident": 0.6657427549362183,
+            "indicator": "hiểu được chương trình là dãy các lệnh điều khiển máy tính",
+            "level": 1,
+            "full_comment": "Em biết dùng nhiều dòng lệnh để lập trình nhiều hoạt động cho cho nhân vật."
+        },
+        "applying": {
+            "evidence": "em biết dùng nhiều dòng lệnh để lập trình nhiều hoạt động cho cho nhân vật",
+            "confident": 0.5357720851898193,
+            "indicator": "tạo được chương trình",
+            "level": 1,
+            "full_comment": "Em biết dùng nhiều dòng lệnh để lập trình nhiều hoạt động cho cho nhân vật."
+        },
+        "subject": "Tin học"
+    },
+    "english_comment": {
+        "remembering": {
+            "evidence": "em hoàn thành nội dung môn học",
+            "confident": 0.6217271685600281,
+            "indicator": "nêu được nghề nghiệp",
+            "level": 2,
+            "full_comment": "Em hoàn thành nội dung môn học."
+        },
+        "understanding": {
+            "evidence": "em hoàn thành nội dung môn học",
+            "confident": 0.609520673751831,
+            "indicator": "trình bày được hoạt động học tập",
+            "level": 2,
+            "full_comment": "Em hoàn thành nội dung môn học."
+        },
+        "applying": {
+            "evidence": "em hoàn thành nội dung môn học",
+            "confident": 0.6327260136604309,
+            "indicator": "hoàn thành được nhiệm vụ học tập bằng tiếng Anh",
+            "level": 2,
+            "full_comment": "Em hoàn thành nội dung môn học."
+        },
+        "subject": "Tiếng Anh"
+    },
+    "music_comment": {
+        "remembering": {
+            "evidence": "kết hợp nốt trên khuôn nhạc",
+            "confident": 0.8001426458358765,
+            "indicator": "liệt kê được một số loại nhạc cụ",
+            "level": 1,
+            "full_comment": "Em biết gọi tên nốt, kết hợp nốt trên khuôn nhạc, hát đúng giai điệu."
+        },
+        "understanding": {
+            "evidence": "kết hợp nốt trên khuôn nhạc",
+            "confident": 0.8372527360916138,
+            "indicator": "mô tả được động tác chơi nhạc cụ",
+            "level": 1,
+            "full_comment": "Em biết gọi tên nốt, kết hợp nốt trên khuôn nhạc, hát đúng giai điệu."
+        },
+        "applying": {
+            "evidence": "kết hợp nốt trên khuôn nhạc",
+            "confident": 0.8636674880981445,
+            "indicator": "biểu diễn được các tiết mục âm nhạc",
+            "level": 1,
+            "full_comment": "Em biết gọi tên nốt, kết hợp nốt trên khuôn nhạc, hát đúng giai điệu."
+        },
+        "subject": "Âm nhạc"
+    },
+    "arts_comment": {
+        "remembering": {
+            "evidence": "em hoàn thành nội dung môn học",
+            "confident": 0.5003877878189087,
+            "indicator": "liệt kê được ngành nghề",
+            "level": 2,
+            "full_comment": "Em hoàn thành nội dung môn học."
+        },
+        "understanding": {
+            "evidence": "em hoàn thành nội dung môn học",
+            "confident": 0.6080352067947388,
+            "indicator": "tóm tắt được sự nghiệp",
+            "level": 2,
+            "full_comment": "Em hoàn thành nội dung môn học."
+        },
+        "applying": {
+            "evidence": "em hoàn thành nội dung môn học",
+            "confident": 0.609450101852417,
+            "indicator": "thực hiện được phác thảo",
+            "level": 2,
+            "full_comment": "Em hoàn thành nội dung môn học."
+        },
+        "subject": "Mĩ thuật"
+    },
+    "civics_comment": {
+        "remembering": {
+            "evidence": "biết thể hiện thái độ đồng tình với những hành vi đạo đức tốt",
+            "confident": 0.9010892510414124,
+            "indicator": "phân biệt được thái độ phù hợp với chuẩn mực đạo đức",
+            "level": 2,
+            "full_comment": "Em hoàn thành nội dung môn học và biết thể hiện thái độ đồng tình với những hành vi đạo đức tốt."
+        },
+        "understanding": {
+            "evidence": "biết thể hiện thái độ đồng tình với những hành vi đạo đức tốt",
+            "confident": 0.8878046274185181,
+            "indicator": "nhận xét được thái độ của người khác theo chuẩn mực đạo đức",
+            "level": 2,
+            "full_comment": "Em hoàn thành nội dung môn học và biết thể hiện thái độ đồng tình với những hành vi đạo đức tốt."
+        },
+        "applying": {
+            "evidence": "biết thể hiện thái độ đồng tình với những hành vi đạo đức tốt",
+            "confident": 0.903975248336792,
+            "indicator": "điều chỉnh được thái độ của bản thân phù hợp với chuẩn mực đạo đức",
+            "level": 2,
+            "full_comment": "Em hoàn thành nội dung môn học và biết thể hiện thái độ đồng tình với những hành vi đạo đức tốt."
+        },
+        "subject": "Đạo đức"
+    },
+    "physical_education_comment": {
+        "remembering": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.5195467472076416,
+            "indicator": "biết được các tư thế động tác",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học."
+        },
+        "understanding": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.36934083700180054,
+            "indicator": "so sánh được nội dung tập luyện phù hợp để nâng cao sức khoẻ",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học."
+        },
+        "applying": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.6778688430786133,
+            "indicator": "biểu diễn được bài tập liên hoàn",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học."
+        },
+        "subject": "Giáo dục thể chất"
+    },
+    "experiential_activities_comment": {
+        "remembering": {
+            "evidence": "em hoàn thành nội dung môn học",
+            "confident": 0.5798219442367554,
+            "indicator": "kể được những việc làm tốt",
+            "level": 2,
+            "full_comment": "Em hoàn thành nội dung môn học."
+        },
+        "understanding": {
+            "evidence": "em hoàn thành nội dung môn học",
+            "confident": 0.5462347865104675,
+            "indicator": "nhận xét được sự tiến bộ của bản thân",
+            "level": 2,
+            "full_comment": "Em hoàn thành nội dung môn học."
+        },
+        "applying": {
+            "evidence": "em hoàn thành nội dung môn học",
+            "confident": 0.5848406553268433,
+            "indicator": "xác định được nghề",
+            "level": 2,
+            "full_comment": "Em hoàn thành nội dung môn học."
+        },
+        "subject": "Hoạt động trải nghiệm"
+    },
+    "nature_and_society_comment": {
+        "remembering": {
+            "evidence": "cố gắng lên em nhé",
+            "confident": 0.7385213971138,
+            "indicator": "nói được tên lớp",
+            "level": 1,
+            "full_comment": "Em nắm kiến thức nhưng chưa mạnh dạn phát biểu ý kiến. Cố gắng lên em nhé!"
+        },
+        "understanding": {
+            "evidence": "chưa mạnh dạn phát biểu ý kiến",
+            "confident": 0.4031883478164673,
+            "indicator": "trình bày được một số việc cần tránh để giữ gìn thần kinh",
+            "level": 1,
+            "full_comment": "Em nắm kiến thức nhưng chưa mạnh dạn phát biểu ý kiến. Cố gắng lên em nhé!"
+        },
+        "applying": {
+            "evidence": "em nắm kiến thức",
+            "confident": 0.4480966627597809,
+            "indicator": "đặt được câu hỏi để tìm hiểu về thành tích dạy và học",
+            "level": 1,
+            "full_comment": "Em nắm kiến thức nhưng chưa mạnh dạn phát biểu ý kiến. Cố gắng lên em nhé!"
+        },
+        "subject": "Tự nhiên và Xã hội"
+    }
+}

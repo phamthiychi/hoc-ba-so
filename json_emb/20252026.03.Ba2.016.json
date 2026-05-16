@@ -1,0 +1,267 @@
+{
+    "student_code": "20252026.03.Ba2.016",
+    "vietnamese_comment": {
+        "remembering": {
+            "evidence": "hiểu nội dung bài đọc",
+            "confident": 0.7852199077606201,
+            "indicator": "đọc thuộc lòng đoạn văn",
+            "level": 2,
+            "full_comment": "Em đọc bài to, lưu loát và hiểu nội dung bài đọc. Em làm văn có tiến bộ, chú ý rèn ý văn sáng tạo hơn."
+        },
+        "understanding": {
+            "evidence": "hiểu nội dung bài đọc",
+            "confident": 0.7846075892448425,
+            "indicator": "nhận xét nội dung",
+            "level": 2,
+            "full_comment": "Em đọc bài to, lưu loát và hiểu nội dung bài đọc. Em làm văn có tiến bộ, chú ý rèn ý văn sáng tạo hơn."
+        },
+        "applying": {
+            "evidence": "hiểu nội dung bài đọc",
+            "confident": 0.7209150791168213,
+            "indicator": "vận dụng kiến thức văn học",
+            "level": 2,
+            "full_comment": "Em đọc bài to, lưu loát và hiểu nội dung bài đọc. Em làm văn có tiến bộ, chú ý rèn ý văn sáng tạo hơn."
+        },
+        "subject": "Tiếng Việt"
+    },
+    "mathematics_comment": {
+        "remembering": {
+            "evidence": "em nắm kiến thức",
+            "confident": 0.7614577412605286,
+            "indicator": "làm quen",
+            "level": 1,
+            "full_comment": "Em nắm kiến thức và vận dụng tốt vào bài làm, tính toán đã cẩn thận."
+        },
+        "understanding": {
+            "evidence": "em nắm kiến thức",
+            "confident": 0.6536067724227905,
+            "indicator": "thể hiện",
+            "level": 1,
+            "full_comment": "Em nắm kiến thức và vận dụng tốt vào bài làm, tính toán đã cẩn thận."
+        },
+        "applying": {
+            "evidence": "vận dụng tốt vào bài làm",
+            "confident": 0.5993837118148804,
+            "indicator": "vận dụng",
+            "level": 1,
+            "full_comment": "Em nắm kiến thức và vận dụng tốt vào bài làm, tính toán đã cẩn thận."
+        },
+        "subject": "Toán"
+    },
+    "informatics_comment": {
+        "remembering": {
+            "evidence": "em biết dựa vào sự trợ giúp của máy tính để hoàn thành một số nhiệm vụ",
+            "confident": 0.8737258315086365,
+            "indicator": "biết được vai trò của máy tính",
+            "level": 1,
+            "full_comment": "Em biết dựa vào sự trợ giúp của máy tính để hoàn thành một số nhiệm vụ."
+        },
+        "understanding": {
+            "evidence": "em biết dựa vào sự trợ giúp của máy tính để hoàn thành một số nhiệm vụ",
+            "confident": 0.8083200454711914,
+            "indicator": "giải thích được máy tính là công cụ hiệu quả",
+            "level": 1,
+            "full_comment": "Em biết dựa vào sự trợ giúp của máy tính để hoàn thành một số nhiệm vụ."
+        },
+        "applying": {
+            "evidence": "em biết dựa vào sự trợ giúp của máy tính để hoàn thành một số nhiệm vụ",
+            "confident": 0.8006706833839417,
+            "indicator": "thể hiện được mong muốn biết sử dụng máy tính",
+            "level": 1,
+            "full_comment": "Em biết dựa vào sự trợ giúp của máy tính để hoàn thành một số nhiệm vụ."
+        },
+        "subject": "Tin học"
+    },
+    "english_comment": {
+        "remembering": {
+            "evidence": "em tích cực tham gia hoạt động nhóm",
+            "confident": 0.5852640271186829,
+            "indicator": "nêu được sở thích",
+            "level": 3,
+            "full_comment": "Em tích cực tham gia hoạt động nhóm, giúp đỡ bạn bè."
+        },
+        "understanding": {
+            "evidence": "em tích cực tham gia hoạt động nhóm",
+            "confident": 0.5160971283912659,
+            "indicator": "trình bày được sở thích",
+            "level": 3,
+            "full_comment": "Em tích cực tham gia hoạt động nhóm, giúp đỡ bạn bè."
+        },
+        "applying": {
+            "evidence": "giúp đỡ bạn bè",
+            "confident": 0.8267452120780945,
+            "indicator": "nói được về bạn bè",
+            "level": 3,
+            "full_comment": "Em tích cực tham gia hoạt động nhóm, giúp đỡ bạn bè."
+        },
+        "subject": "Tiếng Anh"
+    },
+    "technology_comment": {
+        "remembering": {
+            "evidence": "em có ý thức tự hoàn thành kiến thức môn học",
+            "confident": 0.4649351239204407,
+            "indicator": "nhận ra",
+            "level": 1,
+            "full_comment": "Em có ý thức tự hoàn thành kiến thức môn học và làm việc nhóm tốt."
+        },
+        "understanding": {
+            "evidence": "em có ý thức tự hoàn thành kiến thức môn học",
+            "confident": 0.5874257683753967,
+            "indicator": "nhận thức",
+            "level": 1,
+            "full_comment": "Em có ý thức tự hoàn thành kiến thức môn học và làm việc nhóm tốt."
+        },
+        "applying": {
+            "evidence": "làm việc nhóm tốt",
+            "confident": 0.5179531574249268,
+            "indicator": "hoàn thiện",
+            "level": 1,
+            "full_comment": "Em có ý thức tự hoàn thành kiến thức môn học và làm việc nhóm tốt."
+        },
+        "subject": "Công nghệ"
+    },
+    "music_comment": {
+        "remembering": {
+            "evidence": "em thuộc lời ca",
+            "confident": 0.8855307698249817,
+            "indicator": "thuộc lời ca",
+            "level": 1,
+            "full_comment": "Em thuộc lời ca, hát đúng giai điệu, biết thể hiện sắc thái bài hát."
+        },
+        "understanding": {
+            "evidence": "biết thể hiện sắc thái bài hát",
+            "confident": 0.6454697251319885,
+            "indicator": "tóm tắt được ý nghĩa của một số thuật ngữ âm nhạc",
+            "level": 1,
+            "full_comment": "Em thuộc lời ca, hát đúng giai điệu, biết thể hiện sắc thái bài hát."
+        },
+        "applying": {
+            "evidence": "hát đúng giai điệu",
+            "confident": 0.6942073106765747,
+            "indicator": "biểu diễn được các tiết mục âm nhạc",
+            "level": 1,
+            "full_comment": "Em thuộc lời ca, hát đúng giai điệu, biết thể hiện sắc thái bài hát."
+        },
+        "subject": "Âm nhạc"
+    },
+    "arts_comment": {
+        "remembering": {
+            "evidence": "em biết sử dụng vật liệu sẵn có để sáng tạo sản phẩm",
+            "confident": 0.6674258708953857,
+            "indicator": "liệt kê được vật liệu",
+            "level": 3,
+            "full_comment": "Em biết sử dụng vật liệu sẵn có để sáng tạo sản phẩm."
+        },
+        "understanding": {
+            "evidence": "em biết sử dụng vật liệu sẵn có để sáng tạo sản phẩm",
+            "confident": 0.7052983045578003,
+            "indicator": "phân biệt được một số chất liệu",
+            "level": 3,
+            "full_comment": "Em biết sử dụng vật liệu sẵn có để sáng tạo sản phẩm."
+        },
+        "applying": {
+            "evidence": "em biết sử dụng vật liệu sẵn có để sáng tạo sản phẩm",
+            "confident": 0.7608828544616699,
+            "indicator": "tạo được sản phẩm",
+            "level": 3,
+            "full_comment": "Em biết sử dụng vật liệu sẵn có để sáng tạo sản phẩm."
+        },
+        "subject": "Mĩ thuật"
+    },
+    "civics_comment": {
+        "remembering": {
+            "evidence": "biết quan tâm giúp đỡ nhiệt tình với bạn bè",
+            "confident": 0.6147077083587646,
+            "indicator": "kể ra được thái độ",
+            "level": 1,
+            "full_comment": "Em lễ phép với thầy cô, biết quan tâm giúp đỡ nhiệt tình với bạn bè."
+        },
+        "understanding": {
+            "evidence": "biết quan tâm giúp đỡ nhiệt tình với bạn bè",
+            "confident": 0.46881425380706787,
+            "indicator": "nhận xét được thái độ của người khác theo chuẩn mực đạo đức",
+            "level": 1,
+            "full_comment": "Em lễ phép với thầy cô, biết quan tâm giúp đỡ nhiệt tình với bạn bè."
+        },
+        "applying": {
+            "evidence": "biết quan tâm giúp đỡ nhiệt tình với bạn bè",
+            "confident": 0.5852835178375244,
+            "indicator": "thực hiện được hành vi tích cực để phát triển bản thân",
+            "level": 1,
+            "full_comment": "Em lễ phép với thầy cô, biết quan tâm giúp đỡ nhiệt tình với bạn bè."
+        },
+        "subject": "Đạo đức"
+    },
+    "physical_education_comment": {
+        "remembering": {
+            "evidence": "mạnh dạn trong các hoạt động nhóm",
+            "confident": 0.6233933568000793,
+            "indicator": "xác định được các tư thế động tác",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học, mạnh dạn trong các hoạt động nhóm."
+        },
+        "understanding": {
+            "evidence": "mạnh dạn trong các hoạt động nhóm",
+            "confident": 0.42805051803588867,
+            "indicator": "mô tả được động tác kĩ thuật",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học, mạnh dạn trong các hoạt động nhóm."
+        },
+        "applying": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.6778688430786133,
+            "indicator": "biểu diễn được bài tập liên hoàn",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học, mạnh dạn trong các hoạt động nhóm."
+        },
+        "subject": "Giáo dục thể chất"
+    },
+    "experiential_activities_comment": {
+        "remembering": {
+            "evidence": "em chủ động tìm kiếm sự hỗ trợ từ thầy cô",
+            "confident": 0.6148341298103333,
+            "indicator": "biết cách làm tìm kiếm sự hỗ trợ",
+            "level": 3,
+            "full_comment": "Em chủ động tìm kiếm sự hỗ trợ từ thầy cô, bạn bè khi tự mình không giải quyết được vấn đề."
+        },
+        "understanding": {
+            "evidence": "bạn bè khi tự mình không giải quyết được vấn đề",
+            "confident": 0.3943665027618408,
+            "indicator": "phân tích được điểm yếu",
+            "level": 3,
+            "full_comment": "Em chủ động tìm kiếm sự hỗ trợ từ thầy cô, bạn bè khi tự mình không giải quyết được vấn đề."
+        },
+        "applying": {
+            "evidence": "bạn bè khi tự mình không giải quyết được vấn đề",
+            "confident": 0.6120601892471313,
+            "indicator": "xây dựng được tình bạn",
+            "level": 3,
+            "full_comment": "Em chủ động tìm kiếm sự hỗ trợ từ thầy cô, bạn bè khi tự mình không giải quyết được vấn đề."
+        },
+        "subject": "Hoạt động trải nghiệm"
+    },
+    "nature_and_society_comment": {
+        "remembering": {
+            "evidence": "em hiểu nội dung bài học",
+            "confident": 0.7322655916213989,
+            "indicator": "kể được tên các hoạt động chính trong lớp học",
+            "level": 2,
+            "full_comment": "Em hiểu nội dung bài học và biết vận dụng kiến thức đã học vào thực tế."
+        },
+        "understanding": {
+            "evidence": "em hiểu nội dung bài học",
+            "confident": 0.5501986145973206,
+            "indicator": "giới thiệu được một cách đơn giản về truyền thống nhà trường",
+            "level": 2,
+            "full_comment": "Em hiểu nội dung bài học và biết vận dụng kiến thức đã học vào thực tế."
+        },
+        "applying": {
+            "evidence": "em hiểu nội dung bài học",
+            "confident": 0.6680670976638794,
+            "indicator": "đặt được câu hỏi để tìm hiểu về thành tích dạy và học",
+            "level": 2,
+            "full_comment": "Em hiểu nội dung bài học và biết vận dụng kiến thức đã học vào thực tế."
+        },
+        "subject": "Tự nhiên và Xã hội"
+    }
+}

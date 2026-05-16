@@ -1,0 +1,243 @@
+{
+    "student_code": "20252026.01.Mo1.012",
+    "vietnamese_comment": {
+        "remembering": {
+            "evidence": null,
+            "confident": 0,
+            "indicator": null,
+            "level": 0,
+            "full_comment": "Em chưa đọc được bài, chưa hoàn thành nội dung môn học."
+        },
+        "understanding": {
+            "evidence": null,
+            "confident": 0,
+            "indicator": null,
+            "level": 0,
+            "full_comment": "Em chưa đọc được bài, chưa hoàn thành nội dung môn học."
+        },
+        "applying": {
+            "evidence": null,
+            "confident": 0,
+            "indicator": null,
+            "level": 0,
+            "full_comment": "Em chưa đọc được bài, chưa hoàn thành nội dung môn học."
+        },
+        "subject": "Tiếng Việt"
+    },
+    "mathematics_comment": {
+        "remembering": {
+            "evidence": null,
+            "confident": 0,
+            "indicator": null,
+            "level": 0,
+            "full_comment": "Em chưa có kỹ năng tính, chưa hoàn thành nội dung môn học."
+        },
+        "understanding": {
+            "evidence": null,
+            "confident": 0,
+            "indicator": null,
+            "level": 0,
+            "full_comment": "Em chưa có kỹ năng tính, chưa hoàn thành nội dung môn học."
+        },
+        "applying": {
+            "evidence": null,
+            "confident": 0,
+            "indicator": null,
+            "level": 0,
+            "full_comment": "Em chưa có kỹ năng tính, chưa hoàn thành nội dung môn học."
+        },
+        "subject": "Toán"
+    },
+    "informatics_comment": {
+        "remembering": {
+            "evidence": "chưa làm nổi bật các chi tiết của sản phẩm",
+            "confident": 0.39756253361701965,
+            "indicator": "nêu được tên thiết bị",
+            "level": 3,
+            "full_comment": "Em chọn màu chưa hợp lí lắm nên chưa làm nổi bật các chi tiết của sản phẩm."
+        },
+        "understanding": {
+            "evidence": "chưa làm nổi bật các chi tiết của sản phẩm",
+            "confident": 0.4973079264163971,
+            "indicator": "trình bày được công việc đặc thù và sản phẩm chính",
+            "level": 3,
+            "full_comment": "Em chọn màu chưa hợp lí lắm nên chưa làm nổi bật các chi tiết của sản phẩm."
+        },
+        "applying": {
+            "evidence": "em chọn màu chưa hợp lí lắm",
+            "confident": 0.7083423137664795,
+            "indicator": "chỉnh sửa được màu sắc",
+            "level": 3,
+            "full_comment": "Em chọn màu chưa hợp lí lắm nên chưa làm nổi bật các chi tiết của sản phẩm."
+        },
+        "subject": "Tin học"
+    },
+    "english_comment": {
+        "remembering": {
+            "evidence": "em cần tập trung hơn trong giờ học",
+            "confident": 0.5727120041847229,
+            "indicator": "thực hiện được các chỉ dẫn đơn giản trong lớp học",
+            "level": 1,
+            "full_comment": "Em cần tập trung hơn trong giờ học."
+        },
+        "understanding": {
+            "evidence": "em cần tập trung hơn trong giờ học",
+            "confident": 0.614824116230011,
+            "indicator": "trình bày được hoạt động học tập",
+            "level": 1,
+            "full_comment": "Em cần tập trung hơn trong giờ học."
+        },
+        "applying": {
+            "evidence": "em cần tập trung hơn trong giờ học",
+            "confident": 0.5513789653778076,
+            "indicator": "nói được về trường học",
+            "level": 1,
+            "full_comment": "Em cần tập trung hơn trong giờ học."
+        },
+        "subject": "Tiếng Anh"
+    },
+    "music_comment": {
+        "remembering": {
+            "evidence": "theo phách",
+            "confident": 0.8487673997879028,
+            "indicator": "thuộc lời ca",
+            "level": 1,
+            "full_comment": "Em biết gõ đệm theo tiết tấu lời ca, theo phách."
+        },
+        "understanding": {
+            "evidence": "theo phách",
+            "confident": 0.683485746383667,
+            "indicator": "nêu được ví dụ",
+            "level": 1,
+            "full_comment": "Em biết gõ đệm theo tiết tấu lời ca, theo phách."
+        },
+        "applying": {
+            "evidence": "theo phách",
+            "confident": 0.43951427936553955,
+            "indicator": "biểu diễn được các tiết mục âm nhạc",
+            "level": 1,
+            "full_comment": "Em biết gõ đệm theo tiết tấu lời ca, theo phách."
+        },
+        "subject": "Âm nhạc"
+    },
+    "arts_comment": {
+        "remembering": {
+            "evidence": "em hoàn thành các bài vẽ",
+            "confident": 0.5417094230651855,
+            "indicator": "nêu được ý tưởng",
+            "level": 1,
+            "full_comment": "Em hoàn thành các bài vẽ."
+        },
+        "understanding": {
+            "evidence": "em hoàn thành các bài vẽ",
+            "confident": 0.6518487334251404,
+            "indicator": "phân biệt được tranh vẽ",
+            "level": 1,
+            "full_comment": "Em hoàn thành các bài vẽ."
+        },
+        "applying": {
+            "evidence": "em hoàn thành các bài vẽ",
+            "confident": 0.6588057279586792,
+            "indicator": "thực hiện được phác thảo",
+            "level": 1,
+            "full_comment": "Em hoàn thành các bài vẽ."
+        },
+        "subject": "Mĩ thuật"
+    },
+    "civics_comment": {
+        "remembering": {
+            "evidence": "hoàn thành các hoạt động",
+            "confident": 0.6904957890510559,
+            "indicator": "nêu được khái niệm",
+            "level": 1,
+            "full_comment": "Em có chú ý nghe giảng bài và hoàn thành các hoạt động."
+        },
+        "understanding": {
+            "evidence": "hoàn thành các hoạt động",
+            "confident": 0.5042609572410583,
+            "indicator": "trình bày được kế hoạch kinh doanh của bản thân",
+            "level": 1,
+            "full_comment": "Em có chú ý nghe giảng bài và hoàn thành các hoạt động."
+        },
+        "applying": {
+            "evidence": "hoàn thành các hoạt động",
+            "confident": 0.6167302131652832,
+            "indicator": "hình thành được nền nếp sinh hoạt",
+            "level": 1,
+            "full_comment": "Em có chú ý nghe giảng bài và hoàn thành các hoạt động."
+        },
+        "subject": "Đạo đức"
+    },
+    "physical_education_comment": {
+        "remembering": {
+            "evidence": "em cần cố gắng tập trung tham gia tập luyện cùng các bạn nhé",
+            "confident": 0.7126396894454956,
+            "indicator": "biết được biên độ động tác",
+            "level": 1,
+            "full_comment": "Em cần cố gắng tập trung tham gia tập luyện cùng các bạn nhé."
+        },
+        "understanding": {
+            "evidence": "em cần cố gắng tập trung tham gia tập luyện cùng các bạn nhé",
+            "confident": 0.5169700980186462,
+            "indicator": "so sánh được phương pháp tập luyện phù hợp để nâng cao sức khoẻ",
+            "level": 1,
+            "full_comment": "Em cần cố gắng tập trung tham gia tập luyện cùng các bạn nhé."
+        },
+        "applying": {
+            "evidence": "em cần cố gắng tập trung tham gia tập luyện cùng các bạn nhé",
+            "confident": 0.6735636591911316,
+            "indicator": "xử lí được các tình huống trong tập luyện",
+            "level": 1,
+            "full_comment": "Em cần cố gắng tập trung tham gia tập luyện cùng các bạn nhé."
+        },
+        "subject": "Giáo dục thể chất"
+    },
+    "experiential_activities_comment": {
+        "remembering": {
+            "evidence": "em hiểu bài",
+            "confident": 0.7070963978767395,
+            "indicator": "kể được những việc làm tốt",
+            "level": 1,
+            "full_comment": "Em hiểu bài nhưng cần tích cực hơn trong hoạt động nhóm."
+        },
+        "understanding": {
+            "evidence": "em hiểu bài",
+            "confident": 0.6493703126907349,
+            "indicator": "chỉ ra được ý nghĩa của hoạt động",
+            "level": 1,
+            "full_comment": "Em hiểu bài nhưng cần tích cực hơn trong hoạt động nhóm."
+        },
+        "applying": {
+            "evidence": "em hiểu bài",
+            "confident": 0.7946490049362183,
+            "indicator": "thuyết trình được",
+            "level": 1,
+            "full_comment": "Em hiểu bài nhưng cần tích cực hơn trong hoạt động nhóm."
+        },
+        "subject": "Hoạt động trải nghiệm"
+    },
+    "nature_and_society_comment": {
+        "remembering": {
+            "evidence": "em hiểu bài",
+            "confident": 0.8197205066680908,
+            "indicator": "nói được tên lớp",
+            "level": 3,
+            "full_comment": "Em hiểu bài nhưng chưa tích cực tham gia các hoạt động."
+        },
+        "understanding": {
+            "evidence": "chưa tích cực tham gia các hoạt động",
+            "confident": 0.53672856092453,
+            "indicator": "trình bày được một số việc cần tránh để giữ gìn cơ quan tuần hoàn",
+            "level": 3,
+            "full_comment": "Em hiểu bài nhưng chưa tích cực tham gia các hoạt động."
+        },
+        "applying": {
+            "evidence": "em hiểu bài",
+            "confident": 0.6199827790260315,
+            "indicator": "đặt được câu hỏi để tìm hiểu về thành tích dạy và học",
+            "level": 3,
+            "full_comment": "Em hiểu bài nhưng chưa tích cực tham gia các hoạt động."
+        },
+        "subject": "Tự nhiên và Xã hội"
+    }
+}

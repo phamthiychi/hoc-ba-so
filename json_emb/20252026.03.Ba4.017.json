@@ -1,0 +1,267 @@
+{
+    "student_code": "20252026.03.Ba4.017",
+    "vietnamese_comment": {
+        "remembering": {
+            "evidence": "đọc bài to",
+            "confident": 0.7922417521476746,
+            "indicator": "kể lại câu chuyện đã đọc",
+            "level": 2,
+            "full_comment": "Em nắm vững nội dung môn học, đọc bài to, rõ ràng, hiểu tốt nội dung bài đọc, biết vận dụng vốn từ đã học để đặt câu, viết đoạn văn ngắn."
+        },
+        "understanding": {
+            "evidence": "em nắm vững nội dung môn học",
+            "confident": 0.7663758993148804,
+            "indicator": "hiểu đề tài",
+            "level": 2,
+            "full_comment": "Em nắm vững nội dung môn học, đọc bài to, rõ ràng, hiểu tốt nội dung bài đọc, biết vận dụng vốn từ đã học để đặt câu, viết đoạn văn ngắn."
+        },
+        "applying": {
+            "evidence": "viết đoạn văn ngắn",
+            "confident": 0.8264820575714111,
+            "indicator": "viết đoạn văn",
+            "level": 2,
+            "full_comment": "Em nắm vững nội dung môn học, đọc bài to, rõ ràng, hiểu tốt nội dung bài đọc, biết vận dụng vốn từ đã học để đặt câu, viết đoạn văn ngắn."
+        },
+        "subject": "Tiếng Việt"
+    },
+    "mathematics_comment": {
+        "remembering": {
+            "evidence": "cố gắng hơn nữa nhé",
+            "confident": 0.7951025366783142,
+            "indicator": "làm quen",
+            "level": 2,
+            "full_comment": "Em nắm vững nội dung môn học, biết xác định đề toán, tính toán khá nhanh nhưng đôi khi chưa cẩn thận. Tuy nhiên, em đã có tiến bộ trong học tập, cố gắng hơn nữa nhé!"
+        },
+        "understanding": {
+            "evidence": "cố gắng hơn nữa nhé",
+            "confident": 0.788977861404419,
+            "indicator": "thể hiện",
+            "level": 2,
+            "full_comment": "Em nắm vững nội dung môn học, biết xác định đề toán, tính toán khá nhanh nhưng đôi khi chưa cẩn thận. Tuy nhiên, em đã có tiến bộ trong học tập, cố gắng hơn nữa nhé!"
+        },
+        "applying": {
+            "evidence": "cố gắng hơn nữa nhé",
+            "confident": 0.7902316451072693,
+            "indicator": "lí giải",
+            "level": 2,
+            "full_comment": "Em nắm vững nội dung môn học, biết xác định đề toán, tính toán khá nhanh nhưng đôi khi chưa cẩn thận. Tuy nhiên, em đã có tiến bộ trong học tập, cố gắng hơn nữa nhé!"
+        },
+        "subject": "Toán"
+    },
+    "informatics_comment": {
+        "remembering": {
+            "evidence": "em cần luyện tập thêm",
+            "confident": 0.5960797071456909,
+            "indicator": "kể lại được điều biết thêm",
+            "level": 1,
+            "full_comment": "Em gặp một ít khó khăn khi thao tác nháy đúp chuột vì tốc độ nháy chuột còn chậm. Em cần luyện tập thêm."
+        },
+        "understanding": {
+            "evidence": "em cần luyện tập thêm",
+            "confident": 0.5243918895721436,
+            "indicator": "tìm hiểu được thông tin ngành đào tạo",
+            "level": 1,
+            "full_comment": "Em gặp một ít khó khăn khi thao tác nháy đúp chuột vì tốc độ nháy chuột còn chậm. Em cần luyện tập thêm."
+        },
+        "applying": {
+            "evidence": "em cần luyện tập thêm",
+            "confident": 0.5346646904945374,
+            "indicator": "chạy thử được chương trình",
+            "level": 1,
+            "full_comment": "Em gặp một ít khó khăn khi thao tác nháy đúp chuột vì tốc độ nháy chuột còn chậm. Em cần luyện tập thêm."
+        },
+        "subject": "Tin học"
+    },
+    "english_comment": {
+        "remembering": {
+            "evidence": "em",
+            "confident": 0.7210434675216675,
+            "indicator": "nêu được sở thích",
+            "level": 1,
+            "full_comment": "Em có nỗ lực nhưng em nên chú ý hơn đến việc ghi nhớ và sử dụng từ mới."
+        },
+        "understanding": {
+            "evidence": "sử dụng từ mới",
+            "confident": 0.7188619375228882,
+            "indicator": "giải thích được ý nghĩa của từ và cụm từ quen thuộc",
+            "level": 1,
+            "full_comment": "Em có nỗ lực nhưng em nên chú ý hơn đến việc ghi nhớ và sử dụng từ mới."
+        },
+        "applying": {
+            "evidence": "sử dụng từ mới",
+            "confident": 0.8312617540359497,
+            "indicator": "sử dụng được liên từ",
+            "level": 1,
+            "full_comment": "Em có nỗ lực nhưng em nên chú ý hơn đến việc ghi nhớ và sử dụng từ mới."
+        },
+        "subject": "Tiếng Anh"
+    },
+    "technology_comment": {
+        "remembering": {
+            "evidence": "bảo quản",
+            "confident": 0.8164420127868652,
+            "indicator": "nêu",
+            "level": 3,
+            "full_comment": "Em nắm được kiến thức môn học, có tính sáng tạo, biết sử dụng và bảo quản cũng như giữ an toàn khi sử dụng các sản phẩm công nghệ."
+        },
+        "understanding": {
+            "evidence": "bảo quản",
+            "confident": 1.0,
+            "indicator": "bảo quản",
+            "level": 3,
+            "full_comment": "Em nắm được kiến thức môn học, có tính sáng tạo, biết sử dụng và bảo quản cũng như giữ an toàn khi sử dụng các sản phẩm công nghệ."
+        },
+        "applying": {
+            "evidence": "bảo quản",
+            "confident": 0.8447636961936951,
+            "indicator": "vận hành",
+            "level": 3,
+            "full_comment": "Em nắm được kiến thức môn học, có tính sáng tạo, biết sử dụng và bảo quản cũng như giữ an toàn khi sử dụng các sản phẩm công nghệ."
+        },
+        "subject": "Công nghệ"
+    },
+    "music_comment": {
+        "remembering": {
+            "evidence": "em hát thuộc lời ca",
+            "confident": 0.8307087421417236,
+            "indicator": "phát biểu được lời ca",
+            "level": 1,
+            "full_comment": "Em hát thuộc lời ca và đúng giai điệu bài hát."
+        },
+        "understanding": {
+            "evidence": "đúng giai điệu bài hát",
+            "confident": 0.5584374666213989,
+            "indicator": "mô tả được động tác chơi nhạc cụ",
+            "level": 1,
+            "full_comment": "Em hát thuộc lời ca và đúng giai điệu bài hát."
+        },
+        "applying": {
+            "evidence": "đúng giai điệu bài hát",
+            "confident": 0.6180360317230225,
+            "indicator": "biểu diễn được các tiết mục âm nhạc",
+            "level": 1,
+            "full_comment": "Em hát thuộc lời ca và đúng giai điệu bài hát."
+        },
+        "subject": "Âm nhạc"
+    },
+    "arts_comment": {
+        "remembering": {
+            "evidence": "em biết chọn lọc hình ảnh phù hợp với đề tài",
+            "confident": 0.6756594181060791,
+            "indicator": "nhận biết được yếu tố tạo hình",
+            "level": 1,
+            "full_comment": "Em biết chọn lọc hình ảnh phù hợp với đề tài, nắm được nội dung kiến thức môn học."
+        },
+        "understanding": {
+            "evidence": "nắm được nội dung kiến thức môn học",
+            "confident": 0.7076295614242554,
+            "indicator": "biểu đạt được nội dung",
+            "level": 1,
+            "full_comment": "Em biết chọn lọc hình ảnh phù hợp với đề tài, nắm được nội dung kiến thức môn học."
+        },
+        "applying": {
+            "evidence": "nắm được nội dung kiến thức môn học",
+            "confident": 0.6988884806632996,
+            "indicator": "thực hiện được phác thảo",
+            "level": 1,
+            "full_comment": "Em biết chọn lọc hình ảnh phù hợp với đề tài, nắm được nội dung kiến thức môn học."
+        },
+        "subject": "Mĩ thuật"
+    },
+    "civics_comment": {
+        "remembering": {
+            "evidence": "em nắm được nội dung môn học",
+            "confident": 0.6353724002838135,
+            "indicator": "nêu được khái niệm",
+            "level": 1,
+            "full_comment": "Em nắm được nội dung môn học và có khả năng vận dụng tốt kiến thức đã học vào cuộc sống."
+        },
+        "understanding": {
+            "evidence": "có khả năng vận dụng tốt kiến thức đã học vào cuộc sống",
+            "confident": 0.5016201734542847,
+            "indicator": "lí giải được bài học thành công trong quá trình kinh doanh của một doanh nghiệp nhỏ cụ thể",
+            "level": 1,
+            "full_comment": "Em nắm được nội dung môn học và có khả năng vận dụng tốt kiến thức đã học vào cuộc sống."
+        },
+        "applying": {
+            "evidence": "có khả năng vận dụng tốt kiến thức đã học vào cuộc sống",
+            "confident": 0.6269580125808716,
+            "indicator": "xác định được lí tưởng sống của bản thân",
+            "level": 1,
+            "full_comment": "Em nắm được nội dung môn học và có khả năng vận dụng tốt kiến thức đã học vào cuộc sống."
+        },
+        "subject": "Đạo đức"
+    },
+    "physical_education_comment": {
+        "remembering": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.5195467472076416,
+            "indicator": "biết được các tư thế động tác",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học."
+        },
+        "understanding": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.36934083700180054,
+            "indicator": "so sánh được nội dung tập luyện phù hợp để nâng cao sức khoẻ",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học."
+        },
+        "applying": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.6778688430786133,
+            "indicator": "biểu diễn được bài tập liên hoàn",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học."
+        },
+        "subject": "Giáo dục thể chất"
+    },
+    "experiential_activities_comment": {
+        "remembering": {
+            "evidence": "vận dụng tốt các kiến thức của môn học",
+            "confident": 0.7210993766784668,
+            "indicator": "kể được những việc làm tốt",
+            "level": 1,
+            "full_comment": "Em hiểu và vận dụng tốt các kiến thức của môn học, xử lý tốt các tình huống của bài."
+        },
+        "understanding": {
+            "evidence": "vận dụng tốt các kiến thức của môn học",
+            "confident": 0.6399482488632202,
+            "indicator": "phân tích được điểm mạnh",
+            "level": 1,
+            "full_comment": "Em hiểu và vận dụng tốt các kiến thức của môn học, xử lý tốt các tình huống của bài."
+        },
+        "applying": {
+            "evidence": "em hiểu",
+            "confident": 0.7795248031616211,
+            "indicator": "thuyết trình được",
+            "level": 1,
+            "full_comment": "Em hiểu và vận dụng tốt các kiến thức của môn học, xử lý tốt các tình huống của bài."
+        },
+        "subject": "Hoạt động trải nghiệm"
+    },
+    "nature_and_society_comment": {
+        "remembering": {
+            "evidence": "em nắm được nội dung bài học",
+            "confident": 0.7079740762710571,
+            "indicator": "kể được tên các hoạt động chính trong lớp học",
+            "level": 1,
+            "full_comment": "Em nắm được nội dung bài học, ghi nhớ tốt kiến thức của môn học."
+        },
+        "understanding": {
+            "evidence": "em nắm được nội dung bài học",
+            "confident": 0.5266067981719971,
+            "indicator": "giới thiệu được một cách đơn giản về truyền thống nhà trường",
+            "level": 1,
+            "full_comment": "Em nắm được nội dung bài học, ghi nhớ tốt kiến thức của môn học."
+        },
+        "applying": {
+            "evidence": "em nắm được nội dung bài học",
+            "confident": 0.6720104217529297,
+            "indicator": "đặt được câu hỏi để tìm hiểu về thành tích dạy và học",
+            "level": 1,
+            "full_comment": "Em nắm được nội dung bài học, ghi nhớ tốt kiến thức của môn học."
+        },
+        "subject": "Tự nhiên và Xã hội"
+    }
+}

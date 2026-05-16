@@ -1,0 +1,243 @@
+{
+    "student_code": "20252026.02.Ha3.026",
+    "vietnamese_comment": {
+        "remembering": {
+            "evidence": "em đọc trôi chảy",
+            "confident": 0.8029985427856445,
+            "indicator": "đọc thuộc lòng đoạn văn",
+            "level": 1,
+            "full_comment": "Em đọc trôi chảy và nắm được nội dung bài đọc. Chữ viết em rõ ràng và trình bày bài sạch đẹp."
+        },
+        "understanding": {
+            "evidence": "nắm được nội dung bài đọc",
+            "confident": 0.8299025297164917,
+            "indicator": "nhận xét nội dung",
+            "level": 1,
+            "full_comment": "Em đọc trôi chảy và nắm được nội dung bài đọc. Chữ viết em rõ ràng và trình bày bài sạch đẹp."
+        },
+        "applying": {
+            "evidence": "chữ viết em rõ ràng",
+            "confident": 0.7324979305267334,
+            "indicator": "viết văn bản",
+            "level": 1,
+            "full_comment": "Em đọc trôi chảy và nắm được nội dung bài đọc. Chữ viết em rõ ràng và trình bày bài sạch đẹp."
+        },
+        "subject": "Tiếng Việt"
+    },
+    "mathematics_comment": {
+        "remembering": {
+            "evidence": "tiếp tục phát huy em nhé",
+            "confident": 0.7791011929512024,
+            "indicator": "làm quen",
+            "level": 1,
+            "full_comment": "Em tính toán cẩn thận, vận dụng tốt các kiến thức vào các dạng bài tập. Tiếp tục phát huy em nhé."
+        },
+        "understanding": {
+            "evidence": "tiếp tục phát huy em nhé",
+            "confident": 0.7787885069847107,
+            "indicator": "thể hiện",
+            "level": 1,
+            "full_comment": "Em tính toán cẩn thận, vận dụng tốt các kiến thức vào các dạng bài tập. Tiếp tục phát huy em nhé."
+        },
+        "applying": {
+            "evidence": "em tính toán cẩn thận",
+            "confident": 0.7573301792144775,
+            "indicator": "lí giải",
+            "level": 1,
+            "full_comment": "Em tính toán cẩn thận, vận dụng tốt các kiến thức vào các dạng bài tập. Tiếp tục phát huy em nhé."
+        },
+        "subject": "Toán"
+    },
+    "informatics_comment": {
+        "remembering": {
+            "evidence": "em biết dùng nhiều dòng lệnh để lập trình nhiều hoạt động cho cho nhân vật",
+            "confident": 0.6353150010108948,
+            "indicator": "thực hiện được một số chức năng trong phần mềm",
+            "level": 1,
+            "full_comment": "Em biết dùng nhiều dòng lệnh để lập trình nhiều hoạt động cho cho nhân vật."
+        },
+        "understanding": {
+            "evidence": "em biết dùng nhiều dòng lệnh để lập trình nhiều hoạt động cho cho nhân vật",
+            "confident": 0.6657427549362183,
+            "indicator": "hiểu được chương trình là dãy các lệnh điều khiển máy tính",
+            "level": 1,
+            "full_comment": "Em biết dùng nhiều dòng lệnh để lập trình nhiều hoạt động cho cho nhân vật."
+        },
+        "applying": {
+            "evidence": "em biết dùng nhiều dòng lệnh để lập trình nhiều hoạt động cho cho nhân vật",
+            "confident": 0.5357720851898193,
+            "indicator": "tạo được chương trình",
+            "level": 1,
+            "full_comment": "Em biết dùng nhiều dòng lệnh để lập trình nhiều hoạt động cho cho nhân vật."
+        },
+        "subject": "Tin học"
+    },
+    "english_comment": {
+        "remembering": {
+            "evidence": "em cần phát huy",
+            "confident": 0.744320273399353,
+            "indicator": "biết được câu mệnh lệnh",
+            "level": 1,
+            "full_comment": "Em có tinh thần học tập tốt. Em cần phát huy."
+        },
+        "understanding": {
+            "evidence": "em có tinh thần học tập tốt",
+            "confident": 0.5580761432647705,
+            "indicator": "trình bày được sở thích",
+            "level": 1,
+            "full_comment": "Em có tinh thần học tập tốt. Em cần phát huy."
+        },
+        "applying": {
+            "evidence": "em cần phát huy",
+            "confident": 0.6103610396385193,
+            "indicator": "nói được về bản thân",
+            "level": 1,
+            "full_comment": "Em có tinh thần học tập tốt. Em cần phát huy."
+        },
+        "subject": "Tiếng Anh"
+    },
+    "music_comment": {
+        "remembering": {
+            "evidence": "em thuộc lời ca",
+            "confident": 0.8855307698249817,
+            "indicator": "thuộc lời ca",
+            "level": 1,
+            "full_comment": "Em thuộc lời ca, hát đúng giai điệu, biết thể hiện sắc thái bài hát."
+        },
+        "understanding": {
+            "evidence": "biết thể hiện sắc thái bài hát",
+            "confident": 0.6454697251319885,
+            "indicator": "tóm tắt được ý nghĩa của một số thuật ngữ âm nhạc",
+            "level": 1,
+            "full_comment": "Em thuộc lời ca, hát đúng giai điệu, biết thể hiện sắc thái bài hát."
+        },
+        "applying": {
+            "evidence": "hát đúng giai điệu",
+            "confident": 0.6942073106765747,
+            "indicator": "biểu diễn được các tiết mục âm nhạc",
+            "level": 1,
+            "full_comment": "Em thuộc lời ca, hát đúng giai điệu, biết thể hiện sắc thái bài hát."
+        },
+        "subject": "Âm nhạc"
+    },
+    "arts_comment": {
+        "remembering": {
+            "evidence": "màu đậm",
+            "confident": 0.7260165214538574,
+            "indicator": "đọc được tên màu sắc",
+            "level": 3,
+            "full_comment": "Em sử dụng được các màu cơ bản; màu đậm, màu nhạt trong thực hành, sáng tạo."
+        },
+        "understanding": {
+            "evidence": "sáng tạo",
+            "confident": 0.7295905351638794,
+            "indicator": "giới thiệu được tác phẩm",
+            "level": 3,
+            "full_comment": "Em sử dụng được các màu cơ bản; màu đậm, màu nhạt trong thực hành, sáng tạo."
+        },
+        "applying": {
+            "evidence": "sáng tạo",
+            "confident": 0.7608040571212769,
+            "indicator": "phác thảo được ý tưởng",
+            "level": 3,
+            "full_comment": "Em sử dụng được các màu cơ bản; màu đậm, màu nhạt trong thực hành, sáng tạo."
+        },
+        "subject": "Mĩ thuật"
+    },
+    "civics_comment": {
+        "remembering": {
+            "evidence": "hành vi đạo đức phù hợp",
+            "confident": 0.9358476996421814,
+            "indicator": "phân biệt được hành vi phù hợp với chuẩn mực đạo đức",
+            "level": 1,
+            "full_comment": "Em biết điều chỉnh thái độ và hành vi đạo đức phù hợp và vận dụng tốt vào cuộc sống."
+        },
+        "understanding": {
+            "evidence": "hành vi đạo đức phù hợp",
+            "confident": 0.9076139330863953,
+            "indicator": "nhận xét được hành vi của bản thân theo chuẩn mực đạo đức",
+            "level": 1,
+            "full_comment": "Em biết điều chỉnh thái độ và hành vi đạo đức phù hợp và vận dụng tốt vào cuộc sống."
+        },
+        "applying": {
+            "evidence": "hành vi đạo đức phù hợp",
+            "confident": 0.9481252431869507,
+            "indicator": "thực hiện được hành vi phù hợp chuẩn mực đạo đức",
+            "level": 1,
+            "full_comment": "Em biết điều chỉnh thái độ và hành vi đạo đức phù hợp và vận dụng tốt vào cuộc sống."
+        },
+        "subject": "Đạo đức"
+    },
+    "physical_education_comment": {
+        "remembering": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.5195467472076416,
+            "indicator": "biết được các tư thế động tác",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học."
+        },
+        "understanding": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.36934083700180054,
+            "indicator": "so sánh được nội dung tập luyện phù hợp để nâng cao sức khoẻ",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học."
+        },
+        "applying": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.6778688430786133,
+            "indicator": "biểu diễn được bài tập liên hoàn",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học."
+        },
+        "subject": "Giáo dục thể chất"
+    },
+    "experiential_activities_comment": {
+        "remembering": {
+            "evidence": "em tích cực xây dựng bài học",
+            "confident": 0.7027266025543213,
+            "indicator": "kể được những việc làm tốt",
+            "level": 3,
+            "full_comment": "Em tích cực xây dựng bài học và vận dụng tốt các bài học vào trong cuộc sống hằng ngày."
+        },
+        "understanding": {
+            "evidence": "em tích cực xây dựng bài học",
+            "confident": 0.6032418012619019,
+            "indicator": "nhận xét được sự tiến bộ của bản thân",
+            "level": 3,
+            "full_comment": "Em tích cực xây dựng bài học và vận dụng tốt các bài học vào trong cuộc sống hằng ngày."
+        },
+        "applying": {
+            "evidence": "em tích cực xây dựng bài học",
+            "confident": 0.6918349862098694,
+            "indicator": "rèn luyện được một số đức tính",
+            "level": 3,
+            "full_comment": "Em tích cực xây dựng bài học và vận dụng tốt các bài học vào trong cuộc sống hằng ngày."
+        },
+        "subject": "Hoạt động trải nghiệm"
+    },
+    "nature_and_society_comment": {
+        "remembering": {
+            "evidence": "tích cực tham gia ý kiến khi tìm hiểu bài",
+            "confident": 0.541251540184021,
+            "indicator": "nêu được đóng góp của công việc đó cho xã hội",
+            "level": 3,
+            "full_comment": "Em có kiến thức khoa học tốt, tích cực tham gia ý kiến khi tìm hiểu bài."
+        },
+        "understanding": {
+            "evidence": "tích cực tham gia ý kiến khi tìm hiểu bài",
+            "confident": 0.4713570177555084,
+            "indicator": "trình bày được một số việc cần làm để giữ gìn cơ quan tuần hoàn",
+            "level": 3,
+            "full_comment": "Em có kiến thức khoa học tốt, tích cực tham gia ý kiến khi tìm hiểu bài."
+        },
+        "applying": {
+            "evidence": "tích cực tham gia ý kiến khi tìm hiểu bài",
+            "confident": 0.5960001349449158,
+            "indicator": "đặt được câu hỏi để tìm hiểu về các hoạt động khác",
+            "level": 3,
+            "full_comment": "Em có kiến thức khoa học tốt, tích cực tham gia ý kiến khi tìm hiểu bài."
+        },
+        "subject": "Tự nhiên và Xã hội"
+    }
+}

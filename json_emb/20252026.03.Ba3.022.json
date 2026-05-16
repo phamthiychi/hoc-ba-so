@@ -1,0 +1,267 @@
+{
+    "student_code": "20252026.03.Ba3.022",
+    "vietnamese_comment": {
+        "remembering": {
+            "evidence": "em đọc lưu loát",
+            "confident": 0.8072033524513245,
+            "indicator": "kể lại câu chuyện đã đọc",
+            "level": 1,
+            "full_comment": "Em đọc lưu loát và hiểu nghĩa bài đọc, viết đúng chính tả. Em viết văn khá."
+        },
+        "understanding": {
+            "evidence": "viết đúng chính tả",
+            "confident": 0.6559118628501892,
+            "indicator": "hiểu đề tài",
+            "level": 1,
+            "full_comment": "Em đọc lưu loát và hiểu nghĩa bài đọc, viết đúng chính tả. Em viết văn khá."
+        },
+        "applying": {
+            "evidence": "em viết văn khá",
+            "confident": 0.7884226441383362,
+            "indicator": "viết văn bản",
+            "level": 1,
+            "full_comment": "Em đọc lưu loát và hiểu nghĩa bài đọc, viết đúng chính tả. Em viết văn khá."
+        },
+        "subject": "Tiếng Việt"
+    },
+    "mathematics_comment": {
+        "remembering": {
+            "evidence": "giờ",
+            "confident": 0.8356660604476929,
+            "indicator": "nhận biết",
+            "level": 2,
+            "full_comment": "Em có kĩ năng tính toán, biết đổi đơn vị, xem ngày, giờ. Em biết vận dụng để hoàn thành yêu cầu bài tập."
+        },
+        "understanding": {
+            "evidence": "giờ",
+            "confident": 0.889568030834198,
+            "indicator": "thể hiện",
+            "level": 2,
+            "full_comment": "Em có kĩ năng tính toán, biết đổi đơn vị, xem ngày, giờ. Em biết vận dụng để hoàn thành yêu cầu bài tập."
+        },
+        "applying": {
+            "evidence": "giờ",
+            "confident": 0.8648995161056519,
+            "indicator": "lí giải",
+            "level": 2,
+            "full_comment": "Em có kĩ năng tính toán, biết đổi đơn vị, xem ngày, giờ. Em biết vận dụng để hoàn thành yêu cầu bài tập."
+        },
+        "subject": "Toán"
+    },
+    "informatics_comment": {
+        "remembering": {
+            "evidence": "kéo thả chuột… khá thành thạo",
+            "confident": 0.5927306413650513,
+            "indicator": "nhận biết được ổ đĩa",
+            "level": 3,
+            "full_comment": "Em thực hiện các thao tác chuột cơ bản như di chuyển chuột, nháy chuột, kéo thả chuột… khá thành thạo."
+        },
+        "understanding": {
+            "evidence": "em thực hiện các thao tác chuột cơ bản như di chuyển chuột",
+            "confident": 0.6082625389099121,
+            "indicator": "giải thích được có những bước có thể chuyển giao cho máy tính",
+            "level": 3,
+            "full_comment": "Em thực hiện các thao tác chuột cơ bản như di chuyển chuột, nháy chuột, kéo thả chuột… khá thành thạo."
+        },
+        "applying": {
+            "evidence": "nháy chuột",
+            "confident": 0.6962112784385681,
+            "indicator": "tạo được tệp",
+            "level": 3,
+            "full_comment": "Em thực hiện các thao tác chuột cơ bản như di chuyển chuột, nháy chuột, kéo thả chuột… khá thành thạo."
+        },
+        "subject": "Tin học"
+    },
+    "english_comment": {
+        "remembering": {
+            "evidence": "em cần chăm chỉ mở rộng vốn từ vựng qua bài tập",
+            "confident": 0.6415950059890747,
+            "indicator": "nhận biết được từ vựng theo chủ đề",
+            "level": 1,
+            "full_comment": "Em có cố gắng nhưng em cần chăm chỉ mở rộng vốn từ vựng qua bài tập."
+        },
+        "understanding": {
+            "evidence": "em cần chăm chỉ mở rộng vốn từ vựng qua bài tập",
+            "confident": 0.65492844581604,
+            "indicator": "vận dụng được từ vựng theo chủ đề",
+            "level": 1,
+            "full_comment": "Em có cố gắng nhưng em cần chăm chỉ mở rộng vốn từ vựng qua bài tập."
+        },
+        "applying": {
+            "evidence": "em có cố gắng",
+            "confident": 0.6360801458358765,
+            "indicator": "nói được về bản thân",
+            "level": 1,
+            "full_comment": "Em có cố gắng nhưng em cần chăm chỉ mở rộng vốn từ vựng qua bài tập."
+        },
+        "subject": "Tiếng Anh"
+    },
+    "technology_comment": {
+        "remembering": {
+            "evidence": "em kể được tên",
+            "confident": 0.8193745613098145,
+            "indicator": "kể tên",
+            "level": 1,
+            "full_comment": "Em kể được tên và ý nghĩa một số biển báo giao thông. Em phối hợp tốt với nhóm để hoàn thành bài học."
+        },
+        "understanding": {
+            "evidence": "em kể được tên",
+            "confident": 0.5459123849868774,
+            "indicator": "làm rõ",
+            "level": 1,
+            "full_comment": "Em kể được tên và ý nghĩa một số biển báo giao thông. Em phối hợp tốt với nhóm để hoàn thành bài học."
+        },
+        "applying": {
+            "evidence": "em kể được tên",
+            "confident": 0.4877137243747711,
+            "indicator": "lắp ráp",
+            "level": 1,
+            "full_comment": "Em kể được tên và ý nghĩa một số biển báo giao thông. Em phối hợp tốt với nhóm để hoàn thành bài học."
+        },
+        "subject": "Công nghệ"
+    },
+    "music_comment": {
+        "remembering": {
+            "evidence": "biết thể hiện vận động theo ý thích khi nghe nhạc",
+            "confident": 0.7034371495246887,
+            "indicator": "nhận biết các nốt nhạc",
+            "level": 1,
+            "full_comment": "Em biết phân biệt âm thanh cao – thấp và biết thể hiện vận động theo ý thích khi nghe nhạc."
+        },
+        "understanding": {
+            "evidence": "biết thể hiện vận động theo ý thích khi nghe nhạc",
+            "confident": 0.7055078148841858,
+            "indicator": "mô tả được động tác chơi nhạc cụ",
+            "level": 1,
+            "full_comment": "Em biết phân biệt âm thanh cao – thấp và biết thể hiện vận động theo ý thích khi nghe nhạc."
+        },
+        "applying": {
+            "evidence": "biết thể hiện vận động theo ý thích khi nghe nhạc",
+            "confident": 0.7529866695404053,
+            "indicator": "xếp loại được kĩ năng thể hiện âm nhạc của bản thân",
+            "level": 1,
+            "full_comment": "Em biết phân biệt âm thanh cao – thấp và biết thể hiện vận động theo ý thích khi nghe nhạc."
+        },
+        "subject": "Âm nhạc"
+    },
+    "arts_comment": {
+        "remembering": {
+            "evidence": "sử dụng thành thạo các dụng cụ",
+            "confident": 0.8539323806762695,
+            "indicator": "liệt kê được công cụ",
+            "level": 2,
+            "full_comment": "Em thao tác nhanh, sử dụng thành thạo các dụng cụ. Em nắm được cách thực hành và biết vận dụng để tạo sản phẩm đẹp."
+        },
+        "understanding": {
+            "evidence": "biết vận dụng để tạo sản phẩm đẹp",
+            "confident": 0.7089419364929199,
+            "indicator": "giới thiệu được sản phẩm",
+            "level": 2,
+            "full_comment": "Em thao tác nhanh, sử dụng thành thạo các dụng cụ. Em nắm được cách thực hành và biết vận dụng để tạo sản phẩm đẹp."
+        },
+        "applying": {
+            "evidence": "sử dụng thành thạo các dụng cụ",
+            "confident": 0.945045530796051,
+            "indicator": "sử dụng được công cụ",
+            "level": 2,
+            "full_comment": "Em thao tác nhanh, sử dụng thành thạo các dụng cụ. Em nắm được cách thực hành và biết vận dụng để tạo sản phẩm đẹp."
+        },
+        "subject": "Mĩ thuật"
+    },
+    "civics_comment": {
+        "remembering": {
+            "evidence": "em biết trình bày ý kiến cá nhân trước tập thể",
+            "confident": 0.7092779874801636,
+            "indicator": "kể ra được thái độ",
+            "level": 1,
+            "full_comment": "Em có tinh thần tập thể, nắm được nội dung bài học. Em biết trình bày ý kiến cá nhân trước tập thể, có tập trung trong giờ học."
+        },
+        "understanding": {
+            "evidence": "em biết trình bày ý kiến cá nhân trước tập thể",
+            "confident": 0.572523832321167,
+            "indicator": "đánh giá được thái độ của bản thân theo chuẩn mực đạo đức",
+            "level": 1,
+            "full_comment": "Em có tinh thần tập thể, nắm được nội dung bài học. Em biết trình bày ý kiến cá nhân trước tập thể, có tập trung trong giờ học."
+        },
+        "applying": {
+            "evidence": "có tập trung trong giờ học",
+            "confident": 0.6533438563346863,
+            "indicator": "xây dựng được kế hoạch của cá nhân để thực hiện các công việc của bản thân trong học tập",
+            "level": 1,
+            "full_comment": "Em có tinh thần tập thể, nắm được nội dung bài học. Em biết trình bày ý kiến cá nhân trước tập thể, có tập trung trong giờ học."
+        },
+        "subject": "Đạo đức"
+    },
+    "physical_education_comment": {
+        "remembering": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.5195467472076416,
+            "indicator": "biết được các tư thế động tác",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học."
+        },
+        "understanding": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.36934083700180054,
+            "indicator": "so sánh được nội dung tập luyện phù hợp để nâng cao sức khoẻ",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học."
+        },
+        "applying": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.6778688430786133,
+            "indicator": "biểu diễn được bài tập liên hoàn",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học."
+        },
+        "subject": "Giáo dục thể chất"
+    },
+    "experiential_activities_comment": {
+        "remembering": {
+            "evidence": "em biết làm việc theo phân công của tập thể",
+            "confident": 0.6134787201881409,
+            "indicator": "kể được những việc làm tốt",
+            "level": 1,
+            "full_comment": "Em hiểu được kiến thức cơ bản bài học. Em biết làm việc theo phân công của tập thể."
+        },
+        "understanding": {
+            "evidence": "em biết làm việc theo phân công của tập thể",
+            "confident": 0.5103483200073242,
+            "indicator": "đánh giá được hiệu quả hoạt động",
+            "level": 1,
+            "full_comment": "Em hiểu được kiến thức cơ bản bài học. Em biết làm việc theo phân công của tập thể."
+        },
+        "applying": {
+            "evidence": "em biết làm việc theo phân công của tập thể",
+            "confident": 0.69864821434021,
+            "indicator": "xác định được nhóm nghề",
+            "level": 1,
+            "full_comment": "Em hiểu được kiến thức cơ bản bài học. Em biết làm việc theo phân công của tập thể."
+        },
+        "subject": "Hoạt động trải nghiệm"
+    },
+    "nature_and_society_comment": {
+        "remembering": {
+            "evidence": "còn thụ động trong giờ học",
+            "confident": 0.7565426826477051,
+            "indicator": "kể được tên các hoạt động chính trong lớp học",
+            "level": 3,
+            "full_comment": "Em thích tìm hiểu những điều chung quanh nhưng còn thụ động trong giờ học. Em cần tích cựchơn trong học tập."
+        },
+        "understanding": {
+            "evidence": "em cần tích cựchơn trong học tập",
+            "confident": 0.5688654780387878,
+            "indicator": "trình bày được một số việc cần làm để giữ gìn cơ quan tuần hoàn",
+            "level": 3,
+            "full_comment": "Em thích tìm hiểu những điều chung quanh nhưng còn thụ động trong giờ học. Em cần tích cựchơn trong học tập."
+        },
+        "applying": {
+            "evidence": "em cần tích cựchơn trong học tập",
+            "confident": 0.6679926514625549,
+            "indicator": "đặt được câu hỏi để tìm hiểu về thành tích dạy và học",
+            "level": 3,
+            "full_comment": "Em thích tìm hiểu những điều chung quanh nhưng còn thụ động trong giờ học. Em cần tích cựchơn trong học tập."
+        },
+        "subject": "Tự nhiên và Xã hội"
+    }
+}

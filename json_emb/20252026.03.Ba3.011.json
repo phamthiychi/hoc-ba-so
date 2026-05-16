@@ -1,0 +1,267 @@
+{
+    "student_code": "20252026.03.Ba3.011",
+    "vietnamese_comment": {
+        "remembering": {
+            "evidence": "em đọc",
+            "confident": 0.7824367880821228,
+            "indicator": "kể lại câu chuyện đã đọc",
+            "level": 2,
+            "full_comment": "Em đọc, viết còn chậm. Em biết vận dụng vốn từ đã học để đặt câu và viết đoạn văn ngắn."
+        },
+        "understanding": {
+            "evidence": "em đọc",
+            "confident": 0.6563518047332764,
+            "indicator": "nhận xét quan điểm của người viết",
+            "level": 2,
+            "full_comment": "Em đọc, viết còn chậm. Em biết vận dụng vốn từ đã học để đặt câu và viết đoạn văn ngắn."
+        },
+        "applying": {
+            "evidence": "viết đoạn văn ngắn",
+            "confident": 0.8264820575714111,
+            "indicator": "viết đoạn văn",
+            "level": 2,
+            "full_comment": "Em đọc, viết còn chậm. Em biết vận dụng vốn từ đã học để đặt câu và viết đoạn văn ngắn."
+        },
+        "subject": "Tiếng Việt"
+    },
+    "mathematics_comment": {
+        "remembering": {
+            "evidence": "em",
+            "confident": 0.8208394050598145,
+            "indicator": "viết",
+            "level": 1,
+            "full_comment": "Em có kĩ năng tính toán, thực hiện đúng yêu cầu bài tập. Em nên tính toán cẩn thận hơn."
+        },
+        "understanding": {
+            "evidence": "em",
+            "confident": 0.8573997020721436,
+            "indicator": "thể hiện",
+            "level": 1,
+            "full_comment": "Em có kĩ năng tính toán, thực hiện đúng yêu cầu bài tập. Em nên tính toán cẩn thận hơn."
+        },
+        "applying": {
+            "evidence": "em",
+            "confident": 0.9097555875778198,
+            "indicator": "lí giải",
+            "level": 1,
+            "full_comment": "Em có kĩ năng tính toán, thực hiện đúng yêu cầu bài tập. Em nên tính toán cẩn thận hơn."
+        },
+        "subject": "Toán"
+    },
+    "informatics_comment": {
+        "remembering": {
+            "evidence": "em còn lúng túng khi phải xác định trình tự thực hiện của một chuỗi công việc",
+            "confident": 0.589529275894165,
+            "indicator": "nêu được công việc",
+            "level": 1,
+            "full_comment": "Em còn lúng túng khi phải xác định trình tự thực hiện của một chuỗi công việc."
+        },
+        "understanding": {
+            "evidence": "em còn lúng túng khi phải xác định trình tự thực hiện của một chuỗi công việc",
+            "confident": 0.5492010116577148,
+            "indicator": "trình bày được quá trình giải quyết vấn đề",
+            "level": 1,
+            "full_comment": "Em còn lúng túng khi phải xác định trình tự thực hiện của một chuỗi công việc."
+        },
+        "applying": {
+            "evidence": "em còn lúng túng khi phải xác định trình tự thực hiện của một chuỗi công việc",
+            "confident": 0.571869432926178,
+            "indicator": "chia được công việc thành những việc nhỏ hơn",
+            "level": 1,
+            "full_comment": "Em còn lúng túng khi phải xác định trình tự thực hiện của một chuỗi công việc."
+        },
+        "subject": "Tin học"
+    },
+    "english_comment": {
+        "remembering": {
+            "evidence": "em cần chăm chỉ mở rộng vốn từ vựng qua bài tập",
+            "confident": 0.6415950059890747,
+            "indicator": "nhận biết được từ vựng theo chủ đề",
+            "level": 1,
+            "full_comment": "Em tiến bộ tốt nhưng em cần chăm chỉ mở rộng vốn từ vựng qua bài tập."
+        },
+        "understanding": {
+            "evidence": "em cần chăm chỉ mở rộng vốn từ vựng qua bài tập",
+            "confident": 0.65492844581604,
+            "indicator": "vận dụng được từ vựng theo chủ đề",
+            "level": 1,
+            "full_comment": "Em tiến bộ tốt nhưng em cần chăm chỉ mở rộng vốn từ vựng qua bài tập."
+        },
+        "applying": {
+            "evidence": "em cần chăm chỉ mở rộng vốn từ vựng qua bài tập",
+            "confident": 0.6200067400932312,
+            "indicator": "đọc được văn bản ngắn phục vụ học tập",
+            "level": 1,
+            "full_comment": "Em tiến bộ tốt nhưng em cần chăm chỉ mở rộng vốn từ vựng qua bài tập."
+        },
+        "subject": "Tiếng Anh"
+    },
+    "technology_comment": {
+        "remembering": {
+            "evidence": "em nêu được các biết tiến hành làm đồ dùng học tập",
+            "confident": 0.5136491656303406,
+            "indicator": "trình bày",
+            "level": 2,
+            "full_comment": "Em nêu được các biết tiến hành làm đồ dùng học tập, biết phối hợp với các bạn khi làm việc nhóm. Em hoàn thành nội dung môn học."
+        },
+        "understanding": {
+            "evidence": "em hoàn thành nội dung môn học",
+            "confident": 0.5461937785148621,
+            "indicator": "làm rõ",
+            "level": 2,
+            "full_comment": "Em nêu được các biết tiến hành làm đồ dùng học tập, biết phối hợp với các bạn khi làm việc nhóm. Em hoàn thành nội dung môn học."
+        },
+        "applying": {
+            "evidence": "em hoàn thành nội dung môn học",
+            "confident": 0.5458450317382812,
+            "indicator": "thực hiện",
+            "level": 2,
+            "full_comment": "Em nêu được các biết tiến hành làm đồ dùng học tập, biết phối hợp với các bạn khi làm việc nhóm. Em hoàn thành nội dung môn học."
+        },
+        "subject": "Công nghệ"
+    },
+    "music_comment": {
+        "remembering": {
+            "evidence": "theo phách",
+            "confident": 0.8487673997879028,
+            "indicator": "thuộc lời ca",
+            "level": 1,
+            "full_comment": "Em biết gõ đệm theo tiết tấu lời ca, theo phách."
+        },
+        "understanding": {
+            "evidence": "theo phách",
+            "confident": 0.683485746383667,
+            "indicator": "nêu được ví dụ",
+            "level": 1,
+            "full_comment": "Em biết gõ đệm theo tiết tấu lời ca, theo phách."
+        },
+        "applying": {
+            "evidence": "theo phách",
+            "confident": 0.43951427936553955,
+            "indicator": "biểu diễn được các tiết mục âm nhạc",
+            "level": 1,
+            "full_comment": "Em biết gõ đệm theo tiết tấu lời ca, theo phách."
+        },
+        "subject": "Âm nhạc"
+    },
+    "arts_comment": {
+        "remembering": {
+            "evidence": "em chuẩn bị dụng cụ",
+            "confident": 0.828977108001709,
+            "indicator": "liệt kê được công cụ",
+            "level": 2,
+            "full_comment": "Em nắm được cách thực hành và biết vận dụng để tạo sản phẩm. Em chuẩn bị dụng cụ, đồ dùng môn học đầy đủ."
+        },
+        "understanding": {
+            "evidence": "biết vận dụng để tạo sản phẩm",
+            "confident": 0.7930580377578735,
+            "indicator": "giới thiệu được sản phẩm",
+            "level": 2,
+            "full_comment": "Em nắm được cách thực hành và biết vận dụng để tạo sản phẩm. Em chuẩn bị dụng cụ, đồ dùng môn học đầy đủ."
+        },
+        "applying": {
+            "evidence": "biết vận dụng để tạo sản phẩm",
+            "confident": 0.9352259635925293,
+            "indicator": "tạo được sản phẩm",
+            "level": 2,
+            "full_comment": "Em nắm được cách thực hành và biết vận dụng để tạo sản phẩm. Em chuẩn bị dụng cụ, đồ dùng môn học đầy đủ."
+        },
+        "subject": "Mĩ thuật"
+    },
+    "civics_comment": {
+        "remembering": {
+            "evidence": "em biết trình bày ý kiến trước các tình huống đạo đức theo nội dung bài học",
+            "confident": 0.7617912888526917,
+            "indicator": "kể ra được biểu hiện của chuẩn mực hành vi đạo đức",
+            "level": 1,
+            "full_comment": "Em nắm được nội dung bài học. Em biết trình bày ý kiến trước các tình huống đạo đức theo nội dung bài học."
+        },
+        "understanding": {
+            "evidence": "em biết trình bày ý kiến trước các tình huống đạo đức theo nội dung bài học",
+            "confident": 0.7611313462257385,
+            "indicator": "nhận xét được thái độ của bản thân theo chuẩn mực đạo đức",
+            "level": 1,
+            "full_comment": "Em nắm được nội dung bài học. Em biết trình bày ý kiến trước các tình huống đạo đức theo nội dung bài học."
+        },
+        "applying": {
+            "evidence": "em biết trình bày ý kiến trước các tình huống đạo đức theo nội dung bài học",
+            "confident": 0.7636619806289673,
+            "indicator": "nhắc nhở người khác thực hiện hành vi phù hợp với chuẩn mực đạo đức",
+            "level": 1,
+            "full_comment": "Em nắm được nội dung bài học. Em biết trình bày ý kiến trước các tình huống đạo đức theo nội dung bài học."
+        },
+        "subject": "Đạo đức"
+    },
+    "physical_education_comment": {
+        "remembering": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.5195467472076416,
+            "indicator": "biết được các tư thế động tác",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học."
+        },
+        "understanding": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.36934083700180054,
+            "indicator": "so sánh được nội dung tập luyện phù hợp để nâng cao sức khoẻ",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học."
+        },
+        "applying": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.6778688430786133,
+            "indicator": "biểu diễn được bài tập liên hoàn",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học."
+        },
+        "subject": "Giáo dục thể chất"
+    },
+    "experiential_activities_comment": {
+        "remembering": {
+            "evidence": "ngưởi thận trong gia đình",
+            "confident": 0.6577338576316833,
+            "indicator": "tìm hiểu được công việc của bố mẹ",
+            "level": 1,
+            "full_comment": "Em biết nói lời yêu thương với cha mẹ và ngưởi thận trong gia đình. Em biết kết hợp với nhóm để hoàn thành bài tập."
+        },
+        "understanding": {
+            "evidence": "em biết nói lời yêu thương với cha mẹ",
+            "confident": 0.4159872829914093,
+            "indicator": "giới thiệu được vẻ đẹp quê em",
+            "level": 1,
+            "full_comment": "Em biết nói lời yêu thương với cha mẹ và ngưởi thận trong gia đình. Em biết kết hợp với nhóm để hoàn thành bài tập."
+        },
+        "applying": {
+            "evidence": "em biết kết hợp với nhóm để hoàn thành bài tập",
+            "confident": 0.5771702527999878,
+            "indicator": "xác định được nhóm nghề",
+            "level": 1,
+            "full_comment": "Em biết nói lời yêu thương với cha mẹ và ngưởi thận trong gia đình. Em biết kết hợp với nhóm để hoàn thành bài tập."
+        },
+        "subject": "Hoạt động trải nghiệm"
+    },
+    "nature_and_society_comment": {
+        "remembering": {
+            "evidence": "em hiểu bài",
+            "confident": 0.8197205066680908,
+            "indicator": "nói được tên lớp",
+            "level": 1,
+            "full_comment": "Em hiểu bài, thực hiện tốt yêu cầu môn học nhưng còn lơ là và thụ động trong giờ học. Em cần cố gắng hơn trong học tập."
+        },
+        "understanding": {
+            "evidence": "thụ động trong giờ học",
+            "confident": 0.5563216209411621,
+            "indicator": "trình bày được một số việc cần làm để giữ gìn cơ quan tuần hoàn",
+            "level": 1,
+            "full_comment": "Em hiểu bài, thực hiện tốt yêu cầu môn học nhưng còn lơ là và thụ động trong giờ học. Em cần cố gắng hơn trong học tập."
+        },
+        "applying": {
+            "evidence": "thực hiện tốt yêu cầu môn học",
+            "confident": 0.6515002250671387,
+            "indicator": "đặt được câu hỏi để tìm hiểu về thành tích dạy và học",
+            "level": 1,
+            "full_comment": "Em hiểu bài, thực hiện tốt yêu cầu môn học nhưng còn lơ là và thụ động trong giờ học. Em cần cố gắng hơn trong học tập."
+        },
+        "subject": "Tự nhiên và Xã hội"
+    }
+}

@@ -1,0 +1,267 @@
+{
+    "student_code": "20252026.03.Ba2.012",
+    "vietnamese_comment": {
+        "remembering": {
+            "evidence": "em hiểu nội dung bài đọc",
+            "confident": 0.7762527465820312,
+            "indicator": "đọc thuộc lòng đoạn văn",
+            "level": 2,
+            "full_comment": "Em hiểu nội dung bài đọc và vận dụng tốt. Em làm văn có tiến bộ, biết chọn lọc từ ngữ phù hợp trong câu."
+        },
+        "understanding": {
+            "evidence": "em hiểu nội dung bài đọc",
+            "confident": 0.7513978481292725,
+            "indicator": "nhận xét nội dung",
+            "level": 2,
+            "full_comment": "Em hiểu nội dung bài đọc và vận dụng tốt. Em làm văn có tiến bộ, biết chọn lọc từ ngữ phù hợp trong câu."
+        },
+        "applying": {
+            "evidence": "em hiểu nội dung bài đọc",
+            "confident": 0.6766749620437622,
+            "indicator": "viết văn bản",
+            "level": 2,
+            "full_comment": "Em hiểu nội dung bài đọc và vận dụng tốt. Em làm văn có tiến bộ, biết chọn lọc từ ngữ phù hợp trong câu."
+        },
+        "subject": "Tiếng Việt"
+    },
+    "mathematics_comment": {
+        "remembering": {
+            "evidence": "em nắm kiến thức",
+            "confident": 0.7614577412605286,
+            "indicator": "làm quen",
+            "level": 1,
+            "full_comment": "Em nắm kiến thức và vận dụng tốt vào bài làm, tính toán đã cẩn thận."
+        },
+        "understanding": {
+            "evidence": "em nắm kiến thức",
+            "confident": 0.6536067724227905,
+            "indicator": "thể hiện",
+            "level": 1,
+            "full_comment": "Em nắm kiến thức và vận dụng tốt vào bài làm, tính toán đã cẩn thận."
+        },
+        "applying": {
+            "evidence": "vận dụng tốt vào bài làm",
+            "confident": 0.5993837118148804,
+            "indicator": "vận dụng",
+            "level": 1,
+            "full_comment": "Em nắm kiến thức và vận dụng tốt vào bài làm, tính toán đã cẩn thận."
+        },
+        "subject": "Toán"
+    },
+    "informatics_comment": {
+        "remembering": {
+            "evidence": "em biết được việc chia một nhiệm vụ lớn thành những nhiệm vụ nhỏ hơn là để dễ hiểu",
+            "confident": 0.896676242351532,
+            "indicator": "nhận biết được mục đích chia một nhiệm vụ lớn thành các nhiệm vụ nhỏ hơn",
+            "level": 1,
+            "full_comment": "Em biết được việc chia một nhiệm vụ lớn thành những nhiệm vụ nhỏ hơn là để dễ hiểu và dễ thực hiện hơn."
+        },
+        "understanding": {
+            "evidence": "em biết được việc chia một nhiệm vụ lớn thành những nhiệm vụ nhỏ hơn là để dễ hiểu",
+            "confident": 0.5597884654998779,
+            "indicator": "giải thích được việc đưa các công thức vào bảng tính",
+            "level": 1,
+            "full_comment": "Em biết được việc chia một nhiệm vụ lớn thành những nhiệm vụ nhỏ hơn là để dễ hiểu và dễ thực hiện hơn."
+        },
+        "applying": {
+            "evidence": "em biết được việc chia một nhiệm vụ lớn thành những nhiệm vụ nhỏ hơn là để dễ hiểu",
+            "confident": 0.7211086750030518,
+            "indicator": "chia được công việc thành những việc nhỏ hơn",
+            "level": 1,
+            "full_comment": "Em biết được việc chia một nhiệm vụ lớn thành những nhiệm vụ nhỏ hơn là để dễ hiểu và dễ thực hiện hơn."
+        },
+        "subject": "Tin học"
+    },
+    "english_comment": {
+        "remembering": {
+            "evidence": "giao tiếp trong lớp",
+            "confident": 0.6638607978820801,
+            "indicator": "thực hiện được các chỉ dẫn đơn giản trong lớp học",
+            "level": 1,
+            "full_comment": "Em đã áp dụng tốt các cấu trúc câu mới vào bài tập và giao tiếp trong lớp."
+        },
+        "understanding": {
+            "evidence": "giao tiếp trong lớp",
+            "confident": 0.7147994041442871,
+            "indicator": "trình bày được hoạt động học tập",
+            "level": 1,
+            "full_comment": "Em đã áp dụng tốt các cấu trúc câu mới vào bài tập và giao tiếp trong lớp."
+        },
+        "applying": {
+            "evidence": "giao tiếp trong lớp",
+            "confident": 0.719855546951294,
+            "indicator": "sử dụng được câu đơn trong giao tiếp",
+            "level": 1,
+            "full_comment": "Em đã áp dụng tốt các cấu trúc câu mới vào bài tập và giao tiếp trong lớp."
+        },
+        "subject": "Tiếng Anh"
+    },
+    "technology_comment": {
+        "remembering": {
+            "evidence": "biết vận dụng kiến thức vào cuộc sống",
+            "confident": 0.46699902415275574,
+            "indicator": "phát hiện",
+            "level": 2,
+            "full_comment": "Em thực hiện tốt yêu cầu cần đạt của môn học, biết vận dụng kiến thức vào cuộc sống."
+        },
+        "understanding": {
+            "evidence": "biết vận dụng kiến thức vào cuộc sống",
+            "confident": 0.5860403776168823,
+            "indicator": "nhận thức",
+            "level": 2,
+            "full_comment": "Em thực hiện tốt yêu cầu cần đạt của môn học, biết vận dụng kiến thức vào cuộc sống."
+        },
+        "applying": {
+            "evidence": "em thực hiện tốt yêu cầu cần đạt của môn học",
+            "confident": 0.5729985237121582,
+            "indicator": "hoàn thiện",
+            "level": 2,
+            "full_comment": "Em thực hiện tốt yêu cầu cần đạt của môn học, biết vận dụng kiến thức vào cuộc sống."
+        },
+        "subject": "Công nghệ"
+    },
+    "music_comment": {
+        "remembering": {
+            "evidence": "kết hợp nốt trên khuôn nhạc",
+            "confident": 0.8001426458358765,
+            "indicator": "liệt kê được một số loại nhạc cụ",
+            "level": 1,
+            "full_comment": "Em biết gọi tên nốt, kết hợp nốt trên khuôn nhạc, hát đúng giai điệu."
+        },
+        "understanding": {
+            "evidence": "kết hợp nốt trên khuôn nhạc",
+            "confident": 0.8372527360916138,
+            "indicator": "mô tả được động tác chơi nhạc cụ",
+            "level": 1,
+            "full_comment": "Em biết gọi tên nốt, kết hợp nốt trên khuôn nhạc, hát đúng giai điệu."
+        },
+        "applying": {
+            "evidence": "kết hợp nốt trên khuôn nhạc",
+            "confident": 0.8636674880981445,
+            "indicator": "biểu diễn được các tiết mục âm nhạc",
+            "level": 1,
+            "full_comment": "Em biết gọi tên nốt, kết hợp nốt trên khuôn nhạc, hát đúng giai điệu."
+        },
+        "subject": "Âm nhạc"
+    },
+    "arts_comment": {
+        "remembering": {
+            "evidence": "em nắm được cách thực hành",
+            "confident": 0.6550993919372559,
+            "indicator": "nhận biết được nguyên lí tạo hình",
+            "level": 2,
+            "full_comment": "Em nắm được cách thực hành và biết vận dụng để tạo sản phẩm."
+        },
+        "understanding": {
+            "evidence": "biết vận dụng để tạo sản phẩm",
+            "confident": 0.7930580973625183,
+            "indicator": "giới thiệu được sản phẩm",
+            "level": 2,
+            "full_comment": "Em nắm được cách thực hành và biết vận dụng để tạo sản phẩm."
+        },
+        "applying": {
+            "evidence": "biết vận dụng để tạo sản phẩm",
+            "confident": 0.9352259635925293,
+            "indicator": "tạo được sản phẩm",
+            "level": 2,
+            "full_comment": "Em nắm được cách thực hành và biết vận dụng để tạo sản phẩm."
+        },
+        "subject": "Mĩ thuật"
+    },
+    "civics_comment": {
+        "remembering": {
+            "evidence": "em thực hiện được lời nói",
+            "confident": 0.6881872415542603,
+            "indicator": "phát biểu được khái niệm",
+            "level": 2,
+            "full_comment": "Em thực hiện được lời nói, việc làm thể hiện sự yêu quý bạn bè."
+        },
+        "understanding": {
+            "evidence": "việc làm thể hiện sự yêu quý bạn bè",
+            "confident": 0.39556270837783813,
+            "indicator": "nhận xét được thái độ của người khác theo chuẩn mực đạo đức",
+            "level": 2,
+            "full_comment": "Em thực hiện được lời nói, việc làm thể hiện sự yêu quý bạn bè."
+        },
+        "applying": {
+            "evidence": "việc làm thể hiện sự yêu quý bạn bè",
+            "confident": 0.45788711309432983,
+            "indicator": "điều chỉnh được cảm xúc của bản thân phù hợp với lứa tuổi",
+            "level": 2,
+            "full_comment": "Em thực hiện được lời nói, việc làm thể hiện sự yêu quý bạn bè."
+        },
+        "subject": "Đạo đức"
+    },
+    "physical_education_comment": {
+        "remembering": {
+            "evidence": "tham gia tích cực các trò chơi được học",
+            "confident": 0.6136327981948853,
+            "indicator": "biết được các tư thế động tác",
+            "level": 3,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học, tham gia tích cực các trò chơi được học."
+        },
+        "understanding": {
+            "evidence": "tham gia tích cực các trò chơi được học",
+            "confident": 0.506976306438446,
+            "indicator": "phân biệt được các sơ đồ chiến thuật thi đấu một môn thể thao",
+            "level": 3,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học, tham gia tích cực các trò chơi được học."
+        },
+        "applying": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.6778688430786133,
+            "indicator": "biểu diễn được bài tập liên hoàn",
+            "level": 3,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học, tham gia tích cực các trò chơi được học."
+        },
+        "subject": "Giáo dục thể chất"
+    },
+    "experiential_activities_comment": {
+        "remembering": {
+            "evidence": "lễ phép với thầy cô",
+            "confident": 0.5394818782806396,
+            "indicator": "tìm hiểu được công việc của bố mẹ",
+            "level": 1,
+            "full_comment": "Em ứng xử thân thiện với bạn bè, lễ phép với thầy cô."
+        },
+        "understanding": {
+            "evidence": "em ứng xử thân thiện với bạn bè",
+            "confident": 0.4522014260292053,
+            "indicator": "đánh giá được giá trị xã hội",
+            "level": 1,
+            "full_comment": "Em ứng xử thân thiện với bạn bè, lễ phép với thầy cô."
+        },
+        "applying": {
+            "evidence": "em ứng xử thân thiện với bạn bè",
+            "confident": 0.8117114901542664,
+            "indicator": "xây dựng được tình bạn",
+            "level": 1,
+            "full_comment": "Em ứng xử thân thiện với bạn bè, lễ phép với thầy cô."
+        },
+        "subject": "Hoạt động trải nghiệm"
+    },
+    "nature_and_society_comment": {
+        "remembering": {
+            "evidence": "em hiểu bài",
+            "confident": 0.8197205066680908,
+            "indicator": "nói được tên lớp",
+            "level": 2,
+            "full_comment": "Em hiểu bài và biết vận dụng kiến thức vào thực hành."
+        },
+        "understanding": {
+            "evidence": "em hiểu bài",
+            "confident": 0.4996330440044403,
+            "indicator": "trình bày được một số việc cần làm để giữ gìn thần kinh",
+            "level": 2,
+            "full_comment": "Em hiểu bài và biết vận dụng kiến thức vào thực hành."
+        },
+        "applying": {
+            "evidence": "biết vận dụng kiến thức vào thực hành",
+            "confident": 0.6328694820404053,
+            "indicator": "đặt được câu hỏi để tìm hiểu về thành tích dạy và học",
+            "level": 2,
+            "full_comment": "Em hiểu bài và biết vận dụng kiến thức vào thực hành."
+        },
+        "subject": "Tự nhiên và Xã hội"
+    }
+}

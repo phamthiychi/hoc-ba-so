@@ -55,8 +55,15 @@ class PostgresRepository(Repository[T], Generic[T]):
         query = self.session.query(self.model_cls)
         for attr, value in filters.items():
             if not hasattr(self.model_cls, attr):
-                return utils._log(f"Module {self.model_cls.__name__} said: Invalid column: {attr}")
-            query = query.filter(getattr(self.model_cls, attr) == value)
+                return utils._log(
+                    f"Module {self.model_cls.__name__} said: Invalid column: {attr}"
+                )
+            column = getattr(self.model_cls, attr)
+            if isinstance(value, str) and value.startswith("LIKE "):
+                pattern = value.replace("LIKE ", "", 1)
+                query = query.filter(column.like(pattern))
+            else:
+                query = query.filter(column == value)
         return query.first()
 
     async def get(self, code: str) -> Optional[T]:

@@ -1,0 +1,243 @@
+{
+    "student_code": "20252026.02.Ha2.008",
+    "vietnamese_comment": {
+        "remembering": {
+            "evidence": "cần rèn đọc hiểu nội dung bài em nhé",
+            "confident": 0.790681004524231,
+            "indicator": "kể lại câu chuyện đã đọc",
+            "level": 2,
+            "full_comment": "Em viết bài có tiến bộ nhiều nhưng cần rèn đọc hiểu nội dung bài em nhé!"
+        },
+        "understanding": {
+            "evidence": "cần rèn đọc hiểu nội dung bài em nhé",
+            "confident": 0.7182228565216064,
+            "indicator": "hiểu chủ đề",
+            "level": 2,
+            "full_comment": "Em viết bài có tiến bộ nhiều nhưng cần rèn đọc hiểu nội dung bài em nhé!"
+        },
+        "applying": {
+            "evidence": "cần rèn đọc hiểu nội dung bài em nhé",
+            "confident": 0.6682316064834595,
+            "indicator": "trình bày ý kiến",
+            "level": 2,
+            "full_comment": "Em viết bài có tiến bộ nhiều nhưng cần rèn đọc hiểu nội dung bài em nhé!"
+        },
+        "subject": "Tiếng Việt"
+    },
+    "mathematics_comment": {
+        "remembering": {
+            "evidence": "em cần đọc kỹ yêu cầu đề bài để làm bài tốt hơn nhé",
+            "confident": 0.6558998823165894,
+            "indicator": "đọc",
+            "level": 2,
+            "full_comment": "Em tính toán có tiến bộ nhiều tuy nhiên em cần đọc kỹ yêu cầu đề bài để làm bài tốt hơn nhé!"
+        },
+        "understanding": {
+            "evidence": "em cần đọc kỹ yêu cầu đề bài để làm bài tốt hơn nhé",
+            "confident": 0.4912007451057434,
+            "indicator": "thể hiện",
+            "level": 2,
+            "full_comment": "Em tính toán có tiến bộ nhiều tuy nhiên em cần đọc kỹ yêu cầu đề bài để làm bài tốt hơn nhé!"
+        },
+        "applying": {
+            "evidence": "em cần đọc kỹ yêu cầu đề bài để làm bài tốt hơn nhé",
+            "confident": 0.48825687170028687,
+            "indicator": "thực hiện",
+            "level": 2,
+            "full_comment": "Em tính toán có tiến bộ nhiều tuy nhiên em cần đọc kỹ yêu cầu đề bài để làm bài tốt hơn nhé!"
+        },
+        "subject": "Toán"
+    },
+    "informatics_comment": {
+        "remembering": {
+            "evidence": "em có khả năng lập trình cho nhiều nhân vật xuất hiện trong trò chơi",
+            "confident": 0.5543930530548096,
+            "indicator": "biết được khả năng đính kèm",
+            "level": 1,
+            "full_comment": "Em có khả năng lập trình cho nhiều nhân vật xuất hiện trong trò chơi."
+        },
+        "understanding": {
+            "evidence": "em có khả năng lập trình cho nhiều nhân vật xuất hiện trong trò chơi",
+            "confident": 0.48177412152290344,
+            "indicator": "hiểu được chương trình là dãy các lệnh điều khiển máy tính",
+            "level": 1,
+            "full_comment": "Em có khả năng lập trình cho nhiều nhân vật xuất hiện trong trò chơi."
+        },
+        "applying": {
+            "evidence": "em có khả năng lập trình cho nhiều nhân vật xuất hiện trong trò chơi",
+            "confident": 0.5571972131729126,
+            "indicator": "thiết kế được các nhân vật hoạt hình",
+            "level": 1,
+            "full_comment": "Em có khả năng lập trình cho nhiều nhân vật xuất hiện trong trò chơi."
+        },
+        "subject": "Tin học"
+    },
+    "english_comment": {
+        "remembering": {
+            "evidence": "em cần phát huy",
+            "confident": 0.744320273399353,
+            "indicator": "biết được câu mệnh lệnh",
+            "level": 2,
+            "full_comment": "Em có tiến bộ trong học tập. Em cần phát huy."
+        },
+        "understanding": {
+            "evidence": "em có tiến bộ trong học tập",
+            "confident": 0.6261543035507202,
+            "indicator": "trình bày được hoạt động học tập",
+            "level": 2,
+            "full_comment": "Em có tiến bộ trong học tập. Em cần phát huy."
+        },
+        "applying": {
+            "evidence": "em cần phát huy",
+            "confident": 0.6103610396385193,
+            "indicator": "nói được về bản thân",
+            "level": 2,
+            "full_comment": "Em có tiến bộ trong học tập. Em cần phát huy."
+        },
+        "subject": "Tiếng Anh"
+    },
+    "music_comment": {
+        "remembering": {
+            "evidence": "đúng lời ca",
+            "confident": 0.845176637172699,
+            "indicator": "thuộc lời ca",
+            "level": 1,
+            "full_comment": "Em biết hát theo giai điệu và đúng lời ca, nhớ tên và vị trí các nốt nhạc qua trò chơi."
+        },
+        "understanding": {
+            "evidence": "vị trí các nốt nhạc qua trò chơi",
+            "confident": 0.6236588954925537,
+            "indicator": "mô tả được động tác chơi nhạc cụ",
+            "level": 1,
+            "full_comment": "Em biết hát theo giai điệu và đúng lời ca, nhớ tên và vị trí các nốt nhạc qua trò chơi."
+        },
+        "applying": {
+            "evidence": "em biết hát theo giai điệu",
+            "confident": 0.6723120212554932,
+            "indicator": "biểu diễn được các tiết mục âm nhạc",
+            "level": 1,
+            "full_comment": "Em biết hát theo giai điệu và đúng lời ca, nhớ tên và vị trí các nốt nhạc qua trò chơi."
+        },
+        "subject": "Âm nhạc"
+    },
+    "arts_comment": {
+        "remembering": {
+            "evidence": "em tự giác thực hiện nhiệm vụ học tập",
+            "confident": 0.6290594935417175,
+            "indicator": "nhận biết được nguyên lí tạo hình",
+            "level": 1,
+            "full_comment": "Em tự giác thực hiện nhiệm vụ học tập nhưng còn chậm."
+        },
+        "understanding": {
+            "evidence": "em tự giác thực hiện nhiệm vụ học tập",
+            "confident": 0.5988370180130005,
+            "indicator": "biểu đạt được ý tưởng",
+            "level": 1,
+            "full_comment": "Em tự giác thực hiện nhiệm vụ học tập nhưng còn chậm."
+        },
+        "applying": {
+            "evidence": "em tự giác thực hiện nhiệm vụ học tập",
+            "confident": 0.6264117956161499,
+            "indicator": "thực hiện được phác thảo",
+            "level": 1,
+            "full_comment": "Em tự giác thực hiện nhiệm vụ học tập nhưng còn chậm."
+        },
+        "subject": "Mĩ thuật"
+    },
+    "civics_comment": {
+        "remembering": {
+            "evidence": "em thực hiện tốt hành vi đạo đức đã học vào cuộc sống",
+            "confident": 0.7220953702926636,
+            "indicator": "kể ra được biểu hiện của chuẩn mực hành vi đạo đức",
+            "level": 3,
+            "full_comment": "Em thực hiện tốt hành vi đạo đức đã học vào cuộc sống."
+        },
+        "understanding": {
+            "evidence": "em thực hiện tốt hành vi đạo đức đã học vào cuộc sống",
+            "confident": 0.7017897367477417,
+            "indicator": "đánh giá được hành vi của bản thân theo chuẩn mực đạo đức",
+            "level": 3,
+            "full_comment": "Em thực hiện tốt hành vi đạo đức đã học vào cuộc sống."
+        },
+        "applying": {
+            "evidence": "em thực hiện tốt hành vi đạo đức đã học vào cuộc sống",
+            "confident": 0.7314847707748413,
+            "indicator": "điều chỉnh được hành vi của bản thân phù hợp với chuẩn mực đạo đức",
+            "level": 3,
+            "full_comment": "Em thực hiện tốt hành vi đạo đức đã học vào cuộc sống."
+        },
+        "subject": "Đạo đức"
+    },
+    "physical_education_comment": {
+        "remembering": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.5195467472076416,
+            "indicator": "biết được các tư thế động tác",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học."
+        },
+        "understanding": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.36934083700180054,
+            "indicator": "so sánh được nội dung tập luyện phù hợp để nâng cao sức khoẻ",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học."
+        },
+        "applying": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.6778688430786133,
+            "indicator": "biểu diễn được bài tập liên hoàn",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học."
+        },
+        "subject": "Giáo dục thể chất"
+    },
+    "experiential_activities_comment": {
+        "remembering": {
+            "evidence": "em biết nêu ý kiến cá nhân khi tham gia các hoạt động tập thể",
+            "confident": 0.6470056772232056,
+            "indicator": "nhận diện được sở thích của bản thân",
+            "level": 1,
+            "full_comment": "Em biết nêu ý kiến cá nhân khi tham gia các hoạt động tập thể."
+        },
+        "understanding": {
+            "evidence": "em biết nêu ý kiến cá nhân khi tham gia các hoạt động tập thể",
+            "confident": 0.5485619306564331,
+            "indicator": "nhận xét được sự tiến bộ của bản thân",
+            "level": 1,
+            "full_comment": "Em biết nêu ý kiến cá nhân khi tham gia các hoạt động tập thể."
+        },
+        "applying": {
+            "evidence": "em biết nêu ý kiến cá nhân khi tham gia các hoạt động tập thể",
+            "confident": 0.596365213394165,
+            "indicator": "thực hiện được việc chăm sóc bản thân",
+            "level": 1,
+            "full_comment": "Em biết nêu ý kiến cá nhân khi tham gia các hoạt động tập thể."
+        },
+        "subject": "Hoạt động trải nghiệm"
+    },
+    "nature_and_society_comment": {
+        "remembering": {
+            "evidence": "em hiểu bài khá tốt",
+            "confident": 0.6986479163169861,
+            "indicator": "nói được tên lớp",
+            "level": 1,
+            "full_comment": "Em hiểu bài khá tốt, biết trả lời câu hỏi khi khám phá nội dung bài học."
+        },
+        "understanding": {
+            "evidence": "biết trả lời câu hỏi khi khám phá nội dung bài học",
+            "confident": 0.5096803903579712,
+            "indicator": "trình bày được một số việc cần làm để giữ gìn thần kinh",
+            "level": 1,
+            "full_comment": "Em hiểu bài khá tốt, biết trả lời câu hỏi khi khám phá nội dung bài học."
+        },
+        "applying": {
+            "evidence": "biết trả lời câu hỏi khi khám phá nội dung bài học",
+            "confident": 0.8056423664093018,
+            "indicator": "đặt được câu hỏi để tìm hiểu về thành tích dạy và học",
+            "level": 1,
+            "full_comment": "Em hiểu bài khá tốt, biết trả lời câu hỏi khi khám phá nội dung bài học."
+        },
+        "subject": "Tự nhiên và Xã hội"
+    }
+}

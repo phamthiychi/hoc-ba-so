@@ -1,0 +1,267 @@
+{
+    "student_code": "20252026.03.Ba3.017",
+    "vietnamese_comment": {
+        "remembering": {
+            "evidence": "em đọc to",
+            "confident": 0.7727884650230408,
+            "indicator": "kể lại câu chuyện đã đọc",
+            "level": 1,
+            "full_comment": "Em đọc to, tìm từ đúng, biết đặt câu đúng. Em biết sử dụng vốn từ phong phú để viết thành đoạn văn theo đúng yêu cầu của đề bài."
+        },
+        "understanding": {
+            "evidence": "em đọc to",
+            "confident": 0.6094930768013,
+            "indicator": "nhận xét quan điểm của người viết",
+            "level": 1,
+            "full_comment": "Em đọc to, tìm từ đúng, biết đặt câu đúng. Em biết sử dụng vốn từ phong phú để viết thành đoạn văn theo đúng yêu cầu của đề bài."
+        },
+        "applying": {
+            "evidence": "em biết sử dụng vốn từ phong phú để viết thành đoạn văn theo đúng yêu cầu của đề bài",
+            "confident": 0.7204276323318481,
+            "indicator": "viết văn bản",
+            "level": 1,
+            "full_comment": "Em đọc to, tìm từ đúng, biết đặt câu đúng. Em biết sử dụng vốn từ phong phú để viết thành đoạn văn theo đúng yêu cầu của đề bài."
+        },
+        "subject": "Tiếng Việt"
+    },
+    "mathematics_comment": {
+        "remembering": {
+            "evidence": "hoàn thành các bài tập",
+            "confident": 0.6961238384246826,
+            "indicator": "làm quen",
+            "level": 1,
+            "full_comment": "Em thực hiện phép tính nhanh, nắm cách giải toán, kĩ năng tính tốt. Em có tư duy lập luận toán tốt, hoàn thành các bài tập."
+        },
+        "understanding": {
+            "evidence": "hoàn thành các bài tập",
+            "confident": 0.7137961387634277,
+            "indicator": "thể hiện",
+            "level": 1,
+            "full_comment": "Em thực hiện phép tính nhanh, nắm cách giải toán, kĩ năng tính tốt. Em có tư duy lập luận toán tốt, hoàn thành các bài tập."
+        },
+        "applying": {
+            "evidence": "nắm cách giải toán",
+            "confident": 0.8005493879318237,
+            "indicator": "giải quyết",
+            "level": 1,
+            "full_comment": "Em thực hiện phép tính nhanh, nắm cách giải toán, kĩ năng tính tốt. Em có tư duy lập luận toán tốt, hoàn thành các bài tập."
+        },
+        "subject": "Toán"
+    },
+    "informatics_comment": {
+        "remembering": {
+            "evidence": "em biết được việc chia một nhiệm vụ lớn thành những nhiệm vụ nhỏ hơn là để dễ hiểu",
+            "confident": 0.896676242351532,
+            "indicator": "nhận biết được mục đích chia một nhiệm vụ lớn thành các nhiệm vụ nhỏ hơn",
+            "level": 1,
+            "full_comment": "Em biết được việc chia một nhiệm vụ lớn thành những nhiệm vụ nhỏ hơn là để dễ hiểu và dễ thực hiện hơn."
+        },
+        "understanding": {
+            "evidence": "em biết được việc chia một nhiệm vụ lớn thành những nhiệm vụ nhỏ hơn là để dễ hiểu",
+            "confident": 0.5597884654998779,
+            "indicator": "giải thích được việc đưa các công thức vào bảng tính",
+            "level": 1,
+            "full_comment": "Em biết được việc chia một nhiệm vụ lớn thành những nhiệm vụ nhỏ hơn là để dễ hiểu và dễ thực hiện hơn."
+        },
+        "applying": {
+            "evidence": "em biết được việc chia một nhiệm vụ lớn thành những nhiệm vụ nhỏ hơn là để dễ hiểu",
+            "confident": 0.7211086750030518,
+            "indicator": "chia được công việc thành những việc nhỏ hơn",
+            "level": 1,
+            "full_comment": "Em biết được việc chia một nhiệm vụ lớn thành những nhiệm vụ nhỏ hơn là để dễ hiểu và dễ thực hiện hơn."
+        },
+        "subject": "Tin học"
+    },
+    "english_comment": {
+        "remembering": {
+            "evidence": "em đặt câu đơn giản chính xác",
+            "confident": 0.83815598487854,
+            "indicator": "biết được các mẫu câu đơn giản",
+            "level": 1,
+            "full_comment": "Em đặt câu đơn giản chính xác và dễ hiểu, thể hiện sự nỗ lực trong việc học."
+        },
+        "understanding": {
+            "evidence": "thể hiện sự nỗ lực trong việc học",
+            "confident": 0.856236457824707,
+            "indicator": "trình bày được hoạt động học tập",
+            "level": 1,
+            "full_comment": "Em đặt câu đơn giản chính xác và dễ hiểu, thể hiện sự nỗ lực trong việc học."
+        },
+        "applying": {
+            "evidence": "em đặt câu đơn giản chính xác",
+            "confident": 0.8710663318634033,
+            "indicator": "viết được câu đơn giản",
+            "level": 1,
+            "full_comment": "Em đặt câu đơn giản chính xác và dễ hiểu, thể hiện sự nỗ lực trong việc học."
+        },
+        "subject": "Tiếng Anh"
+    },
+    "technology_comment": {
+        "remembering": {
+            "evidence": "biết phối hợp với các bạn để giải quyết yêu cầu học tập",
+            "confident": 0.45683753490448,
+            "indicator": "phát hiện",
+            "level": 3,
+            "full_comment": "Em thực hiện tốt các yêu cầu của môn học, biết phối hợp với các bạn để giải quyết yêu cầu học tập. Em biết tuân theo các biển báo giao thông trên đường."
+        },
+        "understanding": {
+            "evidence": "biết phối hợp với các bạn để giải quyết yêu cầu học tập",
+            "confident": 0.4904119372367859,
+            "indicator": "nhận thức",
+            "level": 3,
+            "full_comment": "Em thực hiện tốt các yêu cầu của môn học, biết phối hợp với các bạn để giải quyết yêu cầu học tập. Em biết tuân theo các biển báo giao thông trên đường."
+        },
+        "applying": {
+            "evidence": "em thực hiện tốt các yêu cầu của môn học",
+            "confident": 0.5503607988357544,
+            "indicator": "hoàn thiện",
+            "level": 3,
+            "full_comment": "Em thực hiện tốt các yêu cầu của môn học, biết phối hợp với các bạn để giải quyết yêu cầu học tập. Em biết tuân theo các biển báo giao thông trên đường."
+        },
+        "subject": "Công nghệ"
+    },
+    "music_comment": {
+        "remembering": {
+            "evidence": "em biết điều chỉnh giọng",
+            "confident": 0.7006518840789795,
+            "indicator": "nhận biết các nốt nhạc",
+            "level": 1,
+            "full_comment": "Em biết điều chỉnh giọng và thể hiện yếu tố to nhỏ, cao thấp khi hát và đọc câu nhạc."
+        },
+        "understanding": {
+            "evidence": "thể hiện yếu tố to nhỏ",
+            "confident": 0.5925911664962769,
+            "indicator": "nêu được ví dụ",
+            "level": 1,
+            "full_comment": "Em biết điều chỉnh giọng và thể hiện yếu tố to nhỏ, cao thấp khi hát và đọc câu nhạc."
+        },
+        "applying": {
+            "evidence": "em biết điều chỉnh giọng",
+            "confident": 0.6479870080947876,
+            "indicator": "điều chỉnh được giọng hát để tạo nên sự hài hoà",
+            "level": 1,
+            "full_comment": "Em biết điều chỉnh giọng và thể hiện yếu tố to nhỏ, cao thấp khi hát và đọc câu nhạc."
+        },
+        "subject": "Âm nhạc"
+    },
+    "arts_comment": {
+        "remembering": {
+            "evidence": "em nắm được cách thực hành",
+            "confident": 0.6550993919372559,
+            "indicator": "nhận biết được nguyên lí tạo hình",
+            "level": 2,
+            "full_comment": "Em thao tác nhanh, chính xác và trang trí bài đẹp. Em nắm được cách thực hành và biết vận dụng để tạo sản phẩm."
+        },
+        "understanding": {
+            "evidence": "biết vận dụng để tạo sản phẩm",
+            "confident": 0.7930580377578735,
+            "indicator": "giới thiệu được sản phẩm",
+            "level": 2,
+            "full_comment": "Em thao tác nhanh, chính xác và trang trí bài đẹp. Em nắm được cách thực hành và biết vận dụng để tạo sản phẩm."
+        },
+        "applying": {
+            "evidence": "biết vận dụng để tạo sản phẩm",
+            "confident": 0.9352259635925293,
+            "indicator": "tạo được sản phẩm",
+            "level": 2,
+            "full_comment": "Em thao tác nhanh, chính xác và trang trí bài đẹp. Em nắm được cách thực hành và biết vận dụng để tạo sản phẩm."
+        },
+        "subject": "Mĩ thuật"
+    },
+    "civics_comment": {
+        "remembering": {
+            "evidence": "em thực hiện tốt những hành vi đạo đức đã học",
+            "confident": 0.742577314376831,
+            "indicator": "kể ra được biểu hiện của chuẩn mực hành vi đạo đức",
+            "level": 3,
+            "full_comment": "Em thực hiện tốt những hành vi đạo đức đã học. Em biết lắng nghe và đóng góp ý kiến với bạn để hoàn thành bài học."
+        },
+        "understanding": {
+            "evidence": "em thực hiện tốt những hành vi đạo đức đã học",
+            "confident": 0.7178299427032471,
+            "indicator": "đánh giá được hành vi của bản thân theo chuẩn mực đạo đức",
+            "level": 3,
+            "full_comment": "Em thực hiện tốt những hành vi đạo đức đã học. Em biết lắng nghe và đóng góp ý kiến với bạn để hoàn thành bài học."
+        },
+        "applying": {
+            "evidence": "em thực hiện tốt những hành vi đạo đức đã học",
+            "confident": 0.7433335781097412,
+            "indicator": "đồng tình người khác thực hiện hành vi phù hợp với chuẩn mực đạo đức",
+            "level": 3,
+            "full_comment": "Em thực hiện tốt những hành vi đạo đức đã học. Em biết lắng nghe và đóng góp ý kiến với bạn để hoàn thành bài học."
+        },
+        "subject": "Đạo đức"
+    },
+    "physical_education_comment": {
+        "remembering": {
+            "evidence": "tham gia tích cực các trò chơi được học",
+            "confident": 0.6136327981948853,
+            "indicator": "biết được các tư thế động tác",
+            "level": 3,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học, tham gia tích cực các trò chơi được học."
+        },
+        "understanding": {
+            "evidence": "tham gia tích cực các trò chơi được học",
+            "confident": 0.506976306438446,
+            "indicator": "phân biệt được các sơ đồ chiến thuật thi đấu một môn thể thao",
+            "level": 3,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học, tham gia tích cực các trò chơi được học."
+        },
+        "applying": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.6778688430786133,
+            "indicator": "biểu diễn được bài tập liên hoàn",
+            "level": 3,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học, tham gia tích cực các trò chơi được học."
+        },
+        "subject": "Giáo dục thể chất"
+    },
+    "experiential_activities_comment": {
+        "remembering": {
+            "evidence": "em thực hiện tốt việc làm phù hợp với lứa tuổi để giữ gìn vệ sinh môi trường",
+            "confident": 0.6255660057067871,
+            "indicator": "có ý thức giữ vệ sinh chung",
+            "level": 3,
+            "full_comment": "Em thực hiện tốt việc làm phù hợp với lứa tuổi để giữ gìn vệ sinh môi trường, biết áp dụng nội dung bài học vào thực tiễn. Em hoàn thành bài học."
+        },
+        "understanding": {
+            "evidence": "biết áp dụng nội dung bài học vào thực tiễn",
+            "confident": 0.6053703427314758,
+            "indicator": "giới thiệu được sự kiện",
+            "level": 3,
+            "full_comment": "Em thực hiện tốt việc làm phù hợp với lứa tuổi để giữ gìn vệ sinh môi trường, biết áp dụng nội dung bài học vào thực tiễn. Em hoàn thành bài học."
+        },
+        "applying": {
+            "evidence": "em hoàn thành bài học",
+            "confident": 0.6642823219299316,
+            "indicator": "thuyết trình được",
+            "level": 3,
+            "full_comment": "Em thực hiện tốt việc làm phù hợp với lứa tuổi để giữ gìn vệ sinh môi trường, biết áp dụng nội dung bài học vào thực tiễn. Em hoàn thành bài học."
+        },
+        "subject": "Hoạt động trải nghiệm"
+    },
+    "nature_and_society_comment": {
+        "remembering": {
+            "evidence": "lớp",
+            "confident": 0.7210982441902161,
+            "indicator": "kể được tên các hoạt động chính trong lớp học",
+            "level": 3,
+            "full_comment": "Em thích nghiên cứu kiến thức bài học, có óc quan sát tốt. Em tham gia tích cực trong học tập, thể hiện được những hành động cụ thể, thiết thực về bảo vệ sức khỏe, tìm hiểu môi trường thiên nhiên, biết nêu ý kiến của mình trước nhóm, lớp."
+        },
+        "understanding": {
+            "evidence": "thiết thực về bảo vệ sức khỏe",
+            "confident": 0.6217666864395142,
+            "indicator": "trình bày được một số việc cần làm để bảo vệ cơ quan tuần hoàn",
+            "level": 3,
+            "full_comment": "Em thích nghiên cứu kiến thức bài học, có óc quan sát tốt. Em tham gia tích cực trong học tập, thể hiện được những hành động cụ thể, thiết thực về bảo vệ sức khỏe, tìm hiểu môi trường thiên nhiên, biết nêu ý kiến của mình trước nhóm, lớp."
+        },
+        "applying": {
+            "evidence": "thể hiện được những hành động cụ thể",
+            "confident": 0.764390766620636,
+            "indicator": "đưa ra được nhận xét về những cách ứng xử đó",
+            "level": 3,
+            "full_comment": "Em thích nghiên cứu kiến thức bài học, có óc quan sát tốt. Em tham gia tích cực trong học tập, thể hiện được những hành động cụ thể, thiết thực về bảo vệ sức khỏe, tìm hiểu môi trường thiên nhiên, biết nêu ý kiến của mình trước nhóm, lớp."
+        },
+        "subject": "Tự nhiên và Xã hội"
+    }
+}

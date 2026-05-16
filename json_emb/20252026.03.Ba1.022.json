@@ -1,0 +1,267 @@
+{
+    "student_code": "20252026.03.Ba1.022",
+    "vietnamese_comment": {
+        "remembering": {
+            "evidence": "em đọc lưu loát",
+            "confident": 0.8072034120559692,
+            "indicator": "kể lại câu chuyện đã đọc",
+            "level": 1,
+            "full_comment": "Em đọc lưu loát, hiểu nội dung bài tốt. Em nắm tốt kiến thức từ và câu, viết văn có ý hay, diễn đạt tốt."
+        },
+        "understanding": {
+            "evidence": "hiểu nội dung bài tốt",
+            "confident": 0.8415762186050415,
+            "indicator": "nhận xét nội dung",
+            "level": 1,
+            "full_comment": "Em đọc lưu loát, hiểu nội dung bài tốt. Em nắm tốt kiến thức từ và câu, viết văn có ý hay, diễn đạt tốt."
+        },
+        "applying": {
+            "evidence": "viết văn có ý hay",
+            "confident": 0.8290494680404663,
+            "indicator": "viết đoạn văn",
+            "level": 1,
+            "full_comment": "Em đọc lưu loát, hiểu nội dung bài tốt. Em nắm tốt kiến thức từ và câu, viết văn có ý hay, diễn đạt tốt."
+        },
+        "subject": "Tiếng Việt"
+    },
+    "mathematics_comment": {
+        "remembering": {
+            "evidence": "nắm tốt các dạng toán",
+            "confident": 0.518253743648529,
+            "indicator": "làm quen",
+            "level": 3,
+            "full_comment": "Em có kĩ năng tính toán tốt, nắm tốt các dạng toán và thực hành giải thành thạo các bài tập."
+        },
+        "understanding": {
+            "evidence": "nắm tốt các dạng toán",
+            "confident": 0.5063852071762085,
+            "indicator": "thể hiện",
+            "level": 3,
+            "full_comment": "Em có kĩ năng tính toán tốt, nắm tốt các dạng toán và thực hành giải thành thạo các bài tập."
+        },
+        "applying": {
+            "evidence": "thực hành giải thành thạo các bài tập",
+            "confident": 0.5548229217529297,
+            "indicator": "vận dụng",
+            "level": 3,
+            "full_comment": "Em có kĩ năng tính toán tốt, nắm tốt các dạng toán và thực hành giải thành thạo các bài tập."
+        },
+        "subject": "Toán"
+    },
+    "informatics_comment": {
+        "remembering": {
+            "evidence": "em sử dụng thành thạo phần mềm basic mouse skills để luyện tập sử dụng chuột máy tính",
+            "confident": 0.6713645458221436,
+            "indicator": "biết được vai trò của máy tính",
+            "level": 3,
+            "full_comment": "Em sử dụng thành thạo phần mềm Basic Mouse Skills để luyện tập sử dụng chuột máy tính."
+        },
+        "understanding": {
+            "evidence": "em sử dụng thành thạo phần mềm basic mouse skills để luyện tập sử dụng chuột máy tính",
+            "confident": 0.6661432981491089,
+            "indicator": "giải thích được máy tính là công cụ hiệu quả",
+            "level": 3,
+            "full_comment": "Em sử dụng thành thạo phần mềm Basic Mouse Skills để luyện tập sử dụng chuột máy tính."
+        },
+        "applying": {
+            "evidence": "em sử dụng thành thạo phần mềm basic mouse skills để luyện tập sử dụng chuột máy tính",
+            "confident": 0.6427964568138123,
+            "indicator": "thể hiện được mong muốn biết sử dụng máy tính",
+            "level": 3,
+            "full_comment": "Em sử dụng thành thạo phần mềm Basic Mouse Skills để luyện tập sử dụng chuột máy tính."
+        },
+        "subject": "Tin học"
+    },
+    "english_comment": {
+        "remembering": {
+            "evidence": "em đặt câu đơn giản chính xác",
+            "confident": 0.83815598487854,
+            "indicator": "biết được các mẫu câu đơn giản",
+            "level": 1,
+            "full_comment": "Em đặt câu đơn giản chính xác và dễ hiểu, thể hiện sự nỗ lực trong việc học."
+        },
+        "understanding": {
+            "evidence": "thể hiện sự nỗ lực trong việc học",
+            "confident": 0.856236457824707,
+            "indicator": "trình bày được hoạt động học tập",
+            "level": 1,
+            "full_comment": "Em đặt câu đơn giản chính xác và dễ hiểu, thể hiện sự nỗ lực trong việc học."
+        },
+        "applying": {
+            "evidence": "em đặt câu đơn giản chính xác",
+            "confident": 0.8710663318634033,
+            "indicator": "viết được câu đơn giản",
+            "level": 1,
+            "full_comment": "Em đặt câu đơn giản chính xác và dễ hiểu, thể hiện sự nỗ lực trong việc học."
+        },
+        "subject": "Tiếng Anh"
+    },
+    "technology_comment": {
+        "remembering": {
+            "evidence": "em học tập tích cực",
+            "confident": 0.5686778426170349,
+            "indicator": "nêu",
+            "level": 2,
+            "full_comment": "Em học tập tích cực, nắm tốt kiến thức môn học và vận dụng thực hành làm sản phẩm đạt yêu cầu."
+        },
+        "understanding": {
+            "evidence": "nắm tốt kiến thức môn học",
+            "confident": 0.5887957811355591,
+            "indicator": "nhận thức",
+            "level": 2,
+            "full_comment": "Em học tập tích cực, nắm tốt kiến thức môn học và vận dụng thực hành làm sản phẩm đạt yêu cầu."
+        },
+        "applying": {
+            "evidence": "vận dụng thực hành làm sản phẩm đạt yêu cầu",
+            "confident": 0.5773996114730835,
+            "indicator": "chế tạo",
+            "level": 2,
+            "full_comment": "Em học tập tích cực, nắm tốt kiến thức môn học và vận dụng thực hành làm sản phẩm đạt yêu cầu."
+        },
+        "subject": "Công nghệ"
+    },
+    "music_comment": {
+        "remembering": {
+            "evidence": "theo phách",
+            "confident": 0.8487673997879028,
+            "indicator": "thuộc lời ca",
+            "level": 1,
+            "full_comment": "Em biết gõ đệm theo tiết tấu lời ca, theo phách."
+        },
+        "understanding": {
+            "evidence": "theo phách",
+            "confident": 0.683485746383667,
+            "indicator": "nêu được ví dụ",
+            "level": 1,
+            "full_comment": "Em biết gõ đệm theo tiết tấu lời ca, theo phách."
+        },
+        "applying": {
+            "evidence": "theo phách",
+            "confident": 0.43951427936553955,
+            "indicator": "biểu diễn được các tiết mục âm nhạc",
+            "level": 1,
+            "full_comment": "Em biết gõ đệm theo tiết tấu lời ca, theo phách."
+        },
+        "subject": "Âm nhạc"
+    },
+    "arts_comment": {
+        "remembering": {
+            "evidence": "em phối hợp màu sắc hài hòa",
+            "confident": 0.7077643871307373,
+            "indicator": "đọc được tên màu sắc",
+            "level": 1,
+            "full_comment": "Em phối hợp màu sắc hài hòa và hoàn thiện sản phẩm mĩ thuật đúng yêu cầu, tô màu đẹp."
+        },
+        "understanding": {
+            "evidence": "hoàn thiện sản phẩm mĩ thuật đúng yêu cầu",
+            "confident": 0.7434903383255005,
+            "indicator": "giới thiệu được sản phẩm",
+            "level": 1,
+            "full_comment": "Em phối hợp màu sắc hài hòa và hoàn thiện sản phẩm mĩ thuật đúng yêu cầu, tô màu đẹp."
+        },
+        "applying": {
+            "evidence": "hoàn thiện sản phẩm mĩ thuật đúng yêu cầu",
+            "confident": 0.7332050204277039,
+            "indicator": "tạo được sản phẩm",
+            "level": 1,
+            "full_comment": "Em phối hợp màu sắc hài hòa và hoàn thiện sản phẩm mĩ thuật đúng yêu cầu, tô màu đẹp."
+        },
+        "subject": "Mĩ thuật"
+    },
+    "civics_comment": {
+        "remembering": {
+            "evidence": "em biết thể hiện thái độ phù hợp với những hành vi đạo đức",
+            "confident": 0.8561186790466309,
+            "indicator": "phân biệt được thái độ phù hợp với chuẩn mực đạo đức",
+            "level": 1,
+            "full_comment": "Em ngoan, lễ phép. Em biết thể hiện thái độ phù hợp với những hành vi đạo đức, vận dụng tốt vào thực tiễn."
+        },
+        "understanding": {
+            "evidence": "em biết thể hiện thái độ phù hợp với những hành vi đạo đức",
+            "confident": 0.877123236656189,
+            "indicator": "đánh giá được thái độ của bản thân theo chuẩn mực đạo đức",
+            "level": 1,
+            "full_comment": "Em ngoan, lễ phép. Em biết thể hiện thái độ phù hợp với những hành vi đạo đức, vận dụng tốt vào thực tiễn."
+        },
+        "applying": {
+            "evidence": "em biết thể hiện thái độ phù hợp với những hành vi đạo đức",
+            "confident": 0.8781065940856934,
+            "indicator": "điều chỉnh được thái độ của bản thân phù hợp với chuẩn mực đạo đức",
+            "level": 1,
+            "full_comment": "Em ngoan, lễ phép. Em biết thể hiện thái độ phù hợp với những hành vi đạo đức, vận dụng tốt vào thực tiễn."
+        },
+        "subject": "Đạo đức"
+    },
+    "physical_education_comment": {
+        "remembering": {
+            "evidence": "tham gia tích cực các trò chơi được học",
+            "confident": 0.6136327981948853,
+            "indicator": "biết được các tư thế động tác",
+            "level": 3,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học, tham gia tích cực các trò chơi được học."
+        },
+        "understanding": {
+            "evidence": "tham gia tích cực các trò chơi được học",
+            "confident": 0.506976306438446,
+            "indicator": "phân biệt được các sơ đồ chiến thuật thi đấu một môn thể thao",
+            "level": 3,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học, tham gia tích cực các trò chơi được học."
+        },
+        "applying": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.6778688430786133,
+            "indicator": "biểu diễn được bài tập liên hoàn",
+            "level": 3,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học, tham gia tích cực các trò chơi được học."
+        },
+        "subject": "Giáo dục thể chất"
+    },
+    "experiential_activities_comment": {
+        "remembering": {
+            "evidence": "chăm sóc đến bố mẹ",
+            "confident": 0.8159765005111694,
+            "indicator": "tìm hiểu được công việc của bố mẹ",
+            "level": 3,
+            "full_comment": "Em có thái độ tích cực trong các hoạt động. Em thể hiện được lòng biết ơn, sự quan tâm, chăm sóc đến bố mẹ, người thân và làm được một số công việc phù hợp."
+        },
+        "understanding": {
+            "evidence": "người thân",
+            "confident": 0.6080305576324463,
+            "indicator": "mô tả được hình ảnh bản thân",
+            "level": 3,
+            "full_comment": "Em có thái độ tích cực trong các hoạt động. Em thể hiện được lòng biết ơn, sự quan tâm, chăm sóc đến bố mẹ, người thân và làm được một số công việc phù hợp."
+        },
+        "applying": {
+            "evidence": "làm được một số công việc phù hợp",
+            "confident": 0.762403666973114,
+            "indicator": "tổ chức được buổi lao động",
+            "level": 3,
+            "full_comment": "Em có thái độ tích cực trong các hoạt động. Em thể hiện được lòng biết ơn, sự quan tâm, chăm sóc đến bố mẹ, người thân và làm được một số công việc phù hợp."
+        },
+        "subject": "Hoạt động trải nghiệm"
+    },
+    "nature_and_society_comment": {
+        "remembering": {
+            "evidence": "thiết thực về bảo vệ sức khoẻ",
+            "confident": 0.652143120765686,
+            "indicator": "xác định được các hoạt động vận động có lợi cho sức khoẻ",
+            "level": 3,
+            "full_comment": "Em có thái độ tích cực trong học tập. Thể hiện được những hành động cụ thể, thiết thực về bảo vệ sức khoẻ, tìm hiểu môi trường thiên nhiên."
+        },
+        "understanding": {
+            "evidence": "thiết thực về bảo vệ sức khoẻ",
+            "confident": 0.626227617263794,
+            "indicator": "trình bày được một số việc cần làm để bảo vệ cơ quan tuần hoàn",
+            "level": 3,
+            "full_comment": "Em có thái độ tích cực trong học tập. Thể hiện được những hành động cụ thể, thiết thực về bảo vệ sức khoẻ, tìm hiểu môi trường thiên nhiên."
+        },
+        "applying": {
+            "evidence": "thể hiện được những hành động cụ thể",
+            "confident": 0.764390766620636,
+            "indicator": "đưa ra được nhận xét về những cách ứng xử đó",
+            "level": 3,
+            "full_comment": "Em có thái độ tích cực trong học tập. Thể hiện được những hành động cụ thể, thiết thực về bảo vệ sức khoẻ, tìm hiểu môi trường thiên nhiên."
+        },
+        "subject": "Tự nhiên và Xã hội"
+    }
+}

@@ -1,0 +1,243 @@
+{
+    "student_code": "20252026.01.Mo1.025",
+    "vietnamese_comment": {
+        "remembering": {
+            "evidence": "em đọc bài lưu loát",
+            "confident": 0.7687546014785767,
+            "indicator": "kể lại câu chuyện đã đọc",
+            "level": 1,
+            "full_comment": "Em đọc bài lưu loát, kỹ năng nghe viết tốt. Em cần rèn thêm chữ viết cho đều nét."
+        },
+        "understanding": {
+            "evidence": "em đọc bài lưu loát",
+            "confident": 0.6174249053001404,
+            "indicator": "nhận xét quan điểm của người viết",
+            "level": 1,
+            "full_comment": "Em đọc bài lưu loát, kỹ năng nghe viết tốt. Em cần rèn thêm chữ viết cho đều nét."
+        },
+        "applying": {
+            "evidence": "em cần rèn thêm chữ viết cho đều nét",
+            "confident": 0.7785480618476868,
+            "indicator": "viết đoạn văn",
+            "level": 1,
+            "full_comment": "Em đọc bài lưu loát, kỹ năng nghe viết tốt. Em cần rèn thêm chữ viết cho đều nét."
+        },
+        "subject": "Tiếng Việt"
+    },
+    "mathematics_comment": {
+        "remembering": {
+            "evidence": "em nắm vững kiến thức",
+            "confident": 0.7849345207214355,
+            "indicator": "làm quen",
+            "level": 1,
+            "full_comment": "Em nắm vững kiến thức, kỹ năng tính toán nhanh. Em hoàn thành tốt nội dung môn Toán."
+        },
+        "understanding": {
+            "evidence": "em nắm vững kiến thức",
+            "confident": 0.6765726208686829,
+            "indicator": "thể hiện",
+            "level": 1,
+            "full_comment": "Em nắm vững kiến thức, kỹ năng tính toán nhanh. Em hoàn thành tốt nội dung môn Toán."
+        },
+        "applying": {
+            "evidence": "em nắm vững kiến thức",
+            "confident": 0.6243603825569153,
+            "indicator": "thực hiện",
+            "level": 1,
+            "full_comment": "Em nắm vững kiến thức, kỹ năng tính toán nhanh. Em hoàn thành tốt nội dung môn Toán."
+        },
+        "subject": "Toán"
+    },
+    "informatics_comment": {
+        "remembering": {
+            "evidence": "em biết công dụng của lưới vẽ: giúp vẽ các chi tiết nhỏ một cách chính xác",
+            "confident": 0.6468906402587891,
+            "indicator": "nêu được ứng dụng của Duyệt đồ thị",
+            "level": 1,
+            "full_comment": "Em biết công dụng của lưới vẽ: giúp vẽ các chi tiết nhỏ một cách chính xác."
+        },
+        "understanding": {
+            "evidence": "em biết công dụng của lưới vẽ: giúp vẽ các chi tiết nhỏ một cách chính xác",
+            "confident": 0.5943356156349182,
+            "indicator": "trình bày được tác dụng của một số công cụ",
+            "level": 1,
+            "full_comment": "Em biết công dụng của lưới vẽ: giúp vẽ các chi tiết nhỏ một cách chính xác."
+        },
+        "applying": {
+            "evidence": "em biết công dụng của lưới vẽ: giúp vẽ các chi tiết nhỏ một cách chính xác",
+            "confident": 0.5808572173118591,
+            "indicator": "thực hiện được thao tác xử lí ảnh",
+            "level": 1,
+            "full_comment": "Em biết công dụng của lưới vẽ: giúp vẽ các chi tiết nhỏ một cách chính xác."
+        },
+        "subject": "Tin học"
+    },
+    "english_comment": {
+        "remembering": {
+            "evidence": "em cần luyện đọc nhiều hơn nhé",
+            "confident": 0.7068938612937927,
+            "indicator": "đọc đúng được chữ cái",
+            "level": 1,
+            "full_comment": "Em đọc bài còn chưa thật lưu loát. Em cần luyện đọc nhiều hơn nhé."
+        },
+        "understanding": {
+            "evidence": "em cần luyện đọc nhiều hơn nhé",
+            "confident": 0.6607511043548584,
+            "indicator": "đọc hiểu được nội dung theo chủ đề quen thuộc",
+            "level": 1,
+            "full_comment": "Em đọc bài còn chưa thật lưu loát. Em cần luyện đọc nhiều hơn nhé."
+        },
+        "applying": {
+            "evidence": "em cần luyện đọc nhiều hơn nhé",
+            "confident": 0.6685240268707275,
+            "indicator": "đọc được văn bản ngắn phục vụ học tập",
+            "level": 1,
+            "full_comment": "Em đọc bài còn chưa thật lưu loát. Em cần luyện đọc nhiều hơn nhé."
+        },
+        "subject": "Tiếng Anh"
+    },
+    "music_comment": {
+        "remembering": {
+            "evidence": "em biết điều chỉnh giọng",
+            "confident": 0.7006518840789795,
+            "indicator": "nhận biết các nốt nhạc",
+            "level": 1,
+            "full_comment": "Em biết điều chỉnh giọng và thể hiện yếu tố to nhỏ, cao thấp khi hát và đọc câu nhạc."
+        },
+        "understanding": {
+            "evidence": "thể hiện yếu tố to nhỏ",
+            "confident": 0.5925911664962769,
+            "indicator": "nêu được ví dụ",
+            "level": 1,
+            "full_comment": "Em biết điều chỉnh giọng và thể hiện yếu tố to nhỏ, cao thấp khi hát và đọc câu nhạc."
+        },
+        "applying": {
+            "evidence": "em biết điều chỉnh giọng",
+            "confident": 0.6479870080947876,
+            "indicator": "điều chỉnh được giọng hát để tạo nên sự hài hoà",
+            "level": 1,
+            "full_comment": "Em biết điều chỉnh giọng và thể hiện yếu tố to nhỏ, cao thấp khi hát và đọc câu nhạc."
+        },
+        "subject": "Âm nhạc"
+    },
+    "arts_comment": {
+        "remembering": {
+            "evidence": "em biết sử dụng vật liệu sẵn có để sáng tạo sản phẩm",
+            "confident": 0.6674258708953857,
+            "indicator": "liệt kê được vật liệu",
+            "level": 3,
+            "full_comment": "Em biết sử dụng vật liệu sẵn có để sáng tạo sản phẩm."
+        },
+        "understanding": {
+            "evidence": "em biết sử dụng vật liệu sẵn có để sáng tạo sản phẩm",
+            "confident": 0.7052983045578003,
+            "indicator": "phân biệt được một số chất liệu",
+            "level": 3,
+            "full_comment": "Em biết sử dụng vật liệu sẵn có để sáng tạo sản phẩm."
+        },
+        "applying": {
+            "evidence": "em biết sử dụng vật liệu sẵn có để sáng tạo sản phẩm",
+            "confident": 0.7608828544616699,
+            "indicator": "tạo được sản phẩm",
+            "level": 3,
+            "full_comment": "Em biết sử dụng vật liệu sẵn có để sáng tạo sản phẩm."
+        },
+        "subject": "Mĩ thuật"
+    },
+    "civics_comment": {
+        "remembering": {
+            "evidence": "em biết áp dụng các hành vi đạo đức đã học vào thực tiễn",
+            "confident": 0.8297940492630005,
+            "indicator": "kể ra được biểu hiện của chuẩn mực hành vi đạo đức",
+            "level": 1,
+            "full_comment": "Em biết áp dụng các hành vi đạo đức đã học vào thực tiễn."
+        },
+        "understanding": {
+            "evidence": "em biết áp dụng các hành vi đạo đức đã học vào thực tiễn",
+            "confident": 0.8229785561561584,
+            "indicator": "diễn giải được ý nghĩa của việc thực hiện chuẩn mực hành vi đạo đức",
+            "level": 1,
+            "full_comment": "Em biết áp dụng các hành vi đạo đức đã học vào thực tiễn."
+        },
+        "applying": {
+            "evidence": "em biết áp dụng các hành vi đạo đức đã học vào thực tiễn",
+            "confident": 0.8266493082046509,
+            "indicator": "điều chỉnh được hành vi của bản thân phù hợp với chuẩn mực đạo đức",
+            "level": 1,
+            "full_comment": "Em biết áp dụng các hành vi đạo đức đã học vào thực tiễn."
+        },
+        "subject": "Đạo đức"
+    },
+    "physical_education_comment": {
+        "remembering": {
+            "evidence": "mạnh dạn trong các hoạt động nhóm",
+            "confident": 0.6233933568000793,
+            "indicator": "xác định được các tư thế động tác",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học, mạnh dạn trong các hoạt động nhóm."
+        },
+        "understanding": {
+            "evidence": "mạnh dạn trong các hoạt động nhóm",
+            "confident": 0.42805051803588867,
+            "indicator": "mô tả được động tác kĩ thuật",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học, mạnh dạn trong các hoạt động nhóm."
+        },
+        "applying": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.6778688430786133,
+            "indicator": "biểu diễn được bài tập liên hoàn",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học, mạnh dạn trong các hoạt động nhóm."
+        },
+        "subject": "Giáo dục thể chất"
+    },
+    "experiential_activities_comment": {
+        "remembering": {
+            "evidence": "em biết xử lí tình huống",
+            "confident": 0.703406572341919,
+            "indicator": "nhận biết được những việc nên làm",
+            "level": 1,
+            "full_comment": "Em biết xử lí tình huống, phân biệt đúng/sai trong chủ đề vừa học."
+        },
+        "understanding": {
+            "evidence": "em biết xử lí tình huống",
+            "confident": 0.5973337888717651,
+            "indicator": "chỉ ra được ý nghĩa của hoạt động",
+            "level": 1,
+            "full_comment": "Em biết xử lí tình huống, phân biệt đúng/sai trong chủ đề vừa học."
+        },
+        "applying": {
+            "evidence": "em biết xử lí tình huống",
+            "confident": 0.6638768911361694,
+            "indicator": "thực hiện được việc chăm sóc bản thân",
+            "level": 1,
+            "full_comment": "Em biết xử lí tình huống, phân biệt đúng/sai trong chủ đề vừa học."
+        },
+        "subject": "Hoạt động trải nghiệm"
+    },
+    "nature_and_society_comment": {
+        "remembering": {
+            "evidence": "em hiểu bài nhanh",
+            "confident": 0.6856493949890137,
+            "indicator": "nói được tên lớp",
+            "level": 1,
+            "full_comment": "Em hiểu bài nhanh và tự giác tham gia các hoạt động."
+        },
+        "understanding": {
+            "evidence": "tự giác tham gia các hoạt động",
+            "confident": 0.5400147438049316,
+            "indicator": "trình bày được một số việc cần làm để giữ gìn thần kinh",
+            "level": 1,
+            "full_comment": "Em hiểu bài nhanh và tự giác tham gia các hoạt động."
+        },
+        "applying": {
+            "evidence": "tự giác tham gia các hoạt động",
+            "confident": 0.5644806027412415,
+            "indicator": "đặt được câu hỏi để tìm hiểu về các hoạt động khác",
+            "level": 1,
+            "full_comment": "Em hiểu bài nhanh và tự giác tham gia các hoạt động."
+        },
+        "subject": "Tự nhiên và Xã hội"
+    }
+}

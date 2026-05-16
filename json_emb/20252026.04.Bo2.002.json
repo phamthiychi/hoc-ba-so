@@ -1,0 +1,291 @@
+{
+    "student_code": "20252026.04.Bo2.002",
+    "vietnamese_comment": {
+        "remembering": {
+            "evidence": "em đọc bài tốt",
+            "confident": 0.6673777103424072,
+            "indicator": "kể lại câu chuyện đã đọc",
+            "level": 3,
+            "full_comment": "Em đọc bài tốt, có nhiều sáng tạo trong bài văn."
+        },
+        "understanding": {
+            "evidence": "có nhiều sáng tạo trong bài văn",
+            "confident": 0.6247059106826782,
+            "indicator": "nhận biết cách triển khai ý tưởng",
+            "level": 3,
+            "full_comment": "Em đọc bài tốt, có nhiều sáng tạo trong bài văn."
+        },
+        "applying": {
+            "evidence": "có nhiều sáng tạo trong bài văn",
+            "confident": 0.6693982481956482,
+            "indicator": "viết văn bản",
+            "level": 3,
+            "full_comment": "Em đọc bài tốt, có nhiều sáng tạo trong bài văn."
+        },
+        "subject": "Tiếng Việt"
+    },
+    "mathematics_comment": {
+        "remembering": {
+            "evidence": "em hiểu bài",
+            "confident": 0.785314679145813,
+            "indicator": "làm quen",
+            "level": 1,
+            "full_comment": "Em có tập trung lắng nghe trong giờ học. Em hiểu bài và làm bài đầy đủ."
+        },
+        "understanding": {
+            "evidence": "em hiểu bài",
+            "confident": 0.761841893196106,
+            "indicator": "thể hiện",
+            "level": 1,
+            "full_comment": "Em có tập trung lắng nghe trong giờ học. Em hiểu bài và làm bài đầy đủ."
+        },
+        "applying": {
+            "evidence": "em hiểu bài",
+            "confident": 0.6887495517730713,
+            "indicator": "lí giải",
+            "level": 1,
+            "full_comment": "Em có tập trung lắng nghe trong giờ học. Em hiểu bài và làm bài đầy đủ."
+        },
+        "subject": "Toán"
+    },
+    "informatics_comment": {
+        "remembering": {
+            "evidence": "tạo bài trình chiếu",
+            "confident": 0.7831109762191772,
+            "indicator": "nêu được ứng dụng của Duyệt đồ thị",
+            "level": 2,
+            "full_comment": "Em thực hiện tốt các bài tập thực hành, chủ động tìm hiểu thêm kiến thức theo gợi ý của giáo viên; có tiến bộ rõ rệt trong các kỹ năng gõ văn bản, tạo bài trình chiếu và lập trình cơ bản."
+        },
+        "understanding": {
+            "evidence": "tạo bài trình chiếu",
+            "confident": 0.8617782592773438,
+            "indicator": "trình bày được tính đệ quy",
+            "level": 2,
+            "full_comment": "Em thực hiện tốt các bài tập thực hành, chủ động tìm hiểu thêm kiến thức theo gợi ý của giáo viên; có tiến bộ rõ rệt trong các kỹ năng gõ văn bản, tạo bài trình chiếu và lập trình cơ bản."
+        },
+        "applying": {
+            "evidence": "tạo bài trình chiếu",
+            "confident": 0.7835021615028381,
+            "indicator": "thực hiện được thao tác xử lí ảnh",
+            "level": 2,
+            "full_comment": "Em thực hiện tốt các bài tập thực hành, chủ động tìm hiểu thêm kiến thức theo gợi ý của giáo viên; có tiến bộ rõ rệt trong các kỹ năng gõ văn bản, tạo bài trình chiếu và lập trình cơ bản."
+        },
+        "subject": "Tin học"
+    },
+    "science_comment": {
+        "remembering": {
+            "evidence": "em tích cực phát biểu",
+            "confident": 0.7294204235076904,
+            "indicator": "nêu được",
+            "level": 3,
+            "full_comment": "Em tích cực phát biểu, biết đóng góp ý kiến với bạn để hoàn thành bài học."
+        },
+        "understanding": {
+            "evidence": "em tích cực phát biểu",
+            "confident": 0.6860559582710266,
+            "indicator": "trình bày được",
+            "level": 3,
+            "full_comment": "Em tích cực phát biểu, biết đóng góp ý kiến với bạn để hoàn thành bài học."
+        },
+        "applying": {
+            "evidence": "em tích cực phát biểu",
+            "confident": 0.6949796676635742,
+            "indicator": "nhận xét được",
+            "level": 3,
+            "full_comment": "Em tích cực phát biểu, biết đóng góp ý kiến với bạn để hoàn thành bài học."
+        },
+        "subject": "Khoa học"
+    },
+    "history_and_geography_comment": {
+        "remembering": {
+            "evidence": "em ham học",
+            "confident": 0.588401198387146,
+            "indicator": "liệt kê được sự vật",
+            "level": 1,
+            "full_comment": "Em ham học, có ý thức chuẩn bị bài tốt."
+        },
+        "understanding": {
+            "evidence": "có ý thức chuẩn bị bài tốt",
+            "confident": 0.4382709562778473,
+            "indicator": "trình bày được sự thích ứng của con người với thiên nhiên",
+            "level": 1,
+            "full_comment": "Em ham học, có ý thức chuẩn bị bài tốt."
+        },
+        "applying": {
+            "evidence": "có ý thức chuẩn bị bài tốt",
+            "confident": 0.7484181523323059,
+            "indicator": "vận dụng được điều đã học vào trường hợp cụ thể",
+            "level": 1,
+            "full_comment": "Em ham học, có ý thức chuẩn bị bài tốt."
+        },
+        "subject": "Lịch sử và Địa lí"
+    },
+    "english_comment": {
+        "remembering": {
+            "evidence": "em học đều các kĩ năng",
+            "confident": 0.600831925868988,
+            "indicator": "nêu được nghề nghiệp",
+            "level": 3,
+            "full_comment": "Em học đều các kĩ năng và tích cực giơ tay phát biểu."
+        },
+        "understanding": {
+            "evidence": "em học đều các kĩ năng",
+            "confident": 0.7045322060585022,
+            "indicator": "trình bày được hoạt động học tập",
+            "level": 3,
+            "full_comment": "Em học đều các kĩ năng và tích cực giơ tay phát biểu."
+        },
+        "applying": {
+            "evidence": "em học đều các kĩ năng",
+            "confident": 0.5849192142486572,
+            "indicator": "nói được về nghề nghiệp",
+            "level": 3,
+            "full_comment": "Em học đều các kĩ năng và tích cực giơ tay phát biểu."
+        },
+        "subject": "Tiếng Anh"
+    },
+    "technology_comment": {
+        "remembering": {
+            "evidence": "làm việc nhóm tốt",
+            "confident": 0.45949655771255493,
+            "indicator": "nêu",
+            "level": 3,
+            "full_comment": "Em có kĩ năng lắng nghe và làm việc nhóm tốt; thực hiện tốt yêu cầu cần đạt của môn học."
+        },
+        "understanding": {
+            "evidence": "thực hiện tốt yêu cầu cần đạt của môn học",
+            "confident": 0.5195073485374451,
+            "indicator": "làm rõ",
+            "level": 3,
+            "full_comment": "Em có kĩ năng lắng nghe và làm việc nhóm tốt; thực hiện tốt yêu cầu cần đạt của môn học."
+        },
+        "applying": {
+            "evidence": "thực hiện tốt yêu cầu cần đạt của môn học",
+            "confident": 0.5815986394882202,
+            "indicator": "thực hiện",
+            "level": 3,
+            "full_comment": "Em có kĩ năng lắng nghe và làm việc nhóm tốt; thực hiện tốt yêu cầu cần đạt của môn học."
+        },
+        "subject": "Công nghệ"
+    },
+    "music_comment": {
+        "remembering": {
+            "evidence": "theo phách",
+            "confident": 0.8487673997879028,
+            "indicator": "thuộc lời ca",
+            "level": 1,
+            "full_comment": "Em biết gõ đệm theo tiết tấu lời ca, theo phách."
+        },
+        "understanding": {
+            "evidence": "theo phách",
+            "confident": 0.683485746383667,
+            "indicator": "nêu được ví dụ",
+            "level": 1,
+            "full_comment": "Em biết gõ đệm theo tiết tấu lời ca, theo phách."
+        },
+        "applying": {
+            "evidence": "theo phách",
+            "confident": 0.43951427936553955,
+            "indicator": "biểu diễn được các tiết mục âm nhạc",
+            "level": 1,
+            "full_comment": "Em biết gõ đệm theo tiết tấu lời ca, theo phách."
+        },
+        "subject": "Âm nhạc"
+    },
+    "arts_comment": {
+        "remembering": {
+            "evidence": "hoàn thành các bài",
+            "confident": 0.6850310564041138,
+            "indicator": "xác định được chủ đề",
+            "level": 1,
+            "full_comment": "Em vẽ màu hợp lý đúng nội dung bài học, hoàn thành các bài, vẽ được tranh theo đề tài."
+        },
+        "understanding": {
+            "evidence": "vẽ được tranh theo đề tài",
+            "confident": 0.8906703591346741,
+            "indicator": "phân biệt được tranh vẽ",
+            "level": 1,
+            "full_comment": "Em vẽ màu hợp lý đúng nội dung bài học, hoàn thành các bài, vẽ được tranh theo đề tài."
+        },
+        "applying": {
+            "evidence": "hoàn thành các bài",
+            "confident": 0.760489821434021,
+            "indicator": "thực hiện được phác thảo",
+            "level": 1,
+            "full_comment": "Em vẽ màu hợp lý đúng nội dung bài học, hoàn thành các bài, vẽ được tranh theo đề tài."
+        },
+        "subject": "Mĩ thuật"
+    },
+    "civics_comment": {
+        "remembering": {
+            "evidence": "tham gia hoạt động tốt",
+            "confident": 0.6228721141815186,
+            "indicator": "nêu được thái độ",
+            "level": 1,
+            "full_comment": "Em biết chia sẻ với bạn, tham gia hoạt động tốt."
+        },
+        "understanding": {
+            "evidence": "tham gia hoạt động tốt",
+            "confident": 0.41473978757858276,
+            "indicator": "trình bày được kế hoạch kinh doanh của bản thân",
+            "level": 1,
+            "full_comment": "Em biết chia sẻ với bạn, tham gia hoạt động tốt."
+        },
+        "applying": {
+            "evidence": "tham gia hoạt động tốt",
+            "confident": 0.6607814431190491,
+            "indicator": "thực hiện được hành động tích cực để phát triển bản thân",
+            "level": 1,
+            "full_comment": "Em biết chia sẻ với bạn, tham gia hoạt động tốt."
+        },
+        "subject": "Đạo đức"
+    },
+    "physical_education_comment": {
+        "remembering": {
+            "evidence": "tham gia tích cực các trò chơi được học",
+            "confident": 0.6136327981948853,
+            "indicator": "biết được các tư thế động tác",
+            "level": 3,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học, tham gia tích cực các trò chơi được học."
+        },
+        "understanding": {
+            "evidence": "tham gia tích cực các trò chơi được học",
+            "confident": 0.506976306438446,
+            "indicator": "phân biệt được các sơ đồ chiến thuật thi đấu một môn thể thao",
+            "level": 3,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học, tham gia tích cực các trò chơi được học."
+        },
+        "applying": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.6778688430786133,
+            "indicator": "biểu diễn được bài tập liên hoàn",
+            "level": 3,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học, tham gia tích cực các trò chơi được học."
+        },
+        "subject": "Giáo dục thể chất"
+    },
+    "experiential_activities_comment": {
+        "remembering": {
+            "evidence": "em tham gia thảo luận tích cực",
+            "confident": 0.7379804849624634,
+            "indicator": "kể được những việc làm tốt",
+            "level": 3,
+            "full_comment": "Em tham gia thảo luận tích cực, nhiệt tình, vui vẻ, đoàn kết."
+        },
+        "understanding": {
+            "evidence": "nhiệt tình",
+            "confident": 0.6746430397033691,
+            "indicator": "giới thiệu được vẻ đẹp quê em",
+            "level": 3,
+            "full_comment": "Em tham gia thảo luận tích cực, nhiệt tình, vui vẻ, đoàn kết."
+        },
+        "applying": {
+            "evidence": "nhiệt tình",
+            "confident": 0.7633324265480042,
+            "indicator": "thuyết trình được",
+            "level": 3,
+            "full_comment": "Em tham gia thảo luận tích cực, nhiệt tình, vui vẻ, đoàn kết."
+        },
+        "subject": "Hoạt động trải nghiệm"
+    }
+}

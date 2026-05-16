@@ -1,0 +1,291 @@
+{
+    "student_code": "20252026.04.Bo4.015",
+    "vietnamese_comment": {
+        "remembering": {
+            "evidence": "em đọc hiểu khá",
+            "confident": 0.7342547178268433,
+            "indicator": "đọc thuộc lòng đoạn văn",
+            "level": 1,
+            "full_comment": "Em đọc hiểu khá, viết được bài văn tả con vật đúng yêu cầu, nếu thêm rõ chi tiết, câu văn nhiều cảm xúc sẽ hiệu quả hơn."
+        },
+        "understanding": {
+            "evidence": "câu văn nhiều cảm xúc sẽ hiệu quả hơn",
+            "confident": 0.7528953552246094,
+            "indicator": "phân tích cảm xúc của người viết",
+            "level": 1,
+            "full_comment": "Em đọc hiểu khá, viết được bài văn tả con vật đúng yêu cầu, nếu thêm rõ chi tiết, câu văn nhiều cảm xúc sẽ hiệu quả hơn."
+        },
+        "applying": {
+            "evidence": "nếu thêm rõ chi tiết",
+            "confident": 0.6426056027412415,
+            "indicator": "trình bày ý kiến",
+            "level": 1,
+            "full_comment": "Em đọc hiểu khá, viết được bài văn tả con vật đúng yêu cầu, nếu thêm rõ chi tiết, câu văn nhiều cảm xúc sẽ hiệu quả hơn."
+        },
+        "subject": "Tiếng Việt"
+    },
+    "mathematics_comment": {
+        "remembering": {
+            "evidence": "em thực hiện thành thạo phép tính với phân số",
+            "confident": 0.5217584371566772,
+            "indicator": "làm quen",
+            "level": 3,
+            "full_comment": "Em thực hiện thành thạo phép tính với phân số và có kĩ năng giải toán có lời văn tốt."
+        },
+        "understanding": {
+            "evidence": "em thực hiện thành thạo phép tính với phân số",
+            "confident": 0.4920983910560608,
+            "indicator": "thể hiện",
+            "level": 3,
+            "full_comment": "Em thực hiện thành thạo phép tính với phân số và có kĩ năng giải toán có lời văn tốt."
+        },
+        "applying": {
+            "evidence": "em thực hiện thành thạo phép tính với phân số",
+            "confident": 0.5014435052871704,
+            "indicator": "thực hiện",
+            "level": 3,
+            "full_comment": "Em thực hiện thành thạo phép tính với phân số và có kĩ năng giải toán có lời văn tốt."
+        },
+        "subject": "Toán"
+    },
+    "informatics_comment": {
+        "remembering": {
+            "evidence": "hình thức",
+            "confident": 0.8367520570755005,
+            "indicator": "nêu được công dụng",
+            "level": 2,
+            "full_comment": "Em hoàn thành tốt các nội dung học tập theo hướng dẫn của giáo viên; có khả năng thực hiện đúng thao tác và sản phẩm đạt yêu cầu về nội dung và hình thức."
+        },
+        "understanding": {
+            "evidence": "hình thức",
+            "confident": 0.83204185962677,
+            "indicator": "trình bày được tính đệ quy",
+            "level": 2,
+            "full_comment": "Em hoàn thành tốt các nội dung học tập theo hướng dẫn của giáo viên; có khả năng thực hiện đúng thao tác và sản phẩm đạt yêu cầu về nội dung và hình thức."
+        },
+        "applying": {
+            "evidence": "hình thức",
+            "confident": 0.8202662467956543,
+            "indicator": "tạo được tệp",
+            "level": 2,
+            "full_comment": "Em hoàn thành tốt các nội dung học tập theo hướng dẫn của giáo viên; có khả năng thực hiện đúng thao tác và sản phẩm đạt yêu cầu về nội dung và hình thức."
+        },
+        "subject": "Tin học"
+    },
+    "science_comment": {
+        "remembering": {
+            "evidence": "em tham gia học nhóm tốt",
+            "confident": 0.5667030811309814,
+            "indicator": "nêu được",
+            "level": 1,
+            "full_comment": "Em tham gia học nhóm tốt, biết báo cáo trước lớp."
+        },
+        "understanding": {
+            "evidence": "biết báo cáo trước lớp",
+            "confident": 0.5356169939041138,
+            "indicator": "nêu được ví dụ",
+            "level": 1,
+            "full_comment": "Em tham gia học nhóm tốt, biết báo cáo trước lớp."
+        },
+        "applying": {
+            "evidence": "em tham gia học nhóm tốt",
+            "confident": 0.5303746461868286,
+            "indicator": "đưa ra được",
+            "level": 1,
+            "full_comment": "Em tham gia học nhóm tốt, biết báo cáo trước lớp."
+        },
+        "subject": "Khoa học"
+    },
+    "history_and_geography_comment": {
+        "remembering": {
+            "evidence": "tích cực tìm tòi kiến thức mới",
+            "confident": 0.5541607141494751,
+            "indicator": "tìm kiếm thông tin sự kiện",
+            "level": 3,
+            "full_comment": "Em yêu thích môn học, tích cực tìm tòi kiến thức mới, tuy nhiên nên đọc kĩ bài hơn để trả lời đúng câu hỏi."
+        },
+        "understanding": {
+            "evidence": "tích cực tìm tòi kiến thức mới",
+            "confident": 0.41626471281051636,
+            "indicator": "trình bày được sự thích ứng của con người với thiên nhiên",
+            "level": 3,
+            "full_comment": "Em yêu thích môn học, tích cực tìm tòi kiến thức mới, tuy nhiên nên đọc kĩ bài hơn để trả lời đúng câu hỏi."
+        },
+        "applying": {
+            "evidence": "đọc kĩ bài hơn để trả lời đúng câu hỏi",
+            "confident": 0.6574628353118896,
+            "indicator": "đặt được câu hỏi về một vấn đề",
+            "level": 3,
+            "full_comment": "Em yêu thích môn học, tích cực tìm tòi kiến thức mới, tuy nhiên nên đọc kĩ bài hơn để trả lời đúng câu hỏi."
+        },
+        "subject": "Lịch sử và Địa lí"
+    },
+    "english_comment": {
+        "remembering": {
+            "evidence": "em cần rèn luyện thêm các kĩ năng",
+            "confident": 0.5982877016067505,
+            "indicator": "nêu được nghề nghiệp",
+            "level": 1,
+            "full_comment": "Em cần rèn luyện thêm các kĩ năng và cần chú ý tập trung hơn trong giờ học."
+        },
+        "understanding": {
+            "evidence": "cần chú ý tập trung hơn trong giờ học",
+            "confident": 0.6417544484138489,
+            "indicator": "trình bày được hoạt động học tập",
+            "level": 1,
+            "full_comment": "Em cần rèn luyện thêm các kĩ năng và cần chú ý tập trung hơn trong giờ học."
+        },
+        "applying": {
+            "evidence": "em cần rèn luyện thêm các kĩ năng",
+            "confident": 0.5682151913642883,
+            "indicator": "nói được về nghề nghiệp",
+            "level": 1,
+            "full_comment": "Em cần rèn luyện thêm các kĩ năng và cần chú ý tập trung hơn trong giờ học."
+        },
+        "subject": "Tiếng Anh"
+    },
+    "technology_comment": {
+        "remembering": {
+            "evidence": "em nắm được nội dung kiến thức môn học",
+            "confident": 0.5524296760559082,
+            "indicator": "phát hiện",
+            "level": 1,
+            "full_comment": "Em nắm được nội dung kiến thức môn học. Tuy nhiên, em cần rèn sự tập trung khi học tập hơn."
+        },
+        "understanding": {
+            "evidence": "em nắm được nội dung kiến thức môn học",
+            "confident": 0.5787675380706787,
+            "indicator": "nhận thức",
+            "level": 1,
+            "full_comment": "Em nắm được nội dung kiến thức môn học. Tuy nhiên, em cần rèn sự tập trung khi học tập hơn."
+        },
+        "applying": {
+            "evidence": "em nắm được nội dung kiến thức môn học",
+            "confident": 0.5011427402496338,
+            "indicator": "phác thảo",
+            "level": 1,
+            "full_comment": "Em nắm được nội dung kiến thức môn học. Tuy nhiên, em cần rèn sự tập trung khi học tập hơn."
+        },
+        "subject": "Công nghệ"
+    },
+    "music_comment": {
+        "remembering": {
+            "evidence": "theo phách",
+            "confident": 0.8487673997879028,
+            "indicator": "thuộc lời ca",
+            "level": 1,
+            "full_comment": "Em biết gõ đệm theo tiết tấu lời ca, theo phách."
+        },
+        "understanding": {
+            "evidence": "theo phách",
+            "confident": 0.683485746383667,
+            "indicator": "nêu được ví dụ",
+            "level": 1,
+            "full_comment": "Em biết gõ đệm theo tiết tấu lời ca, theo phách."
+        },
+        "applying": {
+            "evidence": "theo phách",
+            "confident": 0.43951427936553955,
+            "indicator": "biểu diễn được các tiết mục âm nhạc",
+            "level": 1,
+            "full_comment": "Em biết gõ đệm theo tiết tấu lời ca, theo phách."
+        },
+        "subject": "Âm nhạc"
+    },
+    "arts_comment": {
+        "remembering": {
+            "evidence": "em hoàn thành các sản phẩm theo yêu cầu bài học",
+            "confident": 0.589979887008667,
+            "indicator": "liệt kê được công cụ",
+            "level": 1,
+            "full_comment": "Em hoàn thành các sản phẩm theo yêu cầu bài học."
+        },
+        "understanding": {
+            "evidence": "em hoàn thành các sản phẩm theo yêu cầu bài học",
+            "confident": 0.6223965883255005,
+            "indicator": "giới thiệu được tác phẩm",
+            "level": 1,
+            "full_comment": "Em hoàn thành các sản phẩm theo yêu cầu bài học."
+        },
+        "applying": {
+            "evidence": "em hoàn thành các sản phẩm theo yêu cầu bài học",
+            "confident": 0.6813414096832275,
+            "indicator": "thực hiện được phác thảo",
+            "level": 1,
+            "full_comment": "Em hoàn thành các sản phẩm theo yêu cầu bài học."
+        },
+        "subject": "Mĩ thuật"
+    },
+    "civics_comment": {
+        "remembering": {
+            "evidence": "em hiểu bài",
+            "confident": 0.7507689595222473,
+            "indicator": "nêu được khái niệm",
+            "level": 1,
+            "full_comment": "Em hiểu bài và giải quyết tình huống tốt."
+        },
+        "understanding": {
+            "evidence": "giải quyết tình huống tốt",
+            "confident": 0.473232239484787,
+            "indicator": "lí giải được một số tình huống đơn giản trong đời sống về trách nhiệm pháp lí",
+            "level": 1,
+            "full_comment": "Em hiểu bài và giải quyết tình huống tốt."
+        },
+        "applying": {
+            "evidence": "giải quyết tình huống tốt",
+            "confident": 0.716280996799469,
+            "indicator": "thực hiện được giải pháp phù hợp để xử lí một số tình huống pháp luật",
+            "level": 1,
+            "full_comment": "Em hiểu bài và giải quyết tình huống tốt."
+        },
+        "subject": "Đạo đức"
+    },
+    "physical_education_comment": {
+        "remembering": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.5195467472076416,
+            "indicator": "biết được các tư thế động tác",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học."
+        },
+        "understanding": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.36934083700180054,
+            "indicator": "so sánh được nội dung tập luyện phù hợp để nâng cao sức khoẻ",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học."
+        },
+        "applying": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.6778688430786133,
+            "indicator": "biểu diễn được bài tập liên hoàn",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học."
+        },
+        "subject": "Giáo dục thể chất"
+    },
+    "experiential_activities_comment": {
+        "remembering": {
+            "evidence": "lễ phép với thầy cô",
+            "confident": 0.5394818782806396,
+            "indicator": "tìm hiểu được công việc của bố mẹ",
+            "level": 1,
+            "full_comment": "Em ứng xử thân thiện với bạn bè, lễ phép với thầy cô."
+        },
+        "understanding": {
+            "evidence": "em ứng xử thân thiện với bạn bè",
+            "confident": 0.4522014260292053,
+            "indicator": "đánh giá được giá trị xã hội",
+            "level": 1,
+            "full_comment": "Em ứng xử thân thiện với bạn bè, lễ phép với thầy cô."
+        },
+        "applying": {
+            "evidence": "em ứng xử thân thiện với bạn bè",
+            "confident": 0.8117114901542664,
+            "indicator": "xây dựng được tình bạn",
+            "level": 1,
+            "full_comment": "Em ứng xử thân thiện với bạn bè, lễ phép với thầy cô."
+        },
+        "subject": "Hoạt động trải nghiệm"
+    }
+}

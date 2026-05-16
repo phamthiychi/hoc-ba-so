@@ -104,43 +104,123 @@ class SystemCore:
             "Năng lực chung": self.embedding_assessment.emb_knowledge(
                 knowledge_base=self.student_assessment_kb["Năng lực chung"],
                 name="general"),
-            "vietnamese": self.embedding_assessment.emb_knowledge(
-                knowledge_base={"vietnamese": self.student_assessment_kb["Môn học"]["Tiếng Việt"]},
-                name="vietnamese"),
-            "mathematics": self.embedding_assessment.emb_knowledge(
-                knowledge_base={"mathematics":self.student_assessment_kb["Môn học"]["Toán"]},
-                name="mathematics"),
-            "informatics": self.embedding_assessment.emb_knowledge(
-                knowledge_base={"informatics":self.student_assessment_kb["Môn học"]["Tin học"]},
-                name="informatics"),
-            "science": self.embedding_assessment.emb_knowledge(
-                knowledge_base={"science":self.student_assessment_kb["Môn học"]["Khoa học"]},
-                name="science"),
-            "history_and_geography": self.embedding_assessment.emb_knowledge(
-                knowledge_base={"history_and_geography":self.student_assessment_kb["Môn học"]["Lịch sử và Địa lý"]},
-                name="history_and_geography"),
-            "english": self.embedding_assessment.emb_knowledge(
-                knowledge_base={"english":self.student_assessment_kb["Môn học"]["Tiếng Anh"]},
-                name="english"),
-            "technology": self.embedding_assessment.emb_knowledge(
-                knowledge_base={"technology":self.student_assessment_kb["Môn học"]["Công nghệ"]},
-                name="technology"),
-            "music": self.embedding_assessment.emb_knowledge(
-                knowledge_base={"music":self.student_assessment_kb["Môn học"]["Âm nhạc"]},
-                name="music"),
-            "arts": self.embedding_assessment.emb_knowledge(
-                knowledge_base={"arts":self.student_assessment_kb["Môn học"]["Mĩ thuật"]},
-                name="arts"),
-            "civics": self.embedding_assessment.emb_knowledge(
-                knowledge_base={"civics":self.student_assessment_kb["Môn học"]["Giáo dục công dân"]},
-                name="civics"),
-            "physical_education": self.embedding_assessment.emb_knowledge(
-                knowledge_base={"physical_education":self.student_assessment_kb["Môn học"]["Giáo dục thể chất"]},
-                name="physical_education"),
-            "experiential_activities": self.embedding_assessment.emb_knowledge(
-                knowledge_base={"experiential_activities":self.student_assessment_kb["Môn học"]["Hoạt động trải nghiệm"]},
-                name="experiential_activities"),
-            "nature_and_society": None
+            "vietnamese_remembering": self.embedding_assessment.emb_knowledge(
+                knowledge_base={"vietnamese_remembering": self.student_assessment_kb["Môn học"]["Tiếng Việt"]["Biết"]},
+                name="vietnamese_remembering"),
+            "vietnamese_understanding": self.embedding_assessment.emb_knowledge(
+                knowledge_base={"vietnamese_understanding": self.student_assessment_kb["Môn học"]["Tiếng Việt"]["Hiểu"]},
+                name="vietnamese_understanding"),
+            "vietnamese_applying": self.embedding_assessment.emb_knowledge(
+                knowledge_base={"vietnamese_applying": self.student_assessment_kb["Môn học"]["Tiếng Việt"]["Vận dụng"]},
+                name="vietnamese_applying"),
+            "mathematics_remembering": self.embedding_assessment.emb_knowledge(
+                knowledge_base={"mathematics_remembering": self.student_assessment_kb["Môn học"]["Toán"]["Biết"]},
+                name="mathematics_remembering"),
+            "mathematics_understanding": self.embedding_assessment.emb_knowledge(
+                knowledge_base={"mathematics_understanding": self.student_assessment_kb["Môn học"]["Toán"]["Hiểu"]},
+                name="mathematics_understanding"),
+            "mathematics_applying": self.embedding_assessment.emb_knowledge(
+                knowledge_base={"mathematics_applying": self.student_assessment_kb["Môn học"]["Toán"]["Vận dụng"]},
+                name="mathematics_applying"),
+            "informatics_remembering": self.embedding_assessment.emb_knowledge(
+                knowledge_base={"informatics_remembering": self.student_assessment_kb["Môn học"]["Tin học"]["Biết"]},
+                name="informatics_remembering"),
+            "informatics_understanding": self.embedding_assessment.emb_knowledge(
+                knowledge_base={"informatics_understanding": self.student_assessment_kb["Môn học"]["Tin học"]["Hiểu"]},
+                name="informatics_understanding"),
+            "informatics_applying": self.embedding_assessment.emb_knowledge(
+                knowledge_base={"informatics_applying": self.student_assessment_kb["Môn học"]["Tin học"]["Vận dụng"]},
+                name="informatics_applying"),
+            "science_remembering": self.embedding_assessment.emb_knowledge(
+                knowledge_base={"science_remembering": self.student_assessment_kb["Môn học"]["Khoa học"]["Biết"]},
+                name="science_remembering"),
+            "science_understanding": self.embedding_assessment.emb_knowledge(
+                knowledge_base={"science_understanding": self.student_assessment_kb["Môn học"]["Khoa học"]["Hiểu"]},
+                name="science_understanding"),
+            "science_applying": self.embedding_assessment.emb_knowledge(
+                knowledge_base={"science_applying": self.student_assessment_kb["Môn học"]["Khoa học"]["Vận dụng"]},
+                name="science_applying"),
+            "history_and_geography_remembering": self.embedding_assessment.emb_knowledge(
+                knowledge_base={"history_and_geography_remembering": self.student_assessment_kb["Môn học"]["Lịch sử và Địa lý"]["Biết"]},
+                name="history_and_geography_remembering"),
+            "history_and_geography_understanding": self.embedding_assessment.emb_knowledge(
+                knowledge_base={"history_and_geography_understanding": self.student_assessment_kb["Môn học"]["Lịch sử và Địa lý"]["Hiểu"]},
+                name="history_and_geography_understanding"),
+            "history_and_geography_applying": self.embedding_assessment.emb_knowledge(
+                knowledge_base={"history_and_geography_applying": self.student_assessment_kb["Môn học"]["Lịch sử và Địa lý"]["Vận dụng"]},
+                name="history_and_geography_applying"),
+            "english_remembering": self.embedding_assessment.emb_knowledge(
+                knowledge_base={"english_remembering": self.student_assessment_kb["Môn học"]["Tiếng Anh"]["Biết"]},
+                name="english_remembering"),
+            "english_understanding": self.embedding_assessment.emb_knowledge(
+                knowledge_base={"english_understanding": self.student_assessment_kb["Môn học"]["Tiếng Anh"]["Hiểu"]},
+                name="english_understanding"),
+            "english_applying": self.embedding_assessment.emb_knowledge(
+                knowledge_base={"english_applying": self.student_assessment_kb["Môn học"]["Tiếng Anh"]["Vận dụng"]},
+                name="english_applying"),
+            "technology_remembering": self.embedding_assessment.emb_knowledge(
+                knowledge_base={"technology_remembering": self.student_assessment_kb["Môn học"]["Công nghệ"]["Biết"]},
+                name="technology_remembering"),
+            "technology_understanding": self.embedding_assessment.emb_knowledge(
+                knowledge_base={"technology_understanding": self.student_assessment_kb["Môn học"]["Công nghệ"]["Hiểu"]},
+                name="technology_understanding"),
+            "technology_applying": self.embedding_assessment.emb_knowledge(
+                knowledge_base={"technology_applying": self.student_assessment_kb["Môn học"]["Công nghệ"]["Vận dụng"]},
+                name="technology_applying"),
+            "music_remembering": self.embedding_assessment.emb_knowledge(
+                knowledge_base={"music_remembering": self.student_assessment_kb["Môn học"]["Âm nhạc"]["Biết"]},
+                name="music_remembering"),
+            "music_understanding": self.embedding_assessment.emb_knowledge(
+                knowledge_base={"music_understanding": self.student_assessment_kb["Môn học"]["Âm nhạc"]["Hiểu"]},
+                name="music_understanding"),
+            "music_applying": self.embedding_assessment.emb_knowledge(
+                knowledge_base={"music_applying": self.student_assessment_kb["Môn học"]["Âm nhạc"]["Vận dụng"]},
+                name="music_applying"),
+            "arts_remembering": self.embedding_assessment.emb_knowledge(
+                knowledge_base={"arts_remembering": self.student_assessment_kb["Môn học"]["Mĩ thuật"]["Biết"]},
+                name="arts_remembering"),
+            "arts_understanding": self.embedding_assessment.emb_knowledge(
+                knowledge_base={"arts_understanding": self.student_assessment_kb["Môn học"]["Mĩ thuật"]["Hiểu"]},
+                name="arts_understanding"),
+            "arts_applying": self.embedding_assessment.emb_knowledge(
+                knowledge_base={"arts_applying": self.student_assessment_kb["Môn học"]["Mĩ thuật"]["Vận dụng"]},
+                name="arts_applying"),
+            "civics_remembering": self.embedding_assessment.emb_knowledge(
+                knowledge_base={"civics_remembering": self.student_assessment_kb["Môn học"]["Giáo dục công dân"]["Biết"]},
+                name="civics_remembering"),
+            "civics_understanding": self.embedding_assessment.emb_knowledge(
+                knowledge_base={"civics_understanding": self.student_assessment_kb["Môn học"]["Giáo dục công dân"]["Hiểu"]},
+                name="civics_understanding"),
+            "civics_applying": self.embedding_assessment.emb_knowledge(
+                knowledge_base={"civics_applying": self.student_assessment_kb["Môn học"]["Giáo dục công dân"]["Vận dụng"]},
+                name="civics_applying"),
+            "physical_education_remembering": self.embedding_assessment.emb_knowledge(
+                knowledge_base={"physical_education_remembering": self.student_assessment_kb["Môn học"]["Giáo dục thể chất"]["Biết"]},
+                name="physical_education_remembering"),
+            "physical_education_understanding": self.embedding_assessment.emb_knowledge(
+                knowledge_base={"physical_education_understanding": self.student_assessment_kb["Môn học"]["Giáo dục thể chất"]["Hiểu"]},
+                name="physical_education_understanding"),
+            "physical_education_applying": self.embedding_assessment.emb_knowledge(
+                knowledge_base={"physical_education_applying": self.student_assessment_kb["Môn học"]["Giáo dục thể chất"]["Vận dụng"]},
+                name="physical_education_applying"),
+            "experiential_activities_remembering": self.embedding_assessment.emb_knowledge(
+                knowledge_base={"experiential_activities_remembering": self.student_assessment_kb["Môn học"]["Hoạt động trải nghiệm"]["Biết"]},
+                name="experiential_activities_remembering"),
+            "experiential_activities_understanding": self.embedding_assessment.emb_knowledge(
+                knowledge_base={"experiential_activities_understanding": self.student_assessment_kb["Môn học"]["Hoạt động trải nghiệm"]["Hiểu"]},
+                name="experiential_activities_understanding"),
+            "experiential_activities_applying": self.embedding_assessment.emb_knowledge(
+                knowledge_base={"experiential_activities_applying": self.student_assessment_kb["Môn học"]["Hoạt động trải nghiệm"]["Vận dụng"]},
+                name="experiential_activities_applying"),
+            "nature_and_society_remembering": self.embedding_assessment.emb_knowledge(
+                knowledge_base={"nature_and_society_remembering": self.student_assessment_kb["Môn học"]["Tự nhiên và Xã hội"]["Biết"]},
+                name="nature_and_society_remembering"),
+            "nature_and_society_understanding": self.embedding_assessment.emb_knowledge(
+                knowledge_base={"nature_and_society_understanding": self.student_assessment_kb["Môn học"]["Tự nhiên và Xã hội"]["Hiểu"]},
+                name="nature_and_society_understanding"),
+            "nature_and_society_applying": self.embedding_assessment.emb_knowledge(
+                knowledge_base={"nature_and_society_applying": self.student_assessment_kb["Môn học"]["Tự nhiên và Xã hội"]["Vận dụng"]},
+                name="nature_and_society_applying"),
         }
         # ML
         self.student_special_forest = StudentSpecialAssessmentRandomForest()
@@ -252,28 +332,29 @@ class SystemCore:
         for field, comment in payload.model_dump().items():
             if field == "code" or comment == None:
                 continue
-            student_outcome[field] = self.calc_emb_distance(comment, self.emb_kb[field.replace('_comment', '')])
+            student_outcome[field] = self.calc_emb_distance_subject(comment, field.replace('_comment', ''))
             student_outcome[field].update({
                 "subject": SUBJECT_MAPPING[field]
             })
-        await self.add_comments_student_mongo(student_outcome)
-        info = await self.student_comments_repo.get(payload.code)
-        if self.is_full_comments(info) is False:
-            return "Không thể đánh giá học sinh do chưa đủ nhận xét của tất cả môn học"
-        prase_info = info.data.to_dict()
-        prase_info.update({
-            "student_code": payload.code
-        })
-        result_from_ml = self.student_special_forest.predict(prase_info)
-        self.clear_student_assessment(payload.code, "Năng lực đặc thù")
-        for r in result_from_ml:
-            self.create_student_assessment(
-                student_code=payload.code,
-                name=r.get('field'),
-                type_assessment="Năng lực đặc thù",
-                level=r.get('level')
-            )
-        return "Đã đánh giá thành công có học sinh"
+        # await self.add_comments_student_mongo(student_outcome)
+        # info = await self.student_comments_repo.get(payload.code)
+        # if self.is_full_comments(info) is False:
+        #     return "Không thể đánh giá học sinh do chưa đủ nhận xét của tất cả môn học"
+        # prase_info = info.data.to_dict()
+        # prase_info.update({
+        #     "student_code": payload.code
+        # })
+        # result_from_ml = self.student_special_forest.predict(prase_info)
+        # self.clear_student_assessment(payload.code, "Năng lực đặc thù")
+        # for r in result_from_ml:
+        #     self.create_student_assessment(
+        #         student_code=payload.code,
+        #         name=r.get('field'),
+        #         type_assessment="Năng lực đặc thù",
+        #         level=r.get('level')
+        #     )
+        # return "Đã đánh giá thành công có học sinh"
+        return student_outcome
 
     ### ===================================================================================================
     ### Internal funcs
@@ -582,6 +663,12 @@ class SystemCore:
                 to_value=code,
                 relation_type="DEVELOPING"
             )
+    def calc_emb_distance_subject(self, comment: str, subject_name: str) -> dict:
+        levels = ["remembering", "understanding", "applying"]
+        result = {}
+        for lvl in levels:
+            result.update({lvl: self.calc_emb_distance(comment, self.emb_kb[f"{subject_name}_{lvl}"])})
+        return result
 
     def calc_emb_distance(self, comment: str, kb: dict) -> dict:
         clauses = self.utils.split_clauses(comment)

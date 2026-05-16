@@ -1,0 +1,267 @@
+{
+    "student_code": "20252026.03.Ba1.024",
+    "vietnamese_comment": {
+        "remembering": {
+            "evidence": "câu",
+            "confident": 0.7779148817062378,
+            "indicator": "nhận biết biện pháp tu từ",
+            "level": 1,
+            "full_comment": "Em đọc to nhưng ngắt nghỉ chưa hợp lí. Em hiểu nội dung bài đọc, nắm tốt kiến thức từ và câu. Em cố gắng viết đúng chính tả, rèn viết văn rõ ý và có cảm xúc hơn."
+        },
+        "understanding": {
+            "evidence": "câu",
+            "confident": 0.7688896656036377,
+            "indicator": "hiểu đề tài",
+            "level": 1,
+            "full_comment": "Em đọc to nhưng ngắt nghỉ chưa hợp lí. Em hiểu nội dung bài đọc, nắm tốt kiến thức từ và câu. Em cố gắng viết đúng chính tả, rèn viết văn rõ ý và có cảm xúc hơn."
+        },
+        "applying": {
+            "evidence": "rèn viết văn rõ ý",
+            "confident": 0.888924241065979,
+            "indicator": "viết văn bản",
+            "level": 1,
+            "full_comment": "Em đọc to nhưng ngắt nghỉ chưa hợp lí. Em hiểu nội dung bài đọc, nắm tốt kiến thức từ và câu. Em cố gắng viết đúng chính tả, rèn viết văn rõ ý và có cảm xúc hơn."
+        },
+        "subject": "Tiếng Việt"
+    },
+    "mathematics_comment": {
+        "remembering": {
+            "evidence": "em cần rèn đọc kĩ đề bài",
+            "confident": 0.7539021968841553,
+            "indicator": "đọc",
+            "level": 1,
+            "full_comment": "Em có kĩ năng tính toán, nắm được các dạng toán cơ bản. Nhưng em cần rèn đọc kĩ đề bài và tính toán cẩn thận khi làm bài."
+        },
+        "understanding": {
+            "evidence": "em có kĩ năng tính toán",
+            "confident": 0.5110215544700623,
+            "indicator": "thể hiện",
+            "level": 1,
+            "full_comment": "Em có kĩ năng tính toán, nắm được các dạng toán cơ bản. Nhưng em cần rèn đọc kĩ đề bài và tính toán cẩn thận khi làm bài."
+        },
+        "applying": {
+            "evidence": "em có kĩ năng tính toán",
+            "confident": 0.5163085460662842,
+            "indicator": "thực hiện",
+            "level": 1,
+            "full_comment": "Em có kĩ năng tính toán, nắm được các dạng toán cơ bản. Nhưng em cần rèn đọc kĩ đề bài và tính toán cẩn thận khi làm bài."
+        },
+        "subject": "Toán"
+    },
+    "informatics_comment": {
+        "remembering": {
+            "evidence": "các bước phãi được sắp xếp thứ tự",
+            "confident": 0.7592504024505615,
+            "indicator": "nêu được các bước",
+            "level": 1,
+            "full_comment": "Em biết được một số công việc hàng ngày được thực hiện theo từng bước, các bước phãi được sắp xếp thứ tự"
+        },
+        "understanding": {
+            "evidence": "các bước phãi được sắp xếp thứ tự",
+            "confident": 0.6207214593887329,
+            "indicator": "phát biểu được bài toán sắp xếp và tìm kiếm",
+            "level": 1,
+            "full_comment": "Em biết được một số công việc hàng ngày được thực hiện theo từng bước, các bước phãi được sắp xếp thứ tự"
+        },
+        "applying": {
+            "evidence": "các bước phãi được sắp xếp thứ tự",
+            "confident": 0.5828896164894104,
+            "indicator": "xác định được phần cơ sở và phần đệ quy trong mô tả đệ quy",
+            "level": 1,
+            "full_comment": "Em biết được một số công việc hàng ngày được thực hiện theo từng bước, các bước phãi được sắp xếp thứ tự"
+        },
+        "subject": "Tin học"
+    },
+    "english_comment": {
+        "remembering": {
+            "evidence": "chủ động học từ mới thường xuyên",
+            "confident": 0.7839600443840027,
+            "indicator": "nói được các từ và cụm từ quen thuộc",
+            "level": 3,
+            "full_comment": "Em học hỏi tốt nhưng em nên chủ động học từ mới thường xuyên."
+        },
+        "understanding": {
+            "evidence": "chủ động học từ mới thường xuyên",
+            "confident": 0.7611441612243652,
+            "indicator": "vận dụng được từ vựng theo chủ đề",
+            "level": 3,
+            "full_comment": "Em học hỏi tốt nhưng em nên chủ động học từ mới thường xuyên."
+        },
+        "applying": {
+            "evidence": "chủ động học từ mới thường xuyên",
+            "confident": 0.7368731498718262,
+            "indicator": "sử dụng được giới từ",
+            "level": 3,
+            "full_comment": "Em học hỏi tốt nhưng em nên chủ động học từ mới thường xuyên."
+        },
+        "subject": "Tiếng Anh"
+    },
+    "technology_comment": {
+        "remembering": {
+            "evidence": "em nắm được kiến thức",
+            "confident": 0.7290852069854736,
+            "indicator": "phát hiện",
+            "level": 1,
+            "full_comment": "Em nắm được kiến thức, kỹ năng cơ bản của môn học. Em cần chăm học và rèn tính cẩn thận khi làm bài."
+        },
+        "understanding": {
+            "evidence": "em nắm được kiến thức",
+            "confident": 0.676855742931366,
+            "indicator": "làm rõ",
+            "level": 1,
+            "full_comment": "Em nắm được kiến thức, kỹ năng cơ bản của môn học. Em cần chăm học và rèn tính cẩn thận khi làm bài."
+        },
+        "applying": {
+            "evidence": "em cần chăm học",
+            "confident": 0.6425734758377075,
+            "indicator": "thực hiện",
+            "level": 1,
+            "full_comment": "Em nắm được kiến thức, kỹ năng cơ bản của môn học. Em cần chăm học và rèn tính cẩn thận khi làm bài."
+        },
+        "subject": "Công nghệ"
+    },
+    "music_comment": {
+        "remembering": {
+            "evidence": "tốp ca",
+            "confident": 0.8366135358810425,
+            "indicator": "thuộc lời ca",
+            "level": 1,
+            "full_comment": "Em biết hát kết hợp vận động theo nhịp điệu bằng nhiều hình thức khác nhau như : Đơn ca, song ca, tốp ca."
+        },
+        "understanding": {
+            "evidence": "em biết hát kết hợp vận động theo nhịp điệu bằng nhiều hình thức khác nhau như : đơn ca",
+            "confident": 0.7015846371650696,
+            "indicator": "mô tả được động tác chơi nhạc cụ",
+            "level": 1,
+            "full_comment": "Em biết hát kết hợp vận động theo nhịp điệu bằng nhiều hình thức khác nhau như : Đơn ca, song ca, tốp ca."
+        },
+        "applying": {
+            "evidence": "em biết hát kết hợp vận động theo nhịp điệu bằng nhiều hình thức khác nhau như : đơn ca",
+            "confident": 0.7505309581756592,
+            "indicator": "biểu diễn được các tiết mục âm nhạc",
+            "level": 1,
+            "full_comment": "Em biết hát kết hợp vận động theo nhịp điệu bằng nhiều hình thức khác nhau như : Đơn ca, song ca, tốp ca."
+        },
+        "subject": "Âm nhạc"
+    },
+    "arts_comment": {
+        "remembering": {
+            "evidence": "em phối hợp màu sắc hài hòa",
+            "confident": 0.7077643871307373,
+            "indicator": "đọc được tên màu sắc",
+            "level": 1,
+            "full_comment": "Em phối hợp màu sắc hài hòa và hoàn thiện sản phẩm mĩ thuật đúng yêu cầu, tô màu đẹp."
+        },
+        "understanding": {
+            "evidence": "hoàn thiện sản phẩm mĩ thuật đúng yêu cầu",
+            "confident": 0.7434903383255005,
+            "indicator": "giới thiệu được sản phẩm",
+            "level": 1,
+            "full_comment": "Em phối hợp màu sắc hài hòa và hoàn thiện sản phẩm mĩ thuật đúng yêu cầu, tô màu đẹp."
+        },
+        "applying": {
+            "evidence": "hoàn thiện sản phẩm mĩ thuật đúng yêu cầu",
+            "confident": 0.7332050204277039,
+            "indicator": "tạo được sản phẩm",
+            "level": 1,
+            "full_comment": "Em phối hợp màu sắc hài hòa và hoàn thiện sản phẩm mĩ thuật đúng yêu cầu, tô màu đẹp."
+        },
+        "subject": "Mĩ thuật"
+    },
+    "civics_comment": {
+        "remembering": {
+            "evidence": "em biết thể hiện thái độ đồng tình với những hành vi đạo đức",
+            "confident": 0.8417714238166809,
+            "indicator": "phân biệt được thái độ phù hợp với chuẩn mực đạo đức",
+            "level": 1,
+            "full_comment": "Em biết thể hiện thái độ đồng tình với những hành vi đạo đức. Tuy nhiên, em cần tập trung và học tập nghiêm túc hơn."
+        },
+        "understanding": {
+            "evidence": "em biết thể hiện thái độ đồng tình với những hành vi đạo đức",
+            "confident": 0.859696626663208,
+            "indicator": "đánh giá được thái độ của bản thân theo chuẩn mực đạo đức",
+            "level": 1,
+            "full_comment": "Em biết thể hiện thái độ đồng tình với những hành vi đạo đức. Tuy nhiên, em cần tập trung và học tập nghiêm túc hơn."
+        },
+        "applying": {
+            "evidence": "em biết thể hiện thái độ đồng tình với những hành vi đạo đức",
+            "confident": 0.8611018657684326,
+            "indicator": "điều chỉnh được thái độ của bản thân phù hợp với chuẩn mực đạo đức",
+            "level": 1,
+            "full_comment": "Em biết thể hiện thái độ đồng tình với những hành vi đạo đức. Tuy nhiên, em cần tập trung và học tập nghiêm túc hơn."
+        },
+        "subject": "Đạo đức"
+    },
+    "physical_education_comment": {
+        "remembering": {
+            "evidence": "tham gia tích cực các trò chơi được học",
+            "confident": 0.6136327981948853,
+            "indicator": "biết được các tư thế động tác",
+            "level": 3,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học, tham gia tích cực các trò chơi được học."
+        },
+        "understanding": {
+            "evidence": "tham gia tích cực các trò chơi được học",
+            "confident": 0.506976306438446,
+            "indicator": "phân biệt được các sơ đồ chiến thuật thi đấu một môn thể thao",
+            "level": 3,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học, tham gia tích cực các trò chơi được học."
+        },
+        "applying": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.6778688430786133,
+            "indicator": "biểu diễn được bài tập liên hoàn",
+            "level": 3,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học, tham gia tích cực các trò chơi được học."
+        },
+        "subject": "Giáo dục thể chất"
+    },
+    "experiential_activities_comment": {
+        "remembering": {
+            "evidence": "thực hiện được một số việc làm phù hợp với lứa tuổi",
+            "confident": 0.5723181962966919,
+            "indicator": "nhận biết được những việc nên làm",
+            "level": 2,
+            "full_comment": "Em có tiến bộ hơn so với đầu năm. Thực hiện được một số việc làm phù hợp với lứa tuổi. Em cần rèn luyện thêm sự tập trung, chăm chỉ trong học tập."
+        },
+        "understanding": {
+            "evidence": "em có tiến bộ hơn so với đầu năm",
+            "confident": 0.6312519907951355,
+            "indicator": "nhận xét được sự tiến bộ của bản thân",
+            "level": 2,
+            "full_comment": "Em có tiến bộ hơn so với đầu năm. Thực hiện được một số việc làm phù hợp với lứa tuổi. Em cần rèn luyện thêm sự tập trung, chăm chỉ trong học tập."
+        },
+        "applying": {
+            "evidence": "em cần rèn luyện thêm sự tập trung",
+            "confident": 0.6674647927284241,
+            "indicator": "rèn luyện được một số đức tính",
+            "level": 2,
+            "full_comment": "Em có tiến bộ hơn so với đầu năm. Thực hiện được một số việc làm phù hợp với lứa tuổi. Em cần rèn luyện thêm sự tập trung, chăm chỉ trong học tập."
+        },
+        "subject": "Hoạt động trải nghiệm"
+    },
+    "nature_and_society_comment": {
+        "remembering": {
+            "evidence": "em cần chăm",
+            "confident": 0.7746962308883667,
+            "indicator": "nói được tên lớp",
+            "level": 3,
+            "full_comment": "Em nắm được nội dung cơ bản một số hoạt động theo yêu cầu cần đạt của môn học. Em cần chăm và học tập tích cực, hiệu quả hơn."
+        },
+        "understanding": {
+            "evidence": "em nắm được nội dung cơ bản một số hoạt động theo yêu cầu cần đạt của môn học",
+            "confident": 0.6354566812515259,
+            "indicator": "trình bày được một số việc cần làm để giữ gìn cơ quan tuần hoàn",
+            "level": 3,
+            "full_comment": "Em nắm được nội dung cơ bản một số hoạt động theo yêu cầu cần đạt của môn học. Em cần chăm và học tập tích cực, hiệu quả hơn."
+        },
+        "applying": {
+            "evidence": "em nắm được nội dung cơ bản một số hoạt động theo yêu cầu cần đạt của môn học",
+            "confident": 0.6738461256027222,
+            "indicator": "đặt được câu hỏi để tìm hiểu về thành tích dạy và học",
+            "level": 3,
+            "full_comment": "Em nắm được nội dung cơ bản một số hoạt động theo yêu cầu cần đạt của môn học. Em cần chăm và học tập tích cực, hiệu quả hơn."
+        },
+        "subject": "Tự nhiên và Xã hội"
+    }
+}

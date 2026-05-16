@@ -1,0 +1,267 @@
+{
+    "student_code": "20252026.03.Ba2.022",
+    "vietnamese_comment": {
+        "remembering": {
+            "evidence": "dấu câu phù hợp",
+            "confident": 0.7810475826263428,
+            "indicator": "nhận biết biện pháp tu từ",
+            "level": 2,
+            "full_comment": "Em hiểu nội dung bài đọc và vận dụng tốt. Em làm văn có tiến bộ, biết chọn lọc từ ngữ và dấu câu phù hợp."
+        },
+        "understanding": {
+            "evidence": "em hiểu nội dung bài đọc",
+            "confident": 0.7513977885246277,
+            "indicator": "nhận xét nội dung",
+            "level": 2,
+            "full_comment": "Em hiểu nội dung bài đọc và vận dụng tốt. Em làm văn có tiến bộ, biết chọn lọc từ ngữ và dấu câu phù hợp."
+        },
+        "applying": {
+            "evidence": "dấu câu phù hợp",
+            "confident": 0.7330399751663208,
+            "indicator": "viết đoạn văn",
+            "level": 2,
+            "full_comment": "Em hiểu nội dung bài đọc và vận dụng tốt. Em làm văn có tiến bộ, biết chọn lọc từ ngữ và dấu câu phù hợp."
+        },
+        "subject": "Tiếng Việt"
+    },
+    "mathematics_comment": {
+        "remembering": {
+            "evidence": "em nắm kiến thức",
+            "confident": 0.7614577412605286,
+            "indicator": "làm quen",
+            "level": 1,
+            "full_comment": "Em nắm kiến thức và vận dụng tốt vào bài làm, tính toán đã cẩn thận."
+        },
+        "understanding": {
+            "evidence": "em nắm kiến thức",
+            "confident": 0.6536067724227905,
+            "indicator": "thể hiện",
+            "level": 1,
+            "full_comment": "Em nắm kiến thức và vận dụng tốt vào bài làm, tính toán đã cẩn thận."
+        },
+        "applying": {
+            "evidence": "vận dụng tốt vào bài làm",
+            "confident": 0.5993837118148804,
+            "indicator": "vận dụng",
+            "level": 1,
+            "full_comment": "Em nắm kiến thức và vận dụng tốt vào bài làm, tính toán đã cẩn thận."
+        },
+        "subject": "Toán"
+    },
+    "informatics_comment": {
+        "remembering": {
+            "evidence": "em biết dùng các trang mẫu có sẵn của phần mềm powerpoint để tạo các trang trình chiếu đa dạng hơn",
+            "confident": 0.5975872278213501,
+            "indicator": "thực hiện được một số chức năng trong phần mềm",
+            "level": 1,
+            "full_comment": "Em biết dùng các trang mẫu có sẵn của phần mềm PowerPoint để tạo các trang trình chiếu đa dạng hơn."
+        },
+        "understanding": {
+            "evidence": "em biết dùng các trang mẫu có sẵn của phần mềm powerpoint để tạo các trang trình chiếu đa dạng hơn",
+            "confident": 0.5738537907600403,
+            "indicator": "mô phỏng được thuật toán duyệt Duyệt đồ thị",
+            "level": 1,
+            "full_comment": "Em biết dùng các trang mẫu có sẵn của phần mềm PowerPoint để tạo các trang trình chiếu đa dạng hơn."
+        },
+        "applying": {
+            "evidence": "em biết dùng các trang mẫu có sẵn của phần mềm powerpoint để tạo các trang trình chiếu đa dạng hơn",
+            "confident": 0.5247634649276733,
+            "indicator": "sử dụng được phần mềm",
+            "level": 1,
+            "full_comment": "Em biết dùng các trang mẫu có sẵn của phần mềm PowerPoint để tạo các trang trình chiếu đa dạng hơn."
+        },
+        "subject": "Tin học"
+    },
+    "english_comment": {
+        "remembering": {
+            "evidence": "em sử dụng từ vựng linh hoạt",
+            "confident": 0.8119070529937744,
+            "indicator": "nói được các từ và cụm từ quen thuộc",
+            "level": 1,
+            "full_comment": "Em sử dụng từ vựng linh hoạt, câu nói trở nên tự nhiên hơn."
+        },
+        "understanding": {
+            "evidence": "em sử dụng từ vựng linh hoạt",
+            "confident": 0.8175723552703857,
+            "indicator": "vận dụng được từ vựng theo chủ đề",
+            "level": 1,
+            "full_comment": "Em sử dụng từ vựng linh hoạt, câu nói trở nên tự nhiên hơn."
+        },
+        "applying": {
+            "evidence": "em sử dụng từ vựng linh hoạt",
+            "confident": 0.8623364567756653,
+            "indicator": "sử dụng được giới từ",
+            "level": 1,
+            "full_comment": "Em sử dụng từ vựng linh hoạt, câu nói trở nên tự nhiên hơn."
+        },
+        "subject": "Tiếng Anh"
+    },
+    "technology_comment": {
+        "remembering": {
+            "evidence": "em nắm được nội dung",
+            "confident": 0.7737202048301697,
+            "indicator": "nhận biết",
+            "level": 3,
+            "full_comment": "Em nắm được nội dung, kiến thức môn học, tích cực, chủ động trong hoạt động nhóm."
+        },
+        "understanding": {
+            "evidence": "em nắm được nội dung",
+            "confident": 0.7606232166290283,
+            "indicator": "làm rõ",
+            "level": 3,
+            "full_comment": "Em nắm được nội dung, kiến thức môn học, tích cực, chủ động trong hoạt động nhóm."
+        },
+        "applying": {
+            "evidence": "tích cực",
+            "confident": 0.7528685331344604,
+            "indicator": "hoàn thiện",
+            "level": 3,
+            "full_comment": "Em nắm được nội dung, kiến thức môn học, tích cực, chủ động trong hoạt động nhóm."
+        },
+        "subject": "Công nghệ"
+    },
+    "music_comment": {
+        "remembering": {
+            "evidence": "theo phách",
+            "confident": 0.8487673997879028,
+            "indicator": "thuộc lời ca",
+            "level": 1,
+            "full_comment": "Em biết gõ đệm theo tiết tấu lời ca, theo phách."
+        },
+        "understanding": {
+            "evidence": "theo phách",
+            "confident": 0.683485746383667,
+            "indicator": "nêu được ví dụ",
+            "level": 1,
+            "full_comment": "Em biết gõ đệm theo tiết tấu lời ca, theo phách."
+        },
+        "applying": {
+            "evidence": "theo phách",
+            "confident": 0.43951427936553955,
+            "indicator": "biểu diễn được các tiết mục âm nhạc",
+            "level": 1,
+            "full_comment": "Em biết gõ đệm theo tiết tấu lời ca, theo phách."
+        },
+        "subject": "Âm nhạc"
+    },
+    "arts_comment": {
+        "remembering": {
+            "evidence": "em nắm được cách thực hành",
+            "confident": 0.6550993919372559,
+            "indicator": "nhận biết được nguyên lí tạo hình",
+            "level": 2,
+            "full_comment": "Em nắm được cách thực hành và biết vận dụng tốt để tạo sản phẩm."
+        },
+        "understanding": {
+            "evidence": "biết vận dụng tốt để tạo sản phẩm",
+            "confident": 0.7303154468536377,
+            "indicator": "giới thiệu được sản phẩm",
+            "level": 2,
+            "full_comment": "Em nắm được cách thực hành và biết vận dụng tốt để tạo sản phẩm."
+        },
+        "applying": {
+            "evidence": "biết vận dụng tốt để tạo sản phẩm",
+            "confident": 0.872840166091919,
+            "indicator": "tạo được sản phẩm",
+            "level": 2,
+            "full_comment": "Em nắm được cách thực hành và biết vận dụng tốt để tạo sản phẩm."
+        },
+        "subject": "Mĩ thuật"
+    },
+    "civics_comment": {
+        "remembering": {
+            "evidence": "em biết vận dụng nội dung bài học vào thực tiễn tốt",
+            "confident": 0.5334458351135254,
+            "indicator": "nêu được khái niệm",
+            "level": 2,
+            "full_comment": "Em biết vận dụng nội dung bài học vào thực tiễn tốt."
+        },
+        "understanding": {
+            "evidence": "em biết vận dụng nội dung bài học vào thực tiễn tốt",
+            "confident": 0.4618891477584839,
+            "indicator": "phân tích được bài học thành công trong quá trình kinh doanh của một doanh nghiệp nhỏ cụ thể",
+            "level": 2,
+            "full_comment": "Em biết vận dụng nội dung bài học vào thực tiễn tốt."
+        },
+        "applying": {
+            "evidence": "em biết vận dụng nội dung bài học vào thực tiễn tốt",
+            "confident": 0.5388535857200623,
+            "indicator": "thực hiện được hành động tích cực để phát triển bản thân",
+            "level": 2,
+            "full_comment": "Em biết vận dụng nội dung bài học vào thực tiễn tốt."
+        },
+        "subject": "Đạo đức"
+    },
+    "physical_education_comment": {
+        "remembering": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.5195467472076416,
+            "indicator": "biết được các tư thế động tác",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học."
+        },
+        "understanding": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.36934083700180054,
+            "indicator": "so sánh được nội dung tập luyện phù hợp để nâng cao sức khoẻ",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học."
+        },
+        "applying": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.6778688430786133,
+            "indicator": "biểu diễn được bài tập liên hoàn",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học."
+        },
+        "subject": "Giáo dục thể chất"
+    },
+    "experiential_activities_comment": {
+        "remembering": {
+            "evidence": "em chủ động tìm kiếm sự hỗ trợ từ thầy cô",
+            "confident": 0.6148341298103333,
+            "indicator": "biết cách làm tìm kiếm sự hỗ trợ",
+            "level": 3,
+            "full_comment": "Em chủ động tìm kiếm sự hỗ trợ từ thầy cô, bạn bè khi tự mình không giải quyết được vấn đề."
+        },
+        "understanding": {
+            "evidence": "bạn bè khi tự mình không giải quyết được vấn đề",
+            "confident": 0.3943665027618408,
+            "indicator": "phân tích được điểm yếu",
+            "level": 3,
+            "full_comment": "Em chủ động tìm kiếm sự hỗ trợ từ thầy cô, bạn bè khi tự mình không giải quyết được vấn đề."
+        },
+        "applying": {
+            "evidence": "bạn bè khi tự mình không giải quyết được vấn đề",
+            "confident": 0.6120601892471313,
+            "indicator": "xây dựng được tình bạn",
+            "level": 3,
+            "full_comment": "Em chủ động tìm kiếm sự hỗ trợ từ thầy cô, bạn bè khi tự mình không giải quyết được vấn đề."
+        },
+        "subject": "Hoạt động trải nghiệm"
+    },
+    "nature_and_society_comment": {
+        "remembering": {
+            "evidence": "làm được một số hoạt động theo yêu cầu cần đạt của môn học",
+            "confident": 0.7127996683120728,
+            "indicator": "kể được tên các hoạt động chính trong lớp học",
+            "level": 2,
+            "full_comment": "Em có tiến bộ trong học tập, làm được một số hoạt động theo yêu cầu cần đạt của môn học."
+        },
+        "understanding": {
+            "evidence": "làm được một số hoạt động theo yêu cầu cần đạt của môn học",
+            "confident": 0.6740909814834595,
+            "indicator": "trình bày được một số việc cần làm để giữ gìn cơ quan tuần hoàn",
+            "level": 2,
+            "full_comment": "Em có tiến bộ trong học tập, làm được một số hoạt động theo yêu cầu cần đạt của môn học."
+        },
+        "applying": {
+            "evidence": "làm được một số hoạt động theo yêu cầu cần đạt của môn học",
+            "confident": 0.662157416343689,
+            "indicator": "đặt được câu hỏi để tìm hiểu về các hoạt động khác",
+            "level": 2,
+            "full_comment": "Em có tiến bộ trong học tập, làm được một số hoạt động theo yêu cầu cần đạt của môn học."
+        },
+        "subject": "Tự nhiên và Xã hội"
+    }
+}

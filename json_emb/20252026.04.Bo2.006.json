@@ -1,0 +1,291 @@
+{
+    "student_code": "20252026.04.Bo2.006",
+    "vietnamese_comment": {
+        "remembering": {
+            "evidence": "dùng từ",
+            "confident": 0.763565719127655,
+            "indicator": "nhận biết biện pháp tu từ",
+            "level": 1,
+            "full_comment": "Em chăm phát biểu nhưng dùng từ, diễn đạt ý còn hạn chế, cần rèn thêm nhé!"
+        },
+        "understanding": {
+            "evidence": "dùng từ",
+            "confident": 0.7300786972045898,
+            "indicator": "hiểu đề tài",
+            "level": 1,
+            "full_comment": "Em chăm phát biểu nhưng dùng từ, diễn đạt ý còn hạn chế, cần rèn thêm nhé!"
+        },
+        "applying": {
+            "evidence": "dùng từ",
+            "confident": 0.6956779956817627,
+            "indicator": "viết đoạn văn",
+            "level": 1,
+            "full_comment": "Em chăm phát biểu nhưng dùng từ, diễn đạt ý còn hạn chế, cần rèn thêm nhé!"
+        },
+        "subject": "Tiếng Việt"
+    },
+    "mathematics_comment": {
+        "remembering": {
+            "evidence": "em hoàn thành nội dung kiến thức môn học",
+            "confident": 0.5745922327041626,
+            "indicator": "làm quen",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung kiến thức môn học."
+        },
+        "understanding": {
+            "evidence": "em hoàn thành nội dung kiến thức môn học",
+            "confident": 0.5536834001541138,
+            "indicator": "thể hiện",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung kiến thức môn học."
+        },
+        "applying": {
+            "evidence": "em hoàn thành nội dung kiến thức môn học",
+            "confident": 0.5513716340065002,
+            "indicator": "thực hiện",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung kiến thức môn học."
+        },
+        "subject": "Toán"
+    },
+    "informatics_comment": {
+        "remembering": {
+            "evidence": "hình thức",
+            "confident": 0.8367520570755005,
+            "indicator": "nêu được công dụng",
+            "level": 2,
+            "full_comment": "Em hoàn thành tốt các nội dung học tập theo hướng dẫn của giáo viên; có khả năng thực hiện đúng thao tác và sản phẩm đạt yêu cầu về nội dung và hình thức."
+        },
+        "understanding": {
+            "evidence": "hình thức",
+            "confident": 0.83204185962677,
+            "indicator": "trình bày được tính đệ quy",
+            "level": 2,
+            "full_comment": "Em hoàn thành tốt các nội dung học tập theo hướng dẫn của giáo viên; có khả năng thực hiện đúng thao tác và sản phẩm đạt yêu cầu về nội dung và hình thức."
+        },
+        "applying": {
+            "evidence": "hình thức",
+            "confident": 0.8202662467956543,
+            "indicator": "tạo được tệp",
+            "level": 2,
+            "full_comment": "Em hoàn thành tốt các nội dung học tập theo hướng dẫn của giáo viên; có khả năng thực hiện đúng thao tác và sản phẩm đạt yêu cầu về nội dung và hình thức."
+        },
+        "subject": "Tin học"
+    },
+    "science_comment": {
+        "remembering": {
+            "evidence": "em thường xuyên tham gia phát biểu ý kiến xây dựng bài",
+            "confident": 0.5371267199516296,
+            "indicator": "nêu được",
+            "level": 1,
+            "full_comment": "Em thường xuyên tham gia phát biểu ý kiến xây dựng bài."
+        },
+        "understanding": {
+            "evidence": "em thường xuyên tham gia phát biểu ý kiến xây dựng bài",
+            "confident": 0.5819838643074036,
+            "indicator": "nêu được ví dụ",
+            "level": 1,
+            "full_comment": "Em thường xuyên tham gia phát biểu ý kiến xây dựng bài."
+        },
+        "applying": {
+            "evidence": "em thường xuyên tham gia phát biểu ý kiến xây dựng bài",
+            "confident": 0.5779765844345093,
+            "indicator": "xây dựng được",
+            "level": 1,
+            "full_comment": "Em thường xuyên tham gia phát biểu ý kiến xây dựng bài."
+        },
+        "subject": "Khoa học"
+    },
+    "history_and_geography_comment": {
+        "remembering": {
+            "evidence": "em nắm được kiến thức cơ bản học kì",
+            "confident": 0.47896820306777954,
+            "indicator": "liệt kê được sự vật",
+            "level": 2,
+            "full_comment": "Em nắm được kiến thức cơ bản học kì"
+        },
+        "understanding": {
+            "evidence": "em nắm được kiến thức cơ bản học kì",
+            "confident": 0.4394078254699707,
+            "indicator": "trình bày được sự thích ứng của con người với thiên nhiên",
+            "level": 2,
+            "full_comment": "Em nắm được kiến thức cơ bản học kì"
+        },
+        "applying": {
+            "evidence": "em nắm được kiến thức cơ bản học kì",
+            "confident": 0.7991573810577393,
+            "indicator": "vận dụng được điều đã học vào trường hợp cụ thể",
+            "level": 2,
+            "full_comment": "Em nắm được kiến thức cơ bản học kì"
+        },
+        "subject": "Lịch sử và Địa lí"
+    },
+    "english_comment": {
+        "remembering": {
+            "evidence": "em học đều các kĩ năng",
+            "confident": 0.6008318662643433,
+            "indicator": "nêu được nghề nghiệp",
+            "level": 1,
+            "full_comment": "Em học đều các kĩ năng nhưng cần chú ý tập trung hơn trong giờ học."
+        },
+        "understanding": {
+            "evidence": "em học đều các kĩ năng",
+            "confident": 0.7045321464538574,
+            "indicator": "trình bày được hoạt động học tập",
+            "level": 1,
+            "full_comment": "Em học đều các kĩ năng nhưng cần chú ý tập trung hơn trong giờ học."
+        },
+        "applying": {
+            "evidence": "em học đều các kĩ năng",
+            "confident": 0.5849191546440125,
+            "indicator": "nói được về nghề nghiệp",
+            "level": 1,
+            "full_comment": "Em học đều các kĩ năng nhưng cần chú ý tập trung hơn trong giờ học."
+        },
+        "subject": "Tiếng Anh"
+    },
+    "technology_comment": {
+        "remembering": {
+            "evidence": "em thực hiện tốt các yêu cầu cần đạt",
+            "confident": 0.42135554552078247,
+            "indicator": "nêu",
+            "level": 3,
+            "full_comment": "Em thực hiện tốt các yêu cầu cần đạt, có ý thức giữ gìn sản phẩm công nghệ."
+        },
+        "understanding": {
+            "evidence": "em thực hiện tốt các yêu cầu cần đạt",
+            "confident": 0.5158522725105286,
+            "indicator": "làm rõ",
+            "level": 3,
+            "full_comment": "Em thực hiện tốt các yêu cầu cần đạt, có ý thức giữ gìn sản phẩm công nghệ."
+        },
+        "applying": {
+            "evidence": "em thực hiện tốt các yêu cầu cần đạt",
+            "confident": 0.57932448387146,
+            "indicator": "hoàn thiện",
+            "level": 3,
+            "full_comment": "Em thực hiện tốt các yêu cầu cần đạt, có ý thức giữ gìn sản phẩm công nghệ."
+        },
+        "subject": "Công nghệ"
+    },
+    "music_comment": {
+        "remembering": {
+            "evidence": "em thuộc lời ca",
+            "confident": 0.8855307698249817,
+            "indicator": "thuộc lời ca",
+            "level": 1,
+            "full_comment": "Em thuộc lời ca, hát đúng giai điệu, biết thể hiện sắc thái bài hát."
+        },
+        "understanding": {
+            "evidence": "biết thể hiện sắc thái bài hát",
+            "confident": 0.6454697251319885,
+            "indicator": "tóm tắt được ý nghĩa của một số thuật ngữ âm nhạc",
+            "level": 1,
+            "full_comment": "Em thuộc lời ca, hát đúng giai điệu, biết thể hiện sắc thái bài hát."
+        },
+        "applying": {
+            "evidence": "hát đúng giai điệu",
+            "confident": 0.6942073106765747,
+            "indicator": "biểu diễn được các tiết mục âm nhạc",
+            "level": 1,
+            "full_comment": "Em thuộc lời ca, hát đúng giai điệu, biết thể hiện sắc thái bài hát."
+        },
+        "subject": "Âm nhạc"
+    },
+    "arts_comment": {
+        "remembering": {
+            "evidence": "hoàn thành bài vẽ",
+            "confident": 0.7005642056465149,
+            "indicator": "nêu được ý tưởng",
+            "level": 1,
+            "full_comment": "Em biết thực hành theo yêu cầu nội dung bài học, hoàn thành bài vẽ nhưng chú ý tô màu đều hơn."
+        },
+        "understanding": {
+            "evidence": "hoàn thành bài vẽ",
+            "confident": 0.7608909606933594,
+            "indicator": "phân biệt được tranh vẽ",
+            "level": 1,
+            "full_comment": "Em biết thực hành theo yêu cầu nội dung bài học, hoàn thành bài vẽ nhưng chú ý tô màu đều hơn."
+        },
+        "applying": {
+            "evidence": "hoàn thành bài vẽ",
+            "confident": 0.837187647819519,
+            "indicator": "thực hiện được phác thảo",
+            "level": 1,
+            "full_comment": "Em biết thực hành theo yêu cầu nội dung bài học, hoàn thành bài vẽ nhưng chú ý tô màu đều hơn."
+        },
+        "subject": "Mĩ thuật"
+    },
+    "civics_comment": {
+        "remembering": {
+            "evidence": "tham gia tốt hoạt động",
+            "confident": 0.6052432060241699,
+            "indicator": "nêu được thái độ",
+            "level": 2,
+            "full_comment": "Em biết cảm thông với bạn, tham gia tốt hoạt động."
+        },
+        "understanding": {
+            "evidence": "tham gia tốt hoạt động",
+            "confident": 0.3847846984863281,
+            "indicator": "trình bày được kế hoạch kinh doanh của bản thân",
+            "level": 2,
+            "full_comment": "Em biết cảm thông với bạn, tham gia tốt hoạt động."
+        },
+        "applying": {
+            "evidence": "tham gia tốt hoạt động",
+            "confident": 0.6395305395126343,
+            "indicator": "thực hiện được hành động tích cực để phát triển bản thân",
+            "level": 2,
+            "full_comment": "Em biết cảm thông với bạn, tham gia tốt hoạt động."
+        },
+        "subject": "Đạo đức"
+    },
+    "physical_education_comment": {
+        "remembering": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.5195467472076416,
+            "indicator": "biết được các tư thế động tác",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học."
+        },
+        "understanding": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.36934083700180054,
+            "indicator": "so sánh được nội dung tập luyện phù hợp để nâng cao sức khoẻ",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học."
+        },
+        "applying": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.6778688430786133,
+            "indicator": "biểu diễn được bài tập liên hoàn",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học."
+        },
+        "subject": "Giáo dục thể chất"
+    },
+    "experiential_activities_comment": {
+        "remembering": {
+            "evidence": "em tạo được quan hệ gần gũi",
+            "confident": 0.502202570438385,
+            "indicator": "nhận diện được sở thích của bản thân",
+            "level": 1,
+            "full_comment": "Em tạo được quan hệ gần gũi, thân thiện với bạn bè."
+        },
+        "understanding": {
+            "evidence": "em tạo được quan hệ gần gũi",
+            "confident": 0.5029692053794861,
+            "indicator": "mô tả được hình ảnh bản thân",
+            "level": 1,
+            "full_comment": "Em tạo được quan hệ gần gũi, thân thiện với bạn bè."
+        },
+        "applying": {
+            "evidence": "thân thiện với bạn bè",
+            "confident": 0.8547229766845703,
+            "indicator": "xây dựng được tình bạn",
+            "level": 1,
+            "full_comment": "Em tạo được quan hệ gần gũi, thân thiện với bạn bè."
+        },
+        "subject": "Hoạt động trải nghiệm"
+    }
+}

@@ -1,0 +1,291 @@
+{
+    "student_code": "20252026.04.Bo3.003",
+    "vietnamese_comment": {
+        "remembering": {
+            "evidence": "em đọc lưu loát",
+            "confident": 0.8072034120559692,
+            "indicator": "kể lại câu chuyện đã đọc",
+            "level": 1,
+            "full_comment": "Em đọc lưu loát, diễn cảm, hiểu nội dung bài đọc. Em viết đoạn văn mạch lạc, giàu cảm xúc."
+        },
+        "understanding": {
+            "evidence": "giàu cảm xúc",
+            "confident": 0.8089472055435181,
+            "indicator": "phân tích cảm xúc của người viết",
+            "level": 1,
+            "full_comment": "Em đọc lưu loát, diễn cảm, hiểu nội dung bài đọc. Em viết đoạn văn mạch lạc, giàu cảm xúc."
+        },
+        "applying": {
+            "evidence": "em viết đoạn văn mạch lạc",
+            "confident": 0.8255187273025513,
+            "indicator": "viết văn bản",
+            "level": 1,
+            "full_comment": "Em đọc lưu loát, diễn cảm, hiểu nội dung bài đọc. Em viết đoạn văn mạch lạc, giàu cảm xúc."
+        },
+        "subject": "Tiếng Việt"
+    },
+    "mathematics_comment": {
+        "remembering": {
+            "evidence": "em",
+            "confident": 0.8208394050598145,
+            "indicator": "viết",
+            "level": 2,
+            "full_comment": "Em hiểu bài và nắm được kiến thức cơ bản. Tuy nhiện, em nên đọc kĩ đề bài khi giải bài toán có lời văn nhé!"
+        },
+        "understanding": {
+            "evidence": "em",
+            "confident": 0.8573997020721436,
+            "indicator": "thể hiện",
+            "level": 2,
+            "full_comment": "Em hiểu bài và nắm được kiến thức cơ bản. Tuy nhiện, em nên đọc kĩ đề bài khi giải bài toán có lời văn nhé!"
+        },
+        "applying": {
+            "evidence": "em",
+            "confident": 0.9097555875778198,
+            "indicator": "lí giải",
+            "level": 2,
+            "full_comment": "Em hiểu bài và nắm được kiến thức cơ bản. Tuy nhiện, em nên đọc kĩ đề bài khi giải bài toán có lời văn nhé!"
+        },
+        "subject": "Toán"
+    },
+    "informatics_comment": {
+        "remembering": {
+            "evidence": "hình thức",
+            "confident": 0.8367520570755005,
+            "indicator": "nêu được công dụng",
+            "level": 2,
+            "full_comment": "Em hoàn thành tốt các nội dung học tập theo hướng dẫn của giáo viên; có khả năng thực hiện đúng thao tác và sản phẩm đạt yêu cầu về nội dung và hình thức."
+        },
+        "understanding": {
+            "evidence": "hình thức",
+            "confident": 0.83204185962677,
+            "indicator": "trình bày được tính đệ quy",
+            "level": 2,
+            "full_comment": "Em hoàn thành tốt các nội dung học tập theo hướng dẫn của giáo viên; có khả năng thực hiện đúng thao tác và sản phẩm đạt yêu cầu về nội dung và hình thức."
+        },
+        "applying": {
+            "evidence": "hình thức",
+            "confident": 0.8202662467956543,
+            "indicator": "tạo được tệp",
+            "level": 2,
+            "full_comment": "Em hoàn thành tốt các nội dung học tập theo hướng dẫn của giáo viên; có khả năng thực hiện đúng thao tác và sản phẩm đạt yêu cầu về nội dung và hình thức."
+        },
+        "subject": "Tin học"
+    },
+    "science_comment": {
+        "remembering": {
+            "evidence": "quan sát",
+            "confident": 0.8442865610122681,
+            "indicator": "nêu được",
+            "level": 1,
+            "full_comment": "Em có tư duy khoa học tốt, biết đặt câu hỏi, quan sát và rút ra nhận xét đúng."
+        },
+        "understanding": {
+            "evidence": "quan sát",
+            "confident": 0.8438055515289307,
+            "indicator": "trình bày được",
+            "level": 1,
+            "full_comment": "Em có tư duy khoa học tốt, biết đặt câu hỏi, quan sát và rút ra nhận xét đúng."
+        },
+        "applying": {
+            "evidence": "biết đặt câu hỏi",
+            "confident": 0.9521676301956177,
+            "indicator": "đặt được câu hỏi",
+            "level": 1,
+            "full_comment": "Em có tư duy khoa học tốt, biết đặt câu hỏi, quan sát và rút ra nhận xét đúng."
+        },
+        "subject": "Khoa học"
+    },
+    "history_and_geography_comment": {
+        "remembering": {
+            "evidence": "em tích cực tham gia hoạt động để tìm hiểu bài",
+            "confident": 0.5297354459762573,
+            "indicator": "liệt kê được sự vật",
+            "level": 3,
+            "full_comment": "Em tích cực tham gia hoạt động để tìm hiểu bài."
+        },
+        "understanding": {
+            "evidence": "em tích cực tham gia hoạt động để tìm hiểu bài",
+            "confident": 0.4170820713043213,
+            "indicator": "trình bày được mối quan hệ giữa các sự kiện lịch sử",
+            "level": 3,
+            "full_comment": "Em tích cực tham gia hoạt động để tìm hiểu bài."
+        },
+        "applying": {
+            "evidence": "em tích cực tham gia hoạt động để tìm hiểu bài",
+            "confident": 0.598792314529419,
+            "indicator": "vận dụng được điều đã học vào trường hợp cụ thể",
+            "level": 3,
+            "full_comment": "Em tích cực tham gia hoạt động để tìm hiểu bài."
+        },
+        "subject": "Lịch sử và Địa lí"
+    },
+    "english_comment": {
+        "remembering": {
+            "evidence": "cần rèn luyện thêm các kĩ năng",
+            "confident": 0.6536118984222412,
+            "indicator": "nêu được nghề nghiệp",
+            "level": 2,
+            "full_comment": "Em có tiến bộ nhưng cần rèn luyện thêm các kĩ năng."
+        },
+        "understanding": {
+            "evidence": "cần rèn luyện thêm các kĩ năng",
+            "confident": 0.6680091619491577,
+            "indicator": "trình bày được hoạt động học tập",
+            "level": 2,
+            "full_comment": "Em có tiến bộ nhưng cần rèn luyện thêm các kĩ năng."
+        },
+        "applying": {
+            "evidence": "cần rèn luyện thêm các kĩ năng",
+            "confident": 0.5976938009262085,
+            "indicator": "nói được về nghề nghiệp",
+            "level": 2,
+            "full_comment": "Em có tiến bộ nhưng cần rèn luyện thêm các kĩ năng."
+        },
+        "subject": "Tiếng Anh"
+    },
+    "technology_comment": {
+        "remembering": {
+            "evidence": "có ý thức giữ gìn sản phẩm công nghệ",
+            "confident": 0.3962036371231079,
+            "indicator": "phát hiện",
+            "level": 3,
+            "full_comment": "Em thực hiện tốt yêu cầu cần đạt của môn học; có ý thức giữ gìn sản phẩm công nghệ."
+        },
+        "understanding": {
+            "evidence": "em thực hiện tốt yêu cầu cần đạt của môn học",
+            "confident": 0.4794168174266815,
+            "indicator": "làm rõ",
+            "level": 3,
+            "full_comment": "Em thực hiện tốt yêu cầu cần đạt của môn học; có ý thức giữ gìn sản phẩm công nghệ."
+        },
+        "applying": {
+            "evidence": "em thực hiện tốt yêu cầu cần đạt của môn học",
+            "confident": 0.5729985237121582,
+            "indicator": "hoàn thiện",
+            "level": 3,
+            "full_comment": "Em thực hiện tốt yêu cầu cần đạt của môn học; có ý thức giữ gìn sản phẩm công nghệ."
+        },
+        "subject": "Công nghệ"
+    },
+    "music_comment": {
+        "remembering": {
+            "evidence": "em biết điều chỉnh giọng",
+            "confident": 0.7006518840789795,
+            "indicator": "nhận biết các nốt nhạc",
+            "level": 1,
+            "full_comment": "Em biết điều chỉnh giọng và thể hiện yếu tố to nhỏ, cao thấp khi hát và đọc câu nhạc."
+        },
+        "understanding": {
+            "evidence": "thể hiện yếu tố to nhỏ",
+            "confident": 0.5925911664962769,
+            "indicator": "nêu được ví dụ",
+            "level": 1,
+            "full_comment": "Em biết điều chỉnh giọng và thể hiện yếu tố to nhỏ, cao thấp khi hát và đọc câu nhạc."
+        },
+        "applying": {
+            "evidence": "em biết điều chỉnh giọng",
+            "confident": 0.6479870080947876,
+            "indicator": "điều chỉnh được giọng hát để tạo nên sự hài hoà",
+            "level": 1,
+            "full_comment": "Em biết điều chỉnh giọng và thể hiện yếu tố to nhỏ, cao thấp khi hát và đọc câu nhạc."
+        },
+        "subject": "Âm nhạc"
+    },
+    "arts_comment": {
+        "remembering": {
+            "evidence": "em sử dụng màu sắc hài hòa",
+            "confident": 0.701668918132782,
+            "indicator": "đọc được tên màu sắc",
+            "level": 1,
+            "full_comment": "Em sử dụng màu sắc hài hòa, bố cục hợp lý và có cá tính nghệ thuật riêng."
+        },
+        "understanding": {
+            "evidence": "có cá tính nghệ thuật riêng",
+            "confident": 0.7860921621322632,
+            "indicator": "tóm tắt được giá trị nghệ thuật",
+            "level": 1,
+            "full_comment": "Em sử dụng màu sắc hài hòa, bố cục hợp lý và có cá tính nghệ thuật riêng."
+        },
+        "applying": {
+            "evidence": "có cá tính nghệ thuật riêng",
+            "confident": 0.7973870038986206,
+            "indicator": "vận dụng được yếu tố văn hóa nghệ thuật",
+            "level": 1,
+            "full_comment": "Em sử dụng màu sắc hài hòa, bố cục hợp lý và có cá tính nghệ thuật riêng."
+        },
+        "subject": "Mĩ thuật"
+    },
+    "civics_comment": {
+        "remembering": {
+            "evidence": "chăm phát biểu ý kiến",
+            "confident": 0.790616512298584,
+            "indicator": "phát biểu được khái niệm",
+            "level": 1,
+            "full_comment": "Em rất yêu thích môn học, chăm phát biểu ý kiến."
+        },
+        "understanding": {
+            "evidence": "chăm phát biểu ý kiến",
+            "confident": 0.4794468581676483,
+            "indicator": "trình bày được kế hoạch kinh doanh của bản thân",
+            "level": 1,
+            "full_comment": "Em rất yêu thích môn học, chăm phát biểu ý kiến."
+        },
+        "applying": {
+            "evidence": "chăm phát biểu ý kiến",
+            "confident": 0.5270710587501526,
+            "indicator": "phản đối những thái độ vi phạm pháp luật",
+            "level": 1,
+            "full_comment": "Em rất yêu thích môn học, chăm phát biểu ý kiến."
+        },
+        "subject": "Đạo đức"
+    },
+    "physical_education_comment": {
+        "remembering": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.5195467472076416,
+            "indicator": "biết được các tư thế động tác",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học."
+        },
+        "understanding": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.36934083700180054,
+            "indicator": "so sánh được nội dung tập luyện phù hợp để nâng cao sức khoẻ",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học."
+        },
+        "applying": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.6778688430786133,
+            "indicator": "biểu diễn được bài tập liên hoàn",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học."
+        },
+        "subject": "Giáo dục thể chất"
+    },
+    "experiential_activities_comment": {
+        "remembering": {
+            "evidence": "biết chia sẻ ý kiến một cách xây dựng",
+            "confident": 0.6394321918487549,
+            "indicator": "kể được những việc làm tốt",
+            "level": 1,
+            "full_comment": "Em có khả năng hợp tác tốt với bạn trong các hoạt động nhóm và biết chia sẻ ý kiến một cách xây dựng."
+        },
+        "understanding": {
+            "evidence": "biết chia sẻ ý kiến một cách xây dựng",
+            "confident": 0.5411241054534912,
+            "indicator": "giới thiệu được sự kiện",
+            "level": 1,
+            "full_comment": "Em có khả năng hợp tác tốt với bạn trong các hoạt động nhóm và biết chia sẻ ý kiến một cách xây dựng."
+        },
+        "applying": {
+            "evidence": "biết chia sẻ ý kiến một cách xây dựng",
+            "confident": 0.6763347387313843,
+            "indicator": "xây dựng được quan hệ",
+            "level": 1,
+            "full_comment": "Em có khả năng hợp tác tốt với bạn trong các hoạt động nhóm và biết chia sẻ ý kiến một cách xây dựng."
+        },
+        "subject": "Hoạt động trải nghiệm"
+    }
+}

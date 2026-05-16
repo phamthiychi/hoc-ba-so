@@ -1,0 +1,267 @@
+{
+    "student_code": "20252026.03.Ba2.005",
+    "vietnamese_comment": {
+        "remembering": {
+            "evidence": "em hiểu nội dung bài đọc",
+            "confident": 0.7762527465820312,
+            "indicator": "đọc thuộc lòng đoạn văn",
+            "level": 3,
+            "full_comment": "Em hiểu nội dung bài đọc và vận dụng tốt. Em làm văn mạch lạc, có cảm xúc và từ ngữ chọn lọc sáng tạo."
+        },
+        "understanding": {
+            "evidence": "có cảm xúc",
+            "confident": 0.8007998466491699,
+            "indicator": "phân tích cảm xúc của người viết",
+            "level": 3,
+            "full_comment": "Em hiểu nội dung bài đọc và vận dụng tốt. Em làm văn mạch lạc, có cảm xúc và từ ngữ chọn lọc sáng tạo."
+        },
+        "applying": {
+            "evidence": "em hiểu nội dung bài đọc",
+            "confident": 0.6766749620437622,
+            "indicator": "viết văn bản",
+            "level": 3,
+            "full_comment": "Em hiểu nội dung bài đọc và vận dụng tốt. Em làm văn mạch lạc, có cảm xúc và từ ngữ chọn lọc sáng tạo."
+        },
+        "subject": "Tiếng Việt"
+    },
+    "mathematics_comment": {
+        "remembering": {
+            "evidence": "em nắm kiến thức",
+            "confident": 0.7614577412605286,
+            "indicator": "làm quen",
+            "level": 1,
+            "full_comment": "Em nắm kiến thức và vận dụng tốt vào bài làm, tính toán đã cẩn thận."
+        },
+        "understanding": {
+            "evidence": "em nắm kiến thức",
+            "confident": 0.6536067724227905,
+            "indicator": "thể hiện",
+            "level": 1,
+            "full_comment": "Em nắm kiến thức và vận dụng tốt vào bài làm, tính toán đã cẩn thận."
+        },
+        "applying": {
+            "evidence": "vận dụng tốt vào bài làm",
+            "confident": 0.5993837118148804,
+            "indicator": "vận dụng",
+            "level": 1,
+            "full_comment": "Em nắm kiến thức và vận dụng tốt vào bài làm, tính toán đã cẩn thận."
+        },
+        "subject": "Toán"
+    },
+    "informatics_comment": {
+        "remembering": {
+            "evidence": "em biết dùng phần mềm solarsytem để tìm hiểu về hệ mặt trời",
+            "confident": 0.49756866693496704,
+            "indicator": "biết được tệp chương trình cũng là dữ liệu",
+            "level": 1,
+            "full_comment": "Em biết dùng phần mềm SolarSytem để tìm hiểu về hệ mặt trời."
+        },
+        "understanding": {
+            "evidence": "em biết dùng phần mềm solarsytem để tìm hiểu về hệ mặt trời",
+            "confident": 0.4393976926803589,
+            "indicator": "đọc hiểu được chương trình",
+            "level": 1,
+            "full_comment": "Em biết dùng phần mềm SolarSytem để tìm hiểu về hệ mặt trời."
+        },
+        "applying": {
+            "evidence": "em biết dùng phần mềm solarsytem để tìm hiểu về hệ mặt trời",
+            "confident": 0.47966229915618896,
+            "indicator": "sử dụng được phần mềm",
+            "level": 1,
+            "full_comment": "Em biết dùng phần mềm SolarSytem để tìm hiểu về hệ mặt trời."
+        },
+        "subject": "Tin học"
+    },
+    "english_comment": {
+        "remembering": {
+            "evidence": "em nhận biết",
+            "confident": 0.7800050973892212,
+            "indicator": "biết được các thì cơ bản",
+            "level": 1,
+            "full_comment": "Em nhận biết và sử dụng đúng ngữ pháp cơ bản trong bài tập và giao tiếp."
+        },
+        "understanding": {
+            "evidence": "giao tiếp",
+            "confident": 0.8267327547073364,
+            "indicator": "diễn đạt được nhu cầu giao tiếp cơ bản",
+            "level": 1,
+            "full_comment": "Em nhận biết và sử dụng đúng ngữ pháp cơ bản trong bài tập và giao tiếp."
+        },
+        "applying": {
+            "evidence": "giao tiếp",
+            "confident": 0.8158406019210815,
+            "indicator": "sử dụng được câu đơn trong giao tiếp",
+            "level": 1,
+            "full_comment": "Em nhận biết và sử dụng đúng ngữ pháp cơ bản trong bài tập và giao tiếp."
+        },
+        "subject": "Tiếng Anh"
+    },
+    "technology_comment": {
+        "remembering": {
+            "evidence": "biết vận dụng kiến thức vào cuộc sống",
+            "confident": 0.46699902415275574,
+            "indicator": "phát hiện",
+            "level": 2,
+            "full_comment": "Em thực hiện tốt yêu cầu cần đạt của môn học, biết vận dụng kiến thức vào cuộc sống."
+        },
+        "understanding": {
+            "evidence": "biết vận dụng kiến thức vào cuộc sống",
+            "confident": 0.5860403776168823,
+            "indicator": "nhận thức",
+            "level": 2,
+            "full_comment": "Em thực hiện tốt yêu cầu cần đạt của môn học, biết vận dụng kiến thức vào cuộc sống."
+        },
+        "applying": {
+            "evidence": "em thực hiện tốt yêu cầu cần đạt của môn học",
+            "confident": 0.5729985237121582,
+            "indicator": "hoàn thiện",
+            "level": 2,
+            "full_comment": "Em thực hiện tốt yêu cầu cần đạt của môn học, biết vận dụng kiến thức vào cuộc sống."
+        },
+        "subject": "Công nghệ"
+    },
+    "music_comment": {
+        "remembering": {
+            "evidence": "biết thể hiện vận động theo ý thích khi nghe nhạc",
+            "confident": 0.7034371495246887,
+            "indicator": "nhận biết các nốt nhạc",
+            "level": 1,
+            "full_comment": "Em biết phân biệt âm thanh cao – thấp và biết thể hiện vận động theo ý thích khi nghe nhạc."
+        },
+        "understanding": {
+            "evidence": "biết thể hiện vận động theo ý thích khi nghe nhạc",
+            "confident": 0.7055078148841858,
+            "indicator": "mô tả được động tác chơi nhạc cụ",
+            "level": 1,
+            "full_comment": "Em biết phân biệt âm thanh cao – thấp và biết thể hiện vận động theo ý thích khi nghe nhạc."
+        },
+        "applying": {
+            "evidence": "biết thể hiện vận động theo ý thích khi nghe nhạc",
+            "confident": 0.7529866695404053,
+            "indicator": "xếp loại được kĩ năng thể hiện âm nhạc của bản thân",
+            "level": 1,
+            "full_comment": "Em biết phân biệt âm thanh cao – thấp và biết thể hiện vận động theo ý thích khi nghe nhạc."
+        },
+        "subject": "Âm nhạc"
+    },
+    "arts_comment": {
+        "remembering": {
+            "evidence": "em biết liên hệ nội dung chủ đề với hình ảnh trong thực tiễn",
+            "confident": 0.6553081274032593,
+            "indicator": "nhận biết được yếu tố tạo hình",
+            "level": 1,
+            "full_comment": "Em biết liên hệ nội dung chủ đề với hình ảnh trong thực tiễn."
+        },
+        "understanding": {
+            "evidence": "em biết liên hệ nội dung chủ đề với hình ảnh trong thực tiễn",
+            "confident": 0.5648894309997559,
+            "indicator": "phân biệt được tranh vẽ",
+            "level": 1,
+            "full_comment": "Em biết liên hệ nội dung chủ đề với hình ảnh trong thực tiễn."
+        },
+        "applying": {
+            "evidence": "em biết liên hệ nội dung chủ đề với hình ảnh trong thực tiễn",
+            "confident": 0.6238632202148438,
+            "indicator": "vận dụng được yếu tố tạo hình",
+            "level": 1,
+            "full_comment": "Em biết liên hệ nội dung chủ đề với hình ảnh trong thực tiễn."
+        },
+        "subject": "Mĩ thuật"
+    },
+    "civics_comment": {
+        "remembering": {
+            "evidence": "em biết vận dụng bài học trong cuộc sống hằng ngày",
+            "confident": 0.6630545854568481,
+            "indicator": "tìm được thông tin về các hành vi trong đời sống hằng ngày",
+            "level": 2,
+            "full_comment": "Em biết vận dụng bài học trong cuộc sống hằng ngày."
+        },
+        "understanding": {
+            "evidence": "em biết vận dụng bài học trong cuộc sống hằng ngày",
+            "confident": 0.4120464324951172,
+            "indicator": "lí giải được bài học thành công trong quá trình kinh doanh của một doanh nghiệp nhỏ cụ thể",
+            "level": 2,
+            "full_comment": "Em biết vận dụng bài học trong cuộc sống hằng ngày."
+        },
+        "applying": {
+            "evidence": "em biết vận dụng bài học trong cuộc sống hằng ngày",
+            "confident": 0.5714752078056335,
+            "indicator": "xác định được lí tưởng sống của bản thân",
+            "level": 2,
+            "full_comment": "Em biết vận dụng bài học trong cuộc sống hằng ngày."
+        },
+        "subject": "Đạo đức"
+    },
+    "physical_education_comment": {
+        "remembering": {
+            "evidence": "mạnh dạn trong các hoạt động nhóm",
+            "confident": 0.6233933568000793,
+            "indicator": "xác định được các tư thế động tác",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học, mạnh dạn trong các hoạt động nhóm."
+        },
+        "understanding": {
+            "evidence": "mạnh dạn trong các hoạt động nhóm",
+            "confident": 0.42805051803588867,
+            "indicator": "mô tả được động tác kĩ thuật",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học, mạnh dạn trong các hoạt động nhóm."
+        },
+        "applying": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.6778688430786133,
+            "indicator": "biểu diễn được bài tập liên hoàn",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học, mạnh dạn trong các hoạt động nhóm."
+        },
+        "subject": "Giáo dục thể chất"
+    },
+    "experiential_activities_comment": {
+        "remembering": {
+            "evidence": "em tích cực tham gia các hoạt động tập thể do trường",
+            "confident": 0.500792920589447,
+            "indicator": "kể được những việc làm tốt",
+            "level": 3,
+            "full_comment": "Em tích cực tham gia các hoạt động tập thể do trường, lớp tổ chức."
+        },
+        "understanding": {
+            "evidence": "lớp tổ chức",
+            "confident": 0.5125605463981628,
+            "indicator": "phân tích được thông tin nghề nghiệp",
+            "level": 3,
+            "full_comment": "Em tích cực tham gia các hoạt động tập thể do trường, lớp tổ chức."
+        },
+        "applying": {
+            "evidence": "lớp tổ chức",
+            "confident": 0.728105366230011,
+            "indicator": "tổ chức được sự kiện",
+            "level": 3,
+            "full_comment": "Em tích cực tham gia các hoạt động tập thể do trường, lớp tổ chức."
+        },
+        "subject": "Hoạt động trải nghiệm"
+    },
+    "nature_and_society_comment": {
+        "remembering": {
+            "evidence": "em hiểu được nội dung môn học",
+            "confident": 0.6913998126983643,
+            "indicator": "kể được tên các hoạt động chính trong lớp học",
+            "level": 2,
+            "full_comment": "Em hiểu được nội dung môn học và biết vận dụng sáng tạo."
+        },
+        "understanding": {
+            "evidence": "biết vận dụng sáng tạo",
+            "confident": 0.5144433379173279,
+            "indicator": "trình bày được một số việc cần làm để giữ gìn thần kinh",
+            "level": 2,
+            "full_comment": "Em hiểu được nội dung môn học và biết vận dụng sáng tạo."
+        },
+        "applying": {
+            "evidence": "em hiểu được nội dung môn học",
+            "confident": 0.6286777257919312,
+            "indicator": "đặt được câu hỏi để tìm hiểu về thành tích dạy và học",
+            "level": 2,
+            "full_comment": "Em hiểu được nội dung môn học và biết vận dụng sáng tạo."
+        },
+        "subject": "Tự nhiên và Xã hội"
+    }
+}

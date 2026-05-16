@@ -1,0 +1,243 @@
+{
+    "student_code": "20252026.01.Mo2.016",
+    "vietnamese_comment": {
+        "remembering": {
+            "evidence": "nghe",
+            "confident": 0.7132867574691772,
+            "indicator": "kể lại sự việc đã chứng kiến",
+            "level": 2,
+            "full_comment": "Em đọc có tiến bộ, trả lời được một số câu hỏi đơn giản nhưng tốc độ đọc còn chậm và nghe - viết vẫn còn sai nhiều lỗi. Em tiếp tục rèn đọc và luyện viết nhiều hơn nhé!"
+        },
+        "understanding": {
+            "evidence": "nghe",
+            "confident": 0.7183589339256287,
+            "indicator": "hiểu chủ đề",
+            "level": 2,
+            "full_comment": "Em đọc có tiến bộ, trả lời được một số câu hỏi đơn giản nhưng tốc độ đọc còn chậm và nghe - viết vẫn còn sai nhiều lỗi. Em tiếp tục rèn đọc và luyện viết nhiều hơn nhé!"
+        },
+        "applying": {
+            "evidence": "luyện viết nhiều hơn nhé",
+            "confident": 0.7958958148956299,
+            "indicator": "viết đoạn văn",
+            "level": 2,
+            "full_comment": "Em đọc có tiến bộ, trả lời được một số câu hỏi đơn giản nhưng tốc độ đọc còn chậm và nghe - viết vẫn còn sai nhiều lỗi. Em tiếp tục rèn đọc và luyện viết nhiều hơn nhé!"
+        },
+        "subject": "Tiếng Việt"
+    },
+    "mathematics_comment": {
+        "remembering": {
+            "evidence": "biết đọc",
+            "confident": 0.9018682241439819,
+            "indicator": "đọc",
+            "level": 1,
+            "full_comment": "Em nắm kiến thức cơ bản, biết đọc, viết các số trong phạm vi 100 nhưng cần thực hiện các phép tính cẩn thận hơn và luyện tập thêm về so sánh các số nhé!"
+        },
+        "understanding": {
+            "evidence": "biết đọc",
+            "confident": 0.5229708552360535,
+            "indicator": "mô tả",
+            "level": 1,
+            "full_comment": "Em nắm kiến thức cơ bản, biết đọc, viết các số trong phạm vi 100 nhưng cần thực hiện các phép tính cẩn thận hơn và luyện tập thêm về so sánh các số nhé!"
+        },
+        "applying": {
+            "evidence": "luyện tập thêm về so sánh các số nhé",
+            "confident": 0.6691193580627441,
+            "indicator": "so sánh",
+            "level": 1,
+            "full_comment": "Em nắm kiến thức cơ bản, biết đọc, viết các số trong phạm vi 100 nhưng cần thực hiện các phép tính cẩn thận hơn và luyện tập thêm về so sánh các số nhé!"
+        },
+        "subject": "Toán"
+    },
+    "informatics_comment": {
+        "remembering": {
+            "evidence": "em",
+            "confident": 0.7776949405670166,
+            "indicator": "nêu được công dụng",
+            "level": 1,
+            "full_comment": "Em nên tập kéo thả chuột cho thuần thục. Nó sẽ giúp em vẽ hình tốt hơn."
+        },
+        "understanding": {
+            "evidence": "em",
+            "confident": 0.740352988243103,
+            "indicator": "trình bày được tính đệ quy",
+            "level": 1,
+            "full_comment": "Em nên tập kéo thả chuột cho thuần thục. Nó sẽ giúp em vẽ hình tốt hơn."
+        },
+        "applying": {
+            "evidence": "em",
+            "confident": 0.7590398192405701,
+            "indicator": "tìm được tệp",
+            "level": 1,
+            "full_comment": "Em nên tập kéo thả chuột cho thuần thục. Nó sẽ giúp em vẽ hình tốt hơn."
+        },
+        "subject": "Tin học"
+    },
+    "english_comment": {
+        "remembering": {
+            "evidence": "ôn thêm từ vựng nhé",
+            "confident": 0.8078107237815857,
+            "indicator": "nói được các từ và cụm từ quen thuộc",
+            "level": 1,
+            "full_comment": "Em cần tập trung hơn trong giờ học, luyện đọc và ôn thêm từ vựng nhé."
+        },
+        "understanding": {
+            "evidence": "ôn thêm từ vựng nhé",
+            "confident": 0.7771546840667725,
+            "indicator": "vận dụng được từ vựng theo chủ đề",
+            "level": 1,
+            "full_comment": "Em cần tập trung hơn trong giờ học, luyện đọc và ôn thêm từ vựng nhé."
+        },
+        "applying": {
+            "evidence": "ôn thêm từ vựng nhé",
+            "confident": 0.8336819410324097,
+            "indicator": "sử dụng được giới từ",
+            "level": 1,
+            "full_comment": "Em cần tập trung hơn trong giờ học, luyện đọc và ôn thêm từ vựng nhé."
+        },
+        "subject": "Tiếng Anh"
+    },
+    "music_comment": {
+        "remembering": {
+            "evidence": "tốp ca",
+            "confident": 0.8366135358810425,
+            "indicator": "thuộc lời ca",
+            "level": 1,
+            "full_comment": "Em biết hát kết hợp vận động theo nhịp điệu bằng nhiều hình thức khác nhau như : Đơn ca, song ca, tốp ca."
+        },
+        "understanding": {
+            "evidence": "em biết hát kết hợp vận động theo nhịp điệu bằng nhiều hình thức khác nhau như : đơn ca",
+            "confident": 0.7015846371650696,
+            "indicator": "mô tả được động tác chơi nhạc cụ",
+            "level": 1,
+            "full_comment": "Em biết hát kết hợp vận động theo nhịp điệu bằng nhiều hình thức khác nhau như : Đơn ca, song ca, tốp ca."
+        },
+        "applying": {
+            "evidence": "em biết hát kết hợp vận động theo nhịp điệu bằng nhiều hình thức khác nhau như : đơn ca",
+            "confident": 0.7505309581756592,
+            "indicator": "biểu diễn được các tiết mục âm nhạc",
+            "level": 1,
+            "full_comment": "Em biết hát kết hợp vận động theo nhịp điệu bằng nhiều hình thức khác nhau như : Đơn ca, song ca, tốp ca."
+        },
+        "subject": "Âm nhạc"
+    },
+    "arts_comment": {
+        "remembering": {
+            "evidence": "cần lựa chọn màu sắc phù hợp hơn",
+            "confident": 0.6221185922622681,
+            "indicator": "đọc được tên màu sắc",
+            "level": 2,
+            "full_comment": "Em biết thực hiện đúng yêu cầu bài học, tuy nhiên cần lựa chọn màu sắc phù hợp hơn."
+        },
+        "understanding": {
+            "evidence": "cần lựa chọn màu sắc phù hợp hơn",
+            "confident": 0.5369594097137451,
+            "indicator": "phân biệt được tranh in",
+            "level": 2,
+            "full_comment": "Em biết thực hiện đúng yêu cầu bài học, tuy nhiên cần lựa chọn màu sắc phù hợp hơn."
+        },
+        "applying": {
+            "evidence": "em biết thực hiện đúng yêu cầu bài học",
+            "confident": 0.5472668409347534,
+            "indicator": "thực hiện được thao tác",
+            "level": 2,
+            "full_comment": "Em biết thực hiện đúng yêu cầu bài học, tuy nhiên cần lựa chọn màu sắc phù hợp hơn."
+        },
+        "subject": "Mĩ thuật"
+    },
+    "civics_comment": {
+        "remembering": {
+            "evidence": "áp dụng đúng những bài học đạo đức vào thực tế cuộc sống hàng ngày",
+            "confident": 0.7797023057937622,
+            "indicator": "kể ra được biểu hiện của chuẩn mực hành vi đạo đức",
+            "level": 1,
+            "full_comment": "Em hiểu và áp dụng đúng những bài học đạo đức vào thực tế cuộc sống hàng ngày."
+        },
+        "understanding": {
+            "evidence": "áp dụng đúng những bài học đạo đức vào thực tế cuộc sống hàng ngày",
+            "confident": 0.7782337069511414,
+            "indicator": "nhận xét được hành vi của bản thân theo chuẩn mực đạo đức",
+            "level": 1,
+            "full_comment": "Em hiểu và áp dụng đúng những bài học đạo đức vào thực tế cuộc sống hàng ngày."
+        },
+        "applying": {
+            "evidence": "áp dụng đúng những bài học đạo đức vào thực tế cuộc sống hàng ngày",
+            "confident": 0.8658648729324341,
+            "indicator": "chỉ ra được các hiện tượng của đời sống đạo đức",
+            "level": 1,
+            "full_comment": "Em hiểu và áp dụng đúng những bài học đạo đức vào thực tế cuộc sống hàng ngày."
+        },
+        "subject": "Đạo đức"
+    },
+    "physical_education_comment": {
+        "remembering": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.5195467472076416,
+            "indicator": "biết được các tư thế động tác",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học."
+        },
+        "understanding": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.36934083700180054,
+            "indicator": "so sánh được nội dung tập luyện phù hợp để nâng cao sức khoẻ",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học."
+        },
+        "applying": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.6778688430786133,
+            "indicator": "biểu diễn được bài tập liên hoàn",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học."
+        },
+        "subject": "Giáo dục thể chất"
+    },
+    "experiential_activities_comment": {
+        "remembering": {
+            "evidence": "em biết vận dụng kĩ năng sống để giải quyết tốt các tình huống phù hợp lứa tuổi",
+            "confident": 0.6100691556930542,
+            "indicator": "nhận biết được những việc nên làm",
+            "level": 2,
+            "full_comment": "Em biết vận dụng kĩ năng sống để giải quyết tốt các tình huống phù hợp lứa tuổi."
+        },
+        "understanding": {
+            "evidence": "em biết vận dụng kĩ năng sống để giải quyết tốt các tình huống phù hợp lứa tuổi",
+            "confident": 0.5392426252365112,
+            "indicator": "nhận xét được sự tiến bộ của bản thân",
+            "level": 2,
+            "full_comment": "Em biết vận dụng kĩ năng sống để giải quyết tốt các tình huống phù hợp lứa tuổi."
+        },
+        "applying": {
+            "evidence": "em biết vận dụng kĩ năng sống để giải quyết tốt các tình huống phù hợp lứa tuổi",
+            "confident": 0.5909881591796875,
+            "indicator": "thực hiện được việc chăm sóc bản thân",
+            "level": 2,
+            "full_comment": "Em biết vận dụng kĩ năng sống để giải quyết tốt các tình huống phù hợp lứa tuổi."
+        },
+        "subject": "Hoạt động trải nghiệm"
+    },
+    "nature_and_society_comment": {
+        "remembering": {
+            "evidence": "vận dụng tốt kiến thức đã học vào cuộc sống",
+            "confident": 0.4741315543651581,
+            "indicator": "nêu được đóng góp của công việc đó cho xã hội",
+            "level": 1,
+            "full_comment": "Em thích tìm hiểu khoa học, vận dụng tốt kiến thức đã học vào cuộc sống."
+        },
+        "understanding": {
+            "evidence": "vận dụng tốt kiến thức đã học vào cuộc sống",
+            "confident": 0.44765886664390564,
+            "indicator": "nêu được ví dụ về việc sử dụng thực vật trong đời sống hằng ngày",
+            "level": 1,
+            "full_comment": "Em thích tìm hiểu khoa học, vận dụng tốt kiến thức đã học vào cuộc sống."
+        },
+        "applying": {
+            "evidence": "vận dụng tốt kiến thức đã học vào cuộc sống",
+            "confident": 0.5346369743347168,
+            "indicator": "đặt được câu hỏi để tìm hiểu về thành tích dạy và học",
+            "level": 1,
+            "full_comment": "Em thích tìm hiểu khoa học, vận dụng tốt kiến thức đã học vào cuộc sống."
+        },
+        "subject": "Tự nhiên và Xã hội"
+    }
+}

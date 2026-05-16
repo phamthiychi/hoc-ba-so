@@ -33,7 +33,7 @@ class Settings:
     CODES_IN_ASSESSMENT_TYPE = {
         "Phẩm chất": ["patriotism", "compassion", "diligence", "honesty", "responsibility"],
         "Năng lực chung": ["self_reliance_self_learning", "communication_collaboration", "problem_solving_creativity"],
-        "Năng lực đặc thù": ["language", "numeracy", "science", "aesthetics", "physical_education"]
+        "Năng lực đặc thù": ["language", "numeracy", "science", "aesthetics", "physical_education", "technology", "informatics"]
     }
     LEVEL_KEYWORDS = {
     0: [

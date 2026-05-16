@@ -1,0 +1,291 @@
+{
+    "student_code": "20252026.05.Na4.020",
+    "vietnamese_comment": {
+        "remembering": {
+            "evidence": "diễn đạt rõ nghĩa hơn",
+            "confident": 0.7944434881210327,
+            "indicator": "nhận biết biện pháp tu từ",
+            "level": 1,
+            "full_comment": "Em đọc đúng, diễn cảm và hiểu được nội dung bài đọc nhưng cần rèn thêm chính tả, diễn đạt rõ nghĩa hơn."
+        },
+        "understanding": {
+            "evidence": "hiểu được nội dung bài đọc",
+            "confident": 0.8055322170257568,
+            "indicator": "nhận xét nội dung",
+            "level": 1,
+            "full_comment": "Em đọc đúng, diễn cảm và hiểu được nội dung bài đọc nhưng cần rèn thêm chính tả, diễn đạt rõ nghĩa hơn."
+        },
+        "applying": {
+            "evidence": "cần rèn thêm chính tả",
+            "confident": 0.7629028558731079,
+            "indicator": "viết đoạn văn",
+            "level": 1,
+            "full_comment": "Em đọc đúng, diễn cảm và hiểu được nội dung bài đọc nhưng cần rèn thêm chính tả, diễn đạt rõ nghĩa hơn."
+        },
+        "subject": "Tiếng Việt"
+    },
+    "mathematics_comment": {
+        "remembering": {
+            "evidence": "em cần rèn thêm kĩ năng viết đúng lời giải",
+            "confident": 0.6488478183746338,
+            "indicator": "viết",
+            "level": 1,
+            "full_comment": "Em cần rèn thêm kĩ năng viết đúng lời giải và đơn vị trong giải toán."
+        },
+        "understanding": {
+            "evidence": "đơn vị trong giải toán",
+            "confident": 0.5256916284561157,
+            "indicator": "sắp xếp",
+            "level": 1,
+            "full_comment": "Em cần rèn thêm kĩ năng viết đúng lời giải và đơn vị trong giải toán."
+        },
+        "applying": {
+            "evidence": "đơn vị trong giải toán",
+            "confident": 0.5434191226959229,
+            "indicator": "tính",
+            "level": 1,
+            "full_comment": "Em cần rèn thêm kĩ năng viết đúng lời giải và đơn vị trong giải toán."
+        },
+        "subject": "Toán"
+    },
+    "informatics_comment": {
+        "remembering": {
+            "evidence": "thực hiện các thao tác một cách độc lập hơn",
+            "confident": 0.7701296806335449,
+            "indicator": "thực hiện được các thao tác",
+            "level": 1,
+            "full_comment": "Em có cố gắng hoàn thành bài tập cơ bản khi được giáo viên hướng dẫn trực tiếp; cần rèn luyện thêm để nâng cao kỹ năng và thực hiện các thao tác một cách độc lập hơn."
+        },
+        "understanding": {
+            "evidence": "cần rèn luyện thêm để nâng cao kỹ năng",
+            "confident": 0.6961160898208618,
+            "indicator": "tìm hiểu được thông tin ngành đào tạo",
+            "level": 1,
+            "full_comment": "Em có cố gắng hoàn thành bài tập cơ bản khi được giáo viên hướng dẫn trực tiếp; cần rèn luyện thêm để nâng cao kỹ năng và thực hiện các thao tác một cách độc lập hơn."
+        },
+        "applying": {
+            "evidence": "em có cố gắng hoàn thành bài tập cơ bản khi được giáo viên hướng dẫn trực tiếp",
+            "confident": 0.8158124089241028,
+            "indicator": "thực hiện được nhiệm vụ giáo viên đặt ra",
+            "level": 1,
+            "full_comment": "Em có cố gắng hoàn thành bài tập cơ bản khi được giáo viên hướng dẫn trực tiếp; cần rèn luyện thêm để nâng cao kỹ năng và thực hiện các thao tác một cách độc lập hơn."
+        },
+        "subject": "Tin học"
+    },
+    "science_comment": {
+        "remembering": {
+            "evidence": "em hoàn thành tốt nội dung chương trình môn học",
+            "confident": 0.4431513547897339,
+            "indicator": "nêu được",
+            "level": 1,
+            "full_comment": "Em hoàn thành tốt nội dung chương trình môn học."
+        },
+        "understanding": {
+            "evidence": "em hoàn thành tốt nội dung chương trình môn học",
+            "confident": 0.46401894092559814,
+            "indicator": "trình bày được",
+            "level": 1,
+            "full_comment": "Em hoàn thành tốt nội dung chương trình môn học."
+        },
+        "applying": {
+            "evidence": "em hoàn thành tốt nội dung chương trình môn học",
+            "confident": 0.4854031205177307,
+            "indicator": "thực hiện được",
+            "level": 1,
+            "full_comment": "Em hoàn thành tốt nội dung chương trình môn học."
+        },
+        "subject": "Khoa học"
+    },
+    "history_and_geography_comment": {
+        "remembering": {
+            "evidence": "em nắm chắc kiến thức về lịch sử",
+            "confident": 0.7774325013160706,
+            "indicator": "kể lại được các mốc chính của một quá trình lịch sử",
+            "level": 1,
+            "full_comment": "Em nắm chắc kiến thức về lịch sử, địa lí."
+        },
+        "understanding": {
+            "evidence": "địa lí",
+            "confident": 0.7826502323150635,
+            "indicator": "trình bày được sự phân bố đối tượng địa lí",
+            "level": 1,
+            "full_comment": "Em nắm chắc kiến thức về lịch sử, địa lí."
+        },
+        "applying": {
+            "evidence": "em nắm chắc kiến thức về lịch sử",
+            "confident": 0.7446768879890442,
+            "indicator": "tìm hiểu được một hiện tượng lịch sử thông qua tham quan",
+            "level": 1,
+            "full_comment": "Em nắm chắc kiến thức về lịch sử, địa lí."
+        },
+        "subject": "Lịch sử và Địa lí"
+    },
+    "english_comment": {
+        "remembering": {
+            "evidence": "kỹ năng tiếng anh",
+            "confident": 0.6945595145225525,
+            "indicator": "biết được đại từ nhân xưng",
+            "level": 1,
+            "full_comment": "Em còn hạn chế trong việc tiếp thu kiến thức và kỹ năng Tiếng Anh. Em cần nỗ lực nhiều hơn trong học tập và rèn luyện."
+        },
+        "understanding": {
+            "evidence": "rèn luyện",
+            "confident": 0.6609960794448853,
+            "indicator": "trình bày được hoạt động học tập",
+            "level": 1,
+            "full_comment": "Em còn hạn chế trong việc tiếp thu kiến thức và kỹ năng Tiếng Anh. Em cần nỗ lực nhiều hơn trong học tập và rèn luyện."
+        },
+        "applying": {
+            "evidence": "kỹ năng tiếng anh",
+            "confident": 0.6384233832359314,
+            "indicator": "sử dụng được giới từ",
+            "level": 1,
+            "full_comment": "Em còn hạn chế trong việc tiếp thu kiến thức và kỹ năng Tiếng Anh. Em cần nỗ lực nhiều hơn trong học tập và rèn luyện."
+        },
+        "subject": "Tiếng Anh"
+    },
+    "technology_comment": {
+        "remembering": {
+            "evidence": "em hoàn thành sản phẩm kỹ thuật đúng quy định",
+            "confident": 0.41875702142715454,
+            "indicator": "phát hiện",
+            "level": 1,
+            "full_comment": "Em hoàn thành sản phẩm kỹ thuật đúng quy định."
+        },
+        "understanding": {
+            "evidence": "em hoàn thành sản phẩm kỹ thuật đúng quy định",
+            "confident": 0.49100571870803833,
+            "indicator": "thao tác",
+            "level": 1,
+            "full_comment": "Em hoàn thành sản phẩm kỹ thuật đúng quy định."
+        },
+        "applying": {
+            "evidence": "em hoàn thành sản phẩm kỹ thuật đúng quy định",
+            "confident": 0.6433684825897217,
+            "indicator": "chế tạo",
+            "level": 1,
+            "full_comment": "Em hoàn thành sản phẩm kỹ thuật đúng quy định."
+        },
+        "subject": "Công nghệ"
+    },
+    "music_comment": {
+        "remembering": {
+            "evidence": "kết hợp nốt trên khuôn nhạc",
+            "confident": 0.8001426458358765,
+            "indicator": "liệt kê được một số loại nhạc cụ",
+            "level": 1,
+            "full_comment": "Em biết gọi tên nốt, kết hợp nốt trên khuôn nhạc, hát đúng giai điệu."
+        },
+        "understanding": {
+            "evidence": "kết hợp nốt trên khuôn nhạc",
+            "confident": 0.8372527360916138,
+            "indicator": "mô tả được động tác chơi nhạc cụ",
+            "level": 1,
+            "full_comment": "Em biết gọi tên nốt, kết hợp nốt trên khuôn nhạc, hát đúng giai điệu."
+        },
+        "applying": {
+            "evidence": "kết hợp nốt trên khuôn nhạc",
+            "confident": 0.8636674880981445,
+            "indicator": "biểu diễn được các tiết mục âm nhạc",
+            "level": 1,
+            "full_comment": "Em biết gọi tên nốt, kết hợp nốt trên khuôn nhạc, hát đúng giai điệu."
+        },
+        "subject": "Âm nhạc"
+    },
+    "arts_comment": {
+        "remembering": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.4923989474773407,
+            "indicator": "xác định được chủ đề",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học."
+        },
+        "understanding": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.5714013576507568,
+            "indicator": "biểu đạt được nội dung",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học."
+        },
+        "applying": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.5845499038696289,
+            "indicator": "thực hiện được phác thảo",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học."
+        },
+        "subject": "Mĩ thuật"
+    },
+    "civics_comment": {
+        "remembering": {
+            "evidence": "em hoàn thành tốt nội dung chương trình môn học",
+            "confident": 0.3791462182998657,
+            "indicator": "nêu được khái niệm",
+            "level": 1,
+            "full_comment": "Em hoàn thành tốt nội dung chương trình môn học."
+        },
+        "understanding": {
+            "evidence": "em hoàn thành tốt nội dung chương trình môn học",
+            "confident": 0.39804303646087646,
+            "indicator": "lí giải được bài học thành công trong quá trình kinh doanh của một doanh nghiệp nhỏ cụ thể",
+            "level": 1,
+            "full_comment": "Em hoàn thành tốt nội dung chương trình môn học."
+        },
+        "applying": {
+            "evidence": "em hoàn thành tốt nội dung chương trình môn học",
+            "confident": 0.4946468770503998,
+            "indicator": "thực hiện được hành động tích cực để phát triển bản thân",
+            "level": 1,
+            "full_comment": "Em hoàn thành tốt nội dung chương trình môn học."
+        },
+        "subject": "Đạo đức"
+    },
+    "physical_education_comment": {
+        "remembering": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.5195467472076416,
+            "indicator": "biết được các tư thế động tác",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học."
+        },
+        "understanding": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.36934083700180054,
+            "indicator": "so sánh được nội dung tập luyện phù hợp để nâng cao sức khoẻ",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học."
+        },
+        "applying": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.6778688430786133,
+            "indicator": "biểu diễn được bài tập liên hoàn",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học."
+        },
+        "subject": "Giáo dục thể chất"
+    },
+    "experiential_activities_comment": {
+        "remembering": {
+            "evidence": "em hoàn thành tốt nội dung môn học",
+            "confident": 0.6848169565200806,
+            "indicator": "kể được những việc làm tốt",
+            "level": 1,
+            "full_comment": "Em hoàn thành tốt nội dung môn học."
+        },
+        "understanding": {
+            "evidence": "em hoàn thành tốt nội dung môn học",
+            "confident": 0.5262395143508911,
+            "indicator": "nhận xét được sự tiến bộ của bản thân",
+            "level": 1,
+            "full_comment": "Em hoàn thành tốt nội dung môn học."
+        },
+        "applying": {
+            "evidence": "em hoàn thành tốt nội dung môn học",
+            "confident": 0.5031914114952087,
+            "indicator": "thuyết trình được",
+            "level": 1,
+            "full_comment": "Em hoàn thành tốt nội dung môn học."
+        },
+        "subject": "Hoạt động trải nghiệm"
+    }
+}

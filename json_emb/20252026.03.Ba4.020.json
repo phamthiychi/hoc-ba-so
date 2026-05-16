@@ -1,0 +1,267 @@
+{
+    "student_code": "20252026.03.Ba4.020",
+    "vietnamese_comment": {
+        "remembering": {
+            "evidence": "em có kỹ năng đọc",
+            "confident": 0.7311716675758362,
+            "indicator": "đọc thuộc lòng đoạn văn",
+            "level": 3,
+            "full_comment": "Em nắm vững nội dung môn học, tiếp thu bài tốt. Em có kỹ năng đọc, viết thành thạo, viết chữ rõ ràng, viết đoạn văn có nhiều hình ảnh hay, mạch lạc."
+        },
+        "understanding": {
+            "evidence": "em nắm vững nội dung môn học",
+            "confident": 0.7663758993148804,
+            "indicator": "hiểu đề tài",
+            "level": 3,
+            "full_comment": "Em nắm vững nội dung môn học, tiếp thu bài tốt. Em có kỹ năng đọc, viết thành thạo, viết chữ rõ ràng, viết đoạn văn có nhiều hình ảnh hay, mạch lạc."
+        },
+        "applying": {
+            "evidence": "viết thành thạo",
+            "confident": 0.8839410543441772,
+            "indicator": "viết văn bản",
+            "level": 3,
+            "full_comment": "Em nắm vững nội dung môn học, tiếp thu bài tốt. Em có kỹ năng đọc, viết thành thạo, viết chữ rõ ràng, viết đoạn văn có nhiều hình ảnh hay, mạch lạc."
+        },
+        "subject": "Tiếng Việt"
+    },
+    "mathematics_comment": {
+        "remembering": {
+            "evidence": "em nắm vững nội dung môn học",
+            "confident": 0.6157552003860474,
+            "indicator": "làm quen",
+            "level": 3,
+            "full_comment": "Em nắm vững nội dung môn học, tính toán nhanh, thực hành giải thành thạo các bài tập."
+        },
+        "understanding": {
+            "evidence": "em nắm vững nội dung môn học",
+            "confident": 0.6217473745346069,
+            "indicator": "thể hiện",
+            "level": 3,
+            "full_comment": "Em nắm vững nội dung môn học, tính toán nhanh, thực hành giải thành thạo các bài tập."
+        },
+        "applying": {
+            "evidence": "em nắm vững nội dung môn học",
+            "confident": 0.5634771585464478,
+            "indicator": "vận dụng",
+            "level": 3,
+            "full_comment": "Em nắm vững nội dung môn học, tính toán nhanh, thực hành giải thành thạo các bài tập."
+        },
+        "subject": "Toán"
+    },
+    "informatics_comment": {
+        "remembering": {
+            "evidence": "em biết cách lưu bài trình chiếu vào máy",
+            "confident": 0.7450647354125977,
+            "indicator": "biết được chức năng của thiết bị",
+            "level": 1,
+            "full_comment": "Em biết cách lưu bài trình chiếu vào máy và biết cách mở một bài trình chiếu đã lưu sẵn trên máy."
+        },
+        "understanding": {
+            "evidence": "biết cách mở một bài trình chiếu đã lưu sẵn trên máy",
+            "confident": 0.6721686124801636,
+            "indicator": "giải thích được có những bước có thể chuyển giao cho máy tính",
+            "level": 1,
+            "full_comment": "Em biết cách lưu bài trình chiếu vào máy và biết cách mở một bài trình chiếu đã lưu sẵn trên máy."
+        },
+        "applying": {
+            "evidence": "biết cách mở một bài trình chiếu đã lưu sẵn trên máy",
+            "confident": 0.7362070083618164,
+            "indicator": "thể hiện được mong muốn biết sử dụng máy tính",
+            "level": 1,
+            "full_comment": "Em biết cách lưu bài trình chiếu vào máy và biết cách mở một bài trình chiếu đã lưu sẵn trên máy."
+        },
+        "subject": "Tin học"
+    },
+    "english_comment": {
+        "remembering": {
+            "evidence": "em ghi nhớ từ vựng nhanh",
+            "confident": 0.7029584646224976,
+            "indicator": "nói được các từ và cụm từ quen thuộc",
+            "level": 1,
+            "full_comment": "Em ghi nhớ từ vựng nhanh và áp dụng đúng trong tình huống."
+        },
+        "understanding": {
+            "evidence": "em ghi nhớ từ vựng nhanh",
+            "confident": 0.6372792720794678,
+            "indicator": "hiểu được các văn bản ngắn theo chủ đề quen thuộc",
+            "level": 1,
+            "full_comment": "Em ghi nhớ từ vựng nhanh và áp dụng đúng trong tình huống."
+        },
+        "applying": {
+            "evidence": "em ghi nhớ từ vựng nhanh",
+            "confident": 0.6634912490844727,
+            "indicator": "khai thác được thông tin từ đoạn văn ngắn",
+            "level": 1,
+            "full_comment": "Em ghi nhớ từ vựng nhanh và áp dụng đúng trong tình huống."
+        },
+        "subject": "Tiếng Anh"
+    },
+    "technology_comment": {
+        "remembering": {
+            "evidence": "em nắm được kiến thức môn học",
+            "confident": 0.5885592699050903,
+            "indicator": "phát hiện",
+            "level": 3,
+            "full_comment": "Em nắm được kiến thức môn học, kĩ năng lắng nghe và làm việc nhóm tốt, thực hiện tốt yêu cầu cần đạt của môn học."
+        },
+        "understanding": {
+            "evidence": "em nắm được kiến thức môn học",
+            "confident": 0.58933025598526,
+            "indicator": "nhận thức",
+            "level": 3,
+            "full_comment": "Em nắm được kiến thức môn học, kĩ năng lắng nghe và làm việc nhóm tốt, thực hiện tốt yêu cầu cần đạt của môn học."
+        },
+        "applying": {
+            "evidence": "thực hiện tốt yêu cầu cần đạt của môn học",
+            "confident": 0.5815986394882202,
+            "indicator": "thực hiện",
+            "level": 3,
+            "full_comment": "Em nắm được kiến thức môn học, kĩ năng lắng nghe và làm việc nhóm tốt, thực hiện tốt yêu cầu cần đạt của môn học."
+        },
+        "subject": "Công nghệ"
+    },
+    "music_comment": {
+        "remembering": {
+            "evidence": "tốp ca",
+            "confident": 0.8366135358810425,
+            "indicator": "thuộc lời ca",
+            "level": 1,
+            "full_comment": "Em biết hát kết hợp vận động theo nhịp điệu bằng nhiều hình thức khác nhau như : Đơn ca, song ca, tốp ca."
+        },
+        "understanding": {
+            "evidence": "em biết hát kết hợp vận động theo nhịp điệu bằng nhiều hình thức khác nhau như : đơn ca",
+            "confident": 0.7015846371650696,
+            "indicator": "mô tả được động tác chơi nhạc cụ",
+            "level": 1,
+            "full_comment": "Em biết hát kết hợp vận động theo nhịp điệu bằng nhiều hình thức khác nhau như : Đơn ca, song ca, tốp ca."
+        },
+        "applying": {
+            "evidence": "em biết hát kết hợp vận động theo nhịp điệu bằng nhiều hình thức khác nhau như : đơn ca",
+            "confident": 0.7505309581756592,
+            "indicator": "biểu diễn được các tiết mục âm nhạc",
+            "level": 1,
+            "full_comment": "Em biết hát kết hợp vận động theo nhịp điệu bằng nhiều hình thức khác nhau như : Đơn ca, song ca, tốp ca."
+        },
+        "subject": "Âm nhạc"
+    },
+    "arts_comment": {
+        "remembering": {
+            "evidence": "em nắm được cách thực hành",
+            "confident": 0.6550994515419006,
+            "indicator": "nhận biết được nguyên lí tạo hình",
+            "level": 2,
+            "full_comment": "Em nắm được cách thực hành và biết vận dụng để tạo sản phẩm, yêu thích môn học và luôn tự tin giới thiệu sản phẩm của mình."
+        },
+        "understanding": {
+            "evidence": "biết vận dụng để tạo sản phẩm",
+            "confident": 0.7930580377578735,
+            "indicator": "giới thiệu được sản phẩm",
+            "level": 2,
+            "full_comment": "Em nắm được cách thực hành và biết vận dụng để tạo sản phẩm, yêu thích môn học và luôn tự tin giới thiệu sản phẩm của mình."
+        },
+        "applying": {
+            "evidence": "biết vận dụng để tạo sản phẩm",
+            "confident": 0.9352259039878845,
+            "indicator": "tạo được sản phẩm",
+            "level": 2,
+            "full_comment": "Em nắm được cách thực hành và biết vận dụng để tạo sản phẩm, yêu thích môn học và luôn tự tin giới thiệu sản phẩm của mình."
+        },
+        "subject": "Mĩ thuật"
+    },
+    "civics_comment": {
+        "remembering": {
+            "evidence": "biết liên hệ thực tế cuộc sống thông qua các tình huống",
+            "confident": 0.7622435092926025,
+            "indicator": "tìm được thông tin về các tình huống trong đời sống hằng ngày",
+            "level": 1,
+            "full_comment": "Em nắm được kiến thức của môn học, biết liên hệ thực tế cuộc sống thông qua các tình huống."
+        },
+        "understanding": {
+            "evidence": "biết liên hệ thực tế cuộc sống thông qua các tình huống",
+            "confident": 0.6265580058097839,
+            "indicator": "lí giải được một số tình huống đơn giản trong đời sống về trách nhiệm pháp lí",
+            "level": 1,
+            "full_comment": "Em nắm được kiến thức của môn học, biết liên hệ thực tế cuộc sống thông qua các tình huống."
+        },
+        "applying": {
+            "evidence": "biết liên hệ thực tế cuộc sống thông qua các tình huống",
+            "confident": 0.7734531164169312,
+            "indicator": "xác định được lí tưởng sống của bản thân",
+            "level": 1,
+            "full_comment": "Em nắm được kiến thức của môn học, biết liên hệ thực tế cuộc sống thông qua các tình huống."
+        },
+        "subject": "Đạo đức"
+    },
+    "physical_education_comment": {
+        "remembering": {
+            "evidence": "mạnh dạn trong các hoạt động nhóm",
+            "confident": 0.6233933568000793,
+            "indicator": "xác định được các tư thế động tác",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học, mạnh dạn trong các hoạt động nhóm."
+        },
+        "understanding": {
+            "evidence": "mạnh dạn trong các hoạt động nhóm",
+            "confident": 0.42805051803588867,
+            "indicator": "mô tả được động tác kĩ thuật",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học, mạnh dạn trong các hoạt động nhóm."
+        },
+        "applying": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.6778688430786133,
+            "indicator": "biểu diễn được bài tập liên hoàn",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học, mạnh dạn trong các hoạt động nhóm."
+        },
+        "subject": "Giáo dục thể chất"
+    },
+    "experiential_activities_comment": {
+        "remembering": {
+            "evidence": "biết xử lí tình huống",
+            "confident": 0.7551078200340271,
+            "indicator": "nhận biết được những việc nên làm",
+            "level": 1,
+            "full_comment": "Em nắm được nội dung môn học, biết xử lí tình huống và liên hệ thực tế cuộc sống."
+        },
+        "understanding": {
+            "evidence": "biết xử lí tình huống",
+            "confident": 0.6617559790611267,
+            "indicator": "chỉ ra được ý nghĩa của hoạt động",
+            "level": 1,
+            "full_comment": "Em nắm được nội dung môn học, biết xử lí tình huống và liên hệ thực tế cuộc sống."
+        },
+        "applying": {
+            "evidence": "biết xử lí tình huống",
+            "confident": 0.674148440361023,
+            "indicator": "thực hiện được việc chăm sóc bản thân",
+            "level": 1,
+            "full_comment": "Em nắm được nội dung môn học, biết xử lí tình huống và liên hệ thực tế cuộc sống."
+        },
+        "subject": "Hoạt động trải nghiệm"
+    },
+    "nature_and_society_comment": {
+        "remembering": {
+            "evidence": "chính xác",
+            "confident": 0.7139191031455994,
+            "indicator": "nói được tên lớp",
+            "level": 1,
+            "full_comment": "Em hiểu được nội dung môn học, xử lý tình huống nhanh, chính xác."
+        },
+        "understanding": {
+            "evidence": "em hiểu được nội dung môn học",
+            "confident": 0.49850693345069885,
+            "indicator": "giới thiệu được một cách đơn giản về truyền thống nhà trường",
+            "level": 1,
+            "full_comment": "Em hiểu được nội dung môn học, xử lý tình huống nhanh, chính xác."
+        },
+        "applying": {
+            "evidence": "em hiểu được nội dung môn học",
+            "confident": 0.6286777257919312,
+            "indicator": "đặt được câu hỏi để tìm hiểu về thành tích dạy và học",
+            "level": 1,
+            "full_comment": "Em hiểu được nội dung môn học, xử lý tình huống nhanh, chính xác."
+        },
+        "subject": "Tự nhiên và Xã hội"
+    }
+}

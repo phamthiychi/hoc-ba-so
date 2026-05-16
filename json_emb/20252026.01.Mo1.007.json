@@ -1,0 +1,243 @@
+{
+    "student_code": "20252026.01.Mo1.007",
+    "vietnamese_comment": {
+        "remembering": {
+            "evidence": "biết đặt câu hoàn chỉnh",
+            "confident": 0.7540221810340881,
+            "indicator": "nhận biết biện pháp tu từ",
+            "level": 1,
+            "full_comment": "Em đọc bài khá tốt, biết đặt câu hoàn chỉnh. Em cần rèn thêm chữ viết nhé!"
+        },
+        "understanding": {
+            "evidence": "em cần rèn thêm chữ viết nhé",
+            "confident": 0.5894244909286499,
+            "indicator": "tóm tắt nội dung của văn bản",
+            "level": 1,
+            "full_comment": "Em đọc bài khá tốt, biết đặt câu hoàn chỉnh. Em cần rèn thêm chữ viết nhé!"
+        },
+        "applying": {
+            "evidence": "em cần rèn thêm chữ viết nhé",
+            "confident": 0.8102782964706421,
+            "indicator": "viết đoạn văn",
+            "level": 1,
+            "full_comment": "Em đọc bài khá tốt, biết đặt câu hoàn chỉnh. Em cần rèn thêm chữ viết nhé!"
+        },
+        "subject": "Tiếng Việt"
+    },
+    "mathematics_comment": {
+        "remembering": {
+            "evidence": "so sánh số",
+            "confident": 0.7071096897125244,
+            "indicator": "đếm",
+            "level": 1,
+            "full_comment": "Em tiếp thu bài tốt nhưng cần cẩn thận hơn trong tính toán và so sánh số."
+        },
+        "understanding": {
+            "evidence": "em tiếp thu bài tốt",
+            "confident": 0.5670751333236694,
+            "indicator": "thể hiện",
+            "level": 1,
+            "full_comment": "Em tiếp thu bài tốt nhưng cần cẩn thận hơn trong tính toán và so sánh số."
+        },
+        "applying": {
+            "evidence": "so sánh số",
+            "confident": 0.863323450088501,
+            "indicator": "so sánh",
+            "level": 1,
+            "full_comment": "Em tiếp thu bài tốt nhưng cần cẩn thận hơn trong tính toán và so sánh số."
+        },
+        "subject": "Toán"
+    },
+    "informatics_comment": {
+        "remembering": {
+            "evidence": "thoát khỏi chương trình",
+            "confident": 0.8196008801460266,
+            "indicator": "thực hiện được ra khỏi phần mềm",
+            "level": 1,
+            "full_comment": "Em nhận biết biểu tượng Paint, biết cách khởi động và thoát khỏi chương trình."
+        },
+        "understanding": {
+            "evidence": "biết cách khởi động",
+            "confident": 0.5261567831039429,
+            "indicator": "mô tả được kịch bản",
+            "level": 1,
+            "full_comment": "Em nhận biết biểu tượng Paint, biết cách khởi động và thoát khỏi chương trình."
+        },
+        "applying": {
+            "evidence": "em nhận biết biểu tượng paint",
+            "confident": 0.6870067119598389,
+            "indicator": "định dạng được màu chữ",
+            "level": 1,
+            "full_comment": "Em nhận biết biểu tượng Paint, biết cách khởi động và thoát khỏi chương trình."
+        },
+        "subject": "Tin học"
+    },
+    "english_comment": {
+        "remembering": {
+            "evidence": "em cần phát huy",
+            "confident": 0.744320273399353,
+            "indicator": "biết được câu mệnh lệnh",
+            "level": 1,
+            "full_comment": "Em có tinh thần học tập tốt. Em cần phát huy."
+        },
+        "understanding": {
+            "evidence": "em có tinh thần học tập tốt",
+            "confident": 0.5580761432647705,
+            "indicator": "trình bày được sở thích",
+            "level": 1,
+            "full_comment": "Em có tinh thần học tập tốt. Em cần phát huy."
+        },
+        "applying": {
+            "evidence": "em cần phát huy",
+            "confident": 0.6103610396385193,
+            "indicator": "nói được về bản thân",
+            "level": 1,
+            "full_comment": "Em có tinh thần học tập tốt. Em cần phát huy."
+        },
+        "subject": "Tiếng Anh"
+    },
+    "music_comment": {
+        "remembering": {
+            "evidence": "em thuộc lời ca",
+            "confident": 0.8855307698249817,
+            "indicator": "thuộc lời ca",
+            "level": 1,
+            "full_comment": "Em thuộc lời ca, hát đúng giai điệu, biết thể hiện sắc thái bài hát."
+        },
+        "understanding": {
+            "evidence": "biết thể hiện sắc thái bài hát",
+            "confident": 0.6454697251319885,
+            "indicator": "tóm tắt được ý nghĩa của một số thuật ngữ âm nhạc",
+            "level": 1,
+            "full_comment": "Em thuộc lời ca, hát đúng giai điệu, biết thể hiện sắc thái bài hát."
+        },
+        "applying": {
+            "evidence": "hát đúng giai điệu",
+            "confident": 0.6942073106765747,
+            "indicator": "biểu diễn được các tiết mục âm nhạc",
+            "level": 1,
+            "full_comment": "Em thuộc lời ca, hát đúng giai điệu, biết thể hiện sắc thái bài hát."
+        },
+        "subject": "Âm nhạc"
+    },
+    "arts_comment": {
+        "remembering": {
+            "evidence": "tô màu đều nét",
+            "confident": 0.6682164669036865,
+            "indicator": "đọc được tên màu sắc",
+            "level": 1,
+            "full_comment": "Em biết trình bày các bố cục hài hòa và tô màu đều nét."
+        },
+        "understanding": {
+            "evidence": "tô màu đều nét",
+            "confident": 0.6564947962760925,
+            "indicator": "phân biệt được tranh in",
+            "level": 1,
+            "full_comment": "Em biết trình bày các bố cục hài hòa và tô màu đều nét."
+        },
+        "applying": {
+            "evidence": "tô màu đều nét",
+            "confident": 0.5419961214065552,
+            "indicator": "thể hiện được đặc trưng",
+            "level": 1,
+            "full_comment": "Em biết trình bày các bố cục hài hòa và tô màu đều nét."
+        },
+        "subject": "Mĩ thuật"
+    },
+    "civics_comment": {
+        "remembering": {
+            "evidence": "hành vi đạo đức phù hợp",
+            "confident": 0.9358476996421814,
+            "indicator": "phân biệt được hành vi phù hợp với chuẩn mực đạo đức",
+            "level": 1,
+            "full_comment": "Em biết điều chỉnh thái độ và hành vi đạo đức phù hợp."
+        },
+        "understanding": {
+            "evidence": "hành vi đạo đức phù hợp",
+            "confident": 0.9076139330863953,
+            "indicator": "nhận xét được hành vi của bản thân theo chuẩn mực đạo đức",
+            "level": 1,
+            "full_comment": "Em biết điều chỉnh thái độ và hành vi đạo đức phù hợp."
+        },
+        "applying": {
+            "evidence": "hành vi đạo đức phù hợp",
+            "confident": 0.9481252431869507,
+            "indicator": "thực hiện được hành vi phù hợp chuẩn mực đạo đức",
+            "level": 1,
+            "full_comment": "Em biết điều chỉnh thái độ và hành vi đạo đức phù hợp."
+        },
+        "subject": "Đạo đức"
+    },
+    "physical_education_comment": {
+        "remembering": {
+            "evidence": "tham gia tích cực các trò chơi được học",
+            "confident": 0.6136327981948853,
+            "indicator": "biết được các tư thế động tác",
+            "level": 3,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học, tham gia tích cực các trò chơi được học."
+        },
+        "understanding": {
+            "evidence": "tham gia tích cực các trò chơi được học",
+            "confident": 0.506976306438446,
+            "indicator": "phân biệt được các sơ đồ chiến thuật thi đấu một môn thể thao",
+            "level": 3,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học, tham gia tích cực các trò chơi được học."
+        },
+        "applying": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.6778688430786133,
+            "indicator": "biểu diễn được bài tập liên hoàn",
+            "level": 3,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học, tham gia tích cực các trò chơi được học."
+        },
+        "subject": "Giáo dục thể chất"
+    },
+    "experiential_activities_comment": {
+        "remembering": {
+            "evidence": "em biết khám phá thế giới bản thân",
+            "confident": 0.631936252117157,
+            "indicator": "nhận diện được sở thích của bản thân",
+            "level": 1,
+            "full_comment": "Em biết khám phá thế giới bản thân và thế giới xung quanh."
+        },
+        "understanding": {
+            "evidence": "em biết khám phá thế giới bản thân",
+            "confident": 0.581086277961731,
+            "indicator": "mô tả được hình ảnh bản thân",
+            "level": 1,
+            "full_comment": "Em biết khám phá thế giới bản thân và thế giới xung quanh."
+        },
+        "applying": {
+            "evidence": "thế giới xung quanh",
+            "confident": 0.5513513088226318,
+            "indicator": "thể hiện được hành vi văn hoá",
+            "level": 1,
+            "full_comment": "Em biết khám phá thế giới bản thân và thế giới xung quanh."
+        },
+        "subject": "Hoạt động trải nghiệm"
+    },
+    "nature_and_society_comment": {
+        "remembering": {
+            "evidence": "em tiếp thu bài tốt",
+            "confident": 0.67596834897995,
+            "indicator": "nói được tên lớp",
+            "level": 3,
+            "full_comment": "Em tiếp thu bài tốt, tích cực tham gia các hoạt động."
+        },
+        "understanding": {
+            "evidence": "tích cực tham gia các hoạt động",
+            "confident": 0.5990652441978455,
+            "indicator": "trình bày được một số việc cần làm để giữ gìn cơ quan tuần hoàn",
+            "level": 3,
+            "full_comment": "Em tiếp thu bài tốt, tích cực tham gia các hoạt động."
+        },
+        "applying": {
+            "evidence": "em tiếp thu bài tốt",
+            "confident": 0.5318042635917664,
+            "indicator": "đặt được câu hỏi để tìm hiểu về thành tích dạy và học",
+            "level": 3,
+            "full_comment": "Em tiếp thu bài tốt, tích cực tham gia các hoạt động."
+        },
+        "subject": "Tự nhiên và Xã hội"
+    }
+}

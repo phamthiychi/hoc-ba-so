@@ -1,0 +1,243 @@
+{
+    "student_code": "20252026.02.Ha3.031",
+    "vietnamese_comment": {
+        "remembering": {
+            "evidence": "em đọc trôi chảy",
+            "confident": 0.8029985427856445,
+            "indicator": "đọc thuộc lòng đoạn văn",
+            "level": 1,
+            "full_comment": "Em biết sử dụng vốn từ phong phú để viết thành câu. Em đọc trôi chảy và nắm được nội dung bài đọc."
+        },
+        "understanding": {
+            "evidence": "nắm được nội dung bài đọc",
+            "confident": 0.8299026489257812,
+            "indicator": "nhận xét nội dung",
+            "level": 1,
+            "full_comment": "Em biết sử dụng vốn từ phong phú để viết thành câu. Em đọc trôi chảy và nắm được nội dung bài đọc."
+        },
+        "applying": {
+            "evidence": "nắm được nội dung bài đọc",
+            "confident": 0.7121791839599609,
+            "indicator": "viết văn bản",
+            "level": 1,
+            "full_comment": "Em biết sử dụng vốn từ phong phú để viết thành câu. Em đọc trôi chảy và nắm được nội dung bài đọc."
+        },
+        "subject": "Tiếng Việt"
+    },
+    "mathematics_comment": {
+        "remembering": {
+            "evidence": "trình bày bài rõ ràng",
+            "confident": 0.7723783254623413,
+            "indicator": "nhận biết",
+            "level": 3,
+            "full_comment": "Em vận dụng kiến thức đã học thực hiện tốt các dạng bài tập, trình bày bài rõ ràng, khoa học."
+        },
+        "understanding": {
+            "evidence": "trình bày bài rõ ràng",
+            "confident": 0.7792035341262817,
+            "indicator": "thể hiện",
+            "level": 3,
+            "full_comment": "Em vận dụng kiến thức đã học thực hiện tốt các dạng bài tập, trình bày bài rõ ràng, khoa học."
+        },
+        "applying": {
+            "evidence": "trình bày bài rõ ràng",
+            "confident": 0.762138843536377,
+            "indicator": "chứng minh",
+            "level": 3,
+            "full_comment": "Em vận dụng kiến thức đã học thực hiện tốt các dạng bài tập, trình bày bài rõ ràng, khoa học."
+        },
+        "subject": "Toán"
+    },
+    "informatics_comment": {
+        "remembering": {
+            "evidence": "tiếng nổ b",
+            "confident": 0.6009070873260498,
+            "indicator": "nhận biết được tệp",
+            "level": 1,
+            "full_comment": "Em biết được có nhiều loại âm thanh khác nhau: tiếng nổ A, tiếng nổ B, tiếng nổ E."
+        },
+        "understanding": {
+            "evidence": "tiếng nổ b",
+            "confident": 0.6131573915481567,
+            "indicator": "biểu diễn được Đồ thị",
+            "level": 1,
+            "full_comment": "Em biết được có nhiều loại âm thanh khác nhau: tiếng nổ A, tiếng nổ B, tiếng nổ E."
+        },
+        "applying": {
+            "evidence": "tiếng nổ b",
+            "confident": 0.6563015580177307,
+            "indicator": "tạo được tệp",
+            "level": 1,
+            "full_comment": "Em biết được có nhiều loại âm thanh khác nhau: tiếng nổ A, tiếng nổ B, tiếng nổ E."
+        },
+        "subject": "Tin học"
+    },
+    "english_comment": {
+        "remembering": {
+            "evidence": "tích cực phát biểu ý kiến xây dựng bài",
+            "confident": 0.7064642906188965,
+            "indicator": "nêu được sở thích",
+            "level": 3,
+            "full_comment": "Em học rất tốt bộ môn và tích cực phát biểu ý kiến xây dựng bài."
+        },
+        "understanding": {
+            "evidence": "tích cực phát biểu ý kiến xây dựng bài",
+            "confident": 0.6696265935897827,
+            "indicator": "trình bày được sở thích",
+            "level": 3,
+            "full_comment": "Em học rất tốt bộ môn và tích cực phát biểu ý kiến xây dựng bài."
+        },
+        "applying": {
+            "evidence": "tích cực phát biểu ý kiến xây dựng bài",
+            "confident": 0.6520544290542603,
+            "indicator": "sử dụng được động từ tình thái",
+            "level": 3,
+            "full_comment": "Em học rất tốt bộ môn và tích cực phát biểu ý kiến xây dựng bài."
+        },
+        "subject": "Tiếng Anh"
+    },
+    "music_comment": {
+        "remembering": {
+            "evidence": "đúng lời ca",
+            "confident": 0.845176637172699,
+            "indicator": "thuộc lời ca",
+            "level": 1,
+            "full_comment": "Em biết hát theo giai điệu và đúng lời ca, nhớ tên và vị trí các nốt nhạc qua trò chơi."
+        },
+        "understanding": {
+            "evidence": "vị trí các nốt nhạc qua trò chơi",
+            "confident": 0.6236588954925537,
+            "indicator": "mô tả được động tác chơi nhạc cụ",
+            "level": 1,
+            "full_comment": "Em biết hát theo giai điệu và đúng lời ca, nhớ tên và vị trí các nốt nhạc qua trò chơi."
+        },
+        "applying": {
+            "evidence": "em biết hát theo giai điệu",
+            "confident": 0.6723120212554932,
+            "indicator": "biểu diễn được các tiết mục âm nhạc",
+            "level": 1,
+            "full_comment": "Em biết hát theo giai điệu và đúng lời ca, nhớ tên và vị trí các nốt nhạc qua trò chơi."
+        },
+        "subject": "Âm nhạc"
+    },
+    "arts_comment": {
+        "remembering": {
+            "evidence": "lựa chọn công cụ",
+            "confident": 0.820483922958374,
+            "indicator": "liệt kê được công cụ",
+            "level": 1,
+            "full_comment": "Em biết xác định nội dung chủ đề và lựa chọn công cụ, vật liệu để thực hành."
+        },
+        "understanding": {
+            "evidence": "vật liệu để thực hành",
+            "confident": 0.7842035889625549,
+            "indicator": "phân biệt được một số chất liệu",
+            "level": 1,
+            "full_comment": "Em biết xác định nội dung chủ đề và lựa chọn công cụ, vật liệu để thực hành."
+        },
+        "applying": {
+            "evidence": "lựa chọn công cụ",
+            "confident": 0.9893240928649902,
+            "indicator": "lựa chọn được công cụ",
+            "level": 1,
+            "full_comment": "Em biết xác định nội dung chủ đề và lựa chọn công cụ, vật liệu để thực hành."
+        },
+        "subject": "Mĩ thuật"
+    },
+    "civics_comment": {
+        "remembering": {
+            "evidence": "thực hiện được các hành vi phù hợp",
+            "confident": 0.7350836992263794,
+            "indicator": "nêu được thái độ",
+            "level": 2,
+            "full_comment": "Em vận dụng tốt các bài học vào trong cuộc sống và thực hiện được các hành vi phù hợp."
+        },
+        "understanding": {
+            "evidence": "thực hiện được các hành vi phù hợp",
+            "confident": 0.6634633541107178,
+            "indicator": "nhận xét được hành vi của người khác theo chuẩn mực pháp luật",
+            "level": 2,
+            "full_comment": "Em vận dụng tốt các bài học vào trong cuộc sống và thực hiện được các hành vi phù hợp."
+        },
+        "applying": {
+            "evidence": "thực hiện được các hành vi phù hợp",
+            "confident": 0.7459291219711304,
+            "indicator": "thực hiện được hành vi phù hợp chuẩn mực đạo đức",
+            "level": 2,
+            "full_comment": "Em vận dụng tốt các bài học vào trong cuộc sống và thực hiện được các hành vi phù hợp."
+        },
+        "subject": "Đạo đức"
+    },
+    "physical_education_comment": {
+        "remembering": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.5195467472076416,
+            "indicator": "biết được các tư thế động tác",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học."
+        },
+        "understanding": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.36934083700180054,
+            "indicator": "so sánh được nội dung tập luyện phù hợp để nâng cao sức khoẻ",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học."
+        },
+        "applying": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.6778688430786133,
+            "indicator": "biểu diễn được bài tập liên hoàn",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học."
+        },
+        "subject": "Giáo dục thể chất"
+    },
+    "experiential_activities_comment": {
+        "remembering": {
+            "evidence": "xử lí tốt các tình huống",
+            "confident": 0.7427029013633728,
+            "indicator": "kể được những việc làm tốt",
+            "level": 1,
+            "full_comment": "Em có nhiều ý kiến hay khi cùng hoạt động nhóm với các bạn và xử lí tốt các tình huống."
+        },
+        "understanding": {
+            "evidence": "xử lí tốt các tình huống",
+            "confident": 0.5625489354133606,
+            "indicator": "chỉ ra được ý nghĩa của hoạt động",
+            "level": 1,
+            "full_comment": "Em có nhiều ý kiến hay khi cùng hoạt động nhóm với các bạn và xử lí tốt các tình huống."
+        },
+        "applying": {
+            "evidence": "xử lí tốt các tình huống",
+            "confident": 0.645995557308197,
+            "indicator": "thực hiện được việc chăm sóc bản thân",
+            "level": 1,
+            "full_comment": "Em có nhiều ý kiến hay khi cùng hoạt động nhóm với các bạn và xử lí tốt các tình huống."
+        },
+        "subject": "Hoạt động trải nghiệm"
+    },
+    "nature_and_society_comment": {
+        "remembering": {
+            "evidence": "tích cực tham gia ý kiến khi tìm hiểu bài",
+            "confident": 0.541251540184021,
+            "indicator": "nêu được đóng góp của công việc đó cho xã hội",
+            "level": 3,
+            "full_comment": "Em có kiến thức khoa học tốt, tích cực tham gia ý kiến khi tìm hiểu bài."
+        },
+        "understanding": {
+            "evidence": "tích cực tham gia ý kiến khi tìm hiểu bài",
+            "confident": 0.4713570177555084,
+            "indicator": "trình bày được một số việc cần làm để giữ gìn cơ quan tuần hoàn",
+            "level": 3,
+            "full_comment": "Em có kiến thức khoa học tốt, tích cực tham gia ý kiến khi tìm hiểu bài."
+        },
+        "applying": {
+            "evidence": "tích cực tham gia ý kiến khi tìm hiểu bài",
+            "confident": 0.5960001349449158,
+            "indicator": "đặt được câu hỏi để tìm hiểu về các hoạt động khác",
+            "level": 3,
+            "full_comment": "Em có kiến thức khoa học tốt, tích cực tham gia ý kiến khi tìm hiểu bài."
+        },
+        "subject": "Tự nhiên và Xã hội"
+    }
+}

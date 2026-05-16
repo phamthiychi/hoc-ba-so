@@ -1,0 +1,243 @@
+{
+    "student_code": "20252026.01.Mo1.009",
+    "vietnamese_comment": {
+        "remembering": {
+            "evidence": "hiểu nội dung bài đọc",
+            "confident": 0.7852199077606201,
+            "indicator": "đọc thuộc lòng đoạn văn",
+            "level": 1,
+            "full_comment": "Em đọc bài khá tốt, hiểu nội dung bài đọc, biết đặt câu hoàn chỉnh."
+        },
+        "understanding": {
+            "evidence": "hiểu nội dung bài đọc",
+            "confident": 0.7846076488494873,
+            "indicator": "nhận xét nội dung",
+            "level": 1,
+            "full_comment": "Em đọc bài khá tốt, hiểu nội dung bài đọc, biết đặt câu hoàn chỉnh."
+        },
+        "applying": {
+            "evidence": "hiểu nội dung bài đọc",
+            "confident": 0.7209151387214661,
+            "indicator": "vận dụng kiến thức văn học",
+            "level": 1,
+            "full_comment": "Em đọc bài khá tốt, hiểu nội dung bài đọc, biết đặt câu hoàn chỉnh."
+        },
+        "subject": "Tiếng Việt"
+    },
+    "mathematics_comment": {
+        "remembering": {
+            "evidence": "em thực hiện tính đúng",
+            "confident": 0.6230369806289673,
+            "indicator": "làm quen",
+            "level": 1,
+            "full_comment": "Em thực hiện tính đúng, vận dụng tốt vào các bài tập."
+        },
+        "understanding": {
+            "evidence": "em thực hiện tính đúng",
+            "confident": 0.6326179504394531,
+            "indicator": "thể hiện",
+            "level": 1,
+            "full_comment": "Em thực hiện tính đúng, vận dụng tốt vào các bài tập."
+        },
+        "applying": {
+            "evidence": "em thực hiện tính đúng",
+            "confident": 0.663375735282898,
+            "indicator": "thực hiện",
+            "level": 1,
+            "full_comment": "Em thực hiện tính đúng, vận dụng tốt vào các bài tập."
+        },
+        "subject": "Toán"
+    },
+    "informatics_comment": {
+        "remembering": {
+            "evidence": "em",
+            "confident": 0.7776949405670166,
+            "indicator": "nêu được công dụng",
+            "level": 1,
+            "full_comment": "Em nên tập kéo thả chuột cho thuần thục. Nó sẽ giúp em vẽ hình tốt hơn."
+        },
+        "understanding": {
+            "evidence": "em",
+            "confident": 0.740352988243103,
+            "indicator": "trình bày được tính đệ quy",
+            "level": 1,
+            "full_comment": "Em nên tập kéo thả chuột cho thuần thục. Nó sẽ giúp em vẽ hình tốt hơn."
+        },
+        "applying": {
+            "evidence": "em",
+            "confident": 0.7590398192405701,
+            "indicator": "tìm được tệp",
+            "level": 1,
+            "full_comment": "Em nên tập kéo thả chuột cho thuần thục. Nó sẽ giúp em vẽ hình tốt hơn."
+        },
+        "subject": "Tin học"
+    },
+    "english_comment": {
+        "remembering": {
+            "evidence": "em cần luyện đọc nhiều hơn nhé",
+            "confident": 0.7068938612937927,
+            "indicator": "đọc đúng được chữ cái",
+            "level": 1,
+            "full_comment": "Em đọc bài còn chưa thật lưu loát. Em cần luyện đọc nhiều hơn nhé."
+        },
+        "understanding": {
+            "evidence": "em cần luyện đọc nhiều hơn nhé",
+            "confident": 0.6607511043548584,
+            "indicator": "đọc hiểu được nội dung theo chủ đề quen thuộc",
+            "level": 1,
+            "full_comment": "Em đọc bài còn chưa thật lưu loát. Em cần luyện đọc nhiều hơn nhé."
+        },
+        "applying": {
+            "evidence": "em cần luyện đọc nhiều hơn nhé",
+            "confident": 0.6685240268707275,
+            "indicator": "đọc được văn bản ngắn phục vụ học tập",
+            "level": 1,
+            "full_comment": "Em đọc bài còn chưa thật lưu loát. Em cần luyện đọc nhiều hơn nhé."
+        },
+        "subject": "Tiếng Anh"
+    },
+    "music_comment": {
+        "remembering": {
+            "evidence": "kết hợp nốt trên khuôn nhạc",
+            "confident": 0.8001426458358765,
+            "indicator": "liệt kê được một số loại nhạc cụ",
+            "level": 1,
+            "full_comment": "Em biết gọi tên nốt, kết hợp nốt trên khuôn nhạc, hát đúng giai điệu."
+        },
+        "understanding": {
+            "evidence": "kết hợp nốt trên khuôn nhạc",
+            "confident": 0.8372527360916138,
+            "indicator": "mô tả được động tác chơi nhạc cụ",
+            "level": 1,
+            "full_comment": "Em biết gọi tên nốt, kết hợp nốt trên khuôn nhạc, hát đúng giai điệu."
+        },
+        "applying": {
+            "evidence": "kết hợp nốt trên khuôn nhạc",
+            "confident": 0.8636674880981445,
+            "indicator": "biểu diễn được các tiết mục âm nhạc",
+            "level": 1,
+            "full_comment": "Em biết gọi tên nốt, kết hợp nốt trên khuôn nhạc, hát đúng giai điệu."
+        },
+        "subject": "Âm nhạc"
+    },
+    "arts_comment": {
+        "remembering": {
+            "evidence": "em hoàn thành các bài vẽ",
+            "confident": 0.5417094230651855,
+            "indicator": "nêu được ý tưởng",
+            "level": 1,
+            "full_comment": "Em hoàn thành các bài vẽ."
+        },
+        "understanding": {
+            "evidence": "em hoàn thành các bài vẽ",
+            "confident": 0.6518487334251404,
+            "indicator": "phân biệt được tranh vẽ",
+            "level": 1,
+            "full_comment": "Em hoàn thành các bài vẽ."
+        },
+        "applying": {
+            "evidence": "em hoàn thành các bài vẽ",
+            "confident": 0.6588057279586792,
+            "indicator": "thực hiện được phác thảo",
+            "level": 1,
+            "full_comment": "Em hoàn thành các bài vẽ."
+        },
+        "subject": "Mĩ thuật"
+    },
+    "civics_comment": {
+        "remembering": {
+            "evidence": "hành vi đạo đức phù hợp",
+            "confident": 0.9358476996421814,
+            "indicator": "phân biệt được hành vi phù hợp với chuẩn mực đạo đức",
+            "level": 1,
+            "full_comment": "Em biết điều chỉnh thái độ và hành vi đạo đức phù hợp."
+        },
+        "understanding": {
+            "evidence": "hành vi đạo đức phù hợp",
+            "confident": 0.9076139330863953,
+            "indicator": "nhận xét được hành vi của bản thân theo chuẩn mực đạo đức",
+            "level": 1,
+            "full_comment": "Em biết điều chỉnh thái độ và hành vi đạo đức phù hợp."
+        },
+        "applying": {
+            "evidence": "hành vi đạo đức phù hợp",
+            "confident": 0.9481252431869507,
+            "indicator": "thực hiện được hành vi phù hợp chuẩn mực đạo đức",
+            "level": 1,
+            "full_comment": "Em biết điều chỉnh thái độ và hành vi đạo đức phù hợp."
+        },
+        "subject": "Đạo đức"
+    },
+    "physical_education_comment": {
+        "remembering": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.5195467472076416,
+            "indicator": "biết được các tư thế động tác",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học."
+        },
+        "understanding": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.36934083700180054,
+            "indicator": "so sánh được nội dung tập luyện phù hợp để nâng cao sức khoẻ",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học."
+        },
+        "applying": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.6778688430786133,
+            "indicator": "biểu diễn được bài tập liên hoàn",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học."
+        },
+        "subject": "Giáo dục thể chất"
+    },
+    "experiential_activities_comment": {
+        "remembering": {
+            "evidence": "em hiểu bài",
+            "confident": 0.7070963978767395,
+            "indicator": "kể được những việc làm tốt",
+            "level": 1,
+            "full_comment": "Em hiểu bài nhưng cần tích cực hơn trong hoạt động nhóm."
+        },
+        "understanding": {
+            "evidence": "em hiểu bài",
+            "confident": 0.6493703126907349,
+            "indicator": "chỉ ra được ý nghĩa của hoạt động",
+            "level": 1,
+            "full_comment": "Em hiểu bài nhưng cần tích cực hơn trong hoạt động nhóm."
+        },
+        "applying": {
+            "evidence": "em hiểu bài",
+            "confident": 0.7946490049362183,
+            "indicator": "thuyết trình được",
+            "level": 1,
+            "full_comment": "Em hiểu bài nhưng cần tích cực hơn trong hoạt động nhóm."
+        },
+        "subject": "Hoạt động trải nghiệm"
+    },
+    "nature_and_society_comment": {
+        "remembering": {
+            "evidence": "em hiểu bài",
+            "confident": 0.8197205066680908,
+            "indicator": "nói được tên lớp",
+            "level": 3,
+            "full_comment": "Em hiểu bài nhưng chưa tích cực tham gia các hoạt động."
+        },
+        "understanding": {
+            "evidence": "chưa tích cực tham gia các hoạt động",
+            "confident": 0.53672856092453,
+            "indicator": "trình bày được một số việc cần tránh để giữ gìn cơ quan tuần hoàn",
+            "level": 3,
+            "full_comment": "Em hiểu bài nhưng chưa tích cực tham gia các hoạt động."
+        },
+        "applying": {
+            "evidence": "em hiểu bài",
+            "confident": 0.6199827790260315,
+            "indicator": "đặt được câu hỏi để tìm hiểu về thành tích dạy và học",
+            "level": 3,
+            "full_comment": "Em hiểu bài nhưng chưa tích cực tham gia các hoạt động."
+        },
+        "subject": "Tự nhiên và Xã hội"
+    }
+}

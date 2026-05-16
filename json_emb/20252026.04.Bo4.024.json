@@ -1,0 +1,291 @@
+{
+    "student_code": "20252026.04.Bo4.024",
+    "vietnamese_comment": {
+        "remembering": {
+            "evidence": "em đọc tốt",
+            "confident": 0.6237945556640625,
+            "indicator": "đọc thuộc lòng đoạn văn",
+            "level": 1,
+            "full_comment": "Em đọc tốt, câu văn đúng bố cục bài văn tả con vật, câu văn nhiều cảm xúc, chữ viết dẹp, rõ ràng."
+        },
+        "understanding": {
+            "evidence": "câu văn nhiều cảm xúc",
+            "confident": 0.8526031970977783,
+            "indicator": "phân tích cảm xúc của người viết",
+            "level": 1,
+            "full_comment": "Em đọc tốt, câu văn đúng bố cục bài văn tả con vật, câu văn nhiều cảm xúc, chữ viết dẹp, rõ ràng."
+        },
+        "applying": {
+            "evidence": "chữ viết dẹp",
+            "confident": 0.7667989134788513,
+            "indicator": "viết văn bản",
+            "level": 1,
+            "full_comment": "Em đọc tốt, câu văn đúng bố cục bài văn tả con vật, câu văn nhiều cảm xúc, chữ viết dẹp, rõ ràng."
+        },
+        "subject": "Tiếng Việt"
+    },
+    "mathematics_comment": {
+        "remembering": {
+            "evidence": "em thực hiện thành thạo phép tính với phân số",
+            "confident": 0.5217584371566772,
+            "indicator": "làm quen",
+            "level": 3,
+            "full_comment": "Em thực hiện thành thạo phép tính với phân số và có kĩ năng giải toán có lời văn tốt."
+        },
+        "understanding": {
+            "evidence": "em thực hiện thành thạo phép tính với phân số",
+            "confident": 0.4920983910560608,
+            "indicator": "thể hiện",
+            "level": 3,
+            "full_comment": "Em thực hiện thành thạo phép tính với phân số và có kĩ năng giải toán có lời văn tốt."
+        },
+        "applying": {
+            "evidence": "em thực hiện thành thạo phép tính với phân số",
+            "confident": 0.5014435052871704,
+            "indicator": "thực hiện",
+            "level": 3,
+            "full_comment": "Em thực hiện thành thạo phép tính với phân số và có kĩ năng giải toán có lời văn tốt."
+        },
+        "subject": "Toán"
+    },
+    "informatics_comment": {
+        "remembering": {
+            "evidence": "hình thức",
+            "confident": 0.8367520570755005,
+            "indicator": "nêu được công dụng",
+            "level": 2,
+            "full_comment": "Em hoàn thành tốt các nội dung học tập theo hướng dẫn của giáo viên; có khả năng thực hiện đúng thao tác và sản phẩm đạt yêu cầu về nội dung và hình thức."
+        },
+        "understanding": {
+            "evidence": "hình thức",
+            "confident": 0.83204185962677,
+            "indicator": "trình bày được tính đệ quy",
+            "level": 2,
+            "full_comment": "Em hoàn thành tốt các nội dung học tập theo hướng dẫn của giáo viên; có khả năng thực hiện đúng thao tác và sản phẩm đạt yêu cầu về nội dung và hình thức."
+        },
+        "applying": {
+            "evidence": "hình thức",
+            "confident": 0.8202662467956543,
+            "indicator": "tạo được tệp",
+            "level": 2,
+            "full_comment": "Em hoàn thành tốt các nội dung học tập theo hướng dẫn của giáo viên; có khả năng thực hiện đúng thao tác và sản phẩm đạt yêu cầu về nội dung và hình thức."
+        },
+        "subject": "Tin học"
+    },
+    "science_comment": {
+        "remembering": {
+            "evidence": "học",
+            "confident": 0.7959457039833069,
+            "indicator": "nêu được",
+            "level": 3,
+            "full_comment": "Em hiểu bài và tích cực phát biểu trong khi học."
+        },
+        "understanding": {
+            "evidence": "học",
+            "confident": 0.7821547985076904,
+            "indicator": "phân biệt được",
+            "level": 3,
+            "full_comment": "Em hiểu bài và tích cực phát biểu trong khi học."
+        },
+        "applying": {
+            "evidence": "học",
+            "confident": 0.804482102394104,
+            "indicator": "nhận xét được",
+            "level": 3,
+            "full_comment": "Em hiểu bài và tích cực phát biểu trong khi học."
+        },
+        "subject": "Khoa học"
+    },
+    "history_and_geography_comment": {
+        "remembering": {
+            "evidence": "biết báo cáo trước lớp",
+            "confident": 0.5638306736946106,
+            "indicator": "liệt kê được sự vật",
+            "level": 1,
+            "full_comment": "Em tham gia học nhóm tốt, biết báo cáo trước lớp."
+        },
+        "understanding": {
+            "evidence": "biết báo cáo trước lớp",
+            "confident": 0.4120483994483948,
+            "indicator": "trình bày được diễn trình của các sự kiện lịch sử",
+            "level": 1,
+            "full_comment": "Em tham gia học nhóm tốt, biết báo cáo trước lớp."
+        },
+        "applying": {
+            "evidence": "biết báo cáo trước lớp",
+            "confident": 0.6224575042724609,
+            "indicator": "vận dụng được điều đã học vào trường hợp cụ thể",
+            "level": 1,
+            "full_comment": "Em tham gia học nhóm tốt, biết báo cáo trước lớp."
+        },
+        "subject": "Lịch sử và Địa lí"
+    },
+    "english_comment": {
+        "remembering": {
+            "evidence": "viết",
+            "confident": 0.6754461526870728,
+            "indicator": "đọc đúng được chữ cái",
+            "level": 3,
+            "full_comment": "Em tích cực giơ tay phát biểu nhưng cần rèn luyện thêm kĩ năng đọc và viết."
+        },
+        "understanding": {
+            "evidence": "viết",
+            "confident": 0.6583881378173828,
+            "indicator": "giải thích được nội dung cơ bản của đoạn văn",
+            "level": 3,
+            "full_comment": "Em tích cực giơ tay phát biểu nhưng cần rèn luyện thêm kĩ năng đọc và viết."
+        },
+        "applying": {
+            "evidence": "cần rèn luyện thêm kĩ năng đọc",
+            "confident": 0.7564697265625,
+            "indicator": "đọc được văn bản ngắn phục vụ học tập",
+            "level": 3,
+            "full_comment": "Em tích cực giơ tay phát biểu nhưng cần rèn luyện thêm kĩ năng đọc và viết."
+        },
+        "subject": "Tiếng Anh"
+    },
+    "technology_comment": {
+        "remembering": {
+            "evidence": "em học tập hăng hái",
+            "confident": 0.6909070014953613,
+            "indicator": "nêu",
+            "level": 1,
+            "full_comment": "Em học tập hăng hái, nắm tốt nội dung bài. Em khéo léo khi vận dụng thực hành tạo ra sản phẩm tốt."
+        },
+        "understanding": {
+            "evidence": "em học tập hăng hái",
+            "confident": 0.741904616355896,
+            "indicator": "thao tác",
+            "level": 1,
+            "full_comment": "Em học tập hăng hái, nắm tốt nội dung bài. Em khéo léo khi vận dụng thực hành tạo ra sản phẩm tốt."
+        },
+        "applying": {
+            "evidence": "em học tập hăng hái",
+            "confident": 0.7343261241912842,
+            "indicator": "phác thảo",
+            "level": 1,
+            "full_comment": "Em học tập hăng hái, nắm tốt nội dung bài. Em khéo léo khi vận dụng thực hành tạo ra sản phẩm tốt."
+        },
+        "subject": "Công nghệ"
+    },
+    "music_comment": {
+        "remembering": {
+            "evidence": "em thuộc lời ca",
+            "confident": 0.8855307698249817,
+            "indicator": "thuộc lời ca",
+            "level": 1,
+            "full_comment": "Em thuộc lời ca, hát đúng giai điệu, biết thể hiện sắc thái bài hát."
+        },
+        "understanding": {
+            "evidence": "biết thể hiện sắc thái bài hát",
+            "confident": 0.6454697251319885,
+            "indicator": "tóm tắt được ý nghĩa của một số thuật ngữ âm nhạc",
+            "level": 1,
+            "full_comment": "Em thuộc lời ca, hát đúng giai điệu, biết thể hiện sắc thái bài hát."
+        },
+        "applying": {
+            "evidence": "hát đúng giai điệu",
+            "confident": 0.6942073106765747,
+            "indicator": "biểu diễn được các tiết mục âm nhạc",
+            "level": 1,
+            "full_comment": "Em thuộc lời ca, hát đúng giai điệu, biết thể hiện sắc thái bài hát."
+        },
+        "subject": "Âm nhạc"
+    },
+    "arts_comment": {
+        "remembering": {
+            "evidence": "trang trí",
+            "confident": 0.7312068343162537,
+            "indicator": "liệt kê được vật liệu",
+            "level": 3,
+            "full_comment": "Em có tính sáng tạo khi vẽ, trang trí."
+        },
+        "understanding": {
+            "evidence": "trang trí",
+            "confident": 0.8022102117538452,
+            "indicator": "phân biệt được tranh vẽ",
+            "level": 3,
+            "full_comment": "Em có tính sáng tạo khi vẽ, trang trí."
+        },
+        "applying": {
+            "evidence": "trang trí",
+            "confident": 0.7125173807144165,
+            "indicator": "thực hiện được phác thảo",
+            "level": 3,
+            "full_comment": "Em có tính sáng tạo khi vẽ, trang trí."
+        },
+        "subject": "Mĩ thuật"
+    },
+    "civics_comment": {
+        "remembering": {
+            "evidence": "em hiểu bài",
+            "confident": 0.7507689595222473,
+            "indicator": "nêu được khái niệm",
+            "level": 1,
+            "full_comment": "Em hiểu bài và giải quyết tình huống tốt."
+        },
+        "understanding": {
+            "evidence": "giải quyết tình huống tốt",
+            "confident": 0.473232239484787,
+            "indicator": "lí giải được một số tình huống đơn giản trong đời sống về trách nhiệm pháp lí",
+            "level": 1,
+            "full_comment": "Em hiểu bài và giải quyết tình huống tốt."
+        },
+        "applying": {
+            "evidence": "giải quyết tình huống tốt",
+            "confident": 0.716280996799469,
+            "indicator": "thực hiện được giải pháp phù hợp để xử lí một số tình huống pháp luật",
+            "level": 1,
+            "full_comment": "Em hiểu bài và giải quyết tình huống tốt."
+        },
+        "subject": "Đạo đức"
+    },
+    "physical_education_comment": {
+        "remembering": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.5195467472076416,
+            "indicator": "biết được các tư thế động tác",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học."
+        },
+        "understanding": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.36934083700180054,
+            "indicator": "so sánh được nội dung tập luyện phù hợp để nâng cao sức khoẻ",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học."
+        },
+        "applying": {
+            "evidence": "em hoàn thành nội dung chương trình môn học",
+            "confident": 0.6778688430786133,
+            "indicator": "biểu diễn được bài tập liên hoàn",
+            "level": 1,
+            "full_comment": "Em hoàn thành nội dung chương trình môn học."
+        },
+        "subject": "Giáo dục thể chất"
+    },
+    "experiential_activities_comment": {
+        "remembering": {
+            "evidence": "em biết khám phá thế giới bản thân",
+            "confident": 0.631936252117157,
+            "indicator": "nhận diện được sở thích của bản thân",
+            "level": 1,
+            "full_comment": "Em biết khám phá thế giới bản thân và thế giới xung quanh."
+        },
+        "understanding": {
+            "evidence": "em biết khám phá thế giới bản thân",
+            "confident": 0.581086277961731,
+            "indicator": "mô tả được hình ảnh bản thân",
+            "level": 1,
+            "full_comment": "Em biết khám phá thế giới bản thân và thế giới xung quanh."
+        },
+        "applying": {
+            "evidence": "thế giới xung quanh",
+            "confident": 0.5513513088226318,
+            "indicator": "thể hiện được hành vi văn hoá",
+            "level": 1,
+            "full_comment": "Em biết khám phá thế giới bản thân và thế giới xung quanh."
+        },
+        "subject": "Hoạt động trải nghiệm"
+    }
+}
